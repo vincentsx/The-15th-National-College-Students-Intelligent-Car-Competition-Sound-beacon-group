@@ -1,0 +1,963 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_WndF32_BlackmanHarrisTable.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_BlackmanHarrisTable.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_BlackmanHarrisTable.src ..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_BlackmanHarrisTable.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_BlackmanHarrisTable.c'
+
+	
+$TC16X
+	
+	.sdecl	'.rodata.Ifx_WndF32_BlackmanHarrisTable.Ifx_g_WndF32_blackmanHarrisTable',data,rom,cluster('Ifx_g_WndF32_blackmanHarrisTable')
+	.sect	'.rodata.Ifx_WndF32_BlackmanHarrisTable.Ifx_g_WndF32_blackmanHarrisTable'
+	.global	Ifx_g_WndF32_blackmanHarrisTable
+	.align	2
+Ifx_g_WndF32_blackmanHarrisTable:	.type	object
+	.size	Ifx_g_WndF32_blackmanHarrisTable,2048
+	.word	947628162,947774849,948063888,948431009
+	.word	948945544,949608058,950419279,951380094
+	.word	952491556,953754874,955171422,956522024
+	.word	957385912,958328960,959352177,960456654
+	.word	961643563,962914155,964269764,965200861
+	.word	965965842,966775573,967630881,968532635
+	.word	969481743,970479154,971525857,972622883
+	.word	973424914,974025373,974652659,975307367
+	.word	975990111,976701528,977442274,978213024
+	.word	979014474,979847341,980712360,981538712
+	.word	982004519,982487566,982988261,983507024
+	.word	984044281,984600472,985176044,985771455
+	.word	986387174,987023678,987681455,988361002
+	.word	989062829,989787451,990195571,990581474
+	.word	990979582,991390171,991813527,992249937
+	.word	992699694,993163096,993640446,994132051
+	.word	994638225,995159285,995695551,996247353
+	.word	996815020,997398891,997999304,998430480
+	.word	998747752,999073821,999408868,999753075
+	.word	1000106627,1000469710,1000842513,1001225229
+	.word	1001618050,1002021173,1002434795,1002859118
+	.word	1003294344,1003740678,1004198326,1004667498
+	.word	1005148405,1005641261,1006146282,1006648322
+	.word	1006913324,1007184737,1007462675,1007747249
+	.word	1008038573,1008336763,1008641934,1008954204
+	.word	1009273690,1009600511,1009934786,1010276637
+	.word	1010626185,1010983552,1011348862,1011722239
+	.word	1012103808,1012493696,1012892028,1013298933
+	.word	1013714538,1014138974,1014572370,1015014857
+	.word	1015244067,1015474599,1015709875,1015949961
+	.word	1016194926,1016444835,1016699758,1016959761
+	.word	1017224915,1017495286,1017770945,1018051961
+	.word	1018338403,1018630341,1018927845,1019230985
+	.word	1019539832,1019854457,1020174931,1020501324
+	.word	1020833708,1021172154,1021516735,1021867521
+	.word	1022224585,1022587999,1022957835,1023334166
+	.word	1023563619,1023758387,1023956511,1024158027
+	.word	1024362971,1024571380,1024783289,1024998736
+	.word	1025217756,1025440386,1025666662,1025896621
+	.word	1026130297,1026367728,1026608950,1026853999
+	.word	1027102910,1027355720,1027612464,1027873178
+	.word	1028137898,1028406659,1028679497,1028956447
+	.word	1029237544,1029522823,1029812319,1030106066
+	.word	1030404100,1030706455,1031013165,1031324264
+	.word	1031639785,1031879274,1032041508,1032206003
+	.word	1032372777,1032541845,1032713224,1032886930
+	.word	1033062979,1033241387,1033422168,1033605340
+	.word	1033790918,1033978916,1034169351,1034362236
+	.word	1034557586,1034755418,1034955743,1035158578
+	.word	1035363936,1035571832,1035782277,1035995288
+	.word	1036210875,1036429054,1036649836,1036873234
+	.word	1037099261,1037327929,1037559250,1037793235
+	.word	1038029897,1038269247,1038511295,1038756052
+	.word	1039003530,1039253737,1039506685,1039762382
+	.word	1040020840,1040234729,1040366730,1040500125
+	.word	1040634917,1040771110,1040908708,1041047715
+	.word	1041188134,1041329969,1041473224,1041617900
+	.word	1041764001,1041911530,1042060489,1042210881
+	.word	1042362708,1042515972,1042670676,1042826819
+	.word	1042984405,1043143435,1043303909,1043465829
+	.word	1043629196,1043794010,1043960271,1044127981
+	.word	1044297138,1044467743,1044639795,1044813294
+	.word	1044988239,1045164629,1045342463,1045521739
+	.word	1045702457,1045884614,1046068208,1046253237
+	.word	1046439698,1046627590,1046816908,1047007651
+	.word	1047199814,1047393395,1047588389,1047784792
+	.word	1047982601,1048181811,1048382417,1048580208
+	.word	1048681900,1048784282,1048887353,1048991108
+	.word	1049095545,1049200661,1049306452,1049412916
+	.word	1049520048,1049627846,1049736305,1049845421
+	.word	1049955191,1050065611,1050176676,1050288382
+	.word	1050400725,1050513700,1050627303,1050741528
+	.word	1050856371,1050971827,1051087890,1051204556
+	.word	1051321819,1051439673,1051558113,1051677133
+	.word	1051796728,1051916891,1052037616,1052158897
+	.word	1052280727,1052403101,1052526011,1052649451
+	.word	1052773415,1052897894,1053022882,1053148373
+	.word	1053274358,1053400830,1053527782,1053655206
+	.word	1053783094,1053911438,1054040231,1054169465
+	.word	1054299131,1054429220,1054559725,1054690637
+	.word	1054821947,1054953646,1055085726,1055218178
+	.word	1055350992,1055484159,1055617670,1055751517
+	.word	1055885688,1056020174,1056154967,1056290055
+	.word	1056425430,1056561081,1056696997,1056833170
+	.word	1056967098,1057035424,1057103863,1057172408
+	.word	1057241056,1057309799,1057378634,1057447553
+	.word	1057516553,1057585627,1057654770,1057723975
+	.word	1057793238,1057862553,1057931914,1058001314
+	.word	1058070750,1058140213,1058209699,1058279201
+	.word	1058348714,1058418232,1058487748,1058557257
+	.word	1058626752,1058696227,1058765676,1058835093
+	.word	1058904472,1058973806,1059043089,1059112315
+	.word	1059181478,1059250570,1059319586,1059388520
+	.word	1059457365,1059526114,1059594761,1059663299
+	.word	1059731723,1059800025,1059868200,1059936239
+	.word	1060004138,1060071889,1060139486,1060206923
+	.word	1060274191,1060341286,1060408201,1060474928
+	.word	1060541461,1060607794,1060673920,1060739833
+	.word	1060805524,1060870989,1060936221,1061001212
+	.word	1061065957,1061130447,1061194678,1061258643
+	.word	1061322333,1061385744,1061448869,1061511701
+	.word	1061574233,1061636458,1061698371,1061759965
+	.word	1061821234,1061882170,1061942767,1062003019
+	.word	1062062920,1062122462,1062181640,1062240448
+	.word	1062298878,1062356925,1062414582,1062471844
+	.word	1062528703,1062585154,1062641190,1062696805
+	.word	1062751994,1062806749,1062861066,1062914938
+	.word	1062968359,1063021323,1063073824,1063125856
+	.word	1063177415,1063228493,1063279085,1063329185
+	.word	1063378788,1063427889,1063476481,1063524559
+	.word	1063572117,1063619151,1063665655,1063711624
+	.word	1063757052,1063801934,1063846265,1063890040
+	.word	1063933254,1063975902,1064017979,1064059481
+	.word	1064100401,1064140737,1064180482,1064219633
+	.word	1064258184,1064296132,1064333472,1064370200
+	.word	1064406311,1064441801,1064476665,1064510901
+	.word	1064544504,1064577469,1064609794,1064641474
+	.word	1064672505,1064702884,1064732608,1064761672
+	.word	1064790073,1064817809,1064844875,1064871269
+	.word	1064896987,1064922026,1064946384,1064970057
+	.word	1064993043,1065015339,1065036941,1065057849
+	.word	1065078059,1065097568,1065116375,1065134477
+	.word	1065151872,1065168558,1065184533,1065199795
+	.word	1065214342,1065228173,1065241285,1065253678
+	.word	1065265350,1065276298,1065286523,1065296023
+	.word	1065304796,1065312842,1065320159,1065326748
+	.word	1065332606,1065337733,1065342129,1065345794
+	.word	1065348726,1065350925,1065352391,1065353124
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	1237
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_BlackmanHarrisTable.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,1,3
+	.word	214
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	217
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	262
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	274
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	354
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	328
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	360
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	360
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	328
+	.byte	6,0,10,4,61,9,8,11
+	.byte	'real',0
+	.word	274
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	274
+	.byte	4,2,35,4,0,12
+	.word	446
+	.byte	3
+	.word	480
+	.byte	8
+	.byte	'IFX_Cf32_dot',0,3,3,85,20
+	.word	274
+	.byte	1,1,5
+	.byte	'b',0,3,85,49
+	.word	485
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,91,20
+	.word	274
+	.byte	1,1,5
+	.byte	'c',0,3,91,49
+	.word	485
+	.byte	13,6,0,0,3
+	.word	446
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
+	.byte	'a',0,3,125,40
+	.word	564
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	274
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	274
+	.byte	6,0,7
+	.byte	'int',0,4,5,12
+	.word	623
+	.byte	14
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,15
+	.word	630
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,16
+	.word	672
+	.byte	3
+	.word	672
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	688
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	693
+	.byte	18
+	.byte	'value',0
+	.word	672
+	.byte	18
+	.byte	'compare',0
+	.word	672
+	.byte	0,19
+	.word	222
+	.byte	20
+	.word	248
+	.byte	6,0,19
+	.word	283
+	.byte	20
+	.word	315
+	.byte	6,0,19
+	.word	365
+	.byte	20
+	.word	384
+	.byte	6,0,19
+	.word	400
+	.byte	20
+	.word	415
+	.byte	20
+	.word	429
+	.byte	6,0,19
+	.word	490
+	.byte	20
+	.word	514
+	.byte	6,0,19
+	.word	526
+	.byte	20
+	.word	550
+	.byte	13,21
+	.word	490
+	.byte	20
+	.word	514
+	.byte	22
+	.word	524
+	.byte	0,6,0,0,19
+	.word	569
+	.byte	20
+	.word	589
+	.byte	20
+	.word	599
+	.byte	20
+	.word	610
+	.byte	6,0,7
+	.byte	'short int',0,2,5,23
+	.byte	'__wchar_t',0,5,1,1
+	.word	867
+	.byte	23
+	.byte	'__size_t',0,5,1,1
+	.word	672
+	.byte	23
+	.byte	'__ptrdiff_t',0,5,1,1
+	.word	623
+	.byte	24,1,3
+	.word	935
+	.byte	23
+	.byte	'__codeptr',0,5,1,1
+	.word	937
+	.byte	7
+	.byte	'unsigned char',0,1,8,23
+	.byte	'uint8',0,6,105,29
+	.word	960
+	.byte	7
+	.byte	'unsigned short int',0,2,7,23
+	.byte	'uint16',0,6,109,29
+	.word	991
+	.byte	7
+	.byte	'unsigned long int',0,4,7,23
+	.byte	'uint32',0,6,113,29
+	.word	1028
+	.byte	23
+	.byte	'uint64',0,6,118,29
+	.word	328
+	.byte	23
+	.byte	'sint16',0,6,126,29
+	.word	867
+	.byte	7
+	.byte	'long int',0,4,5,23
+	.byte	'sint32',0,6,131,1,29
+	.word	1094
+	.byte	7
+	.byte	'long long int',0,8,5,23
+	.byte	'sint64',0,6,139,1,29
+	.word	1122
+	.byte	23
+	.byte	'float32',0,6,168,1,29
+	.word	274
+	.byte	23
+	.byte	'pvoid',0,4,57,28
+	.word	360
+	.byte	23
+	.byte	'cfloat32',0,4,65,3
+	.word	446
+	.byte	23
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	1122
+	.byte	25,128,16
+	.word	274
+	.byte	26,255,3,0
+.L8:
+	.byte	12
+	.word	1224
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,73,19,0,0,16,53,0,73,19,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,18,5,0,3
+	.byte	8,73,19,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,29,1,49,19,0,0,22,11,0,49,19,0,0,23,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,24,21,0,54,15,0,0,25,1,1,11,15,73,19,0,0,26,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L10-.L9
+.L9:
+	.half	3
+	.word	.L12-.L11
+.L11:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_BlackmanHarrisTable.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L12:
+.L10:
+	.sdecl	'.debug_info',debug,cluster('Ifx_g_WndF32_blackmanHarrisTable')
+	.sect	'.debug_info'
+.L6:
+	.word	260
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_BlackmanHarrisTable.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Ifx_g_WndF32_blackmanHarrisTable',0,5,52,19
+	.word	.L8
+	.byte	1,5,3
+	.word	Ifx_g_WndF32_blackmanHarrisTable
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_g_WndF32_blackmanHarrisTable')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     2   * \file Ifx_WndF32_BlackmanHarrisTable.c
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     3   * \brief Lookup table for Blackman-Harris window function
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     4   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     6   * \version disabled
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     8   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    17  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    18  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    20  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    27  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    34  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    42  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    44   */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    45  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    46  #include "Ifx_WndF32.h"
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    47  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    48  #if IFX_WNDF32_TABLE_LENGTH != 1024
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    49  #error This was generated with IFX_WNDF32_TABLE_LENGTH = 1024. Please regenerate.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    50  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    51  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    52  CONST_CFG float32 Ifx_g_WndF32_blackmanHarrisTable[(IFX_WNDF32_TABLE_LENGTH / 2)] = {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    53      _DATAF(0.000060000000000001),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    54      _DATAF(6.05336435769415E-05),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    55      _DATAF(6.21351621010909E-05),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    56      _DATAF(6.48063189517042E-05),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    57      _DATAF(6.85500530901977E-05),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    58      _DATAF(7.33704790552552E-05),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    59      _DATAF(7.92728869546643E-05),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    60      _DATAF(8.62637424542366E-05),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    61      _DATAF(9.43506867646833E-05),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    62      _DATAF(0.000103542536623254),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    63      _DATAF(0.000113849284272844),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    64      _DATAF(0.00012528209743509),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    65      _DATAF(0.000137853319279022),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    66      _DATAF(0.000151576468382483),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    67      _DATAF(0.000166466238687386),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    68      _DATAF(0.000182538499446352),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    69      _DATAF(0.000199810295160321),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    70      _DATAF(0.000218299845506252),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    71      _DATAF(0.000238026545253333),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    72      _DATAF(0.000259010964166398),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    73      _DATAF(0.000281274846895671),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    74      _DATAF(0.000304841112851225),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    75      _DATAF(0.000329733856060103),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    76      _DATAF(0.000355978345005534),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    77      _DATAF(0.000383601022445701),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    78      _DATAF(0.00041262950521132),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    79      _DATAF(0.000443092583978778),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    80      _DATAF(0.000475020223018621),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    81      _DATAF(0.000508443559916298),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    82      _DATAF(0.000543394905263906),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    83      _DATAF(0.000579907742319714),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    84      _DATAF(0.000618016726635444),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    85      _DATAF(0.000657757685646449),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    86      _DATAF(0.000699167618224639),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    87      _DATAF(0.000742284694190907),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    88      _DATAF(0.000787148253784491),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    89      _DATAF(0.000833798807087666),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    90      _DATAF(0.000882278033402194),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    91      _DATAF(0.000932628780575385),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    92      _DATAF(0.000984895064273818),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    93      _DATAF(0.00103912206720055),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    94      _DATAF(0.00109535613825471),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    95      _DATAF(0.00115364479162906),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    96      _DATAF(0.00121403670584417),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    97      _DATAF(0.00127658172271511),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    98      _DATAF(0.00134133084624859),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	    99      _DATAF(0.0014083362414667),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   100      _DATAF(0.00147765123315459),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   101      _DATAF(0.00154933030452976),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   102      _DATAF(0.0016234290958281),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   103      _DATAF(0.00170000440280525),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   104      _DATAF(0.00177911417514856),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   105      _DATAF(0.00186081751479774),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   106      _DATAF(0.00194517467416997),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   107      _DATAF(0.00203224705428634),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   108      _DATAF(0.00212209720279637),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   109      _DATAF(0.0022147888118974),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   110      _DATAF(0.00231038671614482),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   111      _DATAF(0.00240895689015029),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   112      _DATAF(0.00251056644616419),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   113      _DATAF(0.00261528363153874),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   114      _DATAF(0.00272317782606849),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   115      _DATAF(0.0028343195392042),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   116      _DATAF(0.00294878040713723),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   117      _DATAF(0.00306663318975018),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   118      _DATAF(0.00318795176743033),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   119      _DATAF(0.00331281113774309),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   120      _DATAF(0.00344128741195982),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   121      _DATAF(0.00357345781143924),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   122      _DATAF(0.00370940066385603),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   123      _DATAF(0.00384919539927517),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   124      _DATAF(0.00399292254606638),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   125      _DATAF(0.00414066372665728),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   126      _DATAF(0.00429250165311901),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   127      _DATAF(0.00444852012258346),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   128      _DATAF(0.00460880401248608),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   129      _DATAF(0.00477343927563203),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   130      _DATAF(0.0049425129350816),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   131      _DATAF(0.00511611307885149),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   132      _DATAF(0.00529432885442795),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   133      _DATAF(0.00547725046308894),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   134      _DATAF(0.00566496915403105),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   135      _DATAF(0.00585757721829767),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   136      _DATAF(0.00605516798250564),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   137      _DATAF(0.00625783580236627),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   138      _DATAF(0.00646567605599707),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   139      _DATAF(0.00667878513702144),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   140      _DATAF(0.00689726044745254),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   141      _DATAF(0.00712120039035792),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   142      _DATAF(0.00735070436230157),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   143      _DATAF(0.00758587274556064),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   144      _DATAF(0.00782680690011242),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   145      _DATAF(0.00807360915538975),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   146      _DATAF(0.00832638280180106),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   147      _DATAF(0.00858523208201078),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   148      _DATAF(0.0088502621819799),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   149      _DATAF(0.00912157922176039),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   150      _DATAF(0.00939929024604285),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   151      _DATAF(0.00968350321445337),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   152      _DATAF(0.00997432699159716),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   153      _DATAF(0.0102718713368455),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   154      _DATAF(0.010576246893865),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   155      _DATAF(0.0108875651798833),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   156      _DATAF(0.0112059385746926),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   157      _DATAF(0.0115314803093847),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   158      _DATAF(0.011864304454818),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   159      _DATAF(0.0122045259098121),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   160      _DATAF(0.0125522603890683),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   161      _DATAF(0.0129076244108144),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   162      _DATAF(0.0132707352841705),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   163      _DATAF(0.013641711096234),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   164      _DATAF(0.0140206706988822),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   165      _DATAF(0.0144077336952905),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   166      _DATAF(0.0148030204261634),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   167      _DATAF(0.0152066519556773),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   168      _DATAF(0.0156187500571341),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   169      _DATAF(0.0160394371983217),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   170      _DATAF(0.0164688365265826),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   171      _DATAF(0.0169070718535868),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   172      _DATAF(0.0173542676398092),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   173      _DATAF(0.0178105489787098),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   174      _DATAF(0.0182760415806149),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   175      _DATAF(0.0187508717562994),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   176      _DATAF(0.0192351664002677),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   177      _DATAF(0.0197290529737345),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   178      _DATAF(0.020232659487302),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   179      _DATAF(0.0207461144833353),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   180      _DATAF(0.0212695470180336),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   181      _DATAF(0.0218030866431987),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   182      _DATAF(0.0223468633876972),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   183      _DATAF(0.0229010077386208),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   184      _DATAF(0.0234656506221394),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   185      _DATAF(0.0240409233840514),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   186      _DATAF(0.0246269577700285),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   187      _DATAF(0.0252238859055558),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   188      _DATAF(0.025831840275569),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   189      _DATAF(0.026450953703786),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   190      _DATAF(0.0270813593317373),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   191      _DATAF(0.0277231905974923),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   192      _DATAF(0.0283765812140843),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   193      _DATAF(0.0290416651476349),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   194      _DATAF(0.029718576595178),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   195      _DATAF(0.0304074499621848),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   196      _DATAF(0.031108419839792),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   197      _DATAF(0.0318216209817327),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   198      _DATAF(0.0325471882809733),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   199      _DATAF(0.0332852567460565),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   200      _DATAF(0.0340359614771537),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   201      _DATAF(0.0347994376418264),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   202      _DATAF(0.0355758204505013),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   203      _DATAF(0.036365245131659),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   204      _DATAF(0.0371678469067388),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   205      _DATAF(0.0379837609647635),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   206      _DATAF(0.038813122436685),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   207      _DATAF(0.039656066369453),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   208      _DATAF(0.0405127276998116),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   209      _DATAF(0.041383241227825),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   210      _DATAF(0.0422677415901346),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   211      _DATAF(0.0431663632329524),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   212      _DATAF(0.0440792403847932),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   213      _DATAF(0.0450065070289477),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   214      _DATAF(0.0459482968757025),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   215      _DATAF(0.0469047433343071),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   216      _DATAF(0.0478759794846953),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   217      _DATAF(0.0488621380489625),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   218      _DATAF(0.0498633513626023),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   219      _DATAF(0.0508797513455092),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   220      _DATAF(0.0519114694727488),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   221      _DATAF(0.0529586367451015),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   222      _DATAF(0.0540213836593831),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   223      _DATAF(0.0550998401785474),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   224      _DATAF(0.0561941357015757),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   225      _DATAF(0.0573043990331573),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   226      _DATAF(0.0584307583531662),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   227      _DATAF(0.0595733411859395),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   228      _DATAF(0.0607322743693613),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   229      _DATAF(0.06190768402376),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   230      _DATAF(0.0630996955206202),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   231      _DATAF(0.0643084334511193),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   232      _DATAF(0.0655340215944914),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   233      _DATAF(0.0667765828862246),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   234      _DATAF(0.0680362393860989),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   235      _DATAF(0.0693131122460692),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   236      _DATAF(0.0706073216779996),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   237      _DATAF(0.0719189869212565),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   238      _DATAF(0.0732482262101651),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   239      _DATAF(0.0745951567413363),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   240      _DATAF(0.0759598946408714),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   241      _DATAF(0.0773425549314486),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   242      _DATAF(0.0787432514993022),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   243      _DATAF(0.0801620970610963),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   244      _DATAF(0.0815992031307037),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   245      _DATAF(0.083054679985896),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   246      _DATAF(0.0845286366349502),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   247      _DATAF(0.0860211807831818),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   248      _DATAF(0.0875324187994092),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   249      _DATAF(0.0890624556823589),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   250      _DATAF(0.0906113950270166),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   251      _DATAF(0.092179338990934),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   252      _DATAF(0.0937663882604969),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   253      _DATAF(0.0953726420171649),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   254      _DATAF(0.0969981979036867),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   255      _DATAF(0.0986431519903029),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   256      _DATAF(0.100307598740941),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   257      _DATAF(0.101991630979414),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   258      _DATAF(0.103695339855624),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   259      _DATAF(0.105418814811791),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   260      _DATAF(0.107162143548701),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   261      _DATAF(0.108925411991991),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   262      _DATAF(0.110708704258479),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   263      _DATAF(0.112512102622539),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   264      _DATAF(0.114335687482543),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   265      _DATAF(0.116179537327367),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   266      _DATAF(0.118043728702971),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   267      _DATAF(0.119928336179073),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   268      _DATAF(0.121833432315909),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   269      _DATAF(0.123759087631096),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   270      _DATAF(0.125705370566615),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   271      _DATAF(0.127672347455906),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   272      _DATAF(0.129660082491093),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   273      _DATAF(0.131668637690355),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   274      _DATAF(0.133698072865431),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   275      _DATAF(0.135748445589297),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   276      _DATAF(0.137819811163995),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   277      _DATAF(0.139912222588642),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   278      _DATAF(0.142025730527626),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   279      _DATAF(0.144160383278985),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   280      _DATAF(0.146316226742996),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   281      _DATAF(0.14849330439097),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   282      _DATAF(0.150691657234271),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   283      _DATAF(0.152911323793562),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   284      _DATAF(0.155152340068285),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   285      _DATAF(0.157414739506395),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   286      _DATAF(0.15969855297435),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   287      _DATAF(0.162003808727361),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   288      _DATAF(0.164330532379924),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   289      _DATAF(0.166678746876629),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   290      _DATAF(0.169048472463272),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   291      _DATAF(0.171439726658257),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   292      _DATAF(0.173852524224323),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   293      _DATAF(0.176286877140581),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   294      _DATAF(0.178742794574886),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   295      _DATAF(0.181220282856548),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   296      _DATAF(0.183719345449389),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   297      _DATAF(0.186239982925158),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   298      _DATAF(0.188782192937316),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   299      _DATAF(0.191345970195187),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   300      _DATAF(0.193931306438502),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   301      _DATAF(0.196538190412331),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   302      _DATAF(0.199166607842421),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   303      _DATAF(0.201816541410937),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   304      _DATAF(0.204487970732631),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   305      _DATAF(0.207180872331433),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   306      _DATAF(0.209895219617483),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   307      _DATAF(0.212630982864606),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   308      _DATAF(0.21538812918824),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   309      _DATAF(0.218166622523828),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   310      _DATAF(0.220966423605681),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   311      _DATAF(0.223787489946321),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   312      _DATAF(0.226629775816306),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   313      _DATAF(0.229493232224558),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   314      _DATAF(0.232377806899193),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   315      _DATAF(0.235283444268855),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   316      _DATAF(0.238210085444584),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   317      _DATAF(0.241157668202195),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   318      _DATAF(0.244126126965209),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   319      _DATAF(0.247115392788316),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   320      _DATAF(0.25012539334139),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   321      _DATAF(0.253156052894067),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   322      _DATAF(0.256207292300887),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   323      _DATAF(0.259279028987005),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   324      _DATAF(0.262371176934486),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   325      _DATAF(0.265483646669187),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   326      _DATAF(0.268616345248233),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   327      _DATAF(0.271769176248094),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   328      _DATAF(0.27494203975327),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   329      _DATAF(0.278134832345589),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   330      _DATAF(0.281347447094127),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   331      _DATAF(0.284579773545761),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   332      _DATAF(0.287831697716344),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   333      _DATAF(0.291103102082533),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   334      _DATAF(0.294393865574252),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   335      _DATAF(0.297703863567812),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   336      _DATAF(0.301032967879694),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   337      _DATAF(0.30438104676098),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   338      _DATAF(0.307747964892468),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   339      _DATAF(0.311133583380456),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   340      _DATAF(0.314537759753201),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   341      _DATAF(0.317960347958064),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   342      _DATAF(0.321401198359353),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   343      _DATAF(0.324860157736845),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   344      _DATAF(0.328337069285016),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   345      _DATAF(0.331831772612977),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   346      _DATAF(0.335344103745104),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   347      _DATAF(0.338873895122394),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   348      _DATAF(0.342420975604529),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   349      _DATAF(0.345985170472656),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   350      _DATAF(0.3495663014329),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   351      _DATAF(0.353164186620592),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   352      _DATAF(0.356778640605235),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   353      _DATAF(0.360409474396196),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   354      _DATAF(0.364056495449141),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   355      _DATAF(0.367719507673201),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   356      _DATAF(0.371398311438886),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   357      _DATAF(0.375092703586736),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   358      _DATAF(0.378802477436722),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   359      _DATAF(0.382527422798394),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   360      _DATAF(0.386267325981779),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   361      _DATAF(0.39002196980903),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   362      _DATAF(0.393791133626826),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   363      _DATAF(0.397574593319535),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   364      _DATAF(0.401372121323116),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   365      _DATAF(0.4051834866398),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   366      _DATAF(0.409008454853506),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   367      _DATAF(0.412846788146031),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   368      _DATAF(0.416698245313995),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   369      _DATAF(0.420562581786534),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   370      _DATAF(0.424439549643771),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   371      _DATAF(0.428328897636028),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   372      _DATAF(0.432230371203805),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   373      _DATAF(0.436143712498517),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   374      _DATAF(0.440068660403987),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   375      _DATAF(0.444004950558688),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   376      _DATAF(0.447952315378757),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   377      _DATAF(0.451910484081743),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   378      _DATAF(0.455879182711121),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   379      _DATAF(0.459858134161553),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   380      _DATAF(0.463847058204895),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   381      _DATAF(0.46784567151695),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   382      _DATAF(0.471853687704974),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   383      _DATAF(0.475870817335914),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   384      _DATAF(0.479896767965388),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   385      _DATAF(0.483931244167404),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   386      _DATAF(0.487973947564809),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   387      _DATAF(0.492024576860471),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   388      _DATAF(0.496082827869183),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   389      _DATAF(0.500148393550297),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   390      _DATAF(0.50422096404107),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   391      _DATAF(0.508300226690728),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   392      _DATAF(0.512385866095238),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   393      _DATAF(0.516477564132795),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   394      _DATAF(0.520575),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   395      _DATAF(0.524677850248738),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   396      _DATAF(0.528785788823753),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   397      _DATAF(0.532898487100904),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   398      _DATAF(0.537015613926103),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   399      _DATAF(0.541136835654929),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   400      _DATAF(0.545261816192918),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   401      _DATAF(0.549390217036503),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   402      _DATAF(0.553521697314626),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   403      _DATAF(0.557655913830994),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   404      _DATAF(0.561792521106979),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   405      _DATAF(0.565931171425163),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   406      _DATAF(0.570071514873506),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   407      _DATAF(0.574213199390142),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   408      _DATAF(0.578355870808795),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   409      _DATAF(0.582499172904798),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   410      _DATAF(0.586642747441718),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   411      _DATAF(0.590786234218577),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   412      _DATAF(0.594929271117651),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   413      _DATAF(0.599071494152859),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   414      _DATAF(0.603212537518709),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   415      _DATAF(0.607352033639815),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   416      _DATAF(0.611489613220962),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   417      _DATAF(0.615624905297715),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   418      _DATAF(0.619757537287565),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   419      _DATAF(0.623887135041594),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   420      _DATAF(0.628013322896669),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   421      _DATAF(0.632135723728129),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   422      _DATAF(0.636253959002978),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   423      _DATAF(0.640367648833561),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   424      _DATAF(0.644476412031722),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   425      _DATAF(0.648579866163425),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   426      _DATAF(0.652677627603835),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   427      _DATAF(0.656769311592843),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   428      _DATAF(0.660854532291033),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   429      _DATAF(0.664932902836069),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   430      _DATAF(0.669004035399499),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   431      _DATAF(0.673067541243964),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   432      _DATAF(0.6771230307808),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   433      _DATAF(0.681170113628019),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   434      _DATAF(0.685208398668663),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   435      _DATAF(0.689237494109519),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   436      _DATAF(0.693257007540177),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   437      _DATAF(0.697266545992425),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   438      _DATAF(0.701265715999973),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   439      _DATAF(0.705254123658479),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   440      _DATAF(0.70923137468589),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   441      _DATAF(0.713197074483052),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   442      _DATAF(0.717150828194615),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   443      _DATAF(0.721092240770188),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   444      _DATAF(0.72502091702575),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   445      _DATAF(0.7289364617053),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   446      _DATAF(0.732838479542731),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   447      _DATAF(0.736726575323917),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   448      _DATAF(0.740600353949007),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   449      _DATAF(0.744459420494891),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   450      _DATAF(0.748303380277859),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   451      _DATAF(0.752131838916412),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   452      _DATAF(0.755944402394215),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   453      _DATAF(0.759740677123202),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   454      _DATAF(0.763520270006787),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   455      _DATAF(0.76728278850319),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   456      _DATAF(0.771027840688865),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   457      _DATAF(0.774755035321995),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   458      _DATAF(0.778463981906066),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   459      _DATAF(0.782154290753498),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   460      _DATAF(0.785825573049304),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   461      _DATAF(0.789477440914794),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   462      _DATAF(0.793109507471277),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   463      _DATAF(0.796721386903776),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   464      _DATAF(0.800312694524721),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   465      _DATAF(0.803883046837616),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   466      _DATAF(0.807432061600672),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   467      _DATAF(0.810959357890378),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   468      _DATAF(0.814464556165),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   469      _DATAF(0.817947278328014),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   470      _DATAF(0.821407147791419),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   471      _DATAF(0.824843789538964),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   472      _DATAF(0.82825683018923),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   473      _DATAF(0.831645898058594),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   474      _DATAF(0.835010623224019),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   475      _DATAF(0.8383506375857),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   476      _DATAF(0.841665574929516),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   477      _DATAF(0.844955070989297),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   478      _DATAF(0.848218763508878),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   479      _DATAF(0.851456292303937),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   480      _DATAF(0.854667299323595),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   481      _DATAF(0.85785142871177),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   482      _DATAF(0.861008326868267),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   483      _DATAF(0.864137642509598),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   484      _DATAF(0.867239026729501),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   485      _DATAF(0.87031213305917),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   486      _DATAF(0.87335661752716),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   487      _DATAF(0.876372138718963),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   488      _DATAF(0.879358357836245),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   489      _DATAF(0.882314938755719),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   490      _DATAF(0.885241548087659),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   491      _DATAF(0.888137855234021),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   492      _DATAF(0.891003532446169),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   493      _DATAF(0.8938382548822),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   494      _DATAF(0.896641700663836),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   495      _DATAF(0.899413550932886),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   496      _DATAF(0.90215348990726),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   497      _DATAF(0.90486120493652),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   498      _DATAF(0.907536386556961),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   499      _DATAF(0.9101787285462),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   500      _DATAF(0.912787927977272),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   501      _DATAF(0.915363685272211),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   502      _DATAF(0.917905704255112),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   503      _DATAF(0.92041369220465),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   504      _DATAF(0.922887359906061),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   505      _DATAF(0.925326421702555),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   506      _DATAF(0.927730595546164),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   507      _DATAF(0.930099603048002),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   508      _DATAF(0.932433169527932),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   509      _DATAF(0.93473102406363),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   510      _DATAF(0.936992899539027),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   511      _DATAF(0.939218532692123),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   512      _DATAF(0.941407664162166),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   513      _DATAF(0.943560038536173),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   514      _DATAF(0.945675404394792),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   515      _DATAF(0.947753514357501),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   516      _DATAF(0.949794125127105),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   517      _DATAF(0.951796997533564),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   518      _DATAF(0.953761896577093),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   519      _DATAF(0.955688591470572),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   520      _DATAF(0.957576855681214),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   521      _DATAF(0.959426466971513),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   522      _DATAF(0.961237207439446),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   523      _DATAF(0.963008863557916),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   524      _DATAF(0.964741226213449),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   525      _DATAF(0.966434090744106),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   526      _DATAF(0.968087256976625),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   527      _DATAF(0.969700529262773),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   528      _DATAF(0.971273716514903),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   529      _DATAF(0.972806632240705),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   530      _DATAF(0.974299094577144),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   531      _DATAF(0.975750926323582),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   532      _DATAF(0.977161954974065),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   533      _DATAF(0.978532012748779),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   534      _DATAF(0.979860936624663),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   535      _DATAF(0.981148568365171),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   536      _DATAF(0.982394754549168),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   537      _DATAF(0.98359934659898),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   538      _DATAF(0.984762200807557),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   539      _DATAF(0.985883178364764),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   540      _DATAF(0.986962145382792),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   541      _DATAF(0.987998972920675),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   542      _DATAF(0.988993537007913),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   543      _DATAF(0.989945718667196),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   544      _DATAF(0.990855403936222),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   545      _DATAF(0.991722483888599),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   546      _DATAF(0.992546854653837),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   547      _DATAF(0.993328417436418),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   548      _DATAF(0.994067078533934),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   549      _DATAF(0.994762749354304),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   550      _DATAF(0.995415346432055),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   551      _DATAF(0.996024791443661),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   552      _DATAF(0.996591011221945),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   553      _DATAF(0.997113937769534),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   554      _DATAF(0.997593508271372),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   555      _DATAF(0.998029665106271),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   556      _DATAF(0.99842235585752),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   557      _DATAF(0.998771533322532),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   558      _DATAF(0.999077155521532),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   559      _DATAF(0.99933918570529),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   560      _DATAF(0.999557592361884),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   561      _DATAF(0.999732349222509),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   562      _DATAF(0.999863435266309),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   563      _DATAF(0.999950834724255),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   564      _DATAF(0.999994537082046),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_BlackmanHarrisTable.c	   565  };
+
+	; Module end

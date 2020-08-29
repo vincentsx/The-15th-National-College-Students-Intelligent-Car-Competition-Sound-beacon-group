@@ -1,0 +1,1555 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_LutSincosF32_Table.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32_Table.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32_Table.src ..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32_Table.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32_Table.c'
+
+	
+$TC16X
+	
+	.sdecl	'.rodata.Ifx_LutSincosF32_Table.Ifx_g_LutSincosF32_table',data,rom,cluster('Ifx_g_LutSincosF32_table')
+	.sect	'.rodata.Ifx_LutSincosF32_Table.Ifx_g_LutSincosF32_table'
+	.global	Ifx_g_LutSincosF32_table
+	.align	2
+Ifx_g_LutSincosF32_table:	.type	object
+	.size	Ifx_g_LutSincosF32_table,4100
+	.space	4
+	.word	986255317,994643910,999738305,1003032456
+	.word	1006326576,1008126808,1009773826,1011420816
+	.word	1013067775,1014714699,1015691576,1016514998
+	.word	1017338396,1018161769,1018985115,1019808432
+	.word	1020631718,1021454970,1022278188,1023101370
+	.word	1023667344,1024078895,1024490424,1024901932
+	.word	1025313416,1025724875,1026136310,1026547719
+	.word	1026959100,1027370453,1027781777,1028193072
+	.word	1028604335,1029015566,1029426764,1029837929
+	.word	1030249058,1030660152,1031071209,1031482228
+	.word	1031845996,1032051466,1032256916,1032462346
+	.word	1032667754,1032873140,1033078503,1033283845
+	.word	1033489162,1033694457,1033899727,1034104972
+	.word	1034310192,1034515386,1034720555,1034925696
+	.word	1035130811,1035335898,1035540957,1035745987
+	.word	1035950989,1036155961,1036360902,1036565814
+	.word	1036770694,1036975543,1037180360,1037385145
+	.word	1037589897,1037794615,1037999300,1038203950
+	.word	1038408566,1038613146,1038817690,1039022198
+	.word	1039226670,1039431104,1039635500,1039839859
+	.word	1040044178,1040217925,1040320046,1040422146
+	.word	1040524226,1040626286,1040728325,1040830342
+	.word	1040932339,1041034314,1041136267,1041238199
+	.word	1041340108,1041441994,1041543858,1041645699
+	.word	1041747517,1041849312,1041951083,1042052830
+	.word	1042154552,1042256251,1042357925,1042459574
+	.word	1042561197,1042662796,1042764369,1042865916
+	.word	1042967437,1043068932,1043170401,1043271842
+	.word	1043373257,1043474644,1043576004,1043677336
+	.word	1043778640,1043879916,1043981164,1044082383
+	.word	1044183573,1044284734,1044385865,1044486967
+	.word	1044588039,1044689081,1044790093,1044891074
+	.word	1044992024,1045092943,1045193831,1045294688
+	.word	1045395512,1045496305,1045597065,1045697793
+	.word	1045798488,1045899151,1045999780,1046100375
+	.word	1046200938,1046301466,1046401960,1046502419
+	.word	1046602844,1046703235,1046803590,1046903910
+	.word	1047004194,1047104442,1047204655,1047304831
+	.word	1047404971,1047505074,1047605140,1047705169
+	.word	1047805160,1047905114,1048005030,1048104908
+	.word	1048204747,1048304548,1048404310,1048504033
+	.word	1048589858,1048639680,1048689482,1048739264
+	.word	1048789026,1048838768,1048888490,1048938190
+	.word	1048987871,1049037530,1049087169,1049136787
+	.word	1049186384,1049235959,1049285514,1049335047
+	.word	1049384558,1049434048,1049483516,1049532962
+	.word	1049582386,1049631788,1049681168,1049730525
+	.word	1049779860,1049829173,1049878463,1049927729
+	.word	1049976973,1050026194,1050075392,1050124567
+	.word	1050173718,1050222846,1050271950,1050321030
+	.word	1050370087,1050419119,1050468128,1050517112
+	.word	1050566072,1050615007,1050663918,1050712805
+	.word	1050761666,1050810503,1050859315,1050908101
+	.word	1050956863,1051005599,1051054309,1051102994
+	.word	1051151653,1051200287,1051248894,1051297476
+	.word	1051346031,1051394561,1051443063,1051491540
+	.word	1051539989,1051588412,1051636809,1051685178
+	.word	1051733520,1051781835,1051830123,1051878383
+	.word	1051926616,1051974821,1052022998,1052071148
+	.word	1052119270,1052167363,1052215428,1052263466
+	.word	1052311474,1052359454,1052407406,1052455328
+	.word	1052503222,1052551087,1052598923,1052646730
+	.word	1052694507,1052742255,1052789973,1052837662
+	.word	1052885320,1052932949,1052980548,1053028117
+	.word	1053075656,1053123164,1053170642,1053218089
+	.word	1053265506,1053312892,1053360247,1053407571
+	.word	1053454864,1053502126,1053549356,1053596555
+	.word	1053643722,1053690858,1053737962,1053785034
+	.word	1053832074,1053879082,1053926058,1053973001
+	.word	1054019912,1054066791,1054113636,1054160449
+	.word	1054207229,1054253977,1054300691,1054347371
+	.word	1054394019,1054440633,1054487213,1054533760
+	.word	1054580273,1054626753,1054673198,1054719609
+	.word	1054765986,1054812329,1054858637,1054904911
+	.word	1054951150,1054997354,1055043524,1055089658
+	.word	1055135758,1055181822,1055227851,1055273845
+	.word	1055319803,1055365725,1055411612,1055457463
+	.word	1055503278,1055549057,1055594800,1055640507
+	.word	1055686177,1055731811,1055777408,1055822969
+	.word	1055868492,1055913979,1055959429,1056004842
+	.word	1056050217,1056095555,1056140856,1056186119
+	.word	1056231345,1056276533,1056321683,1056366795
+	.word	1056411868,1056456904,1056501902,1056546861
+	.word	1056591781,1056636663,1056681506,1056726311
+	.word	1056771076,1056815803,1056860490,1056905138
+	.word	1056949747,1056979462,1057001727,1057023972
+	.word	1057046197,1057068403,1057090588,1057112753
+	.word	1057134898,1057157023,1057179128,1057201213
+	.word	1057223277,1057245321,1057267345,1057289348
+	.word	1057311330,1057333292,1057355234,1057377154
+	.word	1057399054,1057420934,1057442792,1057464630
+	.word	1057486447,1057508242,1057530017,1057551771
+	.word	1057573503,1057595214,1057616905,1057638573
+	.word	1057660221,1057681847,1057703452,1057725035
+	.word	1057746597,1057768137,1057789655,1057811152
+	.word	1057832627,1057854081,1057875512,1057896922
+	.word	1057918309,1057939675,1057961019,1057982340
+	.word	1058003640,1058024917,1058046172,1058067405
+	.word	1058088615,1058109803,1058130969,1058152112
+	.word	1058173232,1058194330,1058215406,1058236458
+	.word	1058257488,1058278495,1058299480,1058320441
+	.word	1058341380,1058362295,1058383188,1058404057
+	.word	1058424903,1058445727,1058466526,1058487303
+	.word	1058508056,1058528786,1058549493,1058570176
+	.word	1058590835,1058611471,1058632084,1058652672
+	.word	1058673237,1058693779,1058714296,1058734790
+	.word	1058755259,1058775705,1058796127,1058816524
+	.word	1058836898,1058857247,1058877572,1058897873
+	.word	1058918150,1058938402,1058958630,1058978834
+	.word	1058999013,1059019167,1059039297,1059059403
+	.word	1059079483,1059099539,1059119570,1059139577
+	.word	1059159558,1059179515,1059199447,1059219353
+	.word	1059239235,1059259091,1059278923,1059298729
+	.word	1059318510,1059338266,1059357996,1059377701
+	.word	1059397380,1059417035,1059436663,1059456266
+	.word	1059475844,1059495395,1059514922,1059534422
+	.word	1059553896,1059573345,1059592768,1059612165
+	.word	1059631536,1059650881,1059670200,1059689493
+	.word	1059708759,1059728000,1059747214,1059766402
+	.word	1059785563,1059804699,1059823807,1059842890
+	.word	1059861945,1059880975,1059899977,1059918953
+	.word	1059937903,1059956825,1059975721,1059994590
+	.word	1060013432,1060032247,1060051035,1060069797
+	.word	1060088531,1060107238,1060125918,1060144571
+	.word	1060163196,1060181794,1060200365,1060218909
+	.word	1060237425,1060255914,1060274375,1060292809
+	.word	1060311215,1060329594,1060347945,1060366268
+	.word	1060384564,1060402831,1060421071,1060439283
+	.word	1060457467,1060475623,1060493752,1060511852
+	.word	1060529924,1060547967,1060565983,1060583971
+	.word	1060601930,1060619861,1060637763,1060655638
+	.word	1060673483,1060691301,1060709089,1060726850
+	.word	1060744581,1060762284,1060779959,1060797604
+	.word	1060815221,1060832809,1060850369,1060867899
+	.word	1060885400,1060902873,1060920316,1060937731
+	.word	1060955116,1060972472,1060989799,1061007097
+	.word	1061024366,1061041605,1061058815,1061075995
+	.word	1061093147,1061110268,1061127360,1061144423
+	.word	1061161456,1061178460,1061195433,1061212378
+	.word	1061229292,1061246177,1061263031,1061279856
+	.word	1061296651,1061313417,1061330152,1061346857
+	.word	1061363532,1061380177,1061396792,1061413376
+	.word	1061429931,1061446455,1061462949,1061479413
+	.word	1061495846,1061512249,1061528621,1061544963
+	.word	1061561275,1061577556,1061593806,1061610026
+	.word	1061626215,1061642373,1061658500,1061674597
+	.word	1061690663,1061706698,1061722702,1061738675
+	.word	1061754618,1061770529,1061786409,1061802258
+	.word	1061818076,1061833863,1061849619,1061865343
+	.word	1061881036,1061896698,1061912329,1061927928
+	.word	1061943495,1061959032,1061974536,1061990009
+	.word	1062005451,1062020861,1062036240,1062051586
+	.word	1062066901,1062082185,1062097436,1062112656
+	.word	1062127844,1062142999,1062158123,1062173215
+	.word	1062188276,1062203304,1062218299,1062233263
+	.word	1062248195,1062263095,1062277962,1062292797
+	.word	1062307600,1062322370,1062337108,1062351814
+	.word	1062366488,1062381129,1062395737,1062410313
+	.word	1062424856,1062439367,1062453845,1062468291
+	.word	1062482703,1062497083,1062511431,1062525745
+	.word	1062540027,1062554276,1062568492,1062582675
+	.word	1062596825,1062610942,1062625026,1062639077
+	.word	1062653095,1062667080,1062681031,1062694950
+	.word	1062708835,1062722687,1062736505,1062750291
+	.word	1062764043,1062777761,1062791446,1062805098
+	.word	1062818716,1062832301,1062845852,1062859370
+	.word	1062872854,1062886304,1062899721,1062913104
+	.word	1062926453,1062939769,1062953050,1062966298
+	.word	1062979512,1062992692,1063005838,1063018951
+	.word	1063032029,1063045073,1063058083,1063071059
+	.word	1063084001,1063096909,1063109783,1063122622
+	.word	1063135427,1063148198,1063160935,1063173637
+	.word	1063186305,1063198939,1063211538,1063224103
+	.word	1063236633,1063249129,1063261590,1063274017
+	.word	1063286409,1063298767,1063311090,1063323378
+	.word	1063335632,1063347850,1063360034,1063372184
+	.word	1063384298,1063396378,1063408422,1063420432
+	.word	1063432407,1063444347,1063456252,1063468122
+	.word	1063479957,1063491756,1063503521,1063515251
+	.word	1063526945,1063538604,1063550228,1063561817
+	.word	1063573371,1063584889,1063596372,1063607819
+	.word	1063619232,1063630608,1063641950,1063653256
+	.word	1063664526,1063675761,1063686960,1063698124
+	.word	1063709253,1063720345,1063731402,1063742424
+	.word	1063753409,1063764359,1063775273,1063786152
+	.word	1063796995,1063807801,1063818572,1063829308
+	.word	1063840007,1063850670,1063861298,1063871889
+	.word	1063882444,1063892964,1063903447,1063913895
+	.word	1063924306,1063934681,1063945020,1063955323
+	.word	1063965589,1063975820,1063986014,1063996172
+	.word	1064006293,1064016379,1064026427,1064036440
+	.word	1064046416,1064056356,1064066260,1064076126
+	.word	1064085957,1064095751,1064105508,1064115229
+	.word	1064124914,1064134561,1064144173,1064153747
+	.word	1064163285,1064172786,1064182251,1064191678
+	.word	1064201069,1064210424,1064219741,1064229022
+	.word	1064238266,1064247472,1064256643,1064265776
+	.word	1064274872,1064283931,1064292954,1064301939
+	.word	1064310887,1064319799,1064328673,1064337510
+	.word	1064346310,1064355073,1064363799,1064372488
+	.word	1064381140,1064389754,1064398331,1064406871
+	.word	1064415374,1064423839,1064432268,1064440658
+	.word	1064449012,1064457328,1064465607,1064473848
+	.word	1064482052,1064490219,1064498348,1064506439
+	.word	1064514494,1064522510,1064530489,1064538431
+	.word	1064546335,1064554201,1064562030,1064569821
+	.word	1064577575,1064585291,1064592969,1064600610
+	.word	1064608213,1064615778,1064623305,1064630795
+	.word	1064638247,1064645661,1064653037,1064660375
+	.word	1064667676,1064674939,1064682163,1064689350
+	.word	1064696499,1064703610,1064710683,1064717719
+	.word	1064724716,1064731675,1064738596,1064745479
+	.word	1064752324,1064759131,1064765900,1064772631
+	.word	1064779324,1064785978,1064792595,1064799173
+	.word	1064805713,1064812215,1064818679,1064825104
+	.word	1064831492,1064837841,1064844151,1064850424
+	.word	1064856658,1064862854,1064869011,1064875131
+	.word	1064881211,1064887254,1064893258,1064899224
+	.word	1064905151,1064911040,1064916890,1064922702
+	.word	1064928476,1064934211,1064939907,1064945565
+	.word	1064951185,1064956766,1064962308,1064967812
+	.word	1064973277,1064978704,1064984092,1064989442
+	.word	1064994753,1065000025,1065005259,1065010454
+	.word	1065015610,1065020727,1065025806,1065030846
+	.word	1065035848,1065040811,1065045735,1065050620
+	.word	1065055466,1065060274,1065065043,1065069773
+	.word	1065074464,1065079117,1065083731,1065088305
+	.word	1065092841,1065097338,1065101797,1065106216
+	.word	1065110596,1065114938,1065119240,1065123504
+	.word	1065127729,1065131914,1065136061,1065140169
+	.word	1065144238,1065148268,1065152259,1065156211
+	.word	1065160124,1065163997,1065167832,1065171628
+	.word	1065175385,1065179102,1065182781,1065186420
+	.word	1065190021,1065193582,1065197104,1065200588
+	.word	1065204032,1065207436,1065210802,1065214129
+	.word	1065217416,1065220664,1065223874,1065227044
+	.word	1065230174,1065233266,1065236318,1065239331
+	.word	1065242305,1065245240,1065248136,1065250992
+	.word	1065253809,1065256587,1065259325,1065262025
+	.word	1065264685,1065267305,1065269887,1065272429
+	.word	1065274932,1065277396,1065279820,1065282205
+	.word	1065284551,1065286857,1065289124,1065291352
+	.word	1065293540,1065295689,1065297799,1065299869
+	.word	1065301900,1065303892,1065305844,1065307757
+	.word	1065309631,1065311465,1065313260,1065315015
+	.word	1065316731,1065318408,1065320045,1065321643
+	.word	1065323202,1065324721,1065326200,1065327640
+	.word	1065329041,1065330403,1065331725,1065333007
+	.word	1065334250,1065335454,1065336618,1065337743
+	.word	1065338828,1065339874,1065340881,1065341847
+	.word	1065342775,1065343663,1065344512,1065345321
+	.word	1065346091,1065346821,1065347512,1065348163
+	.word	1065348775,1065349347,1065349880,1065350374
+	.word	1065350828,1065351242,1065351617,1065351953
+	.word	1065352249,1065352505,1065352723,1065352900
+	.word	1065353038,1065353137,1065353196,1065353216
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	971
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32_Table.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,1,3
+	.word	206
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	209
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	254
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	266
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	346
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	320
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	352
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	352
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	320
+	.byte	6,0,7
+	.byte	'int',0,4,5,10
+	.word	438
+	.byte	11
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,12
+	.word	445
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,13
+	.word	487
+	.byte	3
+	.word	487
+	.byte	14
+	.byte	'__cmpswapw',0
+	.word	503
+	.byte	1,1,1,1,15
+	.byte	'p',0
+	.word	508
+	.byte	15
+	.byte	'value',0
+	.word	487
+	.byte	15
+	.byte	'compare',0
+	.word	487
+	.byte	0,16
+	.word	214
+	.byte	17
+	.word	240
+	.byte	6,0,16
+	.word	275
+	.byte	17
+	.word	307
+	.byte	6,0,16
+	.word	357
+	.byte	17
+	.word	376
+	.byte	6,0,16
+	.word	392
+	.byte	17
+	.word	407
+	.byte	17
+	.word	421
+	.byte	6,0,7
+	.byte	'short int',0,2,5,18
+	.byte	'__wchar_t',0,3,1,1
+	.word	618
+	.byte	18
+	.byte	'__size_t',0,3,1,1
+	.word	487
+	.byte	18
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	438
+	.byte	19,1,3
+	.word	686
+	.byte	18
+	.byte	'__codeptr',0,3,1,1
+	.word	688
+	.byte	7
+	.byte	'unsigned char',0,1,8,18
+	.byte	'uint8',0,4,105,29
+	.word	711
+	.byte	7
+	.byte	'unsigned short int',0,2,7,18
+	.byte	'uint16',0,4,109,29
+	.word	742
+	.byte	7
+	.byte	'unsigned long int',0,4,7,18
+	.byte	'uint32',0,4,113,29
+	.word	779
+	.byte	18
+	.byte	'uint64',0,4,118,29
+	.word	320
+	.byte	18
+	.byte	'sint16',0,4,126,29
+	.word	618
+	.byte	7
+	.byte	'long int',0,4,5,18
+	.byte	'sint32',0,4,131,1,29
+	.word	845
+	.byte	7
+	.byte	'long long int',0,8,5,18
+	.byte	'sint64',0,4,139,1,29
+	.word	873
+	.byte	18
+	.byte	'float32',0,4,168,1,29
+	.word	266
+	.byte	18
+	.byte	'pvoid',0,5,57,28
+	.word	352
+	.byte	18
+	.byte	'Ifx_TickTime',0,5,79,28
+	.word	873
+	.byte	20,132,32
+	.word	266
+	.byte	21,128,8,0
+.L8:
+	.byte	10
+	.word	958
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,38,0,73,19,0,0,11,46
+	.byte	1,3,8,54,15,39,12,63,12,60,12,0,0,12,5,0,73,19,0,0,13,53,0,73,19,0,0,14,46,1,3,8,73,19,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,3,8,73,19,0,0,16,46,1,49,19,0,0,17,5,0,49,19,0,0,18,22,0,3,8,58,15,59,15,57,15,73
+	.byte	19,0,0,19,21,0,54,15,0,0,20,1,1,11,15,73,19,0,0,21,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L10-.L9
+.L9:
+	.half	3
+	.word	.L12-.L11
+.L11:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32_Table.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0,0
+.L12:
+.L10:
+	.sdecl	'.debug_info',debug,cluster('Ifx_g_LutSincosF32_table')
+	.sect	'.debug_info'
+.L6:
+	.word	244
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32_Table.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Ifx_g_LutSincosF32_table',0,3,61,15
+	.word	.L8
+	.byte	1,5,3
+	.word	Ifx_g_LutSincosF32_table
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_g_LutSincosF32_table')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     2   * \file Ifx_LutSincosF32_Table.c
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     3   * \brief Table data for Sin/Cos lookup functions
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     4   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     6   * \version disabled
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     8   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    17  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    18  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    20  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    27  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    34  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    42  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    44   * $Revision: 614 $
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    45   * $Date: 2013-03-04 14:09:48 +0100 (Mon, 04 Mar 2013) $
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    46   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    47   */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    48  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    49  #include "Ifx_Lut.h"
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    50  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    51  #if IFX_LUT_TABLE_CONST == 0
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    52  /* FIXME Table size not consistent  */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    53  IFX_LUT_TABLE float32 Ifx_g_LutSincosF32_table[IFX_LUT_ANGLE_RESOLUTION + (IFX_LUT_ANGLE_RESOLUTION / 4)];
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    54  #else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    55  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    56  #if (IFX_LUT_ANGLE_RESOLUTION != 4096)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    57  #error "Inconsistent between Lookup Table and configuration. Please regenerate."
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    58  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    59  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    60  /*lint -e915*/
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    61  const float32 Ifx_g_LutSincosF32_table[1025] = {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    62      0,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    63      0.00153398018628477,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    64      0.00306795676296598,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    65      0.00460192612044857,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    66      0.00613588464915448,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    67      0.0076698287395311,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    68      0.00920375478205982,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    69      0.0107376591672645,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    70      0.0122715382857199,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    71      0.0138053885280604,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    72      0.0153392062849881,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    73      0.0168729879472817,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    74      0.0184067299058048,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    75      0.0199404285515144,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    76      0.0214740802754695,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    77      0.0230076814688394,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    78      0.0245412285229123,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    79      0.0260747178291039,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    80      0.0276081457789657,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    81      0.0291415087641937,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    82      0.0306748031766366,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    83      0.0322080254083046,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    84      0.0337411718513776,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    85      0.0352742388982139,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    86      0.0368072229413588,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    87      0.0383401203735527,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    88      0.0398729275877398,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    89      0.0414056409770767,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    90      0.0429382569349408,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    91      0.0444707718549387,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    92      0.0460031821309146,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    93      0.0475354841569593,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    94      0.049067674327418,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    95      0.0505997490368993,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    96      0.0521317046802833,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    97      0.0536635376527305,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    98      0.0551952443496899,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	    99      0.0567268211669077,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   100      0.0582582645004358,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   101      0.0597895707466399,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   102      0.0613207363022086,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   103      0.0628517575641614,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   104      0.0643826309298575,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   105      0.0659133527970038,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   106      0.0674439195636641,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   107      0.0689743276282667,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   108      0.0705045733896139,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   109      0.0720346532468893,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   110      0.0735645635996674,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   111      0.0750943008479213,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   112      0.0766238613920315,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   113      0.0781532416327942,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   114      0.0796824379714301,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   115      0.0812114468095924,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   116      0.0827402645493757,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   117      0.0842688875933241,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   118      0.0857973123444399,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   119      0.0873255352061921,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   120      0.0888535525825246,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   121      0.090381360877865,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   122      0.0919089564971327,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   123      0.0934363358457478,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   124      0.094963495329639,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   125      0.0964904313552526,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   126      0.0980171403295606,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   127      0.0995436186600693,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   128      0.101069862754828,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   129      0.102595869022436,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   130      0.104121633872055,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   131      0.105647153713411,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   132      0.107172424956809,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   133      0.108697444013139,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   134      0.110222207293883,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   135      0.111746711211127,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   136      0.113270952177564,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   137      0.11479492660651,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   138      0.116318630911905,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   139      0.117842061508325,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   140      0.119365214810991,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   141      0.120888087235777,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   142      0.122410675199216,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   143      0.123932975118512,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   144      0.125454983411546,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   145      0.126976696496886,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   146      0.128498110793793,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   147      0.130019222722233,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   148      0.131540028702883,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   149      0.133060525157139,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   150      0.134580708507126,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   151      0.136100575175706,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   152      0.137620121586486,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   153      0.139139344163826,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   154      0.140658239332849,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   155      0.142176803519448,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   156      0.143695033150294,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   157      0.145212924652847,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   158      0.146730474455362,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   159      0.148247678986896,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   160      0.149764534677322,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   161      0.15128103795733,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   162      0.152797185258443,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   163      0.15431297301302,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   164      0.155828397654265,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   165      0.157343455616238,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   166      0.158858143333861,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   167      0.160372457242928,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   168      0.161886393780112,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   169      0.163399949382973,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   170      0.16491312048997,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   171      0.166425903540464,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   172      0.167938294974731,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   173      0.169450291233968,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   174      0.170961888760301,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   175      0.172473083996796,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   176      0.173983873387464,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   177      0.175494253377271,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   178      0.177004220412149,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   179      0.178513770938998,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   180      0.1800229014057,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   181      0.181531608261125,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   182      0.183039887955141,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   183      0.18454773693862,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   184      0.186055151663447,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   185      0.18756212858253,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   186      0.189068664149806,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   187      0.190574754820253,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   188      0.192080397049892,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   189      0.193585587295804,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   190      0.195090322016128,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   191      0.19659459767008,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   192      0.198098410717954,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   193      0.199601757621131,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   194      0.201104634842092,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   195      0.202607038844421,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   196      0.204108966092817,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   197      0.205610413053099,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   198      0.207111376192219,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   199      0.208611851978263,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   200      0.21011183688047,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   201      0.211611327369228,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   202      0.213110319916091,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   203      0.214608810993787,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   204      0.21610679707622,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   205      0.217604274638484,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   206      0.21910124015687,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   207      0.220597690108874,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   208      0.222093620973204,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   209      0.22358902922979,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   210      0.225083911359793,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   211      0.22657826384561,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   212      0.228072083170886,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   213      0.229565365820519,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   214      0.231058108280671,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   215      0.232550307038775,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   216      0.234041958583543,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   217      0.235533059404975,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   218      0.237023605994367,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   219      0.238513594844318,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   220      0.240003022448741,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   221      0.241491885302869,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   222      0.242980179903264,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   223      0.244467902747824,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   224      0.245955050335795,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   225      0.247441619167773,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   226      0.24892760574572,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   227      0.250413006572965,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   228      0.251897818154217,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   229      0.25338203699557,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   230      0.254865659604515,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   231      0.256348682489943,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   232      0.257831102162159,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   233      0.259312915132886,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   234      0.260794117915276,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   235      0.262274707023914,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   236      0.263754678974831,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   237      0.265234030285512,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   238      0.266712757474898,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   239      0.268190857063403,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   240      0.269668325572915,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   241      0.271145159526808,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   242      0.272621355449949,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   243      0.274096909868706,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   244      0.275571819310958,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   245      0.2770460803061,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   246      0.278519689385053,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   247      0.279992643080273,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   248      0.281464937925758,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   249      0.282936570457055,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   250      0.284407537211272,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   251      0.285877834727081,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   252      0.28734745954473,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   253      0.288816408206049,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   254      0.290284677254462,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   255      0.291752263234989,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   256      0.293219162694259,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   257      0.294685372180514,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   258      0.296150888243624,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   259      0.297615707435086,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   260      0.29907982630804,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   261      0.300543241417273,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   262      0.302005949319228,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   263      0.303467946572011,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   264      0.304929229735402,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   265      0.306389795370861,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   266      0.307849640041535,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   267      0.309308760312269,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   268      0.310767152749611,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   269      0.312224813921825,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   270      0.313681740398892,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   271      0.315137928752522,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   272      0.316593375556166,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   273      0.318048077385015,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   274      0.319502030816016,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   275      0.320955232427875,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   276      0.32240767880107,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   277      0.323859366517853,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   278      0.325310292162263,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   279      0.326760452320132,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   280      0.328209843579092,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   281      0.329658462528587,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   282      0.331106305759876,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   283      0.332553369866044,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   284      0.333999651442009,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   285      0.335445147084532,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   286      0.33688985339222,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   287      0.338333766965541,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   288      0.339776884406827,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   289      0.341219202320282,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   290      0.342660717311994,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   291      0.344101425989939,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   292      0.345541324963989,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   293      0.346980410845924,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   294      0.348418680249435,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   295      0.349856129790135,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   296      0.351292756085567,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   297      0.352728555755211,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   298      0.35416352542049,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   299      0.355597661704784,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   300      0.35703096123343,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   301      0.358463420633737,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   302      0.359895036534988,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   303      0.361325805568454,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   304      0.362755724367397,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   305      0.36418478956708,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   306      0.365612997804774,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   307      0.367040345719767,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   308      0.368466829953372,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   309      0.369892447148934,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   310      0.371317193951838,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   311      0.372741067009516,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   312      0.374164062971458,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   313      0.375586178489217,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   314      0.377007410216418,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   315      0.378427754808766,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   316      0.379847208924051,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   317      0.381265769222162,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   318      0.38268343236509,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   319      0.384100195016935,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   320      0.385516053843919,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   321      0.386931005514389,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   322      0.388345046698826,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   323      0.389758174069856,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   324      0.391170384302254,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   325      0.392581674072951,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   326      0.393992040061048,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   327      0.395401478947816,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   328      0.39680998741671,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   329      0.398217562153374,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   330      0.399624199845647,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   331      0.401029897183576,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   332      0.402434650859418,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   333      0.403838457567654,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   334      0.40524131400499,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   335      0.406643216870369,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   336      0.408044162864979,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   337      0.409444148692258,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   338      0.410843171057904,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   339      0.412241226669883,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   340      0.413638312238435,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   341      0.415034424476082,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   342      0.416429560097637,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   343      0.417823715820212,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   344      0.419216888363224,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   345      0.420609074448403,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   346      0.4220002707998,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   347      0.423390474143796,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   348      0.424779681209109,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   349      0.4261678887268,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   350      0.427555093430282,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   351      0.428941292055329,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   352      0.430326481340083,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   353      0.431710658025057,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   354      0.433093818853152,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   355      0.434475960569656,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   356      0.435857079922255,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   357      0.437237173661044,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   358      0.438616238538528,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   359      0.439994271309633,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   360      0.441371268731717,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   361      0.44274722756457,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   362      0.444122144570429,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   363      0.445496016513982,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   364      0.446868840162374,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   365      0.44824061228522,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   366      0.449611329654607,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   367      0.450980989045104,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   368      0.452349587233771,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   369      0.453717121000164,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   370      0.455083587126344,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   371      0.456448982396884,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   372      0.457813303598877,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   373      0.459176547521944,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   374      0.46053871095824,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   375      0.461899790702463,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   376      0.46325978355186,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   377      0.464618686306238,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   378      0.465976495767966,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   379      0.467333208741988,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   380      0.468688822035828,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   381      0.470043332459596,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   382      0.471396736825998,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   383      0.472749031950343,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   384      0.47410021465055,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   385      0.475450281747156,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   386      0.476799230063322,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   387      0.478147056424843,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   388      0.479493757660153,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   389      0.480839330600334,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   390      0.482183772079123,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   391      0.483527078932919,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   392      0.484869248000791,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   393      0.486210276124486,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   394      0.487550160148436,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   395      0.488888896919763,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   396      0.490226483288291,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   397      0.49156291610655,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   398      0.492898192229784,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   399      0.49423230851596,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   400      0.495565261825773,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   401      0.496897049022654,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   402      0.498227666972782,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   403      0.499557112545082,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   404      0.500885382611241,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   405      0.502212474045711,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   406      0.503538383725718,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   407      0.504863108531268,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   408      0.506186645345155,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   409      0.507508991052971,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   410      0.508830142543107,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   411      0.510150096706767,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   412      0.51146885043797,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   413      0.512786400633563,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   414      0.514102744193222,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   415      0.515417878019463,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   416      0.51673179901765,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   417      0.518044504095999,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   418      0.51935599016559,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   419      0.520666254140367,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   420      0.521975292937154,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   421      0.523283103475656,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   422      0.524589682678469,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   423      0.525895027471085,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   424      0.527199134781901,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   425      0.528502001542228,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   426      0.529803624686295,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   427      0.531104001151255,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   428      0.532403127877198,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   429      0.533701001807153,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   430      0.534997619887097,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   431      0.536292979065963,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   432      0.537587076295645,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   433      0.538879908531008,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   434      0.540171472729893,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   435      0.541461765853123,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   436      0.542750784864516,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   437      0.544038526730884,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   438      0.545324988422046,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   439      0.546610166910835,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   440      0.5478940591731,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   441      0.54917666218772,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   442      0.550457972936605,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   443      0.551737988404707,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   444      0.553016705580027,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   445      0.55429412145362,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   446      0.555570233019602,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   447      0.55684503727516,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   448      0.558118531220556,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   449      0.559390711859136,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   450      0.560661576197336,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   451      0.561931121244689,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   452      0.563199344013834,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   453      0.564466241520519,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   454      0.565731810783613,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   455      0.566996048825109,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   456      0.568258952670131,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   457      0.569520519346947,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   458      0.570780745886967,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   459      0.572039629324757,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   460      0.573297166698042,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   461      0.574553355047716,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   462      0.575808191417845,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   463      0.577061672855679,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   464      0.578313796411656,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   465      0.579564559139406,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   466      0.580813958095765,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   467      0.582061990340775,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   468      0.583308652937698,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   469      0.584553942953015,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   470      0.585797857456439,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   471      0.587040393520918,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   472      0.588281548222645,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   473      0.589521318641064,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   474      0.590759701858874,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   475      0.591996694962041,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   476      0.5932322950398,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   477      0.594466499184664,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   478      0.595699304492433,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   479      0.596930708062197,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   480      0.598160706996342,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   481      0.599389298400565,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   482      0.600616479383869,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   483      0.60184224705858,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   484      0.603066598540348,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   485      0.604289530948156,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   486      0.605511041404326,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   487      0.606731127034524,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   488      0.607949784967774,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   489      0.609167012336453,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   490      0.610382806276309,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   491      0.611597163926462,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   492      0.61281008242941,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   493      0.614021558931038,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   494      0.615231590580627,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   495      0.616440174530854,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   496      0.617647307937804,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   497      0.618852987960976,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   498      0.620057211763289,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   499      0.621259976511088,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   500      0.62246127937415,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   501      0.623661117525695,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   502      0.624859488142386,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   503      0.626056388404344,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   504      0.627251815495144,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   505      0.628445766601833,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   506      0.629638238914927,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   507      0.630829229628424,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   508      0.632018735939809,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   509      0.633206755050057,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   510      0.634393284163645,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   511      0.635578320488556,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   512      0.636761861236284,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   513      0.637943903621844,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   514      0.639124444863776,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   515      0.640303482184152,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   516      0.641481012808583,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   517      0.642657033966227,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   518      0.643831542889791,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   519      0.645004536815544,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   520      0.646176012983316,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   521      0.647345968636512,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   522      0.648514401022112,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   523      0.649681307390683,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   524      0.650846684996381,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   525      0.65201053109696,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   526      0.653172842953777,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   527      0.6543336178318,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   528      0.655492852999615,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   529      0.656650545729429,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   530      0.657806693297079,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   531      0.658961292982037,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   532      0.66011434206742,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   533      0.661265837839992,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   534      0.662415777590172,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   535      0.66356415861204,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   536      0.664710978203345,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   537      0.66585623366551,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   538      0.666999922303637,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   539      0.668142041426518,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   540      0.669282588346636,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   541      0.670421560380173,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   542      0.671558954847018,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   543      0.672694769070773,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   544      0.673829000378756,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   545      0.674961646102012,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   546      0.676092703575316,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   547      0.67722217013718,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   548      0.678350043129861,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   549      0.679476319899365,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   550      0.680600997795453,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   551      0.68172407417165,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   552      0.682845546385248,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   553      0.683965411797315,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   554      0.6850836677727,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   555      0.686200311680039,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   556      0.687315340891759,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   557      0.68842875278409,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   558      0.689540544737067,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   559      0.690650714134535,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   560      0.691759258364158,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   561      0.692866174817425,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   562      0.693971460889654,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   563      0.695075113980001,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   564      0.696177131491463,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   565      0.697277510830887,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   566      0.698376249408973,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   567      0.699473344640284,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   568      0.700568793943248,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   569      0.701662594740168,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   570      0.702754744457225,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   571      0.703845240524485,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   572      0.704934080375905,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   573      0.70602126144934,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   574      0.707106781186547,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   575      0.708190637033195,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   576      0.709272826438866,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   577      0.710353346857062,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   578      0.711432195745216,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   579      0.712509370564692,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   580      0.713584868780794,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   581      0.714658687862769,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   582      0.715730825283819,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   583      0.7168012785211,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   584      0.717870045055732,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   585      0.718937122372804,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   586      0.720002507961382,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   587      0.721066199314508,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   588      0.722128193929215,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   589      0.723188489306527,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   590      0.724247082951467,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   591      0.725303972373061,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   592      0.726359155084346,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   593      0.727412628602376,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   594      0.728464390448225,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   595      0.729514438146997,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   596      0.730562769227828,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   597      0.731609381223893,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   598      0.732654271672413,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   599      0.73369743811466,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   600      0.734738878095963,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   601      0.735778589165713,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   602      0.73681656887737,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   603      0.737852814788466,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   604      0.738887324460615,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   605      0.739920095459516,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   606      0.740951125354959,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   607      0.741980411720831,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   608      0.743007952135122,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   609      0.744033744179929,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   610      0.745057785441466,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   611      0.746080073510064,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   612      0.74710060598018,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   613      0.748119380450403,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   614      0.749136394523459,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   615      0.750151645806215,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   616      0.751165131909686,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   617      0.752176850449043,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   618      0.753186799043612,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   619      0.754194975316889,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   620      0.755201376896537,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   621      0.756206001414395,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   622      0.757208846506484,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   623      0.758209909813015,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   624      0.759209188978388,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   625      0.760206681651202,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   626      0.761202385484262,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   627      0.762196298134579,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   628      0.763188417263381,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   629      0.764178740536117,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   630      0.765167265622459,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   631      0.766153990196313,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   632      0.76713891193582,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   633      0.768122028523365,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   634      0.76910333764558,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   635      0.770082836993348,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   636      0.771060524261814,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   637      0.772036397150384,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   638      0.773010453362737,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   639      0.773982690606823,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   640      0.774953106594874,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   641      0.775921699043408,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   642      0.776888465673232,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   643      0.777853404209453,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   644      0.778816512381476,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   645      0.779777787923014,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   646      0.780737228572094,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   647      0.781694832071059,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   648      0.782650596166576,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   649      0.783604518609638,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   650      0.784556597155575,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   651      0.785506829564054,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   652      0.786455213599086,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   653      0.787401747029031,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   654      0.788346427626606,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   655      0.789289253168886,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   656      0.79023022143731,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   657      0.79116933021769,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   658      0.792106577300212,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   659      0.793041960479444,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   660      0.793975477554337,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   661      0.794907126328237,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   662      0.795836904608883,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   663      0.796764810208419,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   664      0.797690840943391,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   665      0.798614994634761,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   666      0.799537269107905,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   667      0.800457662192623,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   668      0.80137617172314,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   669      0.802292795538116,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   670      0.803207531480645,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   671      0.804120377398266,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   672      0.805031331142964,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   673      0.805940390571176,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   674      0.806847553543799,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   675      0.80775281792619,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   676      0.808656181588175,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   677      0.809557642404051,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   678      0.810457198252595,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   679      0.811354847017064,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   680      0.812250586585204,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   681      0.813144414849254,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   682      0.814036329705948,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   683      0.814926329056527,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   684      0.815814410806734,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   685      0.816700572866828,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   686      0.817584813151584,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   687      0.818467129580299,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   688      0.819347520076797,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   689      0.820225982569435,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   690      0.821102514991105,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   691      0.821977115279242,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   692      0.822849781375826,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   693      0.823720511227391,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   694      0.824589302785025,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   695      0.825456154004377,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   696      0.826321062845663,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   697      0.827184027273669,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   698      0.828045045257756,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   699      0.828904114771865,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   700      0.829761233794523,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   701      0.830616400308846,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   702      0.831469612302545,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   703      0.83232086776793,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   704      0.833170164701913,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   705      0.834017501106018,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   706      0.83486287498638,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   707      0.835706284353753,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   708      0.836547727223512,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   709      0.837387201615662,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   710      0.838224705554838,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   711      0.839060237070313,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   712      0.839893794195999,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   713      0.840725374970458,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   714      0.841554977436898,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   715      0.842382599643186,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   716      0.843208239641845,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   717      0.844031895490066,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   718      0.844853565249707,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   719      0.845673246987299,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   720      0.846490938774052,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   721      0.847306638685858,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   722      0.848120344803297,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   723      0.84893205521164,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   724      0.849741768000852,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   725      0.850549481265603,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   726      0.851355193105265,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   727      0.85215890162392,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   728      0.852960604930364,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   729      0.853760301138111,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   730      0.854557988365401,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   731      0.855353664735196,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   732      0.856147328375194,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   733      0.856938977417829,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   734      0.857728610000272,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   735      0.858516224264443,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   736      0.859301818357008,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   737      0.86008539042939,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   738      0.860866938637767,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   739      0.861646461143081,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   740      0.862423956111041,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   741      0.863199421712124,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   742      0.863972856121587,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   743      0.864744257519462,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   744      0.865513624090569,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   745      0.866280954024513,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   746      0.867046245515693,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   747      0.867809496763303,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   748      0.868570705971341,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   749      0.869329871348607,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   750      0.870086991108711,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   751      0.870842063470079,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   752      0.871595086655951,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   753      0.872346058894392,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   754      0.87309497841829,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   755      0.873841843465367,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   756      0.874586652278176,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   757      0.875329403104111,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   758      0.876070094195407,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   759      0.876808723809146,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   760      0.877545290207261,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   761      0.878279791656541,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   762      0.879012226428633,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   763      0.879742592800047,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   764      0.880470889052161,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   765      0.881197113471222,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   766      0.881921264348355,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   767      0.882643339979563,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   768      0.883363338665732,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   769      0.884081258712635,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   770      0.884797098430938,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   771      0.8855108561362,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   772      0.886222530148881,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   773      0.886932118794342,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   774      0.887639620402854,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   775      0.888345033309596,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   776      0.889048355854665,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   777      0.889749586383073,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   778      0.890448723244758,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   779      0.891145764794583,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   780      0.891840709392343,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   781      0.892533555402765,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   782      0.893224301195515,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   783      0.893912945145203,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   784      0.894599485631383,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   785      0.895283921038558,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   786      0.895966249756185,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   787      0.89664647017868,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   788      0.897324580705418,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   789      0.89800057974074,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   790      0.898674465693954,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   791      0.899346236979341,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   792      0.90001589201616,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   793      0.900683429228647,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   794      0.901348847046022,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   795      0.902012143902493,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   796      0.902673318237259,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   797      0.903332368494512,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   798      0.903989293123443,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   799      0.904644090578246,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   800      0.905296759318119,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   801      0.905947297807268,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   802      0.906595704514915,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   803      0.907241977915296,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   804      0.907886116487666,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   805      0.908528118716306,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   806      0.909167983090522,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   807      0.909805708104652,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   808      0.910441292258067,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   809      0.911074734055176,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   810      0.91170603200543,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   811      0.912335184623323,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   812      0.912962190428398,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   813      0.913587047945251,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   814      0.914209755703531,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   815      0.914830312237946,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   816      0.915448716088268,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   817      0.916064965799332,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   818      0.916679059921043,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   819      0.917290997008378,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   820      0.91790077562139,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   821      0.918508394325212,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   822      0.919113851690058,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   823      0.919717146291227,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   824      0.92031827670911,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   825      0.92091724152919,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   826      0.921514039342042,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   827      0.922108668743345,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   828      0.922701128333879,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   829      0.923291416719528,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   830      0.923879532511287,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   831      0.924465474325263,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   832      0.925049240782678,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   833      0.925630830509873,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   834      0.926210242138311,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   835      0.926787474304582,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   836      0.927362525650401,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   837      0.927935394822618,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   838      0.928506080473215,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   839      0.929074581259316,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   840      0.929640895843181,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   841      0.930205022892219,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   842      0.930766961078984,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   843      0.93132670908118,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   844      0.931884265581668,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   845      0.932439629268462,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   846      0.932992798834739,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   847      0.933543772978836,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   848      0.934092550404259,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   849      0.934639129819681,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   850      0.935183509938947,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   851      0.93572568948108,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   852      0.936265667170278,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   853      0.936803441735922,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   854      0.937339011912575,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   855      0.93787237643999,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   856      0.938403534063108,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   857      0.938932483532064,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   858      0.93945922360219,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   859      0.939983753034014,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   860      0.940506070593268,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   861      0.941026175050889,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   862      0.941544065183021,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   863      0.942059739771017,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   864      0.942573197601447,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   865      0.943084437466093,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   866      0.94359345816196,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   867      0.944100258491273,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   868      0.94460483726148,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   869      0.945107193285261,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   870      0.945607325380521,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   871      0.946105232370403,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   872      0.946600913083284,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   873      0.947094366352777,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   874      0.947585591017741,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   875      0.948074585922276,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   876      0.94856134991573,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   877      0.949045881852701,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   878      0.949528180593037,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   879      0.950008245001843,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   880      0.950486073949482,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   881      0.950961666311575,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   882      0.951435020969008,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   883      0.951906136807932,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   884      0.952375012719766,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   885      0.952841647601199,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   886      0.953306040354194,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   887      0.95376818988599,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   888      0.954228095109106,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   889      0.954685754941338,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   890      0.955141168305771,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   891      0.955594334130771,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   892      0.956045251349996,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   893      0.956493918902395,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   894      0.956940335732209,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   895      0.957384500788976,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   896      0.957826413027533,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   897      0.958266071408018,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   898      0.958703474895872,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   899      0.959138622461842,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   900      0.959571513081985,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   901      0.960002145737666,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   902      0.960430519415566,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   903      0.96085663310768,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   904      0.961280485811321,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   905      0.961702076529123,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   906      0.962121404269042,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   907      0.962538468044359,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   908      0.962953266873684,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   909      0.963365799780954,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   910      0.96377606579544,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   911      0.964184063951746,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   912      0.964589793289813,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   913      0.96499325285492,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   914      0.965394441697689,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   915      0.965793358874084,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   916      0.966190003445413,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   917      0.966584374478333,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   918      0.966976471044852,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   919      0.967366292222329,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   920      0.967753837093476,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   921      0.968139104746362,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   922      0.968522094274417,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   923      0.968902804776429,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   924      0.969281235356549,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   925      0.969657385124292,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   926      0.970031253194544,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   927      0.970402838687556,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   928      0.97077214072895,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   929      0.971139158449725,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   930      0.971503890986252,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   931      0.971866337480279,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   932      0.972226497078936,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   933      0.972584368934732,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   934      0.97293995220556,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   935      0.973293246054698,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   936      0.973644249650812,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   937      0.973992962167956,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   938      0.974339382785576,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   939      0.974683510688511,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   940      0.975025345066994,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   941      0.975364885116657,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   942      0.975702130038529,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   943      0.976037079039039,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   944      0.976369731330021,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   945      0.976700086128712,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   946      0.977028142657754,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   947      0.9773539001452,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   948      0.97767735782451,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   949      0.977998514934557,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   950      0.978317370719628,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   951      0.978633924429423,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   952      0.978948175319062,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   953      0.979260122649082,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   954      0.979569765685441,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   955      0.979877103699518,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   956      0.980182135968117,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   957      0.980484861773469,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   958      0.98078528040323,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   959      0.981083391150487,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   960      0.981379193313755,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   961      0.981672686196983,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   962      0.981963869109555,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   963      0.982252741366289,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   964      0.982539302287441,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   965      0.982823551198705,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   966      0.983105487431216,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   967      0.983385110321551,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   968      0.98366241921173,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   969      0.983937413449219,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   970      0.984210092386929,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   971      0.984480455383221,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   972      0.984748501801904,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   973      0.98501423101224,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   974      0.985277642388941,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   975      0.985538735312176,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   976      0.985797509167567,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   977      0.986053963346195,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   978      0.986308097244599,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   979      0.986559910264775,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   980      0.986809401814185,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   981      0.987056571305751,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   982      0.987301418157858,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   983      0.987543941794359,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   984      0.987784141644572,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   985      0.988022017143284,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   986      0.988257567730749,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   987      0.988490792852697,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   988      0.988721691960324,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   989      0.988950264510303,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   990      0.989176509964781,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   991      0.98940042779138,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   992      0.989622017463201,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   993      0.989841278458821,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   994      0.990058210262297,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   995      0.990272812363169,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   996      0.990485084256457,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   997      0.990695025442665,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   998      0.99090263542778,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	   999      0.991107913723277,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1000      0.991310859846115,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1001      0.991511473318744,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1002      0.9917097536691,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1003      0.991905700430609,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1004      0.992099313142192,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1005      0.992290591348257,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1006      0.99247953459871,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1007      0.992666142448948,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1008      0.992850414459865,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1009      0.993032350197851,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1010      0.993211949234794,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1011      0.993389211148081,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1012      0.993564135520595,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1013      0.993736721940725,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1014      0.993906970002356,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1015      0.994074879304879,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1016      0.994240449453188,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1017      0.994403680057679,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1018      0.994564570734255,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1019      0.994723121104326,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1020      0.994879330794806,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1021      0.995033199438119,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1022      0.995184726672197,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1023      0.995333912140482,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1024      0.995480755491927,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1025      0.995625256380994,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1026      0.99576741446766,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1027      0.995907229417412,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1028      0.996044700901252,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1029      0.996179828595697,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1030      0.996312612182778,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1031      0.996443051350043,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1032      0.996571145790555,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1033      0.996696895202896,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1034      0.996820299291166,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1035      0.996941357764982,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1036      0.997060070339483,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1037      0.997176436735326,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1038      0.99729045667869,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1039      0.997402129901275,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1040      0.997511456140303,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1041      0.99761843513852,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1042      0.997723066644192,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1043      0.997825350411112,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1044      0.997925286198596,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1045      0.998022873771486,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1046      0.998118112900149,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1047      0.998211003360478,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1048      0.998301544933893,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1049      0.99838973740734,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1050      0.998475580573295,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1051      0.998559074229759,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1052      0.998640218180265,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1053      0.998719012233873,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1054      0.998795456205172,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1055      0.998869549914284,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1056      0.998941293186857,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1057      0.999010685854073,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1058      0.999077727752645,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1059      0.999142418724817,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1060      0.999204758618364,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1061      0.999264747286594,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1062      0.99932238458835,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1063      0.999377670388003,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1064      0.999430604555462,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1065      0.999481186966167,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1066      0.999529417501093,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1067      0.999575296046749,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1068      0.999618822495179,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1069      0.999659996743959,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1070      0.999698818696204,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1071      0.999735288260562,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1072      0.999769405351215,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1073      0.999801169887884,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1074      0.999830581795823,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1075      0.999857641005824,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1076      0.999882347454213,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1077      0.999904701082853,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1078      0.999924701839145,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1079      0.999942349676024,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1080      0.999957644551964,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1081      0.999970586430974,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1082      0.999981175282601,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1083      0.999989411081928,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1084      0.999995293809576,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1085      0.999998823451702,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1086      1,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1087  };
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1088  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32_Table.c	  1089  #endif
+
+	; Module end

@@ -1,0 +1,798 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\.Ifx_GlobalResources.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.src ..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_get',code,cluster('Ifx_GlobalResources_get')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_get'
+	.align	2
+	
+	.global	Ifx_GlobalResources_get
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     2   * \file Ifx_GlobalResources.h
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     3   * \brief Handling of global resources
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     4   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     5   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     6   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     7   * $Date: 2014-02-27 20:08:36 GMT$
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     8   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     9   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    10   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    16  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    17  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    19  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    26  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    32   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    33  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    41  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    42   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    43   */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    44  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    45  #include "Ifx_GlobalResources.h"
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    46  /** \brief Global resource object */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    47  typedef struct
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    48  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    49      const Ifx_GlobalResources_Item *table;  /**< \brief Pointer to the global resource table */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    50      sint32                          size;   /**< \brief Size of the global resource table */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    51  } Ifx_GlobalResources;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    52  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    53  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    54  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    55  Ifx_GlobalResources ifx_GlobalResource;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    56  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    57  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    58  void *Ifx_GlobalResources_get(sint32 id)
+; Function Ifx_GlobalResources_get
+.L8:
+Ifx_GlobalResources_get:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    59  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    60      void *result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    61  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    62  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    63  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    64      if (id < ifx_GlobalResource.size)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    65      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    66          result = ifx_GlobalResource.table[id].resource;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    67      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    68      else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    69      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    70          result = NULL_PTR;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    71      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    72  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    73  #else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    74      result = NULL_PTR;
+	mov.a	a2,#0
+.L71:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    75  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    76  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    77  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    78      return result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    79  }
+	ret
+.L47:
+	
+__Ifx_GlobalResources_get_function_end:
+	.size	Ifx_GlobalResources_get,__Ifx_GlobalResources_get_function_end-Ifx_GlobalResources_get
+.L25:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getIndex',code,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getIndex'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getIndex
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    80  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    81  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    82  sint32 Ifx_GlobalResources_getIndex(void *resource)
+; Function Ifx_GlobalResources_getIndex
+.L10:
+Ifx_GlobalResources_getIndex:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    83  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    84      sint32 id = -1;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    85  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    86  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    87      int    i;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    88  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    89      for (i = 0; i < ifx_GlobalResource.size; i++)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    90      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    91          if (resource == ifx_GlobalResource.table[i].resource)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    92          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    93              id = i;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    94          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    95          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    96          {}
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    97      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    98  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    99  #else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   100  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   101  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   102      return id;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   103  }
+	mov	d2,#-1
+	ret
+.L50:
+	
+__Ifx_GlobalResources_getIndex_function_end:
+	.size	Ifx_GlobalResources_getIndex,__Ifx_GlobalResources_getIndex_function_end-Ifx_GlobalResources_getIndex
+.L30:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getItem',code,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getItem'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getItem
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   104  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   105  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   106  const Ifx_GlobalResources_Item *Ifx_GlobalResources_getItem(sint32 id)
+; Function Ifx_GlobalResources_getItem
+.L12:
+Ifx_GlobalResources_getItem:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   107  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   108      const Ifx_GlobalResources_Item *result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   109  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   110  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   111  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   112      if (id < ifx_GlobalResource.size)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   113      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   114          result = &ifx_GlobalResource.table[id];
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   115      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   116      else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   117      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   118          result = NULL_PTR;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   119      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   120  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   121  #else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   122      result = NULL_PTR;
+	mov.a	a2,#0
+.L80:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   123  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   124  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   125  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   126      return result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   127  }
+	ret
+.L53:
+	
+__Ifx_GlobalResources_getItem_function_end:
+	.size	Ifx_GlobalResources_getItem,__Ifx_GlobalResources_getItem_function_end-Ifx_GlobalResources_getItem
+.L35:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getName',code,cluster('Ifx_GlobalResources_getName')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getName'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getName
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   128  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   129  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   130  pchar Ifx_GlobalResources_getName(sint32 id)
+; Function Ifx_GlobalResources_getName
+.L14:
+Ifx_GlobalResources_getName:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   131  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   132      pchar name;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   133  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   134  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   135  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   136      if (id < ifx_GlobalResource.size)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   137      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   138          name = ifx_GlobalResource.table[id].name;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   139      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   140      else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   141      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   142          name = "unknown";
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   143      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   144  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   145  #else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   146      name = "unknown";
+	movh.a	a2,#@his(.1.str)
+	lea	a2,[a2]@los(.1.str)
+.L85:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   147  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   148  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   149  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   150      return name;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   151  }
+	ret
+.L56:
+	
+__Ifx_GlobalResources_getName_function_end:
+	.size	Ifx_GlobalResources_getName,__Ifx_GlobalResources_getName_function_end-Ifx_GlobalResources_getName
+.L40:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_init',code,cluster('Ifx_GlobalResources_init')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_init'
+	.align	2
+	
+	.global	Ifx_GlobalResources_init
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   152  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   153  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   154  boolean Ifx_GlobalResources_init(const Ifx_GlobalResources_Item *table, uint32 size)
+; Function Ifx_GlobalResources_init
+.L16:
+Ifx_GlobalResources_init:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   155  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   156      boolean result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   157  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   158  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   159      ifx_GlobalResource.table = table;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   160      ifx_GlobalResource.size  = size;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   161      result                   = TRUE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   162  #else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   163      result                   = FALSE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   164  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   165  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   166  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   167      return result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   168  }
+	mov	d2,#0
+	ret
+.L59:
+	
+__Ifx_GlobalResources_init_function_end:
+	.size	Ifx_GlobalResources_init,__Ifx_GlobalResources_init_function_end-Ifx_GlobalResources_init
+.L45:
+	; End of function
+	
+	.sdecl	'.rodata.Ifx_GlobalResources..1.str',data,rom
+	.sect	'.rodata.Ifx_GlobalResources..1.str'
+.1.str:	.type	object
+	.size	.1.str,8
+	.byte	117,110,107,110
+	.byte	111,119,110
+	.space	1
+	.calls	'Ifx_GlobalResources_get','',0
+	.calls	'Ifx_GlobalResources_getIndex','',0
+	.calls	'Ifx_GlobalResources_getItem','',0
+	.calls	'Ifx_GlobalResources_getName','',0
+	.calls	'Ifx_GlobalResources_init','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L18:
+	.word	814
+	.half	3
+	.word	.L19
+	.byte	4
+.L17:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L20
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	206
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	213
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	255
+	.byte	7
+	.word	255
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	271
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	276
+	.byte	9
+	.byte	'value',0
+	.word	255
+	.byte	9
+	.byte	'compare',0
+	.word	255
+	.byte	0,10
+	.byte	'void',0
+.L46:
+	.byte	7
+	.word	333
+.L48:
+	.byte	2
+	.byte	'long int',0,4,5,2
+	.byte	'char',0,1,6,3
+	.word	356
+	.byte	7
+	.word	364
+.L55:
+	.byte	11
+	.byte	'pchar',0,2,56,28
+	.word	369
+	.byte	12,1,58,9,8,13
+	.byte	'resource',0
+	.word	339
+	.byte	4,2,35,0,13
+	.byte	'name',0
+	.word	374
+	.byte	4,2,35,4,0,3
+	.word	388
+.L52:
+	.byte	7
+	.word	426
+	.byte	3
+	.word	356
+	.byte	7
+	.word	436
+.L58:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L61:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,2
+	.byte	'short int',0,2,5,11
+	.byte	'__wchar_t',0,3,1,1
+	.word	484
+	.byte	11
+	.byte	'__size_t',0,3,1,1
+	.word	255
+	.byte	11
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	206
+	.byte	14,1,7
+	.word	552
+	.byte	11
+	.byte	'__codeptr',0,3,1,1
+	.word	554
+	.byte	11
+	.byte	'boolean',0,4,101,29
+	.word	446
+	.byte	11
+	.byte	'uint8',0,4,105,29
+	.word	446
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'uint16',0,4,109,29
+	.word	607
+	.byte	11
+	.byte	'uint32',0,4,113,29
+	.word	463
+	.byte	11
+	.byte	'sint16',0,4,126,29
+	.word	484
+	.byte	11
+	.byte	'sint32',0,4,131,1,29
+	.word	344
+	.byte	2
+	.byte	'long long int',0,8,5,11
+	.byte	'sint64',0,4,139,1,29
+	.word	690
+	.byte	2
+	.byte	'float',0,4,4,11
+	.byte	'float32',0,4,168,1,29
+	.word	723
+	.byte	11
+	.byte	'pvoid',0,2,57,28
+	.word	339
+	.byte	11
+	.byte	'Ifx_TickTime',0,2,79,28
+	.word	690
+	.byte	11
+	.byte	'Ifx_GlobalResources_Item',0,1,62,3
+	.word	388
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L19:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,59,0,3,8,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,19,1,58
+	.byte	15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L20:
+	.word	.L64-.L63
+.L63:
+	.half	3
+	.word	.L66-.L65
+.L65:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L66:
+.L64:
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_info'
+.L21:
+	.word	284
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L24,.L23
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_get',0,1,58,7
+	.word	.L46
+	.byte	1,1,1
+	.word	.L8,.L47,.L7
+	.byte	4
+	.byte	'id',0,1,58,38
+	.word	.L48,.L49
+	.byte	5
+	.word	.L8,.L47
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_line'
+.L23:
+	.word	.L68-.L67
+.L67:
+	.half	3
+	.word	.L70-.L69
+.L69:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L70:
+	.byte	5,14,7,0,5,2
+	.word	.L8
+	.byte	3,201,0,1,5,1,9
+	.half	.L71-.L8
+	.byte	3,5,1,7,9
+	.half	.L25-.L71
+	.byte	0,1,1
+.L68:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_ranges'
+.L24:
+	.word	-1,.L8,0,.L25-.L8,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_info'
+.L26:
+	.word	295
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L29,.L28
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getIndex',0,1,82,8
+	.word	.L48
+	.byte	1,1,1
+	.word	.L10,.L50,.L9
+	.byte	4
+	.byte	'resource',0,1,82,43
+	.word	.L46,.L51
+	.byte	5
+	.word	.L10,.L50
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_line'
+.L28:
+	.word	.L73-.L72
+.L72:
+	.half	3
+	.word	.L75-.L74
+.L74:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L75:
+	.byte	5,12,7,0,5,2
+	.word	.L10
+	.byte	3,229,0,1,5,1,3,1,1,7,9
+	.half	.L30-.L10
+	.byte	0,1,1
+.L73:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_ranges'
+.L29:
+	.word	-1,.L10,0,.L30-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_info'
+.L31:
+	.word	288
+	.half	3
+	.word	.L32
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L34,.L33
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getItem',0,1,106,33
+	.word	.L52
+	.byte	1,1,1
+	.word	.L12,.L53,.L11
+	.byte	4
+	.byte	'id',0,1,106,68
+	.word	.L48,.L54
+	.byte	5
+	.word	.L12,.L53
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_abbrev'
+.L32:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_line'
+.L33:
+	.word	.L77-.L76
+.L76:
+	.half	3
+	.word	.L79-.L78
+.L78:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L79:
+	.byte	5,14,7,0,5,2
+	.word	.L12
+	.byte	3,249,0,1,5,1,9
+	.half	.L80-.L12
+	.byte	3,5,1,7,9
+	.half	.L35-.L80
+	.byte	0,1,1
+.L77:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_ranges'
+.L34:
+	.word	-1,.L12,0,.L35-.L12,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_info'
+.L36:
+	.word	290
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L39,.L38
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getName',0,1,130,1,7
+	.word	.L55
+	.byte	1,1,1
+	.word	.L14,.L56,.L13
+	.byte	4
+	.byte	'id',0,1,130,1,42
+	.word	.L48,.L57
+	.byte	5
+	.word	.L14,.L56
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_line'
+.L38:
+	.word	.L82-.L81
+.L81:
+	.half	3
+	.word	.L84-.L83
+.L83:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L84:
+	.byte	5,12,7,0,5,2
+	.word	.L14
+	.byte	3,145,1,1,5,1,9
+	.half	.L85-.L14
+	.byte	3,5,1,7,9
+	.half	.L40-.L85
+	.byte	0,1,1
+.L82:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_ranges'
+.L39:
+	.word	-1,.L14,0,.L40-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_info'
+.L41:
+	.word	308
+	.half	3
+	.word	.L42
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L44,.L43
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_init',0,1,154,1,9
+	.word	.L58
+	.byte	1,1,1
+	.word	.L16,.L59,.L15
+	.byte	4
+	.byte	'table',0,1,154,1,66
+	.word	.L52,.L60
+	.byte	4
+	.byte	'size',0,1,154,1,80
+	.word	.L61,.L62
+	.byte	5
+	.word	.L16,.L59
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_abbrev'
+.L42:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_line'
+.L43:
+	.word	.L87-.L86
+.L86:
+	.half	3
+	.word	.L89-.L88
+.L88:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L89:
+	.byte	5,12,7,0,5,2
+	.word	.L16
+	.byte	3,166,1,1,5,1,3,1,1,7,9
+	.half	.L45-.L16
+	.byte	0,1,1
+.L87:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_ranges'
+.L44:
+	.word	-1,.L16,0,.L45-.L16,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L47-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L49:
+	.word	-1,.L8,0,.L47-.L8
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_loc'
+.L9:
+	.word	-1,.L10,0,.L50-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L51:
+	.word	-1,.L10,0,.L50-.L10
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_loc'
+.L11:
+	.word	-1,.L12,0,.L53-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L54:
+	.word	-1,.L12,0,.L53-.L12
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L56-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L57:
+	.word	-1,.L14,0,.L56-.L14
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_loc'
+.L15:
+	.word	-1,.L16,0,.L59-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L62:
+	.word	-1,.L16,0,.L59-.L16
+	.half	1
+	.byte	84
+	.word	0,0
+.L60:
+	.word	-1,.L16,0,.L59-.L16
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L90:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L90,.L8,.L47-.L8
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L90,.L10,.L50-.L10
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L90,.L12,.L53-.L12
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L90,.L14,.L56-.L14
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L90,.L16,.L59-.L16
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+
+	; Module end

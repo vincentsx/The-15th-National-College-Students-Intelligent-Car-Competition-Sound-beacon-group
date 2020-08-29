@@ -1,0 +1,276 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\.CompilerGnuc.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.src ..\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	668
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	199
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	206
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	248
+	.byte	7
+	.word	248
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	264
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	269
+	.byte	9
+	.byte	'value',0
+	.word	248
+	.byte	9
+	.byte	'compare',0
+	.word	248
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	326
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	248
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	199
+	.byte	11,1,7
+	.word	394
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	396
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,105,29
+	.word	419
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,109,29
+	.word	450
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,113,29
+	.word	487
+	.byte	10
+	.byte	'sint16',0,2,126,29
+	.word	326
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,131,1,29
+	.word	538
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,139,1,29
+	.word	566
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,168,1,29
+	.word	599
+	.byte	12
+	.byte	'void',0,7
+	.word	625
+	.byte	10
+	.byte	'pvoid',0,3,57,28
+	.word	631
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,79,28
+	.word	566
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'..\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0,0
+.L9:
+.L7:
+
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     1  /**
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     2   * \file CompilerGnuc.c
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     3   *
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     4   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     5   *
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     6   * $Date: 2014-02-27 20:08:40 GMT$
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     7   *
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     8   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     9   *
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    10   *
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    11   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    12   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    13   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    14   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    15  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    16  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    18  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    19   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    20   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    21   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    22   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    23   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    24   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    25  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    26   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    30   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    31   * language processor.
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    32  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    39   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    40  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    41   *
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    42   */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    43  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    44  #include "Cpu/Std/Ifx_Types.h"
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    45  #include "Compilers.h"
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    46  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    47  #if defined(__HIGHTEC__) && !defined(WIN32)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    48  /*!
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    49   * \brief Data s C variables.
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    50   */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    51  extern uint32 __clear_table[];  /**< clear table entry */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    52  extern uint32 __copy_table[];   /**< copy table entry */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    53  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    54  typedef volatile union
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    55  {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    56      uint8              *ucPtr;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    57      uint16             *usPtr;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    58      uint32             *uiPtr;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    59      unsigned long long *ullPtr;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    60  } IfxStart_CTablePtr;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    61  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    62  /*!
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    63   * \brief Initializes C variables.
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    64   *
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    65   * This function is called in the startup. This function initialize the all variables in .data section
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    66   * and clears the .bss section
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    67   *
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    68   * Parameters: Nil
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    69   * Return: Nil
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    70   */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    71  void Ifx_C_Init(void)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    72  {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    73      IfxStart_CTablePtr pBlockDest, pBlockSrc;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    74      uint32             uiLength, uiCnt;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    75      uint32            *pTable;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    76      /* clear table */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    77      pTable = (uint32 *)&__clear_table;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    78  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    79      while (pTable)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    80      {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    81          pBlockDest.uiPtr = (uint32 *)*pTable++;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    82          uiLength         = *pTable++;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    83  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    84          /* we are finished when length == -1 */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    85          if (uiLength == 0xFFFFFFFF)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    86          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    87              break;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    88          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    89  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    90          uiCnt = uiLength / 8;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    91  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    92          while (uiCnt--)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    93          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    94              *pBlockDest.ullPtr++ = 0;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    95          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    96  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    97          if (uiLength & 0x4)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    98          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    99              *pBlockDest.uiPtr++ = 0;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   100          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   101  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   102          if (uiLength & 0x2)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   103          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   104              *pBlockDest.usPtr++ = 0;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   105          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   106  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   107          if (uiLength & 0x1)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   108          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   109              *pBlockDest.ucPtr = 0;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   110          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   111      }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   112  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   113      /* copy table */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   114      pTable = (uint32 *)&__copy_table;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   115  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   116      while (pTable)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   117      {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   118          pBlockSrc.uiPtr  = (uint32 *)*pTable++;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   119          pBlockDest.uiPtr = (uint32 *)*pTable++;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   120          uiLength         = *pTable++;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   121  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   122          /* we are finished when length == -1 */
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   123          if (uiLength == 0xFFFFFFFF)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   124          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   125              break;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   126          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   127  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   128          uiCnt = uiLength / 8;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   129  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   130          while (uiCnt--)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   131          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   132              *pBlockDest.ullPtr++ = *pBlockSrc.ullPtr++;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   133          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   134  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   135          if (uiLength & 0x4)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   136          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   137              *pBlockDest.uiPtr++ = *pBlockSrc.uiPtr++;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   138          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   139  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   140          if (uiLength & 0x2)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   141          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   142              *pBlockDest.usPtr++ = *pBlockSrc.usPtr++;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   143          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   144  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   145          if (uiLength & 0x1)
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   146          {
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   147              *pBlockDest.ucPtr = *pBlockSrc.ucPtr;
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   148          }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   149      }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   150  }
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   151  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   152  
+; ..\src\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   153  #endif
+
+	; Module end

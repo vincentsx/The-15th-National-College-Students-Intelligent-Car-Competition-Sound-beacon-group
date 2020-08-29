@@ -1,0 +1,4788 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_Crc.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.src ..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_Crc.Ifx_Crc_init',code,cluster('Ifx_Crc_init')
+	.sect	'.text.Ifx_Crc.Ifx_Crc_init'
+	.align	2
+	
+	.global	Ifx_Crc_init
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     2   * \file Ifx_Crc.c
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     3   * \brief CRC algorithm
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     4   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     5   * \version disabled
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     7   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     8   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	     9   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    10   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    16  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    17  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    19  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    26  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    32   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    33  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    41  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    42   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    43   */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    44  #include "Ifx_Crc.h"
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    45  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    46  uint32 Ifx_Crc_reflect(uint32 crc, sint32 bitnum);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    47  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    48  boolean Ifx_Crc_init(Ifc_Crc *driver, const Ifc_Crc_Table *table, sint32 direct, sint32 refout, uint32 crcinit, uint32 crcxor)
+; Function Ifx_Crc_init
+.L117:
+Ifx_Crc_init:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    49  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    50      sint32 i;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    51      uint32 bit, crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    52  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    53      if (crcinit != (crcinit & table->crcmask))
+	ld.w	d15,[a5]16
+.L425:
+	and	d0,d6,d15
+.L426:
+	jne	d6,d0,.L2
+.L427:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    54      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    55          //IfxStdIf_DPipe_print(io,"ERROR, invalid crcinit."ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    56          return FALSE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    57      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    58  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    59      if (crcxor != (crcxor & table->crcmask))
+	and	d15,d7
+.L428:
+	jeq	d15,d7,.L3
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    60      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    61          //IfxStdIf_DPipe_print(io,"ERROR, invalid crcxor."ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    62          return FALSE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    63      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    64  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    65      driver->table  = table;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    66      driver->crcxor = crcxor;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    67      driver->refout = refout;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    68  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    69      // compute missing initial CRC value
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    70  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    71      if (!direct)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    72      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    73          driver->crcinit_nondirect = crcinit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    74          crc                       = crcinit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    75  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    76          for (i = 0; i < table->order; i++)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    77          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    78              bit   = crc & table->crchighbit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    79              crc <<= 1;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    80  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    81              if (bit)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    82              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    83                  crc ^= table->polynom;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    84              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    85          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    86  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    87          crc                   &= table->crcmask;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    88          driver->crcinit_direct = crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    89      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    90  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    91      else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    92      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    93          driver->crcinit_direct = crcinit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    94          crc                    = crcinit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    95  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    96          for (i = 0; i < table->order; i++)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    97          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    98              bit = crc & 1;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	    99  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   100              if (bit)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   101              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   102                  crc ^= table->polynom;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   103              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   104  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   105              crc >>= 1;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   106  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   107              if (bit)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   108              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   109                  crc |= table->crchighbit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   110              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   111          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   112  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   113          driver->crcinit_nondirect = crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   114      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   115  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   116      return TRUE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   117  }
+.L2:
+	mov	d2,#0
+	ret
+.L3:
+	st.a	[a4]16,a5
+.L429:
+	st.w	[a4],d7
+.L430:
+	st.w	[a4]4,d5
+.L431:
+	jne	d4,#0,.L5
+.L432:
+	st.w	[a4]12,d6
+.L433:
+	mov	d0,#0
+.L323:
+	ld.w	d1,[a5]
+.L434:
+	j	.L6
+.L7:
+	ld.w	d15,[a5]12
+.L324:
+	and	d15,d6
+.L435:
+	sh	d6,#1
+.L436:
+	jeq	d15,#0,.L8
+.L437:
+	ld.w	d15,[a5]4
+.L325:
+	xor	d6,d15
+.L8:
+	add	d0,#1
+.L6:
+	jlt	d0,d1,.L7
+.L438:
+	ld.w	d15,[a5]16
+.L439:
+	and	d6,d15
+	st.w	[a4]8,d6
+.L322:
+	j	.L9
+.L5:
+	st.w	[a4]8,d6
+.L440:
+	mov	d0,#0
+.L326:
+	ld.w	d1,[a5]
+.L441:
+	j	.L10
+.L11:
+	and	d15,d6,#1
+.L327:
+	jeq	d15,#0,.L12
+.L442:
+	ld.w	d2,[a5]4
+.L443:
+	xor	d6,d2
+.L12:
+	sh	d6,#-1
+.L444:
+	jeq	d15,#0,.L13
+.L445:
+	ld.w	d15,[a5]12
+.L328:
+	or	d6,d15
+.L13:
+	add	d0,#1
+.L10:
+	jlt	d0,d1,.L11
+.L446:
+	st.w	[a4]12,d6
+.L9:
+	mov	d2,#1
+	ret
+.L226:
+	
+__Ifx_Crc_init_function_end:
+	.size	Ifx_Crc_init,__Ifx_Crc_init_function_end-Ifx_Crc_init
+.L154:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Crc.Ifx_Crc_createTable',code,cluster('Ifx_Crc_createTable')
+	.sect	'.text.Ifx_Crc.Ifx_Crc_createTable'
+	.align	2
+	
+	.global	Ifx_Crc_createTable
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   118  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   119  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   120  boolean Ifx_Crc_createTable(Ifc_Crc_Table *table, sint32 order, uint32 polynom, sint32 refin)
+; Function Ifx_Crc_createTable
+.L119:
+Ifx_Crc_createTable:	.type	func
+	mov	e8,d5,d4
+	mov.aa	a15,a4
+.L329:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   121  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   122      uint32 crcmask;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   123      // at first, compute constant bit masks for whole CRC and CRC high bit
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   124  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   125      crcmask = ((((uint32)1 << (order - 1)) - 1) << 1) | 1;
+	mov	d0,#1
+.L451:
+	mov	d10,d6
+.L330:
+	add	d15,d8,#-1
+.L331:
+	sh	d0,d0,d15
+.L452:
+	sh	d1,d0,#1
+.L453:
+	add	d15,d1,#-2
+.L454:
+	or	d11,d15,#1
+.L332:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   126  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   127      // check parameters
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   128  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   129      if ((order < 1) || (order > 32))
+	jlt	d8,#1,.L15
+.L333:
+	mov	d15,#32
+.L334:
+	jlt	d15,d8,.L16
+.L335:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   130      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   131          //IfxStdIf_DPipe_print(io,"ERROR, invalid order, it must be between 1..32."ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   132          return FALSE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   133      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   134  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   135      if (polynom != (polynom & crcmask))
+	and	d15,d9,d11
+.L455:
+	jeq	d15,d9,.L17
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   136      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   137          //IfxStdIf_DPipe_print(io,"ERROR, invalid polynom."ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   138          return FALSE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   139      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   140  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   141      table->order      = order;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   142      table->polynom    = polynom;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   143      table->refin      = refin;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   144      table->crchighbit = (uint32)1 << (order - 1);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   145      table->crcmask    = crcmask;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   146      // generate lookup table
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   147      // make CRC lookup table used by table algorithms
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   148      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   149          sint32 i, j;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   150          uint32 bit, crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   151  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   152          for (i = 0; i < 256; i++)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   153          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   154              crc = (uint32)i;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   155  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   156              if (refin)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   157              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   158                  crc = Ifx_Crc_reflect(crc, 8);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   159              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   160  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   161              crc <<= order - 8;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   162  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   163              for (j = 0; j < 8; j++)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   164              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   165                  bit   = crc & table->crchighbit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   166                  crc <<= 1;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   167  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   168                  if (bit)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   169                  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   170                      crc ^= polynom;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   171                  }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   172              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   173  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   174              if (refin)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   175              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   176                  crc = Ifx_Crc_reflect(crc, order);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   177              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   178  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   179              crc &= crcmask;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   180  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   181              if (order <= 8)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   182              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   183                  uint8 *crctab = (uint8 *)((uint32)table + sizeof(Ifc_Crc_Table));
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   184                  crctab[i] = (uint8)crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   185              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   186              else if (order <= 16)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   187              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   188                  uint16 *crctab = (uint16 *)((uint32)table + sizeof(Ifc_Crc_Table));
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   189                  crctab[i] = (uint16)crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   190              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   191              else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   192              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   193                  uint32 *crctab = (uint32 *)((uint32)table + sizeof(Ifc_Crc_Table));
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   194                  crctab[i] = crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   195              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   196          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   197      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   198      return TRUE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   199  }
+.L16:
+.L15:
+	mov	d2,#0
+	ret
+.L17:
+	st.w	[a15],d8
+.L336:
+	lea	a2,[a15]4
+.L337:
+	st.w	[a2+],d9
+.L338:
+	st.w	[a2+],d10
+.L456:
+	st.w	[a2+],d0
+.L457:
+	st.w	[a2+],d11
+.L247:
+	mov	d12,#0
+	mov.d	d0,a15
+.L254:
+	add	d13,d0,#20
+	lea	a12,255
+.L19:
+	mov	d2,d12
+.L339:
+	jeq	d10,#0,.L20
+.L458:
+	mov	d5,#8
+	mov	d4,d12
+	call	Ifx_Crc_reflect
+.L20:
+	add	d15,d8,#-8
+.L340:
+	sh	d4,d2,d15
+	mov.a	a2,#7
+.L21:
+	ld.w	d15,[a15]12
+.L342:
+	and	d15,d4
+.L459:
+	sh	d4,#1
+.L460:
+	jeq	d15,#0,.L22
+.L344:
+	xor	d4,d9
+.L22:
+	loop	a2,.L21
+.L461:
+	jeq	d10,#0,.L23
+.L345:
+	mov	d5,d8
+	call	Ifx_Crc_reflect
+.L341:
+	mov	d4,d2
+.L23:
+	and	d4,d11
+.L462:
+	mov	d15,#8
+.L343:
+	jlt	d15,d8,.L24
+.L255:
+	mov.a	a2,d12
+.L346:
+	addsc.a	a2,a2,d13,#0
+.L347:
+	st.b	[a2],d4
+.L256:
+	j	.L25
+.L24:
+	mov	d15,#16
+.L348:
+	jlt	d15,d8,.L26
+.L257:
+	mov.a	a2,d13
+.L463:
+	addsc.a	a2,a2,d12,#1
+.L464:
+	st.h	[a2],d4
+.L258:
+	j	.L27
+.L26:
+	mov.a	a2,d13
+.L465:
+	addsc.a	a2,a2,d12,#2
+.L466:
+	st.w	[a2],d4
+.L27:
+.L25:
+	add	d12,#1
+	loop	a12,.L19
+.L248:
+	mov	d2,#1
+	ret
+.L240:
+	
+__Ifx_Crc_createTable_function_end:
+	.size	Ifx_Crc_createTable,__Ifx_Crc_createTable_function_end-Ifx_Crc_createTable
+.L159:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Crc.Ifx_Crc_reflect',code,cluster('Ifx_Crc_reflect')
+	.sect	'.text.Ifx_Crc.Ifx_Crc_reflect'
+	.align	2
+	
+	.global	Ifx_Crc_reflect
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   200  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   201  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   202  // subroutines
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   203  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   204  uint32 Ifx_Crc_reflect(uint32 crc, sint32 bitnum)
+; Function Ifx_Crc_reflect
+.L121:
+Ifx_Crc_reflect:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   205  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   206      // reflects the lower 'bitnum' bits of 'crc'
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   207  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   208      uint32 i, j = 1, crcout = 0;
+	mov	d0,#1
+.L350:
+	mov	d2,#0
+.L351:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   209  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   210      for (i = (uint32)1 << (bitnum - 1); i; i >>= 1)
+	add	d5,#-1
+.L349:
+	sh	d15,d0,d5
+.L29:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   211      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   212          if (crc & i)
+	and	d1,d4,d15
+.L593:
+	jeq	d1,#0,.L30
+.L594:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   213          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   214              crcout |= j;
+	or	d2,d0
+.L30:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   215          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   216  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   217          j <<= 1;
+	sh	d0,#1
+.L595:
+	sh	d15,#-1
+.L596:
+	jne	d15,#0,.L29
+.L597:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   218      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   219  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   220      return crcout;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   221  }
+	ret
+.L316:
+	
+__Ifx_Crc_reflect_function_end:
+	.size	Ifx_Crc_reflect,__Ifx_Crc_reflect_function_end-Ifx_Crc_reflect
+.L184:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Crc.Ifx_Crc_tableFast',code,cluster('Ifx_Crc_tableFast')
+	.sect	'.text.Ifx_Crc.Ifx_Crc_tableFast'
+	.align	2
+	
+	.global	Ifx_Crc_tableFast
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   222  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   223  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   224  uint32 Ifx_Crc_tableFast(Ifc_Crc *driver, uint8 *p, uint32 len)
+; Function Ifx_Crc_tableFast
+.L123:
+Ifx_Crc_tableFast:	.type	func
+	mov.aa	a15,a4
+.L353:
+	mov.aa	a12,a5
+.L354:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   225  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   226      // fast lookup table algorithm without augmented zero bytes, e.g. used in pkzip.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   227      // only usable with polynom orders of 8, 16, 24 or 32.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   228  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   229      uint32 crc              = driver->crcinit_direct;
+	mov	d8,d4
+	ld.w	d4,[a15]8
+.L352:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   230      sint32 orderMinusHeight = driver->table->order - 8;
+	fcall	.cocofun_5
+.L471:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   231  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   232      if (driver->table->refin)
+	jeq	d11,#0,.L32
+.L355:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   233      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   234          crc = Ifx_Crc_reflect(crc, driver->table->order);
+	mov	d5,d9
+	call	Ifx_Crc_reflect
+.L356:
+	mov	d4,d2
+.L32:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   235      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   236  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   237      if (driver->table->order <= 8)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   238      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   239          uint8 *crctab = (uint8 *)((uint32)driver->table + sizeof(Ifc_Crc_Table));
+	mov.d	d0,a13
+.L472:
+	add	d0,d0,#20
+.L268:
+	mov	d15,#8
+.L473:
+	jlt	d15,d9,.L33
+.L269:
+	mov.a	a2,d0
+.L359:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   240  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   241          if (!driver->table->refin)
+	jne	d11,#0,.L38
+.L474:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   242          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   243              while (len--)
+	j	.L35
+.L36:
+	fcall	.cocofun_2
+.L357:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   244              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   245                  crc = (crc << 8) ^ crctab[((crc >> (orderMinusHeight)) & 0xff) ^ *p++];
+	addsc.a	a4,a2,d15,#0
+.L360:
+	ld.bu	d4,[a4]
+.L475:
+	xor	d4,d0
+.L35:
+	jne	d8,#0,.L36
+.L476:
+	j	.L37
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   246              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   247          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   248          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   249          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   250              while (len--)
+.L39:
+	fcall	.cocofun_3
+.L361:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   251              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   252                  crc = (crc >> 8) ^ crctab[(crc & 0xff) ^ *p++];
+	addsc.a	a4,a2,d15,#0
+.L362:
+	ld.bu	d4,[a4]
+.L477:
+	xor	d4,d1
+.L38:
+	jne	d8,#0,.L39
+.L270:
+	j	.L40
+.L33:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   253              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   254          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   255      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   256      else if (driver->table->order <= 16)
+	mov	d15,#16
+.L478:
+	jlt	d15,d9,.L41
+.L273:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   257      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   258          uint16 *crctab = (uint16 *)((uint32)driver->table + sizeof(Ifc_Crc_Table));
+	mov.a	a2,d0
+.L364:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   259  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   260          if (!driver->table->refin)
+	jne	d11,#0,.L46
+.L479:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   261          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   262              while (len--)
+	j	.L43
+.L44:
+	fcall	.cocofun_2
+.L363:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   263              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   264                  crc = (crc << 8) ^ crctab[((crc >> (orderMinusHeight)) & 0xff) ^ *p++];
+	fcall	.cocofun_6
+.L43:
+	jne	d8,#0,.L44
+.L480:
+	j	.L45
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   265              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   266          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   267          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   268          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   269              while (len--)
+.L47:
+	fcall	.cocofun_3
+.L481:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   270              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   271                  crc = (crc >> 8) ^ crctab[(crc & 0xff) ^ *p++];
+	addsc.a	a4,a2,d15,#1
+	ld.hu	d4,[a4]0
+.L482:
+	xor	d4,d1
+.L46:
+	jne	d8,#0,.L47
+.L274:
+	j	.L48
+.L41:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   272              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   273          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   274      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   275      else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   276      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   277          uint32 *crctab = (uint32 *)((uint32)driver->table + sizeof(Ifc_Crc_Table));
+	mov.a	a2,d0
+.L366:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   278  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   279          if (!driver->table->refin)
+	jne	d11,#0,.L53
+.L483:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   280          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   281              while (len--)
+	j	.L50
+.L51:
+	fcall	.cocofun_2
+.L484:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   282              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   283                  crc = (crc << 8) ^ crctab[((crc >> (orderMinusHeight)) & 0xff) ^ *p++];
+	addsc.a	a4,a2,d15,#2
+	ld.w	d4,[a4]
+.L485:
+	xor	d4,d0
+.L50:
+	jne	d8,#0,.L51
+.L486:
+	j	.L52
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   284              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   285          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   286          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   287          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   288              while (len--)
+.L54:
+	fcall	.cocofun_3
+.L487:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   289              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   290                  crc = (crc >> 8) ^ crctab[(crc & 0xff) ^ *p++];
+	addsc.a	a4,a2,d15,#2
+	ld.w	d4,[a4]
+.L488:
+	xor	d4,d1
+.L53:
+	jne	d8,#0,.L54
+.L52:
+.L48:
+.L45:
+.L40:
+.L37:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   291              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   292          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   293      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   294  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   295      if (driver->refout ^ driver->table->refin)
+	ld.w	d15,[a15]4
+.L489:
+	xor	d15,d11
+.L490:
+	jeq	d15,#0,.L55
+.L491:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   296      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   297          crc = Ifx_Crc_reflect(crc, driver->table->order);
+	mov	d5,d9
+	call	Ifx_Crc_reflect
+.L365:
+	mov	d4,d2
+.L55:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   298      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   299  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   300      crc ^= driver->crcxor;
+	ld.w	d15,[a15]
+.L492:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   301      crc &= driver->table->crcmask;
+	xor	d4,d15
+	ld.w	d15,[a13]16
+.L367:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   302  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   303      return crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   304  }
+	and	d2,d4,d15
+	ret
+.L259:
+	
+__Ifx_Crc_tableFast_function_end:
+	.size	Ifx_Crc_tableFast,__Ifx_Crc_tableFast_function_end-Ifx_Crc_tableFast
+.L164:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Crc..cocofun_6',code,cluster('.cocofun_6')
+	.sect	'.text.Ifx_Crc..cocofun_6'
+	.align	2
+; Function .cocofun_6
+.L125:
+.cocofun_6:	.type	func
+; Function body .cocofun_6, coco_iter:0
+	addsc.a	a4,a2,d15,#1
+	ld.hu	d4,[a4]0
+.L637:
+	xor	d4,d0
+	fret
+.L214:
+	; End of function
+	.sdecl	'.text.Ifx_Crc..cocofun_5',code,cluster('.cocofun_5')
+	.sect	'.text.Ifx_Crc..cocofun_5'
+	.align	2
+; Function .cocofun_5
+.L127:
+.cocofun_5:	.type	func
+; Function body .cocofun_5, coco_iter:0
+	ld.a	a13,[a15]16
+.L631:
+	ld.w	d9,[a13]
+.L632:
+	ld.w	d11,[a13]8
+.L358:
+	add	d10,d9,#-8
+	fret
+.L209:
+	; End of function
+	.sdecl	'.text.Ifx_Crc..cocofun_3',code,cluster('.cocofun_3')
+	.sect	'.text.Ifx_Crc..cocofun_3'
+	.align	2
+; Function .cocofun_3
+.L129:
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:0
+	and	d15,d4,#255
+	ld.bu	d0,[a12+]
+.L617:
+	sh	d1,d4,#-8
+.L618:
+	xor	d15,d0
+.L619:
+	add	d8,#-1
+	fret
+.L199:
+	; End of function
+	.sdecl	'.text.Ifx_Crc..cocofun_2',code,cluster('.cocofun_2')
+	.sect	'.text.Ifx_Crc..cocofun_2'
+	.align	2
+; Function .cocofun_2
+.L131:
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	extr.u	d15,d4,d10,#8
+	ld.bu	d1,[a12+]
+.L610:
+	sh	d0,d4,#8
+.L611:
+	add	d8,#-1
+.L612:
+	xor	d15,d1
+	fret
+.L194:
+	; End of function
+	.sdecl	'.text.Ifx_Crc.Ifx_Crc_table',code,cluster('Ifx_Crc_table')
+	.sect	'.text.Ifx_Crc.Ifx_Crc_table'
+	.align	2
+	
+	.global	Ifx_Crc_table
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   305  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   306  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   307  uint32 Ifx_Crc_table(Ifc_Crc *driver, uint8 *p, uint32 len)
+; Function Ifx_Crc_table
+.L133:
+Ifx_Crc_table:	.type	func
+	mov.aa	a15,a4
+.L369:
+	mov.aa	a12,a5
+.L370:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   308  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   309      // normal lookup table algorithm with augmented zero bytes.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   310      // only usable with polynom orders of 8, 16, 24 or 32.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   311  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   312      uint32 crc              = driver->crcinit_nondirect;
+	mov	d8,d4
+	ld.w	d4,[a15]12
+.L368:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   313      sint32 orderMinusHeight = driver->table->order - 8;
+	fcall	.cocofun_5
+.L371:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   314  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   315      if (driver->table->refin)
+	jeq	d11,#0,.L57
+.L497:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   316      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   317          crc = Ifx_Crc_reflect(crc, driver->table->order);
+	mov	d5,d9
+	call	Ifx_Crc_reflect
+.L372:
+	mov	d4,d2
+.L57:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   318      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   319  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   320      if (driver->table->order <= 8)
+	mov	d15,#8
+.L498:
+	jlt	d15,d9,.L58
+.L286:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   321      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   322          uint8 *crctab = (uint8 *)((uint32)driver->table + sizeof(Ifc_Crc_Table));
+	mov.d	d0,a13
+.L499:
+	add	d0,d0,#20
+.L374:
+	mov.a	a2,d0
+.L375:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   323  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   324          if (!driver->table->refin)
+	jne	d11,#0,.L63
+.L500:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   325          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   326              while (len--)
+	j	.L60
+.L61:
+	fcall	.cocofun_4
+.L373:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   327              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   328                  crc = ((crc << 8) | *p++) ^ crctab[(crc >> (orderMinusHeight)) & 0xff];
+	addsc.a	a4,a2,d15,#0
+.L376:
+	ld.bu	d4,[a4]
+.L501:
+	xor	d4,d0
+.L60:
+	jne	d8,#0,.L61
+.L502:
+	j	.L62
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   329              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   330          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   331          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   332          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   333              while (len--)
+.L64:
+	fcall	.cocofun_1
+.L377:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   334              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   335                  crc = ((crc >> 8) | (*p++ << (orderMinusHeight))) ^ crctab[crc & 0xff];
+	addsc.a	a4,a2,d15,#0
+.L378:
+	ld.bu	d4,[a4]
+.L503:
+	xor	d4,d0
+.L63:
+	jne	d8,#0,.L64
+.L62:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   336              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   337          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   338  #pragma warning 529         // 屏蔽警告
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   339          if (!driver->table->refin)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   340          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   341              while (++len < (driver->table->order >> 3))
+	sha	d0,d9,#-3
+.L504:
+	jne	d11,#0,.L65
+.L505:
+	mov	d1,#0
+	j	.L66
+.L67:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   342              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   343                  crc = (crc << 8) ^ crctab[(crc >> (orderMinusHeight)) & 0xff];
+	fcall	.cocofun_7
+.L506:
+	addsc.a	a4,a2,d15,#0
+.L379:
+	add	d1,#1
+.L507:
+	ld.bu	d4,[a4]
+.L508:
+	xor	d4,d2
+.L66:
+	jlt.u	d1,d0,.L67
+.L509:
+	j	.L68
+.L65:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   344              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   345          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   346          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   347          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   348              while (++len < (driver->table->order >> 3))
+	mov	d1,#0
+	j	.L69
+.L70:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   349              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   350                  crc = (crc >> 8) ^ crctab[crc & 0xff];
+	fcall	.cocofun_8
+.L510:
+	addsc.a	a4,a2,d15,#0
+.L380:
+	add	d1,#1
+.L511:
+	ld.bu	d4,[a4]
+.L512:
+	xor	d4,d2
+.L69:
+	jlt.u	d1,d0,.L70
+.L287:
+	j	.L71
+.L58:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   351              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   352          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   353      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   354      else if (driver->table->order <= 16)
+	mov	d15,#16
+.L513:
+	jlt	d15,d9,.L72
+.L292:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   355      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   356          uint16 *crctab = (uint16 *)((uint32)driver->table + sizeof(Ifc_Crc_Table));
+	mov.d	d15,a13
+.L514:
+	add	d15,d15,#20
+.L382:
+	mov.a	a2,d15
+.L383:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   357  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   358          if (!driver->table->refin)
+	jne	d11,#0,.L77
+.L515:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   359          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   360              while (len--)
+	j	.L74
+.L75:
+	fcall	.cocofun_4
+.L381:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   361              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   362                  crc = ((crc << 8) | *p++) ^ crctab[(crc >> (orderMinusHeight)) & 0xff];
+	fcall	.cocofun_6
+.L74:
+	jne	d8,#0,.L75
+.L516:
+	j	.L76
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   363              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   364          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   365          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   366          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   367              while (len--)
+.L78:
+	fcall	.cocofun_1
+.L384:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   368              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   369                  crc = ((crc >> 8) | (*p++ << (orderMinusHeight))) ^ crctab[crc & 0xff];
+	fcall	.cocofun_6
+.L77:
+	jne	d8,#0,.L78
+.L76:
+	sha	d0,d9,#-3
+.L288:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   370              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   371          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   372  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   373          if (!driver->table->refin)
+	jne	d11,#0,.L79
+.L517:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   374          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   375              while (++len < (driver->table->order >> 3))
+	mov	d1,#0
+.L80:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   376              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   377                  crc = (crc << 8) ^ crctab[(crc >> (orderMinusHeight)) & 0xff];
+	fcall	.cocofun_7
+.L385:
+	addsc.a	a4,a2,d15,#1
+.L518:
+	add	d1,#1
+.L519:
+	ld.hu	d4,[a4]0
+.L520:
+	xor	d4,d2
+.L521:
+	jlt.u	d1,d0,.L80
+.L522:
+	j	.L81
+.L79:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   378              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   379          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   380          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   381          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   382              while (++len < (driver->table->order >> 3))
+	mov	d1,#0
+.L82:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   383              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   384                  crc = (crc >> 8) ^ crctab[crc & 0xff];
+	fcall	.cocofun_8
+.L386:
+	addsc.a	a4,a2,d15,#1
+.L523:
+	add	d1,#1
+.L524:
+	ld.hu	d4,[a4]0
+.L525:
+	xor	d4,d2
+.L526:
+	jlt.u	d1,d0,.L82
+.L293:
+	j	.L83
+.L72:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   385              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   386          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   387      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   388      else if (driver->table->order <= 32)
+	mov	d15,#32
+.L527:
+	jlt	d15,d9,.L84
+.L296:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   389      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   390          uint32 *crctab = (uint32 *)((uint32)driver->table + sizeof(Ifc_Crc_Table));
+	mov.d	d15,a13
+.L528:
+	add	d15,d15,#20
+.L387:
+	mov.a	a2,d15
+.L392:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   391  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   392          if (!driver->table->refin)
+	jne	d11,#0,.L89
+.L529:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   393          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   394              while (len--)
+	j	.L86
+.L87:
+	fcall	.cocofun_4
+.L388:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   395              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   396                  crc = ((crc << 8) | *p++) ^ crctab[(crc >> (orderMinusHeight)) & 0xff];
+	addsc.a	a4,a2,d15,#2
+	ld.w	d4,[a4]
+.L530:
+	xor	d4,d0
+.L86:
+	jne	d8,#0,.L87
+.L531:
+	j	.L88
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   397              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   398          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   399          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   400          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   401              while (len--)
+.L90:
+	fcall	.cocofun_1
+.L532:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   402              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   403                  crc = ((crc >> 8) | (*p++ << (orderMinusHeight))) ^ crctab[crc & 0xff];
+	addsc.a	a4,a2,d15,#2
+	ld.w	d4,[a4]
+.L533:
+	xor	d4,d0
+.L89:
+	jne	d8,#0,.L90
+.L88:
+	sha	d0,d9,#-3
+.L289:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   404              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   405          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   406  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   407          if (!driver->table->refin)
+	jne	d11,#0,.L91
+.L534:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   408          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   409              while (++len < (driver->table->order >> 3))
+	mov	d1,#0
+.L92:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   410              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   411                  crc = (crc << 8) ^ crctab[(crc >> (orderMinusHeight)) & 0xff];
+	fcall	.cocofun_7
+.L389:
+	addsc.a	a4,a2,d15,#2
+.L535:
+	add	d1,#1
+.L536:
+	ld.w	d4,[a4]
+.L537:
+	xor	d4,d2
+.L538:
+	jlt.u	d1,d0,.L92
+.L539:
+	j	.L93
+.L91:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   412              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   413          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   414          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   415          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   416              while (++len < (driver->table->order >> 3))
+	mov	d1,#0
+.L94:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   417              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   418                  crc = (crc >> 8) ^ crctab[crc & 0xff];
+	fcall	.cocofun_8
+.L390:
+	addsc.a	a4,a2,d15,#2
+.L540:
+	add	d1,#1
+.L541:
+	ld.w	d4,[a4]
+.L542:
+	xor	d4,d2
+.L543:
+	jlt.u	d1,d0,.L94
+.L93:
+.L84:
+.L83:
+.L81:
+.L71:
+.L68:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   419              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   420          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   421      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   422  #pragma warning default     // 打开警告
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   423      if (driver->refout ^ driver->table->refin)
+	ld.w	d15,[a15]4
+.L544:
+	xor	d15,d11
+.L545:
+	jeq	d15,#0,.L95
+.L546:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   424      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   425          crc = Ifx_Crc_reflect(crc, driver->table->order);
+	mov	d5,d9
+	call	Ifx_Crc_reflect
+.L391:
+	mov	d4,d2
+.L95:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   426      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   427  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   428      crc ^= driver->crcxor;
+	ld.w	d15,[a15]
+.L547:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   429      crc &= driver->table->crcmask;
+	xor	d4,d15
+	ld.w	d15,[a13]16
+.L393:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   430  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   431      return crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   432  }
+	and	d2,d4,d15
+	ret
+.L279:
+	
+__Ifx_Crc_table_function_end:
+	.size	Ifx_Crc_table,__Ifx_Crc_table_function_end-Ifx_Crc_table
+.L169:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Crc..cocofun_8',code,cluster('.cocofun_8')
+	.sect	'.text.Ifx_Crc..cocofun_8'
+	.align	2
+; Function .cocofun_8
+.L135:
+.cocofun_8:	.type	func
+; Function body .cocofun_8, coco_iter:0
+	sh	d2,d4,#-8
+.L647:
+	and	d15,d4,#255
+	fret
+.L224:
+	; End of function
+	.sdecl	'.text.Ifx_Crc..cocofun_7',code,cluster('.cocofun_7')
+	.sect	'.text.Ifx_Crc..cocofun_7'
+	.align	2
+; Function .cocofun_7
+.L137:
+.cocofun_7:	.type	func
+; Function body .cocofun_7, coco_iter:0
+	sh	d2,d4,#8
+.L642:
+	extr.u	d15,d4,d10,#8
+	fret
+.L219:
+	; End of function
+	.sdecl	'.text.Ifx_Crc..cocofun_4',code,cluster('.cocofun_4')
+	.sect	'.text.Ifx_Crc..cocofun_4'
+	.align	2
+; Function .cocofun_4
+.L139:
+.cocofun_4:	.type	func
+; Function body .cocofun_4, coco_iter:0
+	sh	d0,d4,#8
+	ld.bu	d15,[a12+]
+.L624:
+	add	d8,#-1
+.L625:
+	or	d0,d15
+.L626:
+	extr.u	d15,d4,d10,#8
+	fret
+.L204:
+	; End of function
+	.sdecl	'.text.Ifx_Crc..cocofun_1',code,cluster('.cocofun_1')
+	.sect	'.text.Ifx_Crc..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.L141:
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	sh	d0,d4,#-8
+	ld.bu	d15,[a12+]
+.L602:
+	add	d8,#-1
+.L603:
+	sha	d15,d15,d10
+.L604:
+	or	d0,d15
+.L605:
+	and	d15,d4,#255
+	fret
+.L189:
+	; End of function
+	.sdecl	'.text.Ifx_Crc.Ifx_Crc_bitByBit',code,cluster('Ifx_Crc_bitByBit')
+	.sect	'.text.Ifx_Crc.Ifx_Crc_bitByBit'
+	.align	2
+	
+	.global	Ifx_Crc_bitByBit
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   433  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   434  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   435  uint32 Ifx_Crc_bitByBit(Ifc_Crc *driver, uint8 *p, uint32 len)
+; Function Ifx_Crc_bitByBit
+.L143:
+Ifx_Crc_bitByBit:	.type	func
+	mov.aa	a15,a4
+.L394:
+	mov.aa	a12,a5
+.L395:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   436  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   437      // bit by bit algorithm with augmented zero bytes.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   438      // does not use lookup table, suited for polynom driver->table->orders between 1...32.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   439  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   440      uint32 i, j, c, bit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   441      uint32 crc = driver->crcinit_nondirect;
+	mov	d8,d4
+	ld.w	d9,[a15]12
+.L397:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   442  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   443      for (i = 0; i < len; i++)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   444      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   445          c = (uint32)*p++;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   446  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   447          if (driver->table->refin)
+	mov	d10,#0
+	ld.a	a13,[a15]16
+.L399:
+	j	.L97
+.L98:
+	ld.w	d15,[a13]8
+.L552:
+	ld.bu	d4,[a12+]
+.L401:
+	jeq	d15,#0,.L99
+.L553:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   448          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   449              c = Ifx_Crc_reflect(c, 8);
+	mov	d5,#8
+	call	Ifx_Crc_reflect
+.L402:
+	mov	d4,d2
+.L99:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   450          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   451  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   452          for (j = 0x80; j; j >>= 1)
+	mov	d0,#128
+.L100:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   453          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   454              bit   = crc & driver->table->crchighbit;
+	ld.w	d15,[a13]12
+.L554:
+	and	d1,d9,d15
+.L403:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   455              crc <<= 1;
+	sh	d9,#1
+.L555:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   456  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   457              if (c & j)
+	and	d15,d4,d0
+.L556:
+	jeq	d15,#0,.L101
+.L557:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   458              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   459                  crc |= 1;
+	or	d9,d9,#1
+.L101:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   460              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   461  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   462              if (bit)
+	jeq	d1,#0,.L102
+.L558:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   463              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   464                  crc ^= driver->table->polynom;
+	ld.w	d15,[a13]4
+.L559:
+	xor	d9,d15
+.L102:
+	sh	d0,#-1
+.L560:
+	jne	d0,#0,.L100
+.L561:
+	add	d10,#1
+.L97:
+	jlt.u	d10,d8,.L98
+.L562:
+	ld.a	a12,[a15]16
+.L396:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   465              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   466          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   467      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   468  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   469      for (i = 0; i < driver->table->order; i++)
+	mov	d0,#0
+.L400:
+	ld.w	d5,[a12]
+.L563:
+	j	.L103
+.L104:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   470      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   471          bit   = crc & driver->table->crchighbit;
+	ld.w	d15,[a12]12
+.L404:
+	and	d15,d9
+.L564:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   472          crc <<= 1;
+	sh	d9,#1
+.L565:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   473  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   474          if (bit)
+	jeq	d15,#0,.L105
+.L566:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   475          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   476              crc ^= driver->table->polynom;
+	ld.w	d15,[a12]4
+.L405:
+	xor	d9,d15
+.L105:
+	add	d0,#1
+.L103:
+	jlt.u	d0,d5,.L104
+.L567:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   477          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   478      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   479  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   480      if (driver->refout)
+	ld.w	d15,[a15]4
+.L568:
+	jeq	d15,#0,.L106
+.L569:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   481      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   482          crc = Ifx_Crc_reflect(crc, driver->table->order);
+	mov	d4,d9
+	call	Ifx_Crc_reflect
+.L398:
+	mov	d9,d2
+.L106:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   483      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   484  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   485      crc ^= driver->crcxor;
+	ld.w	d15,[a15]
+.L570:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   486      crc &= driver->table->crcmask;
+	xor	d9,d15
+	ld.w	d15,[a12]16
+.L406:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   487  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   488      return crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   489  }
+	and	d2,d9,d15
+	ret
+.L298:
+	
+__Ifx_Crc_bitByBit_function_end:
+	.size	Ifx_Crc_bitByBit,__Ifx_Crc_bitByBit_function_end-Ifx_Crc_bitByBit
+.L174:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Crc.Ifx_Crc_bitByBitFast',code,cluster('Ifx_Crc_bitByBitFast')
+	.sect	'.text.Ifx_Crc.Ifx_Crc_bitByBitFast'
+	.align	2
+	
+	.global	Ifx_Crc_bitByBitFast
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   490  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   491  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   492  uint32 Ifx_Crc_bitByBitFast(Ifc_Crc *driver, uint8 *p, uint32 len)
+; Function Ifx_Crc_bitByBitFast
+.L145:
+Ifx_Crc_bitByBitFast:	.type	func
+	mov.aa	a15,a4
+.L407:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   493  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   494      // fast bit by bit algorithm without augmented zero bytes.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   495      // does not use lookup table, suited for polynom driver->table->orders between 1...32.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   496  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   497      uint32 i, j, c, bit;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   498      uint32 crc = driver->crcinit_direct;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   499  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   500      for (i = 0; i < len; i++)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   501      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   502          c = (uint32)*p++;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   503  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   504          if (driver->table->refin)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   505          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   506              c = Ifx_Crc_reflect(c, 8);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   507          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   508  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   509          for (j = 0x80; j; j >>= 1)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   510          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   511              bit   = crc & driver->table->crchighbit;
+	ld.a	a13,[a15]16
+.L575:
+	mov	d8,d4
+	mov.aa	a12,a5
+.L408:
+	mov	d10,#0
+	ld.w	d9,[a15]8
+.L410:
+	ld.w	d11,[a13]12
+.L576:
+	j	.L108
+.L109:
+	ld.w	d15,[a13]8
+.L577:
+	ld.bu	d4,[a12+]
+.L412:
+	jeq	d15,#0,.L110
+.L578:
+	mov	d5,#8
+	call	Ifx_Crc_reflect
+.L413:
+	mov	d4,d2
+.L110:
+	mov	d15,#128
+.L111:
+	and	d0,d9,d11
+.L414:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   512              crc <<= 1;
+	sh	d9,#1
+.L579:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   513  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   514              if (c & j)
+	and	d1,d4,d15
+.L580:
+	jeq	d1,#0,.L112
+.L581:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   515              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   516                  bit ^= driver->table->crchighbit;
+	xor	d0,d11
+.L112:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   517              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   518  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   519              if (bit)
+	jeq	d0,#0,.L113
+.L582:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   520              {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   521                  crc ^= driver->table->polynom;
+	ld.w	d0,[a13]4
+.L415:
+	xor	d9,d0
+.L113:
+	sh	d15,#-1
+.L583:
+	jne	d15,#0,.L111
+.L584:
+	add	d10,#1
+.L108:
+	jlt.u	d10,d8,.L109
+.L585:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   522              }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   523          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   524      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   525  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   526      if (driver->refout)
+	ld.w	d15,[a15]4
+.L586:
+	ld.a	a12,[a15]16
+.L409:
+	jeq	d15,#0,.L114
+.L587:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   527      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   528          crc = Ifx_Crc_reflect(crc, driver->table->order);
+	ld.w	d5,[a12]
+	mov	d4,d9
+	call	Ifx_Crc_reflect
+.L411:
+	mov	d9,d2
+.L114:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   529      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   530  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   531      crc ^= driver->crcxor;
+	ld.w	d15,[a15]
+.L588:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   532      crc &= driver->table->crcmask;
+	xor	d9,d15
+	ld.w	d15,[a12]16
+.L416:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   533  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   534      return crc;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   535  }
+	and	d2,d9,d15
+	ret
+.L307:
+	
+__Ifx_Crc_bitByBitFast_function_end:
+	.size	Ifx_Crc_bitByBitFast,__Ifx_Crc_bitByBitFast_function_end-Ifx_Crc_bitByBitFast
+.L179:
+	; End of function
+	
+	.calls	'Ifx_Crc_createTable','Ifx_Crc_reflect'
+	.calls	'Ifx_Crc_tableFast','Ifx_Crc_reflect'
+	.calls	'Ifx_Crc_table','Ifx_Crc_reflect'
+	.calls	'Ifx_Crc_bitByBit','Ifx_Crc_reflect'
+	.calls	'Ifx_Crc_bitByBitFast','Ifx_Crc_reflect'
+	.calls	'Ifx_Crc_tableFast','.cocofun_5'
+	.calls	'Ifx_Crc_tableFast','.cocofun_2'
+	.calls	'Ifx_Crc_tableFast','.cocofun_3'
+	.calls	'Ifx_Crc_tableFast','.cocofun_6'
+	.calls	'Ifx_Crc_table','.cocofun_5'
+	.calls	'Ifx_Crc_table','.cocofun_4'
+	.calls	'Ifx_Crc_table','.cocofun_1'
+	.calls	'Ifx_Crc_table','.cocofun_7'
+	.calls	'Ifx_Crc_table','.cocofun_8'
+	.calls	'Ifx_Crc_table','.cocofun_6'
+	.calls	'Ifx_Crc_init','',0
+	.calls	'Ifx_Crc_createTable','',0
+	.calls	'Ifx_Crc_reflect','',0
+	.calls	'Ifx_Crc_tableFast','',0
+	.calls	'.cocofun_6','',0
+	.calls	'.cocofun_5','',0
+	.calls	'.cocofun_3','',0
+	.calls	'.cocofun_2','',0
+	.calls	'Ifx_Crc_table','',0
+	.calls	'.cocofun_8','',0
+	.calls	'.cocofun_7','',0
+	.calls	'.cocofun_4','',0
+	.calls	'.cocofun_1','',0
+	.calls	'Ifx_Crc_bitByBit','',0
+	.calls	'Ifx_Crc_bitByBitFast','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L147:
+	.word	943
+	.half	3
+	.word	.L148
+	.byte	4
+.L146:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L149
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	191
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	198
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	240
+	.byte	7
+	.word	240
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	256
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	261
+	.byte	9
+	.byte	'value',0
+	.word	240
+	.byte	9
+	.byte	'compare',0
+	.word	240
+	.byte	0
+.L225:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L234:
+	.byte	2
+	.byte	'unsigned long int',0,4,7
+.L231:
+	.byte	2
+	.byte	'long int',0,4,5,10,1,62,9,20,11
+	.byte	'order',0
+	.word	356
+	.byte	4,2,35,0,11
+	.byte	'polynom',0
+	.word	335
+	.byte	4,2,35,4,11
+	.byte	'refin',0
+	.word	356
+	.byte	4,2,35,8,11
+	.byte	'crchighbit',0
+	.word	335
+	.byte	4,2,35,12,11
+	.byte	'crcmask',0
+	.word	335
+	.byte	4,2,35,16,0,3
+	.word	368
+.L229:
+	.byte	7
+	.word	458
+	.byte	10,1,88,9,20,11
+	.byte	'crcxor',0
+	.word	335
+	.byte	4,2,35,0,11
+	.byte	'refout',0
+	.word	356
+	.byte	4,2,35,4,11
+	.byte	'crcinit_direct',0
+	.word	335
+	.byte	4,2,35,8,11
+	.byte	'crcinit_nondirect',0
+	.word	335
+	.byte	4,2,35,12,11
+	.byte	'table',0
+	.word	463
+	.byte	4,2,35,16,0
+.L227:
+	.byte	7
+	.word	468
+.L241:
+	.byte	7
+	.word	368
+.L261:
+	.byte	7
+	.word	318
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L275:
+	.byte	7
+	.word	587
+.L277:
+	.byte	7
+	.word	335
+	.byte	2
+	.byte	'short int',0,2,5,12
+	.byte	'__wchar_t',0,2,1,1
+	.word	619
+	.byte	12
+	.byte	'__size_t',0,2,1,1
+	.word	240
+	.byte	12
+	.byte	'__ptrdiff_t',0,2,1,1
+	.word	191
+	.byte	13,1,7
+	.word	687
+	.byte	12
+	.byte	'__codeptr',0,2,1,1
+	.word	689
+	.byte	12
+	.byte	'boolean',0,3,101,29
+	.word	318
+	.byte	12
+	.byte	'uint8',0,3,105,29
+	.word	318
+	.byte	12
+	.byte	'uint16',0,3,109,29
+	.word	587
+	.byte	12
+	.byte	'uint32',0,3,113,29
+	.word	335
+	.byte	12
+	.byte	'sint16',0,3,126,29
+	.word	619
+	.byte	12
+	.byte	'sint32',0,3,131,1,29
+	.word	356
+	.byte	2
+	.byte	'long long int',0,8,5,12
+	.byte	'sint64',0,3,139,1,29
+	.word	803
+	.byte	2
+	.byte	'float',0,4,4,12
+	.byte	'float32',0,3,168,1,29
+	.word	836
+	.byte	14
+	.byte	'void',0,7
+	.word	862
+	.byte	12
+	.byte	'pvoid',0,4,57,28
+	.word	868
+	.byte	12
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	803
+	.byte	12
+	.byte	'Ifc_Crc_Table',0,1,69,2
+	.word	368
+	.byte	12
+	.byte	'Ifc_Crc',0,1,96,2
+	.word	468
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L148:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,19,1,58,15,59,15,57,15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0
+	.byte	0,12,22,0,3,8,58,15,59,15,57,15,73,19,0,0,13,21,0,54,15,0,0,14,59,0,3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L149:
+	.word	.L418-.L417
+.L417:
+	.half	3
+	.word	.L420-.L419
+.L419:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.h',0,0,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0,0
+.L420:
+.L418:
+	.sdecl	'.debug_info',debug,cluster('Ifx_Crc_init')
+	.sect	'.debug_info'
+.L150:
+	.word	404
+	.half	3
+	.word	.L151
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L153,.L152
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'Ifx_Crc_init',0,1,48,9
+	.word	.L225
+	.byte	1,1,1
+	.word	.L117,.L226,.L116
+	.byte	4
+	.byte	'driver',0,1,48,31
+	.word	.L227,.L228
+	.byte	4
+	.byte	'table',0,1,48,60
+	.word	.L229,.L230
+	.byte	4
+	.byte	'direct',0,1,48,74
+	.word	.L231,.L232
+	.byte	4
+	.byte	'refout',0,1,48,89
+	.word	.L231,.L233
+	.byte	4
+	.byte	'crcinit',0,1,48,104
+	.word	.L234,.L235
+	.byte	4
+	.byte	'crcxor',0,1,48,120
+	.word	.L234,.L236
+	.byte	5
+	.word	.L117,.L226
+	.byte	6
+	.byte	'i',0,1,50,12
+	.word	.L231,.L237
+	.byte	6
+	.byte	'bit',0,1,51,12
+	.word	.L234,.L238
+	.byte	6
+	.byte	'crc',0,1,51,17
+	.word	.L234,.L239
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Crc_init')
+	.sect	'.debug_abbrev'
+.L151:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Crc_init')
+	.sect	'.debug_line'
+.L152:
+	.word	.L422-.L421
+.L421:
+	.half	3
+	.word	.L424-.L423
+.L423:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L424:
+	.byte	5,36,7,0,5,2
+	.word	.L117
+	.byte	3,52,1,5,29,9
+	.half	.L425-.L117
+	.byte	1,5,5,9
+	.half	.L426-.L425
+	.byte	1,5,27,7,9
+	.half	.L427-.L426
+	.byte	3,6,1,5,5,9
+	.half	.L428-.L427
+	.byte	1,5,16,7,9
+	.half	.L2-.L428
+	.byte	3,3,1,5,1,3,55,1,5,20,7,9
+	.half	.L3-.L2
+	.byte	3,76,1,9
+	.half	.L429-.L3
+	.byte	3,1,1,9
+	.half	.L430-.L429
+	.byte	3,1,1,5,10,9
+	.half	.L431-.L430
+	.byte	3,4,1,5,35,7,9
+	.half	.L432-.L431
+	.byte	3,2,1,5,16,9
+	.half	.L433-.L432
+	.byte	3,3,1,5,30,9
+	.half	.L323-.L433
+	.byte	1,5,37,9
+	.half	.L434-.L323
+	.byte	1,5,32,9
+	.half	.L7-.L434
+	.byte	3,2,1,5,25,9
+	.half	.L324-.L7
+	.byte	1,5,17,9
+	.half	.L435-.L324
+	.byte	3,1,1,5,13,9
+	.half	.L436-.L435
+	.byte	3,2,1,5,29,7,9
+	.half	.L437-.L436
+	.byte	3,2,1,5,21,9
+	.half	.L325-.L437
+	.byte	1,5,40,9
+	.half	.L8-.L325
+	.byte	3,121,1,5,37,9
+	.half	.L6-.L8
+	.byte	1,5,39,7,9
+	.half	.L438-.L6
+	.byte	3,11,1,5,31,9
+	.half	.L439-.L438
+	.byte	1,5,32,3,1,1,5,48,9
+	.half	.L322-.L439
+	.byte	3,127,1,5,32,9
+	.half	.L5-.L322
+	.byte	3,6,1,5,16,9
+	.half	.L440-.L5
+	.byte	3,3,1,5,30,9
+	.half	.L326-.L440
+	.byte	1,5,37,9
+	.half	.L441-.L326
+	.byte	1,5,23,9
+	.half	.L11-.L441
+	.byte	3,2,1,5,13,9
+	.half	.L327-.L11
+	.byte	3,2,1,5,29,7,9
+	.half	.L442-.L327
+	.byte	3,2,1,5,21,9
+	.half	.L443-.L442
+	.byte	1,5,17,9
+	.half	.L12-.L443
+	.byte	3,3,1,5,13,9
+	.half	.L444-.L12
+	.byte	3,2,1,5,29,7,9
+	.half	.L445-.L444
+	.byte	3,2,1,5,21,9
+	.half	.L328-.L445
+	.byte	1,5,40,9
+	.half	.L13-.L328
+	.byte	3,115,1,5,37,9
+	.half	.L10-.L13
+	.byte	1,5,35,7,9
+	.half	.L446-.L10
+	.byte	3,17,1,5,12,9
+	.half	.L9-.L446
+	.byte	3,3,1,5,1,3,1,1,7,9
+	.half	.L154-.L9
+	.byte	0,1,1
+.L422:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Crc_init')
+	.sect	'.debug_ranges'
+.L153:
+	.word	-1,.L117,0,.L154-.L117,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_Crc_createTable')
+	.sect	'.debug_info'
+.L155:
+	.word	442
+	.half	3
+	.word	.L156
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L158,.L157
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'Ifx_Crc_createTable',0,1,120,9
+	.word	.L225
+	.byte	1,1,1
+	.word	.L119,.L240,.L118
+	.byte	4
+	.byte	'table',0,1,120,44
+	.word	.L241,.L242
+	.byte	4
+	.byte	'order',0,1,120,58
+	.word	.L231,.L243
+	.byte	4
+	.byte	'polynom',0,1,120,72
+	.word	.L234,.L244
+	.byte	4
+	.byte	'refin',0,1,120,88
+	.word	.L231,.L245
+	.byte	5
+	.word	.L119,.L240
+	.byte	6
+	.byte	'crcmask',0,1,122,12
+	.word	.L234,.L246
+	.byte	5
+	.word	.L247,.L248
+	.byte	6
+	.byte	'i',0,1,149,1,16
+	.word	.L231,.L249
+	.byte	6
+	.byte	'j',0,1,149,1,19
+	.word	.L231,.L250
+	.byte	6
+	.byte	'bit',0,1,150,1,16
+	.word	.L234,.L251
+	.byte	6
+	.byte	'crc',0,1,150,1,21
+	.word	.L234,.L252
+	.byte	7
+	.word	.L253
+	.byte	8
+	.word	.L257,.L258
+	.byte	8
+	.word	.L26,.L25
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Crc_createTable')
+	.sect	'.debug_abbrev'
+.L156:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,0,85,6,0,0,8,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Crc_createTable')
+	.sect	'.debug_line'
+.L157:
+	.word	.L448-.L447
+.L447:
+	.half	3
+	.word	.L450-.L449
+.L449:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L450:
+	.byte	5,9,7,0,5,2
+	.word	.L119
+	.byte	3,247,0,1,5,18,9
+	.half	.L329-.L119
+	.byte	3,5,1,5,9,9
+	.half	.L451-.L329
+	.byte	3,123,1,5,38,9
+	.half	.L330-.L451
+	.byte	3,5,1,5,28,9
+	.half	.L331-.L330
+	.byte	1,5,49,9
+	.half	.L452-.L331
+	.byte	1,5,44,9
+	.half	.L453-.L452
+	.byte	1,5,55,9
+	.half	.L454-.L453
+	.byte	1,5,9,9
+	.half	.L332-.L454
+	.byte	3,4,1,5,33,7,9
+	.half	.L333-.L332
+	.byte	1,5,31,9
+	.half	.L334-.L333
+	.byte	1,5,29,7,9
+	.half	.L335-.L334
+	.byte	3,6,1,5,5,9
+	.half	.L455-.L335
+	.byte	1,5,16,7,9
+	.half	.L15-.L455
+	.byte	3,3,1,5,1,3,61,1,5,23,7,9
+	.half	.L17-.L15
+	.byte	3,70,1,9
+	.half	.L336-.L17
+	.byte	3,1,1,9
+	.half	.L338-.L336
+	.byte	3,1,1,9
+	.half	.L456-.L338
+	.byte	3,1,1,9
+	.half	.L457-.L456
+	.byte	3,1,1,5,16,9
+	.half	.L247-.L457
+	.byte	3,7,1,5,51,3,31,1,5,57,9
+	.half	.L254-.L247
+	.byte	1,5,28,3,97,1,5,17,9
+	.half	.L19-.L254
+	.byte	3,2,1,5,13,9
+	.half	.L339-.L19
+	.byte	3,2,1,5,44,7,9
+	.half	.L458-.L339
+	.byte	3,2,1,5,27,9
+	.half	.L20-.L458
+	.byte	3,3,1,5,17,9
+	.half	.L340-.L20
+	.byte	1,5,30,3,2,1,5,36,9
+	.half	.L21-.L340
+	.byte	3,2,1,5,29,9
+	.half	.L342-.L21
+	.byte	1,5,21,9
+	.half	.L459-.L342
+	.byte	3,1,1,5,17,9
+	.half	.L460-.L459
+	.byte	3,2,1,5,25,7,9
+	.half	.L344-.L460
+	.byte	3,2,1,5,30,9
+	.half	.L22-.L344
+	.byte	3,121,1,5,13,7,9
+	.half	.L461-.L22
+	.byte	3,11,1,5,44,7,9
+	.half	.L345-.L461
+	.byte	3,2,1,5,21,9
+	.half	.L341-.L345
+	.byte	1,5,17,9
+	.half	.L23-.L341
+	.byte	3,3,1,5,26,9
+	.half	.L462-.L23
+	.byte	3,2,1,5,13,9
+	.half	.L343-.L462
+	.byte	1,5,24,7,9
+	.half	.L255-.L343
+	.byte	3,3,1,5,23,9
+	.half	.L346-.L255
+	.byte	1,5,27,9
+	.half	.L347-.L346
+	.byte	1,5,31,9
+	.half	.L256-.L347
+	.byte	3,127,1,9
+	.half	.L24-.L256
+	.byte	3,3,1,5,18,9
+	.half	.L348-.L24
+	.byte	1,5,34,7,9
+	.half	.L257-.L348
+	.byte	3,2,1,5,23,9
+	.half	.L463-.L257
+	.byte	3,1,1,5,27,9
+	.half	.L464-.L463
+	.byte	1,5,32,9
+	.half	.L258-.L464
+	.byte	3,127,1,5,34,9
+	.half	.L26-.L258
+	.byte	3,5,1,5,23,9
+	.half	.L465-.L26
+	.byte	3,1,1,5,27,9
+	.half	.L466-.L465
+	.byte	1,5,31,9
+	.half	.L25-.L466
+	.byte	3,86,1,5,28,1,5,12,7,9
+	.half	.L248-.L25
+	.byte	3,46,1,5,1,3,1,1,7,9
+	.half	.L159-.L248
+	.byte	0,1,1
+.L448:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Crc_createTable')
+	.sect	'.debug_ranges'
+.L158:
+	.word	-1,.L119,0,.L159-.L119,0,0
+.L253:
+	.word	-1,.L119,.L254-.L119,.L19-.L119,.L255-.L119,.L256-.L119,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_Crc_tableFast')
+	.sect	'.debug_info'
+.L160:
+	.word	427
+	.half	3
+	.word	.L161
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L163,.L162
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'Ifx_Crc_tableFast',0,1,224,1,8
+	.word	.L234
+	.byte	1,1,1
+	.word	.L123,.L259,.L122
+	.byte	4
+	.byte	'driver',0,1,224,1,35
+	.word	.L227,.L260
+	.byte	4
+	.byte	'p',0,1,224,1,50
+	.word	.L261,.L262
+	.byte	4
+	.byte	'len',0,1,224,1,60
+	.word	.L234,.L263
+	.byte	5
+	.word	.L264
+	.byte	6
+	.byte	'crc',0,1,229,1,12
+	.word	.L234,.L265
+	.byte	6
+	.byte	'orderMinusHeight',0,1,230,1,12
+	.word	.L231,.L266
+	.byte	5
+	.word	.L267
+	.byte	6
+	.byte	'crctab',0,1,239,1,16
+	.word	.L261,.L271
+	.byte	0,5
+	.word	.L272
+	.byte	6
+	.byte	'crctab',0,1,130,2,17
+	.word	.L275,.L276
+	.byte	0,7
+	.word	.L41,.L37
+	.byte	6
+	.byte	'crctab',0,1,149,2,17
+	.word	.L277,.L278
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Crc_tableFast')
+	.sect	'.debug_abbrev'
+.L161:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,1,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Crc_tableFast')
+	.sect	'.debug_line'
+.L162:
+	.word	.L468-.L467
+.L467:
+	.half	3
+	.word	.L470-.L469
+.L469:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L470:
+	.byte	5,8,7,0,5,2
+	.word	.L123
+	.byte	3,223,1,1,5,37,9
+	.half	.L354-.L123
+	.byte	3,5,1,9
+	.half	.L352-.L354
+	.byte	3,1,1,5,5,9
+	.half	.L471-.L352
+	.byte	3,2,1,5,49,7,9
+	.half	.L355-.L471
+	.byte	3,2,1,5,13,9
+	.half	.L356-.L355
+	.byte	1,5,49,9
+	.half	.L32-.L356
+	.byte	3,5,1,5,57,9
+	.half	.L472-.L32
+	.byte	1,5,33,9
+	.half	.L268-.L472
+	.byte	3,126,1,5,5,9
+	.half	.L473-.L268
+	.byte	1,5,23,7,9
+	.half	.L269-.L473
+	.byte	3,2,1,5,14,9
+	.half	.L359-.L269
+	.byte	3,2,1,5,25,7,9
+	.half	.L474-.L359
+	.byte	3,2,1,5,23,9
+	.half	.L36-.L474
+	.byte	1,5,42,9
+	.half	.L357-.L36
+	.byte	3,2,1,5,34,9
+	.half	.L475-.L357
+	.byte	1,5,25,9
+	.half	.L35-.L475
+	.byte	3,126,1,5,23,7,9
+	.half	.L476-.L35
+	.byte	1,9
+	.half	.L39-.L476
+	.byte	3,7,1,5,42,9
+	.half	.L361-.L39
+	.byte	3,2,1,5,34,9
+	.half	.L477-.L361
+	.byte	1,5,25,9
+	.half	.L38-.L477
+	.byte	3,126,1,5,9,7,9
+	.half	.L270-.L38
+	.byte	3,126,1,5,38,9
+	.half	.L33-.L270
+	.byte	3,8,1,5,10,9
+	.half	.L478-.L33
+	.byte	1,5,24,7,9
+	.half	.L273-.L478
+	.byte	3,2,1,5,14,9
+	.half	.L364-.L273
+	.byte	3,2,1,5,25,7,9
+	.half	.L479-.L364
+	.byte	3,2,1,5,23,9
+	.half	.L44-.L479
+	.byte	1,5,42,9
+	.half	.L363-.L44
+	.byte	3,2,1,5,25,9
+	.half	.L43-.L363
+	.byte	3,126,1,5,23,7,9
+	.half	.L480-.L43
+	.byte	1,9
+	.half	.L47-.L480
+	.byte	3,7,1,5,42,9
+	.half	.L481-.L47
+	.byte	3,2,1,5,34,9
+	.half	.L482-.L481
+	.byte	1,5,25,9
+	.half	.L46-.L482
+	.byte	3,126,1,5,9,7,9
+	.half	.L274-.L46
+	.byte	3,126,1,5,24,9
+	.half	.L41-.L274
+	.byte	3,10,1,5,14,9
+	.half	.L366-.L41
+	.byte	3,2,1,5,25,7,9
+	.half	.L483-.L366
+	.byte	3,2,1,5,23,9
+	.half	.L51-.L483
+	.byte	1,5,42,9
+	.half	.L484-.L51
+	.byte	3,2,1,5,34,9
+	.half	.L485-.L484
+	.byte	1,5,25,9
+	.half	.L50-.L485
+	.byte	3,126,1,5,23,7,9
+	.half	.L486-.L50
+	.byte	1,9
+	.half	.L54-.L486
+	.byte	3,7,1,5,42,9
+	.half	.L487-.L54
+	.byte	3,2,1,5,34,9
+	.half	.L488-.L487
+	.byte	1,5,25,9
+	.half	.L53-.L488
+	.byte	3,126,1,5,15,7,9
+	.half	.L37-.L53
+	.byte	3,7,1,5,24,9
+	.half	.L489-.L37
+	.byte	1,5,5,9
+	.half	.L490-.L489
+	.byte	1,5,49,7,9
+	.half	.L491-.L490
+	.byte	3,2,1,5,13,9
+	.half	.L365-.L491
+	.byte	1,5,18,9
+	.half	.L55-.L365
+	.byte	3,3,1,5,9,9
+	.half	.L492-.L55
+	.byte	1,5,25,3,1,1,5,9,9
+	.half	.L367-.L492
+	.byte	1,5,1,3,3,1,7,9
+	.half	.L164-.L367
+	.byte	0,1,1
+.L468:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Crc_tableFast')
+	.sect	'.debug_ranges'
+.L163:
+	.word	-1,.L123,0,.L164-.L123,0,0
+.L264:
+	.word	-1,.L123,0,.L259-.L123,-1,.L127,0,.L209-.L127,0,0
+.L267:
+	.word	-1,.L123,.L32-.L123,.L268-.L123,.L269-.L123,.L270-.L123,-1,.L129,0,.L199-.L129,-1,.L131,0,.L194-.L131
+	.word	0,0
+.L272:
+	.word	-1,.L123,.L273-.L123,.L274-.L123,-1,.L125,0,.L214-.L125,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_Crc_table')
+	.sect	'.debug_info'
+.L165:
+	.word	423
+	.half	3
+	.word	.L166
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L168,.L167
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'Ifx_Crc_table',0,1,179,2,8
+	.word	.L234
+	.byte	1,1,1
+	.word	.L133,.L279,.L132
+	.byte	4
+	.byte	'driver',0,1,179,2,31
+	.word	.L227,.L280
+	.byte	4
+	.byte	'p',0,1,179,2,46
+	.word	.L261,.L281
+	.byte	4
+	.byte	'len',0,1,179,2,56
+	.word	.L234,.L282
+	.byte	5
+	.word	.L133,.L279
+	.byte	6
+	.byte	'crc',0,1,184,2,12
+	.word	.L234,.L283
+	.byte	6
+	.byte	'orderMinusHeight',0,1,185,2,12
+	.word	.L231,.L284
+	.byte	7
+	.word	.L285
+	.byte	6
+	.byte	'crctab',0,1,194,2,16
+	.word	.L261,.L290
+	.byte	0,7
+	.word	.L291
+	.byte	6
+	.byte	'crctab',0,1,228,2,17
+	.word	.L275,.L294
+	.byte	0,7
+	.word	.L295
+	.byte	6
+	.byte	'crctab',0,1,134,3,17
+	.word	.L277,.L297
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Crc_table')
+	.sect	'.debug_abbrev'
+.L166:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,1,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Crc_table')
+	.sect	'.debug_line'
+.L167:
+	.word	.L494-.L493
+.L493:
+	.half	3
+	.word	.L496-.L495
+.L495:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L496:
+	.byte	5,8,7,0,5,2
+	.word	.L133
+	.byte	3,178,2,1,5,37,9
+	.half	.L370-.L133
+	.byte	3,5,1,9
+	.half	.L368-.L370
+	.byte	3,1,1,5,5,9
+	.half	.L371-.L368
+	.byte	3,2,1,5,49,7,9
+	.half	.L497-.L371
+	.byte	3,2,1,5,13,9
+	.half	.L372-.L497
+	.byte	1,5,33,9
+	.half	.L57-.L372
+	.byte	3,3,1,5,5,9
+	.half	.L498-.L57
+	.byte	1,5,49,7,9
+	.half	.L286-.L498
+	.byte	3,2,1,5,57,9
+	.half	.L499-.L286
+	.byte	1,5,23,9
+	.half	.L374-.L499
+	.byte	1,5,14,9
+	.half	.L375-.L374
+	.byte	3,2,1,5,25,7,9
+	.half	.L500-.L375
+	.byte	3,2,1,5,23,9
+	.half	.L61-.L500
+	.byte	1,5,51,9
+	.half	.L373-.L61
+	.byte	3,2,1,5,43,9
+	.half	.L501-.L373
+	.byte	1,5,25,9
+	.half	.L60-.L501
+	.byte	3,126,1,5,23,7,9
+	.half	.L502-.L60
+	.byte	1,9
+	.half	.L64-.L502
+	.byte	3,7,1,5,75,9
+	.half	.L377-.L64
+	.byte	3,2,1,5,67,9
+	.half	.L503-.L377
+	.byte	1,5,25,9
+	.half	.L63-.L503
+	.byte	3,126,1,5,50,7,9
+	.half	.L62-.L63
+	.byte	3,8,1,5,14,9
+	.half	.L504-.L62
+	.byte	3,126,1,5,20,7,9
+	.half	.L505-.L504
+	.byte	3,2,1,5,55,1,5,28,9
+	.half	.L67-.L505
+	.byte	3,2,1,5,42,9
+	.half	.L506-.L67
+	.byte	1,5,20,9
+	.half	.L379-.L506
+	.byte	3,126,1,5,42,9
+	.half	.L507-.L379
+	.byte	3,2,1,5,34,9
+	.half	.L508-.L507
+	.byte	1,5,55,9
+	.half	.L66-.L508
+	.byte	3,126,1,5,20,7,9
+	.half	.L509-.L66
+	.byte	1,9
+	.half	.L65-.L509
+	.byte	3,7,1,5,55,1,5,28,9
+	.half	.L70-.L65
+	.byte	3,2,1,5,42,9
+	.half	.L510-.L70
+	.byte	1,5,20,9
+	.half	.L380-.L510
+	.byte	3,126,1,5,42,9
+	.half	.L511-.L380
+	.byte	3,2,1,5,34,9
+	.half	.L512-.L511
+	.byte	1,5,55,9
+	.half	.L69-.L512
+	.byte	3,126,1,5,9,7,9
+	.half	.L287-.L69
+	.byte	3,126,1,5,38,9
+	.half	.L58-.L287
+	.byte	3,8,1,5,10,9
+	.half	.L513-.L58
+	.byte	1,5,51,7,9
+	.half	.L292-.L513
+	.byte	3,2,1,5,59,9
+	.half	.L514-.L292
+	.byte	1,5,24,9
+	.half	.L382-.L514
+	.byte	1,5,14,9
+	.half	.L383-.L382
+	.byte	3,2,1,5,25,7,9
+	.half	.L515-.L383
+	.byte	3,2,1,5,23,9
+	.half	.L75-.L515
+	.byte	1,5,51,9
+	.half	.L381-.L75
+	.byte	3,2,1,5,25,9
+	.half	.L74-.L381
+	.byte	3,126,1,5,23,7,9
+	.half	.L516-.L74
+	.byte	1,9
+	.half	.L78-.L516
+	.byte	3,7,1,5,75,9
+	.half	.L384-.L78
+	.byte	3,2,1,5,25,9
+	.half	.L77-.L384
+	.byte	3,126,1,5,50,7,9
+	.half	.L76-.L77
+	.byte	3,102,1,5,14,9
+	.half	.L288-.L76
+	.byte	3,32,1,5,20,7,9
+	.half	.L517-.L288
+	.byte	3,2,1,5,28,9
+	.half	.L80-.L517
+	.byte	3,2,1,5,42,9
+	.half	.L385-.L80
+	.byte	1,5,20,9
+	.half	.L518-.L385
+	.byte	3,126,1,5,42,9
+	.half	.L519-.L518
+	.byte	3,2,1,5,34,9
+	.half	.L520-.L519
+	.byte	1,5,55,9
+	.half	.L521-.L520
+	.byte	3,126,1,5,20,7,9
+	.half	.L522-.L521
+	.byte	1,9
+	.half	.L79-.L522
+	.byte	3,7,1,5,28,9
+	.half	.L82-.L79
+	.byte	3,2,1,5,42,9
+	.half	.L386-.L82
+	.byte	1,5,20,9
+	.half	.L523-.L386
+	.byte	3,126,1,5,42,9
+	.half	.L524-.L523
+	.byte	3,2,1,5,34,9
+	.half	.L525-.L524
+	.byte	1,5,55,9
+	.half	.L526-.L525
+	.byte	3,126,1,5,9,7,9
+	.half	.L293-.L526
+	.byte	3,126,1,5,38,9
+	.half	.L72-.L293
+	.byte	3,8,1,5,10,9
+	.half	.L527-.L72
+	.byte	1,5,51,7,9
+	.half	.L296-.L527
+	.byte	3,2,1,5,59,9
+	.half	.L528-.L296
+	.byte	1,5,24,9
+	.half	.L387-.L528
+	.byte	1,5,14,9
+	.half	.L392-.L387
+	.byte	3,2,1,5,25,7,9
+	.half	.L529-.L392
+	.byte	3,2,1,5,23,9
+	.half	.L87-.L529
+	.byte	1,5,51,9
+	.half	.L388-.L87
+	.byte	3,2,1,5,43,9
+	.half	.L530-.L388
+	.byte	1,5,25,9
+	.half	.L86-.L530
+	.byte	3,126,1,5,23,7,9
+	.half	.L531-.L86
+	.byte	1,9
+	.half	.L90-.L531
+	.byte	3,7,1,5,75,9
+	.half	.L532-.L90
+	.byte	3,2,1,5,67,9
+	.half	.L533-.L532
+	.byte	1,5,25,9
+	.half	.L89-.L533
+	.byte	3,126,1,5,50,7,9
+	.half	.L88-.L89
+	.byte	3,68,1,5,14,9
+	.half	.L289-.L88
+	.byte	3,194,0,1,5,20,7,9
+	.half	.L534-.L289
+	.byte	3,2,1,5,28,9
+	.half	.L92-.L534
+	.byte	3,2,1,5,42,9
+	.half	.L389-.L92
+	.byte	1,5,20,9
+	.half	.L535-.L389
+	.byte	3,126,1,5,42,9
+	.half	.L536-.L535
+	.byte	3,2,1,5,34,9
+	.half	.L537-.L536
+	.byte	1,5,55,9
+	.half	.L538-.L537
+	.byte	3,126,1,5,20,7,9
+	.half	.L539-.L538
+	.byte	1,9
+	.half	.L91-.L539
+	.byte	3,7,1,5,28,9
+	.half	.L94-.L91
+	.byte	3,2,1,5,42,9
+	.half	.L390-.L94
+	.byte	1,5,20,9
+	.half	.L540-.L390
+	.byte	3,126,1,5,42,9
+	.half	.L541-.L540
+	.byte	3,2,1,5,34,9
+	.half	.L542-.L541
+	.byte	1,5,55,9
+	.half	.L543-.L542
+	.byte	3,126,1,5,15,7,9
+	.half	.L68-.L543
+	.byte	3,7,1,5,24,9
+	.half	.L544-.L68
+	.byte	1,5,5,9
+	.half	.L545-.L544
+	.byte	1,5,49,7,9
+	.half	.L546-.L545
+	.byte	3,2,1,5,13,9
+	.half	.L391-.L546
+	.byte	1,5,18,9
+	.half	.L95-.L391
+	.byte	3,3,1,5,9,9
+	.half	.L547-.L95
+	.byte	1,5,25,3,1,1,5,9,9
+	.half	.L393-.L547
+	.byte	1,5,1,3,3,1,7,9
+	.half	.L169-.L393
+	.byte	0,1,1
+.L494:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Crc_table')
+	.sect	'.debug_ranges'
+.L168:
+	.word	-1,.L133,0,.L169-.L133,0,0
+.L285:
+	.word	-1,.L133,.L286-.L133,.L287-.L133,.L76-.L133,.L288-.L133,.L88-.L133,.L289-.L133,-1,.L135,0,.L224-.L135
+	.word	-1,.L137,0,.L219-.L137,-1,.L139,0,.L204-.L139,-1,.L141,0,.L189-.L141,0,0
+.L291:
+	.word	-1,.L133,.L292-.L133,.L76-.L133,.L288-.L133,.L293-.L133,0,0
+.L295:
+	.word	-1,.L133,.L296-.L133,.L88-.L133,.L289-.L133,.L68-.L133,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_Crc_bitByBit')
+	.sect	'.debug_info'
+.L170:
+	.word	380
+	.half	3
+	.word	.L171
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L173,.L172
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'Ifx_Crc_bitByBit',0,1,179,3,8
+	.word	.L234
+	.byte	1,1,1
+	.word	.L143,.L298,.L142
+	.byte	4
+	.byte	'driver',0,1,179,3,34
+	.word	.L227,.L299
+	.byte	4
+	.byte	'p',0,1,179,3,49
+	.word	.L261,.L300
+	.byte	4
+	.byte	'len',0,1,179,3,59
+	.word	.L234,.L301
+	.byte	5
+	.word	.L143,.L298
+	.byte	6
+	.byte	'i',0,1,184,3,12
+	.word	.L234,.L302
+	.byte	6
+	.byte	'j',0,1,184,3,15
+	.word	.L234,.L303
+	.byte	6
+	.byte	'c',0,1,184,3,18
+	.word	.L234,.L304
+	.byte	6
+	.byte	'bit',0,1,184,3,21
+	.word	.L234,.L305
+	.byte	6
+	.byte	'crc',0,1,185,3,12
+	.word	.L234,.L306
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Crc_bitByBit')
+	.sect	'.debug_abbrev'
+.L171:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Crc_bitByBit')
+	.sect	'.debug_line'
+.L172:
+	.word	.L549-.L548
+.L548:
+	.half	3
+	.word	.L551-.L550
+.L550:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L551:
+	.byte	5,8,7,0,5,2
+	.word	.L143
+	.byte	3,178,3,1,5,24,9
+	.half	.L395-.L143
+	.byte	3,6,1,5,12,9
+	.half	.L397-.L395
+	.byte	3,2,1,5,19,3,4,1,5,24,9
+	.half	.L399-.L397
+	.byte	3,124,1,5,26,9
+	.half	.L98-.L399
+	.byte	3,4,1,5,21,9
+	.half	.L552-.L98
+	.byte	3,126,1,5,9,9
+	.half	.L401-.L552
+	.byte	3,2,1,5,36,7,9
+	.half	.L553-.L401
+	.byte	3,2,1,5,15,9
+	.half	.L402-.L553
+	.byte	1,5,16,9
+	.half	.L99-.L402
+	.byte	3,3,1,5,40,9
+	.half	.L100-.L99
+	.byte	3,2,1,5,25,9
+	.half	.L554-.L100
+	.byte	1,5,17,9
+	.half	.L403-.L554
+	.byte	3,1,1,5,19,9
+	.half	.L555-.L403
+	.byte	3,2,1,5,13,9
+	.half	.L556-.L555
+	.byte	1,5,21,7,9
+	.half	.L557-.L556
+	.byte	3,2,1,5,13,9
+	.half	.L101-.L557
+	.byte	3,3,1,5,37,7,9
+	.half	.L558-.L101
+	.byte	3,2,1,5,21,9
+	.half	.L559-.L558
+	.byte	1,5,29,9
+	.half	.L102-.L559
+	.byte	3,116,1,5,25,9
+	.half	.L560-.L102
+	.byte	1,5,27,7,9
+	.half	.L561-.L560
+	.byte	3,119,1,5,24,9
+	.half	.L97-.L561
+	.byte	1,5,19,7,9
+	.half	.L562-.L97
+	.byte	3,4,1,5,12,9
+	.half	.L396-.L562
+	.byte	3,22,1,5,34,9
+	.half	.L400-.L396
+	.byte	1,5,41,9
+	.half	.L563-.L400
+	.byte	1,5,36,9
+	.half	.L104-.L563
+	.byte	3,2,1,5,21,9
+	.half	.L404-.L104
+	.byte	1,5,13,9
+	.half	.L564-.L404
+	.byte	3,1,1,5,9,9
+	.half	.L565-.L564
+	.byte	3,2,1,5,33,7,9
+	.half	.L566-.L565
+	.byte	3,2,1,5,17,9
+	.half	.L405-.L566
+	.byte	1,5,44,9
+	.half	.L105-.L405
+	.byte	3,121,1,5,41,9
+	.half	.L103-.L105
+	.byte	1,5,15,7,9
+	.half	.L567-.L103
+	.byte	3,11,1,5,5,9
+	.half	.L568-.L567
+	.byte	1,5,49,7,9
+	.half	.L569-.L568
+	.byte	3,2,1,5,13,9
+	.half	.L398-.L569
+	.byte	1,5,18,9
+	.half	.L106-.L398
+	.byte	3,3,1,5,9,9
+	.half	.L570-.L106
+	.byte	1,5,25,3,1,1,5,9,9
+	.half	.L406-.L570
+	.byte	1,5,1,3,3,1,7,9
+	.half	.L174-.L406
+	.byte	0,1,1
+.L549:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Crc_bitByBit')
+	.sect	'.debug_ranges'
+.L173:
+	.word	-1,.L143,0,.L174-.L143,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_Crc_bitByBitFast')
+	.sect	'.debug_info'
+.L175:
+	.word	384
+	.half	3
+	.word	.L176
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L178,.L177
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'Ifx_Crc_bitByBitFast',0,1,236,3,8
+	.word	.L234
+	.byte	1,1,1
+	.word	.L145,.L307,.L144
+	.byte	4
+	.byte	'driver',0,1,236,3,38
+	.word	.L227,.L308
+	.byte	4
+	.byte	'p',0,1,236,3,53
+	.word	.L261,.L309
+	.byte	4
+	.byte	'len',0,1,236,3,63
+	.word	.L234,.L310
+	.byte	5
+	.word	.L145,.L307
+	.byte	6
+	.byte	'i',0,1,241,3,12
+	.word	.L234,.L311
+	.byte	6
+	.byte	'j',0,1,241,3,15
+	.word	.L234,.L312
+	.byte	6
+	.byte	'c',0,1,241,3,18
+	.word	.L234,.L313
+	.byte	6
+	.byte	'bit',0,1,241,3,21
+	.word	.L234,.L314
+	.byte	6
+	.byte	'crc',0,1,242,3,12
+	.word	.L234,.L315
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Crc_bitByBitFast')
+	.sect	'.debug_abbrev'
+.L176:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Crc_bitByBitFast')
+	.sect	'.debug_line'
+.L177:
+	.word	.L572-.L571
+.L571:
+	.half	3
+	.word	.L574-.L573
+.L573:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L574:
+	.byte	5,8,7,0,5,2
+	.word	.L145
+	.byte	3,235,3,1,5,33,9
+	.half	.L407-.L145
+	.byte	3,19,1,5,8,9
+	.half	.L575-.L407
+	.byte	3,109,1,5,12,9
+	.half	.L408-.L575
+	.byte	3,8,1,5,24,3,126,1,5,40,9
+	.half	.L410-.L408
+	.byte	3,13,1,5,24,9
+	.half	.L576-.L410
+	.byte	3,117,1,5,26,9
+	.half	.L109-.L576
+	.byte	3,4,1,5,21,9
+	.half	.L577-.L109
+	.byte	3,126,1,5,9,9
+	.half	.L412-.L577
+	.byte	3,2,1,5,36,7,9
+	.half	.L578-.L412
+	.byte	3,2,1,5,15,9
+	.half	.L413-.L578
+	.byte	1,5,16,9
+	.half	.L110-.L413
+	.byte	3,3,1,5,25,9
+	.half	.L111-.L110
+	.byte	3,2,1,5,17,9
+	.half	.L414-.L111
+	.byte	3,1,1,5,19,9
+	.half	.L579-.L414
+	.byte	3,2,1,5,13,9
+	.half	.L580-.L579
+	.byte	1,5,21,7,9
+	.half	.L581-.L580
+	.byte	3,2,1,5,13,9
+	.half	.L112-.L581
+	.byte	3,3,1,5,37,7,9
+	.half	.L582-.L112
+	.byte	3,2,1,5,21,9
+	.half	.L415-.L582
+	.byte	1,5,29,9
+	.half	.L113-.L415
+	.byte	3,116,1,5,25,9
+	.half	.L583-.L113
+	.byte	1,5,27,7,9
+	.half	.L584-.L583
+	.byte	3,119,1,5,24,9
+	.half	.L108-.L584
+	.byte	1,5,15,7,9
+	.half	.L585-.L108
+	.byte	3,26,1,5,33,9
+	.half	.L586-.L585
+	.byte	3,113,1,5,5,9
+	.half	.L409-.L586
+	.byte	3,15,1,5,49,7,9
+	.half	.L587-.L409
+	.byte	3,2,1,5,13,9
+	.half	.L411-.L587
+	.byte	1,5,18,9
+	.half	.L114-.L411
+	.byte	3,3,1,5,9,9
+	.half	.L588-.L114
+	.byte	1,5,25,3,1,1,5,9,9
+	.half	.L416-.L588
+	.byte	1,5,1,3,3,1,7,9
+	.half	.L179-.L416
+	.byte	0,1,1
+.L572:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Crc_bitByBitFast')
+	.sect	'.debug_ranges'
+.L178:
+	.word	-1,.L145,0,.L179-.L145,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_Crc_reflect')
+	.sect	'.debug_info'
+.L180:
+	.word	335
+	.half	3
+	.word	.L181
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L183,.L182
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'Ifx_Crc_reflect',0,1,204,1,8
+	.word	.L234
+	.byte	1,1,1
+	.word	.L121,.L316,.L120
+	.byte	4
+	.byte	'crc',0,1,204,1,31
+	.word	.L234,.L317
+	.byte	4
+	.byte	'bitnum',0,1,204,1,43
+	.word	.L231,.L318
+	.byte	5
+	.word	.L121,.L316
+	.byte	6
+	.byte	'i',0,1,208,1,12
+	.word	.L234,.L319
+	.byte	6
+	.byte	'j',0,1,208,1,15
+	.word	.L234,.L320
+	.byte	6
+	.byte	'crcout',0,1,208,1,22
+	.word	.L234,.L321
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Crc_reflect')
+	.sect	'.debug_abbrev'
+.L181:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Crc_reflect')
+	.sect	'.debug_line'
+.L182:
+	.word	.L590-.L589
+.L589:
+	.half	3
+	.word	.L592-.L591
+.L591:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L592:
+	.byte	5,17,7,0,5,2
+	.word	.L121
+	.byte	3,207,1,1,5,29,9
+	.half	.L350-.L121
+	.byte	1,5,35,9
+	.half	.L351-.L350
+	.byte	3,2,1,5,24,9
+	.half	.L349-.L351
+	.byte	1,5,17,9
+	.half	.L29-.L349
+	.byte	3,2,1,5,9,9
+	.half	.L593-.L29
+	.byte	1,5,20,7,9
+	.half	.L594-.L593
+	.byte	3,2,1,5,11,9
+	.half	.L30-.L594
+	.byte	3,3,1,5,46,9
+	.half	.L595-.L30
+	.byte	3,121,1,5,42,9
+	.half	.L596-.L595
+	.byte	1,5,1,7,9
+	.half	.L597-.L596
+	.byte	3,11,1,7,9
+	.half	.L184-.L597
+	.byte	0,1,1
+.L590:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Crc_reflect')
+	.sect	'.debug_ranges'
+.L183:
+	.word	-1,.L121,0,.L184-.L121,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_1')
+	.sect	'.debug_info'
+.L185:
+	.word	226
+	.half	3
+	.word	.L186
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L188,.L187
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'.cocofun_1',0,1,179,2,8,1
+	.word	.L141,.L189,.L140
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_1')
+	.sect	'.debug_abbrev'
+.L186:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_1')
+	.sect	'.debug_line'
+.L187:
+	.word	.L599-.L598
+.L598:
+	.half	3
+	.word	.L601-.L600
+.L600:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L601:
+	.byte	5,29,7,0,5,2
+	.word	.L141
+	.byte	3,206,2,1,5,38,1,5,23,9
+	.half	.L602-.L141
+	.byte	3,126,1,5,43,9
+	.half	.L603-.L602
+	.byte	3,2,1,5,35,9
+	.half	.L604-.L603
+	.byte	1,5,80,9
+	.half	.L605-.L604
+	.byte	1,9
+	.half	.L189-.L605
+	.byte	0,1,1,5,29,0,5,2
+	.word	.L141
+	.byte	3,240,2,1,5,38,1,5,23,9
+	.half	.L602-.L141
+	.byte	3,126,1,5,43,9
+	.half	.L603-.L602
+	.byte	3,2,1,5,35,9
+	.half	.L604-.L603
+	.byte	1,5,80,9
+	.half	.L605-.L604
+	.byte	1,3,94,1,7,9
+	.half	.L189-.L605
+	.byte	0,1,1,5,29,0,5,2
+	.word	.L141
+	.byte	3,146,3,1,5,38,1,5,23,9
+	.half	.L602-.L141
+	.byte	3,126,1,5,43,9
+	.half	.L603-.L602
+	.byte	3,2,1,5,35,9
+	.half	.L604-.L603
+	.byte	1,5,80,9
+	.half	.L605-.L604
+	.byte	1,3,188,127,1,7,9
+	.half	.L189-.L605
+	.byte	0,1,1
+.L599:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_1')
+	.sect	'.debug_ranges'
+.L188:
+	.word	-1,.L141,0,.L189-.L141,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_2')
+	.sect	'.debug_info'
+.L190:
+	.word	226
+	.half	3
+	.word	.L191
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L193,.L192
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'.cocofun_2',0,1,224,1,8,1
+	.word	.L131,.L194,.L130
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_2')
+	.sect	'.debug_abbrev'
+.L191:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_2')
+	.sect	'.debug_line'
+.L192:
+	.word	.L607-.L606
+.L606:
+	.half	3
+	.word	.L609-.L608
+.L608:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L609:
+	.byte	5,72,7,0,5,2
+	.word	.L131
+	.byte	3,244,1,1,5,82,1,5,28,9
+	.half	.L610-.L131
+	.byte	1,5,23,9
+	.half	.L611-.L610
+	.byte	3,126,1,5,80,9
+	.half	.L612-.L611
+	.byte	3,2,1,9
+	.half	.L194-.L612
+	.byte	0,1,1,5,72,0,5,2
+	.word	.L131
+	.byte	3,135,2,1,5,82,1,5,28,9
+	.half	.L610-.L131
+	.byte	1,5,23,9
+	.half	.L611-.L610
+	.byte	3,126,1,5,80,9
+	.half	.L612-.L611
+	.byte	3,2,1,3,109,1,7,9
+	.half	.L194-.L612
+	.byte	0,1,1,5,72,0,5,2
+	.word	.L131
+	.byte	3,154,2,1,5,82,1,5,28,9
+	.half	.L610-.L131
+	.byte	1,5,23,9
+	.half	.L611-.L610
+	.byte	3,126,1,5,80,9
+	.half	.L612-.L611
+	.byte	3,2,1,3,90,1,7,9
+	.half	.L194-.L612
+	.byte	0,1,1
+.L607:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_2')
+	.sect	'.debug_ranges'
+.L193:
+	.word	-1,.L131,0,.L194-.L131,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_3')
+	.sect	'.debug_info'
+.L195:
+	.word	226
+	.half	3
+	.word	.L196
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L198,.L197
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'.cocofun_3',0,1,224,1,8,1
+	.word	.L129,.L199,.L128
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_3')
+	.sect	'.debug_abbrev'
+.L196:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_3')
+	.sect	'.debug_line'
+.L197:
+	.word	.L614-.L613
+.L613:
+	.half	3
+	.word	.L616-.L615
+.L615:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L616:
+	.byte	5,48,7,0,5,2
+	.word	.L129
+	.byte	3,251,1,1,5,58,1,5,28,9
+	.half	.L617-.L129
+	.byte	1,5,56,9
+	.half	.L618-.L617
+	.byte	1,5,23,9
+	.half	.L619-.L618
+	.byte	3,126,1,5,56,3,2,1,7,9
+	.half	.L199-.L619
+	.byte	0,1,1,5,48,0,5,2
+	.word	.L129
+	.byte	3,142,2,1,5,58,1,5,28,9
+	.half	.L617-.L129
+	.byte	1,5,56,9
+	.half	.L618-.L617
+	.byte	1,5,23,9
+	.half	.L619-.L618
+	.byte	3,126,1,5,56,3,111,1,7,9
+	.half	.L199-.L619
+	.byte	0,1,1,5,48,0,5,2
+	.word	.L129
+	.byte	3,161,2,1,5,58,1,5,28,9
+	.half	.L617-.L129
+	.byte	1,5,56,9
+	.half	.L618-.L617
+	.byte	1,5,23,9
+	.half	.L619-.L618
+	.byte	3,126,1,5,56,3,92,1,7,9
+	.half	.L199-.L619
+	.byte	0,1,1
+.L614:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_3')
+	.sect	'.debug_ranges'
+.L198:
+	.word	-1,.L129,0,.L199-.L129,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_4')
+	.sect	'.debug_info'
+.L200:
+	.word	226
+	.half	3
+	.word	.L201
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L203,.L202
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'.cocofun_4',0,1,179,2,8,1
+	.word	.L139,.L204,.L138
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_4')
+	.sect	'.debug_abbrev'
+.L201:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_4')
+	.sect	'.debug_line'
+.L202:
+	.word	.L621-.L620
+.L620:
+	.half	3
+	.word	.L623-.L622
+.L622:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L623:
+	.byte	5,29,7,0,5,2
+	.word	.L139
+	.byte	3,199,2,1,5,37,1,5,23,9
+	.half	.L624-.L139
+	.byte	3,126,1,5,35,9
+	.half	.L625-.L624
+	.byte	3,2,1,5,80,9
+	.half	.L626-.L625
+	.byte	1,9
+	.half	.L204-.L626
+	.byte	0,1,1,5,29,0,5,2
+	.word	.L139
+	.byte	3,233,2,1,5,37,1,5,23,9
+	.half	.L624-.L139
+	.byte	3,126,1,5,35,9
+	.half	.L625-.L624
+	.byte	3,2,1,5,80,9
+	.half	.L626-.L625
+	.byte	1,3,94,1,7,9
+	.half	.L204-.L626
+	.byte	0,1,1,5,29,0,5,2
+	.word	.L139
+	.byte	3,139,3,1,5,37,1,5,23,9
+	.half	.L624-.L139
+	.byte	3,126,1,5,35,9
+	.half	.L625-.L624
+	.byte	3,2,1,5,80,9
+	.half	.L626-.L625
+	.byte	1,3,188,127,1,7,9
+	.half	.L204-.L626
+	.byte	0,1,1
+.L621:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_4')
+	.sect	'.debug_ranges'
+.L203:
+	.word	-1,.L139,0,.L204-.L139,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_5')
+	.sect	'.debug_info'
+.L205:
+	.word	226
+	.half	3
+	.word	.L206
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L208,.L207
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'.cocofun_5',0,1,224,1,8,1
+	.word	.L127,.L209,.L126
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_5')
+	.sect	'.debug_abbrev'
+.L206:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_5')
+	.sect	'.debug_line'
+.L207:
+	.word	.L628-.L627
+.L627:
+	.half	3
+	.word	.L630-.L629
+.L629:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L630:
+	.byte	5,37,7,0,5,2
+	.word	.L127
+	.byte	3,229,1,1,5,44,9
+	.half	.L631-.L127
+	.byte	1,5,22,9
+	.half	.L632-.L631
+	.byte	3,2,1,5,52,9
+	.half	.L358-.L632
+	.byte	3,126,1,5,22,3,2,1,7,9
+	.half	.L209-.L358
+	.byte	0,1,1,5,37,0,5,2
+	.word	.L127
+	.byte	3,184,2,1,5,44,9
+	.half	.L631-.L127
+	.byte	1,5,22,9
+	.half	.L632-.L631
+	.byte	3,2,1,5,52,9
+	.half	.L358-.L632
+	.byte	3,126,1,5,22,3,175,127,1,7,9
+	.half	.L209-.L358
+	.byte	0,1,1
+.L628:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_5')
+	.sect	'.debug_ranges'
+.L208:
+	.word	-1,.L127,0,.L209-.L127,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_6')
+	.sect	'.debug_info'
+.L210:
+	.word	226
+	.half	3
+	.word	.L211
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L213,.L212
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'.cocofun_6',0,1,224,1,8,1
+	.word	.L125,.L214,.L124
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_6')
+	.sect	'.debug_abbrev'
+.L211:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_6')
+	.sect	'.debug_line'
+.L212:
+	.word	.L634-.L633
+.L633:
+	.half	3
+	.word	.L636-.L635
+.L635:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L636:
+	.byte	5,42,7,0,5,2
+	.word	.L125
+	.byte	3,135,2,1,5,34,9
+	.half	.L637-.L125
+	.byte	1,9
+	.half	.L214-.L637
+	.byte	0,1,1,5,51,0,5,2
+	.word	.L125
+	.byte	3,233,2,1,5,43,9
+	.half	.L637-.L125
+	.byte	1,5,34,3,158,127,1,7,9
+	.half	.L214-.L637
+	.byte	0,1,1,5,75,0,5,2
+	.word	.L125
+	.byte	3,240,2,1,5,67,9
+	.half	.L637-.L125
+	.byte	1,5,34,3,151,127,1,7,9
+	.half	.L214-.L637
+	.byte	0,1,1
+.L634:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_6')
+	.sect	'.debug_ranges'
+.L213:
+	.word	-1,.L125,0,.L214-.L125,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_7')
+	.sect	'.debug_info'
+.L215:
+	.word	226
+	.half	3
+	.word	.L216
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L218,.L217
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'.cocofun_7',0,1,179,2,8,1
+	.word	.L137,.L219,.L136
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_7')
+	.sect	'.debug_abbrev'
+.L216:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_7')
+	.sect	'.debug_line'
+.L217:
+	.word	.L639-.L638
+.L638:
+	.half	3
+	.word	.L641-.L640
+.L640:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L641:
+	.byte	5,28,7,0,5,2
+	.word	.L137
+	.byte	3,214,2,1,5,71,9
+	.half	.L642-.L137
+	.byte	1,9
+	.half	.L219-.L642
+	.byte	0,1,1,5,28,0,5,2
+	.word	.L137
+	.byte	3,248,2,1,5,71,9
+	.half	.L642-.L137
+	.byte	1,3,94,1,7,9
+	.half	.L219-.L642
+	.byte	0,1,1,5,28,0,5,2
+	.word	.L137
+	.byte	3,154,3,1,5,71,9
+	.half	.L642-.L137
+	.byte	1,3,188,127,1,7,9
+	.half	.L219-.L642
+	.byte	0,1,1
+.L639:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_7')
+	.sect	'.debug_ranges'
+.L218:
+	.word	-1,.L137,0,.L219-.L137,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_8')
+	.sect	'.debug_info'
+.L220:
+	.word	226
+	.half	3
+	.word	.L221
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L223,.L222
+	.byte	2
+	.word	.L146
+	.byte	3
+	.byte	'.cocofun_8',0,1,179,2,8,1
+	.word	.L135,.L224,.L134
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_8')
+	.sect	'.debug_abbrev'
+.L221:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_8')
+	.sect	'.debug_line'
+.L222:
+	.word	.L644-.L643
+.L643:
+	.half	3
+	.word	.L646-.L645
+.L645:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Crc.c',0,0,0,0,0
+.L646:
+	.byte	5,28,7,0,5,2
+	.word	.L135
+	.byte	3,221,2,1,5,47,9
+	.half	.L647-.L135
+	.byte	1,9
+	.half	.L224-.L647
+	.byte	0,1,1,5,28,0,5,2
+	.word	.L135
+	.byte	3,255,2,1,5,47,9
+	.half	.L647-.L135
+	.byte	1,3,94,1,7,9
+	.half	.L224-.L647
+	.byte	0,1,1,5,28,0,5,2
+	.word	.L135
+	.byte	3,161,3,1,5,47,9
+	.half	.L647-.L135
+	.byte	1,3,188,127,1,7,9
+	.half	.L224-.L647
+	.byte	0,1,1
+.L644:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_8')
+	.sect	'.debug_ranges'
+.L223:
+	.word	-1,.L135,0,.L224-.L135,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_1')
+	.sect	'.debug_loc'
+.L140:
+	.word	-1,.L141,0,.L189-.L141
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_2')
+	.sect	'.debug_loc'
+.L130:
+	.word	-1,.L131,0,.L194-.L131
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_3')
+	.sect	'.debug_loc'
+.L128:
+	.word	-1,.L129,0,.L199-.L129
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_4')
+	.sect	'.debug_loc'
+.L138:
+	.word	-1,.L139,0,.L204-.L139
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_5')
+	.sect	'.debug_loc'
+.L126:
+	.word	-1,.L127,0,.L209-.L127
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_6')
+	.sect	'.debug_loc'
+.L124:
+	.word	-1,.L125,0,.L214-.L125
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_7')
+	.sect	'.debug_loc'
+.L136:
+	.word	-1,.L137,0,.L219-.L137
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_8')
+	.sect	'.debug_loc'
+.L134:
+	.word	-1,.L135,0,.L224-.L135
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Crc_bitByBit')
+	.sect	'.debug_loc'
+.L142:
+	.word	-1,.L143,0,.L298-.L143
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L305:
+	.word	-1,.L143,.L403-.L143,.L97-.L143
+	.half	1
+	.byte	81
+	.word	.L404-.L143,.L405-.L143
+	.half	1
+	.byte	95
+	.word	0,0
+.L304:
+	.word	-1,.L143,.L401-.L143,.L402-.L143
+	.half	1
+	.byte	84
+	.word	.L402-.L143,.L99-.L143
+	.half	1
+	.byte	82
+	.word	.L99-.L143,.L97-.L143
+	.half	1
+	.byte	84
+	.word	0,0
+.L306:
+	.word	-1,.L143,.L397-.L143,.L398-.L143
+	.half	1
+	.byte	89
+	.word	.L398-.L143,.L106-.L143
+	.half	1
+	.byte	82
+	.word	.L106-.L143,.L406-.L143
+	.half	1
+	.byte	89
+	.word	0,0
+.L299:
+	.word	-1,.L143,0,.L98-.L143
+	.half	1
+	.byte	100
+	.word	.L394-.L143,.L298-.L143
+	.half	1
+	.byte	111
+	.word	0,0
+.L302:
+	.word	-1,.L143,.L399-.L143,.L400-.L143
+	.half	1
+	.byte	90
+	.word	.L400-.L143,.L398-.L143
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L303:
+	.word	-1,.L143,.L100-.L143,.L97-.L143
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L301:
+	.word	-1,.L143,0,.L98-.L143
+	.half	1
+	.byte	84
+	.word	.L397-.L143,.L298-.L143
+	.half	1
+	.byte	88
+	.word	0,0
+.L300:
+	.word	-1,.L143,0,.L98-.L143
+	.half	1
+	.byte	101
+	.word	.L395-.L143,.L396-.L143
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Crc_bitByBitFast')
+	.sect	'.debug_loc'
+.L144:
+	.word	-1,.L145,0,.L307-.L145
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L314:
+	.word	-1,.L145,.L414-.L145,.L415-.L145
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L313:
+	.word	-1,.L145,.L412-.L145,.L413-.L145
+	.half	1
+	.byte	84
+	.word	.L413-.L145,.L110-.L145
+	.half	1
+	.byte	82
+	.word	.L110-.L145,.L108-.L145
+	.half	1
+	.byte	84
+	.word	0,0
+.L315:
+	.word	-1,.L145,.L410-.L145,.L411-.L145
+	.half	1
+	.byte	89
+	.word	.L411-.L145,.L114-.L145
+	.half	1
+	.byte	82
+	.word	.L114-.L145,.L416-.L145
+	.half	1
+	.byte	89
+	.word	0,0
+.L308:
+	.word	-1,.L145,0,.L109-.L145
+	.half	1
+	.byte	100
+	.word	.L407-.L145,.L307-.L145
+	.half	1
+	.byte	111
+	.word	0,0
+.L311:
+	.word	-1,.L145,.L410-.L145,.L307-.L145
+	.half	1
+	.byte	90
+	.word	0,0
+.L312:
+	.word	-1,.L145,.L111-.L145,.L108-.L145
+	.half	1
+	.byte	95
+	.word	0,0
+.L310:
+	.word	-1,.L145,0,.L109-.L145
+	.half	1
+	.byte	84
+	.word	.L408-.L145,.L307-.L145
+	.half	1
+	.byte	88
+	.word	0,0
+.L309:
+	.word	-1,.L145,0,.L109-.L145
+	.half	1
+	.byte	101
+	.word	.L408-.L145,.L409-.L145
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Crc_createTable')
+	.sect	'.debug_loc'
+.L118:
+	.word	-1,.L119,0,.L240-.L119
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L251:
+	.word	-1,.L119,.L342-.L119,.L343-.L119
+	.half	1
+	.byte	95
+	.word	0,0
+.L252:
+	.word	-1,.L119,.L339-.L119,.L21-.L119
+	.half	1
+	.byte	82
+	.word	.L21-.L119,.L341-.L119
+	.half	1
+	.byte	84
+	.word	.L341-.L119,.L23-.L119
+	.half	1
+	.byte	82
+	.word	.L23-.L119,.L240-.L119
+	.half	1
+	.byte	84
+	.word	0,0
+.L246:
+	.word	-1,.L119,.L332-.L119,.L240-.L119
+	.half	1
+	.byte	91
+	.word	0,0
+.L249:
+	.word	-1,.L119,.L254-.L119,.L240-.L119
+	.half	1
+	.byte	92
+	.word	.L346-.L119,.L347-.L119
+	.half	1
+	.byte	98
+	.word	0,0
+.L250:
+	.word	0,0
+.L243:
+	.word	-1,.L119,0,.L19-.L119
+	.half	1
+	.byte	84
+	.word	.L330-.L119,.L331-.L119
+	.half	1
+	.byte	88
+	.word	.L332-.L119,.L333-.L119
+	.half	1
+	.byte	88
+	.word	.L334-.L119,.L335-.L119
+	.half	1
+	.byte	88
+	.word	.L17-.L119,.L336-.L119
+	.half	1
+	.byte	88
+	.word	.L20-.L119,.L340-.L119
+	.half	1
+	.byte	88
+	.word	.L345-.L119,.L341-.L119
+	.half	1
+	.byte	88
+	.word	.L343-.L119,.L255-.L119
+	.half	1
+	.byte	88
+	.word	.L348-.L119,.L257-.L119
+	.half	1
+	.byte	88
+	.word	0,0
+.L244:
+	.word	-1,.L119,0,.L19-.L119
+	.half	1
+	.byte	85
+	.word	.L335-.L119,.L15-.L119
+	.half	1
+	.byte	89
+	.word	.L337-.L119,.L338-.L119
+	.half	1
+	.byte	89
+	.word	.L344-.L119,.L22-.L119
+	.half	1
+	.byte	89
+	.word	0,0
+.L245:
+	.word	-1,.L119,0,.L19-.L119
+	.half	1
+	.byte	86
+	.word	.L330-.L119,.L240-.L119
+	.half	1
+	.byte	90
+	.word	0,0
+.L242:
+	.word	-1,.L119,0,.L254-.L119
+	.half	1
+	.byte	100
+	.word	.L329-.L119,.L240-.L119
+	.half	1
+	.byte	111
+	.word	.L254-.L119,.L19-.L119
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Crc_init')
+	.sect	'.debug_loc'
+.L116:
+	.word	-1,.L117,0,.L226-.L117
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L238:
+	.word	-1,.L117,.L324-.L117,.L325-.L117
+	.half	1
+	.byte	95
+	.word	.L327-.L117,.L328-.L117
+	.half	1
+	.byte	95
+	.word	0,0
+.L239:
+	.word	-1,.L117,0,.L9-.L117
+	.half	1
+	.byte	86
+	.word	0,0
+.L235:
+	.word	-1,.L117,0,.L322-.L117
+	.half	1
+	.byte	86
+	.word	.L5-.L117,.L9-.L117
+	.half	1
+	.byte	86
+	.word	0,0
+.L236:
+	.word	-1,.L117,0,.L226-.L117
+	.half	1
+	.byte	87
+	.word	0,0
+.L232:
+	.word	-1,.L117,0,.L226-.L117
+	.half	1
+	.byte	84
+	.word	0,0
+.L228:
+	.word	-1,.L117,0,.L226-.L117
+	.half	1
+	.byte	100
+	.word	0,0
+.L237:
+	.word	-1,.L117,.L323-.L117,.L5-.L117
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L326-.L117,.L9-.L117
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L233:
+	.word	-1,.L117,0,.L226-.L117
+	.half	1
+	.byte	85
+	.word	0,0
+.L230:
+	.word	-1,.L117,0,.L226-.L117
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Crc_reflect')
+	.sect	'.debug_loc'
+.L120:
+	.word	-1,.L121,0,.L316-.L121
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L318:
+	.word	-1,.L121,0,.L349-.L121
+	.half	1
+	.byte	85
+	.word	0,0
+.L317:
+	.word	-1,.L121,0,.L316-.L121
+	.half	1
+	.byte	84
+	.word	0,0
+.L321:
+	.word	-1,.L121,.L351-.L121,.L316-.L121
+	.half	1
+	.byte	82
+	.word	0,0
+.L319:
+	.word	-1,.L121,.L29-.L121,.L316-.L121
+	.half	1
+	.byte	95
+	.word	0,0
+.L320:
+	.word	-1,.L121,.L350-.L121,.L316-.L121
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Crc_table')
+	.sect	'.debug_loc'
+.L132:
+	.word	-1,.L133,0,.L279-.L133
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L283:
+	.word	-1,.L133,.L127-.L133,.L209-.L133
+	.half	1
+	.byte	84
+	.word	.L371-.L133,.L372-.L133
+	.half	1
+	.byte	84
+	.word	.L372-.L133,.L57-.L133
+	.half	1
+	.byte	82
+	.word	.L57-.L133,.L373-.L133
+	.half	1
+	.byte	84
+	.word	.L139-.L133,.L204-.L133
+	.half	1
+	.byte	84
+	.word	.L376-.L133,.L377-.L133
+	.half	1
+	.byte	84
+	.word	.L141-.L133,.L189-.L133
+	.half	1
+	.byte	84
+	.word	.L378-.L133,.L67-.L133
+	.half	1
+	.byte	84
+	.word	.L137-.L133,.L219-.L133
+	.half	1
+	.byte	84
+	.word	.L379-.L133,.L70-.L133
+	.half	1
+	.byte	84
+	.word	.L135-.L133,.L224-.L133
+	.half	1
+	.byte	84
+	.word	.L380-.L133,.L381-.L133
+	.half	1
+	.byte	84
+	.word	.L125-.L133,.L214-.L133
+	.half	1
+	.byte	84
+	.word	.L74-.L133,.L384-.L133
+	.half	1
+	.byte	84
+	.word	.L77-.L133,.L391-.L133
+	.half	1
+	.byte	84
+	.word	.L391-.L133,.L95-.L133
+	.half	1
+	.byte	82
+	.word	.L95-.L133,.L393-.L133
+	.half	1
+	.byte	84
+	.word	0,0
+.L290:
+	.word	-1,.L133,.L374-.L133,.L373-.L133
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L375-.L133,.L373-.L133
+	.half	1
+	.byte	98
+	.word	.L139-.L133,.L204-.L133
+	.half	1
+	.byte	98
+	.word	.L376-.L133,.L377-.L133
+	.half	1
+	.byte	98
+	.word	.L141-.L133,.L189-.L133
+	.half	1
+	.byte	98
+	.word	.L378-.L133,.L67-.L133
+	.half	1
+	.byte	98
+	.word	.L137-.L133,.L219-.L133
+	.half	1
+	.byte	98
+	.word	.L379-.L133,.L70-.L133
+	.half	1
+	.byte	98
+	.word	.L135-.L133,.L224-.L133
+	.half	1
+	.byte	98
+	.word	.L380-.L133,.L58-.L133
+	.half	1
+	.byte	98
+	.word	0,0
+.L294:
+	.word	-1,.L133,.L382-.L133,.L381-.L133
+	.half	1
+	.byte	95
+	.word	.L383-.L133,.L381-.L133
+	.half	1
+	.byte	98
+	.word	.L139-.L133,.L204-.L133
+	.half	1
+	.byte	98
+	.word	.L125-.L133,.L214-.L133
+	.half	1
+	.byte	98
+	.word	.L74-.L133,.L384-.L133
+	.half	1
+	.byte	98
+	.word	.L141-.L133,.L189-.L133
+	.half	1
+	.byte	98
+	.word	.L137-.L133,.L219-.L133
+	.half	1
+	.byte	98
+	.word	.L135-.L133,.L224-.L133
+	.half	1
+	.byte	98
+	.word	.L77-.L133,.L72-.L133
+	.half	1
+	.byte	98
+	.word	0,0
+.L297:
+	.word	-1,.L133,.L387-.L133,.L388-.L133
+	.half	1
+	.byte	95
+	.word	.L139-.L133,.L204-.L133
+	.half	1
+	.byte	98
+	.word	.L141-.L133,.L189-.L133
+	.half	1
+	.byte	98
+	.word	.L137-.L133,.L219-.L133
+	.half	1
+	.byte	98
+	.word	.L135-.L133,.L224-.L133
+	.half	1
+	.byte	98
+	.word	.L392-.L133,.L68-.L133
+	.half	1
+	.byte	98
+	.word	0,0
+.L280:
+	.word	-1,.L133,0,.L368-.L133
+	.half	1
+	.byte	100
+	.word	.L369-.L133,.L368-.L133
+	.half	1
+	.byte	111
+	.word	.L127-.L133,.L209-.L133
+	.half	1
+	.byte	100
+	.word	.L127-.L133,.L209-.L133
+	.half	1
+	.byte	111
+	.word	.L371-.L133,.L372-.L133
+	.half	1
+	.byte	100
+	.word	.L371-.L133,.L373-.L133
+	.half	1
+	.byte	111
+	.word	.L139-.L133,.L204-.L133
+	.half	1
+	.byte	111
+	.word	.L376-.L133,.L377-.L133
+	.half	1
+	.byte	111
+	.word	.L141-.L133,.L189-.L133
+	.half	1
+	.byte	111
+	.word	.L378-.L133,.L67-.L133
+	.half	1
+	.byte	111
+	.word	.L137-.L133,.L219-.L133
+	.half	1
+	.byte	111
+	.word	.L379-.L133,.L70-.L133
+	.half	1
+	.byte	111
+	.word	.L135-.L133,.L224-.L133
+	.half	1
+	.byte	111
+	.word	.L380-.L133,.L381-.L133
+	.half	1
+	.byte	111
+	.word	.L125-.L133,.L214-.L133
+	.half	1
+	.byte	111
+	.word	.L74-.L133,.L384-.L133
+	.half	1
+	.byte	111
+	.word	.L77-.L133,.L279-.L133
+	.half	1
+	.byte	111
+	.word	0,0
+.L282:
+	.word	-1,.L133,0,.L368-.L133
+	.half	1
+	.byte	84
+	.word	.L127-.L133,.L209-.L133
+	.half	1
+	.byte	88
+	.word	.L371-.L133,.L373-.L133
+	.half	1
+	.byte	88
+	.word	.L139-.L133,.L204-.L133
+	.half	1
+	.byte	88
+	.word	.L376-.L133,.L377-.L133
+	.half	1
+	.byte	88
+	.word	.L141-.L133,.L189-.L133
+	.half	1
+	.byte	88
+	.word	.L378-.L133,.L67-.L133
+	.half	1
+	.byte	88
+	.word	.L137-.L133,.L219-.L133
+	.half	1
+	.byte	81
+	.word	.L379-.L133,.L65-.L133
+	.half	1
+	.byte	81
+	.word	.L65-.L133,.L70-.L133
+	.half	1
+	.byte	88
+	.word	.L135-.L133,.L224-.L133
+	.half	1
+	.byte	81
+	.word	.L380-.L133,.L58-.L133
+	.half	1
+	.byte	81
+	.word	.L58-.L133,.L381-.L133
+	.half	1
+	.byte	88
+	.word	.L125-.L133,.L214-.L133
+	.half	1
+	.byte	88
+	.word	.L74-.L133,.L384-.L133
+	.half	1
+	.byte	88
+	.word	.L77-.L133,.L385-.L133
+	.half	1
+	.byte	88
+	.word	.L80-.L133,.L79-.L133
+	.half	1
+	.byte	81
+	.word	.L79-.L133,.L386-.L133
+	.half	1
+	.byte	88
+	.word	.L82-.L133,.L72-.L133
+	.half	1
+	.byte	81
+	.word	.L72-.L133,.L389-.L133
+	.half	1
+	.byte	88
+	.word	.L92-.L133,.L91-.L133
+	.half	1
+	.byte	81
+	.word	.L91-.L133,.L390-.L133
+	.half	1
+	.byte	88
+	.word	.L94-.L133,.L68-.L133
+	.half	1
+	.byte	81
+	.word	0,0
+.L284:
+	.word	-1,.L133,.L358-.L133,.L209-.L133
+	.half	1
+	.byte	90
+	.word	.L371-.L133,.L373-.L133
+	.half	1
+	.byte	90
+	.word	.L139-.L133,.L204-.L133
+	.half	1
+	.byte	90
+	.word	.L376-.L133,.L377-.L133
+	.half	1
+	.byte	90
+	.word	.L141-.L133,.L189-.L133
+	.half	1
+	.byte	90
+	.word	.L378-.L133,.L67-.L133
+	.half	1
+	.byte	90
+	.word	.L137-.L133,.L219-.L133
+	.half	1
+	.byte	90
+	.word	.L379-.L133,.L70-.L133
+	.half	1
+	.byte	90
+	.word	.L135-.L133,.L224-.L133
+	.half	1
+	.byte	90
+	.word	.L380-.L133,.L381-.L133
+	.half	1
+	.byte	90
+	.word	.L125-.L133,.L214-.L133
+	.half	1
+	.byte	90
+	.word	.L74-.L133,.L384-.L133
+	.half	1
+	.byte	90
+	.word	.L77-.L133,.L279-.L133
+	.half	1
+	.byte	90
+	.word	0,0
+.L281:
+	.word	-1,.L133,0,.L368-.L133
+	.half	1
+	.byte	101
+	.word	.L370-.L133,.L368-.L133
+	.half	1
+	.byte	108
+	.word	.L127-.L133,.L209-.L133
+	.half	1
+	.byte	101
+	.word	.L127-.L133,.L209-.L133
+	.half	1
+	.byte	108
+	.word	.L371-.L133,.L372-.L133
+	.half	1
+	.byte	101
+	.word	.L371-.L133,.L373-.L133
+	.half	1
+	.byte	108
+	.word	.L139-.L133,.L204-.L133
+	.half	1
+	.byte	108
+	.word	.L376-.L133,.L377-.L133
+	.half	1
+	.byte	108
+	.word	.L141-.L133,.L189-.L133
+	.half	1
+	.byte	108
+	.word	.L378-.L133,.L67-.L133
+	.half	1
+	.byte	108
+	.word	.L137-.L133,.L219-.L133
+	.half	1
+	.byte	108
+	.word	.L379-.L133,.L70-.L133
+	.half	1
+	.byte	108
+	.word	.L135-.L133,.L224-.L133
+	.half	1
+	.byte	108
+	.word	.L380-.L133,.L381-.L133
+	.half	1
+	.byte	108
+	.word	.L125-.L133,.L214-.L133
+	.half	1
+	.byte	108
+	.word	.L74-.L133,.L384-.L133
+	.half	1
+	.byte	108
+	.word	.L77-.L133,.L279-.L133
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Crc_tableFast')
+	.sect	'.debug_loc'
+.L122:
+	.word	-1,.L123,0,.L259-.L123
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L265:
+	.word	-1,.L123,.L127-.L123,.L209-.L123
+	.half	1
+	.byte	84
+	.word	.L355-.L123,.L356-.L123
+	.half	1
+	.byte	84
+	.word	.L356-.L123,.L32-.L123
+	.half	1
+	.byte	82
+	.word	.L32-.L123,.L357-.L123
+	.half	1
+	.byte	84
+	.word	.L131-.L123,.L194-.L123
+	.half	1
+	.byte	84
+	.word	.L360-.L123,.L361-.L123
+	.half	1
+	.byte	84
+	.word	.L129-.L123,.L199-.L123
+	.half	1
+	.byte	84
+	.word	.L362-.L123,.L363-.L123
+	.half	1
+	.byte	84
+	.word	.L125-.L123,.L214-.L123
+	.half	1
+	.byte	84
+	.word	.L43-.L123,.L365-.L123
+	.half	1
+	.byte	84
+	.word	.L365-.L123,.L55-.L123
+	.half	1
+	.byte	82
+	.word	.L55-.L123,.L367-.L123
+	.half	1
+	.byte	84
+	.word	0,0
+.L271:
+	.word	-1,.L123,.L359-.L123,.L357-.L123
+	.half	1
+	.byte	98
+	.word	.L131-.L123,.L194-.L123
+	.half	1
+	.byte	98
+	.word	.L360-.L123,.L361-.L123
+	.half	1
+	.byte	98
+	.word	.L129-.L123,.L199-.L123
+	.half	1
+	.byte	98
+	.word	.L362-.L123,.L33-.L123
+	.half	1
+	.byte	98
+	.word	0,0
+.L276:
+	.word	-1,.L123,.L364-.L123,.L363-.L123
+	.half	1
+	.byte	98
+	.word	.L131-.L123,.L194-.L123
+	.half	1
+	.byte	98
+	.word	.L125-.L123,.L214-.L123
+	.half	1
+	.byte	98
+	.word	.L129-.L123,.L199-.L123
+	.half	1
+	.byte	98
+	.word	.L43-.L123,.L41-.L123
+	.half	1
+	.byte	98
+	.word	0,0
+.L278:
+	.word	-1,.L123,.L131-.L123,.L194-.L123
+	.half	1
+	.byte	98
+	.word	.L129-.L123,.L199-.L123
+	.half	1
+	.byte	98
+	.word	.L366-.L123,.L37-.L123
+	.half	1
+	.byte	98
+	.word	0,0
+.L260:
+	.word	-1,.L123,0,.L352-.L123
+	.half	1
+	.byte	100
+	.word	.L353-.L123,.L352-.L123
+	.half	1
+	.byte	111
+	.word	.L127-.L123,.L209-.L123
+	.half	1
+	.byte	100
+	.word	.L127-.L123,.L209-.L123
+	.half	1
+	.byte	111
+	.word	.L355-.L123,.L356-.L123
+	.half	1
+	.byte	100
+	.word	.L355-.L123,.L357-.L123
+	.half	1
+	.byte	111
+	.word	.L131-.L123,.L194-.L123
+	.half	1
+	.byte	111
+	.word	.L360-.L123,.L361-.L123
+	.half	1
+	.byte	111
+	.word	.L129-.L123,.L199-.L123
+	.half	1
+	.byte	111
+	.word	.L362-.L123,.L363-.L123
+	.half	1
+	.byte	111
+	.word	.L125-.L123,.L214-.L123
+	.half	1
+	.byte	111
+	.word	.L43-.L123,.L259-.L123
+	.half	1
+	.byte	111
+	.word	0,0
+.L263:
+	.word	-1,.L123,0,.L352-.L123
+	.half	1
+	.byte	84
+	.word	.L127-.L123,.L209-.L123
+	.half	1
+	.byte	88
+	.word	.L355-.L123,.L357-.L123
+	.half	1
+	.byte	88
+	.word	.L131-.L123,.L194-.L123
+	.half	1
+	.byte	88
+	.word	.L360-.L123,.L361-.L123
+	.half	1
+	.byte	88
+	.word	.L129-.L123,.L199-.L123
+	.half	1
+	.byte	88
+	.word	.L362-.L123,.L363-.L123
+	.half	1
+	.byte	88
+	.word	.L125-.L123,.L214-.L123
+	.half	1
+	.byte	88
+	.word	.L43-.L123,.L259-.L123
+	.half	1
+	.byte	88
+	.word	0,0
+.L266:
+	.word	-1,.L123,.L358-.L123,.L209-.L123
+	.half	1
+	.byte	90
+	.word	.L355-.L123,.L357-.L123
+	.half	1
+	.byte	90
+	.word	.L131-.L123,.L194-.L123
+	.half	1
+	.byte	90
+	.word	.L360-.L123,.L361-.L123
+	.half	1
+	.byte	90
+	.word	.L129-.L123,.L199-.L123
+	.half	1
+	.byte	90
+	.word	.L362-.L123,.L363-.L123
+	.half	1
+	.byte	90
+	.word	.L125-.L123,.L214-.L123
+	.half	1
+	.byte	90
+	.word	.L43-.L123,.L259-.L123
+	.half	1
+	.byte	90
+	.word	0,0
+.L262:
+	.word	-1,.L123,0,.L352-.L123
+	.half	1
+	.byte	101
+	.word	.L354-.L123,.L352-.L123
+	.half	1
+	.byte	108
+	.word	.L127-.L123,.L209-.L123
+	.half	1
+	.byte	101
+	.word	.L127-.L123,.L209-.L123
+	.half	1
+	.byte	108
+	.word	.L355-.L123,.L356-.L123
+	.half	1
+	.byte	101
+	.word	.L355-.L123,.L357-.L123
+	.half	1
+	.byte	108
+	.word	.L131-.L123,.L194-.L123
+	.half	1
+	.byte	108
+	.word	.L360-.L123,.L361-.L123
+	.half	1
+	.byte	108
+	.word	.L129-.L123,.L199-.L123
+	.half	1
+	.byte	108
+	.word	.L362-.L123,.L363-.L123
+	.half	1
+	.byte	108
+	.word	.L125-.L123,.L214-.L123
+	.half	1
+	.byte	108
+	.word	.L43-.L123,.L259-.L123
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L648:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Crc_init')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L648,.L117,.L226-.L117
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Crc_createTable')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L648,.L119,.L240-.L119
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Crc_reflect')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L648,.L121,.L316-.L121
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Crc_tableFast')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L648,.L123,.L259-.L123
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Crc_table')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L648,.L133,.L279-.L133
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Crc_bitByBit')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L648,.L143,.L298-.L143
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Crc_bitByBitFast')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L648,.L145,.L307-.L145
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L649:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_6')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L649,.L125,.L214-.L125
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_5')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L649,.L127,.L209-.L127
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_3')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L649,.L129,.L199-.L129
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_2')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L649,.L131,.L194-.L131
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_8')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L649,.L135,.L224-.L135
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_7')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L649,.L137,.L219-.L137
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_4')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L649,.L139,.L204-.L139
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L649,.L141,.L189-.L141
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   536  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   537  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   538  #if CRC_ENABLE_DPIPE
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   539  void Ifx_Crc_printTable(Ifc_Crc_Table *table, IfxStdIf_DPipe *io)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   540  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   541      sint32 i = 0;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   542  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   543      uint32 typeSize;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   544  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   545      if (table->order <= 8)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   546      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   547          typeSize = 8;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   548      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   549      else if (table->order <= 16)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   550      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   551          typeSize = 16;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   552      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   553      else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   554      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   555          typeSize = 32;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   556      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   557  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   558      IfxStdIf_DPipe_print(io, ENDL "Ifc_Crc_Table%d <tabe name> = {"ENDL, typeSize);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   559      IfxStdIf_DPipe_print(io, "    .data.order=%d,"ENDL, table->order);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   560      IfxStdIf_DPipe_print(io, "    .data.polynom=0x%X,"ENDL, table->polynom);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   561      IfxStdIf_DPipe_print(io, "    .data.refin=%d,"ENDL, table->refin);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   562      IfxStdIf_DPipe_print(io, "    .data.crchighbit=%d,"ENDL, table->crchighbit);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   563      IfxStdIf_DPipe_print(io, "    .data.crcmask=0x%X,"ENDL, table->crcmask);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   564      IfxStdIf_DPipe_print(io, "    .crctab={"ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   565      IfxStdIf_DPipe_print(io, "        ");
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   566  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   567      while (i < 256)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   568      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   569          if (table->order <= 4)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   570          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   571              uint8 *crctab = (uint8 *)((uint32)table + sizeof(Ifc_Crc_Table));
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   572              IfxStdIf_DPipe_print(io, "0x%01X, ", crctab[i]);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   573          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   574          else if (table->order <= 8)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   575          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   576              uint8 *crctab = (uint8 *)((uint32)table + sizeof(Ifc_Crc_Table));
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   577              IfxStdIf_DPipe_print(io, "0x%02X, ", crctab[i]);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   578          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   579          else if (table->order <= 16)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   580          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   581              uint16 *crctab = (uint16 *)((uint32)table + sizeof(Ifc_Crc_Table));
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   582              IfxStdIf_DPipe_print(io, "0x%04X, ", crctab[i]);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   583          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   584          else if (table->order <= 24)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   585          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   586              uint32 *crctab = (uint32 *)((uint32)table + sizeof(Ifc_Crc_Table));
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   587              IfxStdIf_DPipe_print(io, "0x%06X, ", crctab[i]);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   588          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   589          else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   590          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   591              uint32 *crctab = (uint32 *)((uint32)table + sizeof(Ifc_Crc_Table));
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   592              IfxStdIf_DPipe_print(io, "0x%08X, ", crctab[i]);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   593          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   594  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   595          i++;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   596  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   597          if ((i % 16) == 0)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   598          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   599              IfxStdIf_DPipe_print(io, ENDL "        ");
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   600          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   601      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   602  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   603      IfxStdIf_DPipe_print(io, "    }"ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   604      IfxStdIf_DPipe_print(io, "};"ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   605  }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   606  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   607  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   608  boolean Ifx_Crc_Test(Ifc_Crc *driver, uint8 *string, uint32 length, IfxStdIf_DPipe *io)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   609  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   610      IfxStdIf_DPipe_print(io, ""ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   611      IfxStdIf_DPipe_print(io, "CRC tester v1.1 written on 13/01/2003 by Sven Reifegerste (zorc/reflex)"ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   612      IfxStdIf_DPipe_print(io, "-----------------------------------------------------------------------"ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   613      IfxStdIf_DPipe_print(io, ""ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   614      IfxStdIf_DPipe_print(io, "Parameters:"ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   615      IfxStdIf_DPipe_print(io, ""ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   616      IfxStdIf_DPipe_print(io, " polynom             :  0x%x"ENDL, driver->table->polynom);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   617      IfxStdIf_DPipe_print(io, " order               :  %d"ENDL, driver->table->order);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   618      IfxStdIf_DPipe_print(io, " crcinit             :  0x%x direct, 0x%x nondirect"ENDL, driver->crcinit_direct, driver->crcinit_nondirect);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   619      IfxStdIf_DPipe_print(io, " crcxor              :  0x%x"ENDL, driver->crcxor);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   620      IfxStdIf_DPipe_print(io, " refin               :  %d"ENDL, driver->table->refin);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   621      IfxStdIf_DPipe_print(io, " refout              :  %d"ENDL, driver->refout);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   622      IfxStdIf_DPipe_print(io, ""ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   623  //	IfxStdIf_DPipe_print(io," data string         :  '%s' (%d bytes)"ENDL, string, stringLength);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   624      IfxStdIf_DPipe_print(io, ""ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   625      IfxStdIf_DPipe_print(io, "Results:"ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   626      IfxStdIf_DPipe_print(io, ""ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   627  #if 0
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   628      IfxCpu_Perf perf;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   629      uint32      result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   630  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   631      IfxCpu_resetAndStartCounters(IfxCpu_CounterMode_normal);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   632      result = Ifx_Crc_bitByBit(driver, (uint8 *)string, length);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   633      perf   = IfxCpu_stopCounters();
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   634      IfxStdIf_DPipe_print(io, " crc bit by bit      :  0x%X, %d cycles"ENDL, result, perf.clock.counter);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   635  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   636      IfxCpu_resetAndStartCounters(IfxCpu_CounterMode_normal);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   637      result = Ifx_Crc_bitByBitFast(driver, (uint8 *)string, length);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   638      perf   = IfxCpu_stopCounters();
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   639      IfxStdIf_DPipe_print(io, " crc bit by bit fast :  0x%X, %d cycles"ENDL, result, perf.clock.counter);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   640  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   641      IfxCpu_resetAndStartCounters(IfxCpu_CounterMode_normal);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   642      result = Ifx_Crc_table(driver, (uint8 *)string, length);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   643      perf   = IfxCpu_stopCounters();
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   644      IfxStdIf_DPipe_print(io, " crc table           :  0x%X, %d cycles"ENDL, result, perf.clock.counter);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   645  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   646      IfxCpu_resetAndStartCounters(IfxCpu_CounterMode_normal);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   647      result = Ifx_Crc_tableFast(driver, (uint8 *)string, length);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   648      perf   = IfxCpu_stopCounters();
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   649      IfxStdIf_DPipe_print(io, " crc table fast      :  0x%X, %d cycles"ENDL, result, perf.clock.counter);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   650  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   651  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   652      return TRUE;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   653  }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   654  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   655  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Crc.c	   656  #endif
+
+	; Module end

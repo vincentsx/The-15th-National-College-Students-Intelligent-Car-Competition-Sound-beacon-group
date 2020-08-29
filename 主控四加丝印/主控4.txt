@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : C:\Users\bz794\Desktop\123\Project\Ö÷¿Ø4.PcbDoc
+Date         : 2020/7/11
+Time         : 17:42:30
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 201
+    Connections routed, 201
+    Connections remaining, 0
+count : 4

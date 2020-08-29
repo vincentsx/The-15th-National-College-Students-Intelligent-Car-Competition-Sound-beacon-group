@@ -1,0 +1,1643 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Service\\CpuGeneric\\StdIf\\.IfxStdIf_Pos.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.src ..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.IfxStdIf_Pos.IfxStdIf_Pos_initConfig',code,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.text.IfxStdIf_Pos.IfxStdIf_Pos_initConfig'
+	.align	2
+	
+	.global	IfxStdIf_Pos_initConfig
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     2   * \file IfxStdIf_Pos.c
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     3   * \brief Standard interface: Position interface
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     4   * \ingroup IfxStdIf
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     6   * \version disabled
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     8   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    17  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    18  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    20  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    27  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    34  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    42  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    44   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    45  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    46  #include "IfxStdIf_Pos.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    47  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    48  void IfxStdIf_Pos_initConfig (IfxStdIf_Pos_Config * config)
+; Function IfxStdIf_Pos_initConfig
+.L10:
+IfxStdIf_Pos_initConfig:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    49  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    50      config->offset = 0;
+	mov	d0,#0
+	st.w	[a4],d0
+.L60:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    51      config->reversed = FALSE;
+	st.b	[a4]4,d0
+.L61:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    52      config->resolution = 0;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    53      config->periodPerRotation = 1;
+	mov	d15,#1
+	st.w	[a4]6,d0
+.L62:
+	st.h	[a4]10,d15
+.L63:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    54      config->resolutionFactor = IfxStdIf_Pos_ResolutionFactor_oneFold;
+	st.b	[a4]12,d15
+.L64:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    55      config->updatePeriod = 0.001;
+	mov	d15,#4719
+	lea	a15,[a4]14
+.L65:
+	addih	d15,d15,#14979
+	st.w	[a15+],d15
+.L66:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    56      config->speedModeThreshold = 0;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    57      config->minSpeed = 0;       // 0 rpm
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    58      config->maxSpeed = 20000.0 / 60.0 * (2 * IFX_PI);   // 20000 rpm
+	mov.u	d15,#58963
+	st.w	[a15+],d0
+.L67:
+	addih	d15,d15,#17666
+	st.w	[a15+],d0
+.L68:
+	st.w	[a4]26,d15
+.L69:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    59      config->speedFilterEnabled = FALSE;
+	st.b	[a4]30,d0
+.L70:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    60      config->speedFilerCutOffFrequency = 0;
+	st.w	[a4]32,d0
+.L71:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    61  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    62  }
+	ret
+.L27:
+	
+__IfxStdIf_Pos_initConfig_function_end:
+	.size	IfxStdIf_Pos_initConfig,__IfxStdIf_Pos_initConfig_function_end-IfxStdIf_Pos_initConfig
+.L21:
+	; End of function
+	
+	.sdecl	'.text.IfxStdIf_Pos.IfxStdIf_Pos_printStatus',code,cluster('IfxStdIf_Pos_printStatus')
+	.sect	'.text.IfxStdIf_Pos.IfxStdIf_Pos_printStatus'
+	.align	2
+	
+	.global	IfxStdIf_Pos_printStatus
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    63  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    64  void IfxStdIf_Pos_printStatus(IfxStdIf_Pos *driver, IfxStdIf_DPipe *io)
+; Function IfxStdIf_Pos_printStatus
+.L12:
+IfxStdIf_Pos_printStatus:	.type	func
+	mov.aa	a15,a5
+.L38:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     2   * \file IfxStdIf_Pos.h
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     3   * \brief Standard interface: Position interface
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     4   * \ingroup IfxStdIf
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     6   * \version disabled
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     8   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    17  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    18  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    20  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    27  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    34  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    42  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    44   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    45   * \defgroup library_srvsw_stdif_posif Standard interface: Position interface
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    46   * \ingroup library_srvsw_stdif
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    47   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    48   * The standard interface position interface (IfxStdIf_Pos) abstract the hardware used for position interface feature like encoder, hall, resolver, ... It provide, after proper initialization an hardware
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    49   * Independent way to interact with the position sensor like getting position, speed, direction, ...
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    50   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    51   * The figure below shows the standard position interface.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    52   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    53   * \image html "stdif_PosIf.png" "Standard position interface"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    54   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    55   * This interface defines the following features:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    56   * -
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    57   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    58   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    59   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    60  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    61  #ifndef IFXSTDIF_POSIF_H
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    62  #define IFXSTDIF_POSIF_H 1
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    63  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    64  #include "Cpu/Std/Ifx_Types.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    65  #include "IfxStdIf.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    66  #include "IfxStdIf_DPipe.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    67  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    68  /** \brief Output event enable / disable */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    69  typedef enum
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    70  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    71      IfxStdIf_Pos_MotionType_rotating,             /**< \brief Rotating sensor */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    72      IfxStdIf_Pos_MotionType_linear                /**< \brief Linear sensor */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    73  } IfxStdIf_Pos_MotionType;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    74  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    75  /** \brief Output event enable / disable */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    76  typedef enum
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    77  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    78      IfxStdIf_Pos_ResolutionFactor_oneFold  = 1,             /**< \brief Default, no multipluication factor */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    79      IfxStdIf_Pos_ResolutionFactor_twoFold  = 2,             /**< \brief 2-fold resolution. Valid for encoder */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    80      IfxStdIf_Pos_ResolutionFactor_fourFold = 4              /**< \brief 4-fold resolution. Valid for encoder */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    81  } IfxStdIf_Pos_ResolutionFactor;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    82  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    83  /** \brief Position sensor Types */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    84  typedef enum
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    85  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    86      IfxStdIf_Pos_SensorType_encoder,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    87      IfxStdIf_Pos_SensorType_hall,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    88      IfxStdIf_Pos_SensorType_resolver,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    89      IfxStdIf_Pos_SensorType_angletrk,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    90      IfxStdIf_Pos_SensorType_igmr,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    91      IfxStdIf_Pos_SensorType_virtual
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    92  } IfxStdIf_Pos_SensorType;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    93  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    94  /** \brief Position sensor direction definition */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    95  typedef enum
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    96  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    97      IfxStdIf_Pos_Dir_forward,         /**< \brief Forward direction. For rotating position sensor, forward is clockwise rotation */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    98      IfxStdIf_Pos_Dir_backward,        /**< \brief Backward direction. For rotating position sensor, fackward is counter-clockwise rotation */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	    99      IfxStdIf_Pos_Dir_unknown          /**< \brief Unknown direction */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   100  } IfxStdIf_Pos_Dir;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   101  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   102  /** \brief Position sensor status definition */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   103  typedef union
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   104  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   105      uint32 status;                      /**< \brief Global status access */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   106      struct
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   107      {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   108          uint32 notSynchronised : 1;     /**< \brief Sensor is not synchronized */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   109          uint32 signalLoss : 1;          /**< \brief Loss of signal error */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   110          uint32 signalDegradation : 1;   /**< \brief Signal degradation warning */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   111          uint32 trackingLoss : 1;        /**< \brief Tracking loss error */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   112          uint32 commError : 1;           /**< \brief Communication error*/
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   113      } B;                                /**< \brief Bitfielf status access */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   114  } IfxStdIf_Pos_Status;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   115  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   116  typedef sint32 IfxStdIf_Pos_RawAngle;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   117  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   118  /** \brief Forward declaration */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   119  typedef struct IfxStdIf_Pos_ IfxStdIf_Pos;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   120  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   121  /** \brief Return the position, inclusive turns
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   122   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   123   * Return the sensor position in rad for rotating sensor inclusive turns, or in m for linear sensors.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   124   * For linear sensor the effect is the same as IfxStdIf_Pos_GetPosition.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   125   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   126   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   127   * \return Return the position inclusive turns in rad
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   128   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   129  typedef float32 (*IfxStdIf_Pos_GetAbsolutePosition)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   130  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   131  /** \brief Handles the zero interrupt
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   132   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   133   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   134   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   135  typedef void (*IfxStdIf_Pos_OnZeroIrq)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   136  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   137  /** \brief Return the raw position sensor offset
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   138   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   139   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   140   * \return Return the raw position sensor offset sensor in ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   141   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   142  typedef sint32 (*IfxStdIf_Pos_GetOffset)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   143  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   144  /** \brief Return the position
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   145   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   146   * Return the sensor position in rad for rotating sensor or in m for linear sensors.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   147   * For rotating sensor, the position is always between 0 and 2*IFX_PI.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   148   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   149   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   150   * \return Return the position in rad or m
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   151   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   152  typedef float32 (*IfxStdIf_Pos_GetPosition)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   153  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   154  /** \brief Return the direction
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   155   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   156   * Return the sensor direction.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   157   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   158   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   159   * \return Return the direction
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   160   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   161  typedef IfxStdIf_Pos_Dir (*IfxStdIf_Pos_GetDirection)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   162  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   163  /** \brief Return the sensor status
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   164   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   165   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   166   * \return Return the sensor status
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   167   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   168  typedef IfxStdIf_Pos_Status (*IfxStdIf_Pos_GetFault)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   169  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   170  /** \brief Return the period per rotation setting
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   171   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   172   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   173   * \return Return the period per rotation setting
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   174   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   175  typedef uint16 (*IfxStdIf_Pos_GetPeriodPerRotation)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   176  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   177  /** \brief Return the raw position in ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   178   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   179   * Return the sensor raw position in ticks.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   180   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   181   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   182   * \return Return the raw position in ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   183   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   184  typedef sint32 (*IfxStdIf_Pos_GetRawPosition)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   185  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   186  /** \brief Get the update period
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   187   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   188   * \return Return the update period in s
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   189   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   190  typedef float32 (*IfxStdIf_Pos_GetRefreshPeriod)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   191  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   192  /** \brief Get the resolution
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   193   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   194   * \return Return the resolution
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   195   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   196  typedef sint32 (*IfxStdIf_Pos_GetResolution)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   197  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   198  /** \brief Get the sensor type
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   199   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   200   * \return Return the sensor type
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   201   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   202  typedef IfxStdIf_Pos_SensorType (*IfxStdIf_Pos_GetSensorType)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   203  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   204  /** \brief Return the speed
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   205   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   206   * \return Return the speed in rad/s or m/s
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   207   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   208  typedef float32 (*IfxStdIf_Pos_GetSpeed)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   209  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   210  /** \brief Return position in turn
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   211   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   212   * \return Return position in turn
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   213   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   214  typedef sint32 (*IfxStdIf_Pos_GetTurn)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   215  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   216  /** \brief Handles the A sensor event
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   217   * Event A is a sensor defined event. it is optional.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   218   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   219   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   220   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   221  typedef void (*IfxStdIf_Pos_OnEventA)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   222  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   223  /** \brief Refresh the status
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   224   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   225   *  Update the stdIf state like speed, position, status, taking into account the updatePeriod
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   226   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   227   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   228   * \return None
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   229   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   230  typedef void (*IfxStdIf_Pos_Update)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   231  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   232  /** \brief Reset the driver
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   233   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   234   *  Clear faults, reset speed and position to 0
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   235   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   236   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   237   * \return None
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   238   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   239  typedef void (*IfxStdIf_Pos_Reset)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   240  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   241  /** \brief Reset the driver fault
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   242   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   243   *  Clear faults
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   244   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   245   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   246   * \return None
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   247   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   248  typedef void (*IfxStdIf_Pos_ResetFaults)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   249  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   250  /** \brief Set the sensor offset
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   251   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   252   * \param offset Offset in sensor ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   253   * \return None
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   254   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   255  typedef void (*IfxStdIf_Pos_SetOffset)(IfxStdIf_InterfaceDriver stdIf, sint32 offset);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   256  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   257  /** \brief Set the sensor position (virtual sensor)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   258   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   259   * \param position Position sensor rad
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   260   * \return None
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   261   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   262  typedef void (*IfxStdIf_Pos_SetPosition)(IfxStdIf_InterfaceDriver stdIf, float32 position);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   263  /** \brief Set the sensor position (virtual sensor)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   264   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   265   * \param position Position sensor ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   266   * \return None
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   267   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   268  typedef void (*IfxStdIf_Pos_SetRawPosition)(IfxStdIf_InterfaceDriver stdIf, sint32 position);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   269  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   270  /** \brief Set the sensor speed (virtual sensor)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   271   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   272   * \param speed speed in rad/s
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   273   * \return None
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   274   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   275  typedef void (*IfxStdIf_Pos_SetSpeed)(IfxStdIf_InterfaceDriver stdIf, float32 speed);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   276  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   277  /** \brief Set the update period
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   278   * \param stdIf Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   279   * \param updatePeriod Refresh period in s
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   280   * \return None
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   281   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   282  typedef void (*IfxStdIf_Pos_SetRefreshPeriod)(IfxStdIf_InterfaceDriver stdIf, float32 updatePeriod);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   283  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   284  /** \brief Standard interface object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   285   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   286  struct IfxStdIf_Pos_
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   287  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   288      IfxStdIf_InterfaceDriver          driver;               /**< \brief Interface driver object                  */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   289      IfxStdIf_Pos_OnZeroIrq            onZeroIrq;            /**< \brief \see IfxStdIf_Pos_OnZeroIrq           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   290      IfxStdIf_Pos_GetAbsolutePosition  getAbsolutePosition;  /**< \brief Return the absolute position     */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   291      IfxStdIf_Pos_GetOffset            getOffset;            /**< \brief \see IfxStdIf_Pos_GetOffset           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   292      IfxStdIf_Pos_GetPosition          getPosition;          /**< \brief \see IfxStdIf_Pos_GetPosition           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   293      IfxStdIf_Pos_GetDirection         getDirection;         /**< \brief \see IfxStdIf_Pos_GetDirection           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   294      IfxStdIf_Pos_GetFault             getFault;             /**< \brief \see IfxStdIf_Pos_GetFault           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   295      IfxStdIf_Pos_GetRawPosition       getRawPosition;       /**< \brief \see IfxStdIf_Pos_GetRawPosition           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   296      IfxStdIf_Pos_GetPeriodPerRotation getPeriodPerRotation; /**< \brief \see IfxStdIf_Pos_GetPeriodPerRotation           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   297      IfxStdIf_Pos_GetRefreshPeriod     getRefreshPeriod;     /**< \brief \see IfxStdIf_Pos_GetRefreshPeriod           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   298      IfxStdIf_Pos_GetResolution        getResolution;        /**< \brief \see IfxStdIf_Pos_GetResolution           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   299      IfxStdIf_Pos_GetSensorType        getSensorType;        /**< \brief \see IfxStdIf_Pos_GetSensorType           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   300      IfxStdIf_Pos_GetTurn              getTurn;              /**< \brief \see IfxStdIf_Pos_GetTurn           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   301      IfxStdIf_Pos_OnEventA             onEventA;             /**< \brief \see IfxStdIf_Pos_OnEventA           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   302      IfxStdIf_Pos_Reset                reset;                /**< \brief \see IfxStdIf_Pos_Reset           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   303      IfxStdIf_Pos_ResetFaults          resetFaults;          /**< \brief \see IfxStdIf_Pos_ResetFaults           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   304      IfxStdIf_Pos_GetSpeed             getSpeed;             /**< \brief \see IfxStdIf_Pos_GetSpeed             */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   305      IfxStdIf_Pos_Update               update;               /**< \brief \see IfxStdIf_Pos_Update           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   306      IfxStdIf_Pos_SetOffset            setOffset;            /**< \brief \see IfxStdIf_Pos_SetOffset           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   307      IfxStdIf_Pos_SetPosition          setPosition;          /**< \brief \see IfxStdIf_Pos_SetPosition           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   308      IfxStdIf_Pos_SetRawPosition       setRawPosition;       /**< \brief \see IfxStdIf_Pos_SetRawPosition           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   309      IfxStdIf_Pos_SetSpeed             setSpeed;             /**< \brief \see IfxStdIf_Pos_SetSpeed           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   310      IfxStdIf_Pos_SetRefreshPeriod     setRefreshPeriod;     /**< \brief \see IfxStdIf_Pos_SetRefreshPeriod           */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   311  };
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   312  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   313  /** \brief Position interface configuration */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   314  typedef struct
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   315  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   316      sint32                        offset;                    /**< \brief Position sensor offset */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   317      boolean                       reversed;                  /**< \brief If true, the sensor direction is reversed */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   318      sint32                        resolution;                /**< \brief Sensor resolution. For encoder with 1024 pulse per revolution, the value should be 1024 */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   319      uint16                        periodPerRotation;         /**< \brief Number of period per rotation. Is usually 1 for encoder */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   320      IfxStdIf_Pos_ResolutionFactor resolutionFactor;          /**< \brief Resolution multiplier for encoder interface, valid is 2, 4. */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   321      float32                       updatePeriod;              /**< \brief period in seconds, at which the application calls IfxStdIf_Pos_update() */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   322      float32                       speedModeThreshold;        /**< \brief Speed threshold used for the speed calculation mode. For encoder, above the threshold the pulse count mode is used, below the threshold, the time delta is used */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   323      float32                       minSpeed;                  /**< \brief Absolute minimal allowed speed. below speed is recognized as 0rad/s */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   324      float32                       maxSpeed;                  /**< \brief Absolute maximal allowed speed. Above speed is recognized as error */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   325      boolean                       speedFilterEnabled;        /**< \brief Enable / disable the speed low pass filter */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   326      float32                       speedFilerCutOffFrequency; /**< \brief Speed low pass filter cut off frequency */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   327  } IfxStdIf_Pos_Config;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   328  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   329  /** \addtogroup library_srvsw_stdif_posif
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   330   *  \{
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   331   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   332  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   333  /** \copydoc IfxStdIf_Pos_OnZeroIrq
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   334   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   335  IFX_INLINE void IfxStdIf_Pos_onZeroIrq(IfxStdIf_Pos *stdIf)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   336  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   337      stdIf->onZeroIrq(stdIf->driver);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   338  }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   339  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   340  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   341  /** \copydoc IfxStdIf_Pos_GetAbsolutePosition
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   342   * \param stdIf Standard interface pointer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   343   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   344  IFX_INLINE float32 IfxStdIf_Pos_getAbsolutePosition(IfxStdIf_Pos *stdIf)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   345  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   346      return stdIf->getAbsolutePosition(stdIf->driver);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   347  }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   348  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   349  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   350  /** \copydoc IfxStdIf_Pos_GetFault MCMETILLD-521
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   351   * \param stdIf Standard interface pointer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   352   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   353  IFX_INLINE IfxStdIf_Pos_Status IfxStdIf_Pos_getFault(IfxStdIf_Pos *stdIf)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   354  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.h	   355      return stdIf->getFault(stdIf->driver);
+	ld.a	a2,[a4]24
+.L76:
+	ld.a	a4,[a4]
+.L43:
+	calli	a2
+.L39:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    65  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    66      IfxStdIf_Pos_Status status;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    67      status = IfxStdIf_Pos_getFault(driver);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    68  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    69      IfxStdIf_DPipe_print(io, "DSADC RDC status:"ENDL);
+	mov	d15,d2
+	movh.a	a5,#@his(.1.str)
+.L44:
+	lea	a5,[a5]@los(.1.str)
+	mov.aa	a4,a15
+.L45:
+	call	IfxStdIf_DPipe_print
+.L46:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    70      if (status.status != 0)
+	jeq	d15,#0,.L2
+.L77:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    71      {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    72          if (status.B.commError)
+	jz.t	d15:4,.L3
+.L78:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    73          {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    74          	IfxStdIf_DPipe_print(io, "- Communication error"ENDL);
+	movh.a	a5,#@his(.2.str)
+	lea	a5,[a5]@los(.2.str)
+	mov.aa	a4,a15
+.L47:
+	call	IfxStdIf_DPipe_print
+.L3:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    75          }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    76          if (status.B.notSynchronised)
+	jz.t	d15:0,.L4
+.L79:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    77          {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    78          	IfxStdIf_DPipe_print(io, "- Synchronization error"ENDL);
+	movh.a	a5,#@his(.3.str)
+	lea	a5,[a5]@los(.3.str)
+	mov.aa	a4,a15
+.L48:
+	call	IfxStdIf_DPipe_print
+.L4:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    79          }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    80          if (status.B.signalDegradation)
+	jz.t	d15:2,.L5
+.L80:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    81          {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    82          	IfxStdIf_DPipe_print(io, "- Signal degradation error"ENDL);
+	movh.a	a5,#@his(.4.str)
+	lea	a5,[a5]@los(.4.str)
+	mov.aa	a4,a15
+.L49:
+	call	IfxStdIf_DPipe_print
+.L5:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    83          }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    84          if (status.B.signalLoss)
+	jz.t	d15:1,.L6
+.L81:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    85          {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    86          	IfxStdIf_DPipe_print(io, "- Signal loss error"ENDL);
+	movh.a	a5,#@his(.5.str)
+	lea	a5,[a5]@los(.5.str)
+	mov.aa	a4,a15
+.L50:
+	call	IfxStdIf_DPipe_print
+.L6:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    87          }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    88          if (status.B.trackingLoss)
+	jz.t	d15:3,.L7
+.L82:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    89          {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    90          	IfxStdIf_DPipe_print(io, "- Tracking error"ENDL);
+	movh.a	a5,#@his(.6.str)
+	lea	a5,[a5]@los(.6.str)
+.L83:
+	j	.L8
+.L7:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    91          }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    92      }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    93      else
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    94      {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    95      	IfxStdIf_DPipe_print(io, "- Ready"ENDL);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    96      }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_Pos.c	    97  }
+	ret
+.L2:
+	movh.a	a5,#@his(.7.str)
+	lea	a5,[a5]@los(.7.str)
+.L8:
+	mov.aa	a4,a15
+.L51:
+	j	IfxStdIf_DPipe_print
+.L30:
+	
+__IfxStdIf_Pos_printStatus_function_end:
+	.size	IfxStdIf_Pos_printStatus,__IfxStdIf_Pos_printStatus_function_end-IfxStdIf_Pos_printStatus
+.L26:
+	; End of function
+	
+	.sdecl	'.rodata.IfxStdIf_Pos..1.str',data,rom
+	.sect	'.rodata.IfxStdIf_Pos..1.str'
+.1.str:	.type	object
+	.size	.1.str,20
+	.byte	68,83,65,68
+	.byte	67,32,82,68
+	.byte	67,32,115,116
+	.byte	97,116,117,115
+	.byte	58,13,10
+	.space	1
+	.sdecl	'.rodata.IfxStdIf_Pos..2.str',data,rom
+	.sect	'.rodata.IfxStdIf_Pos..2.str'
+.2.str:	.type	object
+	.size	.2.str,24
+	.byte	45,32,67,111
+	.byte	109,109,117,110
+	.byte	105,99,97,116
+	.byte	105,111,110,32
+	.byte	101,114,114,111
+	.byte	114,13,10
+	.space	1
+	.sdecl	'.rodata.IfxStdIf_Pos..3.str',data,rom
+	.sect	'.rodata.IfxStdIf_Pos..3.str'
+.3.str:	.type	object
+	.size	.3.str,26
+	.byte	45,32,83,121
+	.byte	110,99,104,114
+	.byte	111,110,105,122
+	.byte	97,116,105,111
+	.byte	110,32,101,114
+	.byte	114,111,114,13
+	.byte	10
+	.space	1
+	.sdecl	'.rodata.IfxStdIf_Pos..4.str',data,rom
+	.sect	'.rodata.IfxStdIf_Pos..4.str'
+.4.str:	.type	object
+	.size	.4.str,29
+	.byte	45,32,83,105
+	.byte	103,110,97,108
+	.byte	32,100,101,103
+	.byte	114,97,100,97
+	.byte	116,105,111,110
+	.byte	32,101,114,114
+	.byte	111,114,13,10
+	.space	1
+	.sdecl	'.rodata.IfxStdIf_Pos..5.str',data,rom
+	.sect	'.rodata.IfxStdIf_Pos..5.str'
+.5.str:	.type	object
+	.size	.5.str,22
+	.byte	45,32,83,105
+	.byte	103,110,97,108
+	.byte	32,108,111,115
+	.byte	115,32,101,114
+	.byte	114,111,114,13
+	.byte	10
+	.space	1
+	.sdecl	'.rodata.IfxStdIf_Pos..6.str',data,rom
+	.sect	'.rodata.IfxStdIf_Pos..6.str'
+.6.str:	.type	object
+	.size	.6.str,19
+	.byte	45,32,84,114
+	.byte	97,99,107,105
+	.byte	110,103,32,101
+	.byte	114,114,111,114
+	.byte	13,10
+	.space	1
+	.sdecl	'.rodata.IfxStdIf_Pos..7.str',data,rom
+	.sect	'.rodata.IfxStdIf_Pos..7.str'
+.7.str:	.type	object
+	.size	.7.str,10
+	.byte	45,32,82,101
+	.byte	97,100,121,13
+	.byte	10
+	.space	1
+	.calls	'IfxStdIf_Pos_printStatus','__INDIRECT__'
+	.calls	'IfxStdIf_Pos_printStatus','IfxStdIf_DPipe_print'
+	.calls	'IfxStdIf_Pos_initConfig','',0
+	.extern	IfxStdIf_DPipe_print
+	.extern	__INDIRECT__
+	.calls	'IfxStdIf_Pos_printStatus','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L14:
+	.word	4820
+	.half	3
+	.word	.L15
+	.byte	4
+.L13:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L16
+	.byte	2
+	.byte	'unsigned long int',0,4,7,2
+	.byte	'unsigned char',0,1,8,3,1,106,5,1,4
+	.byte	'notSynchronised',0,1
+	.word	212
+	.byte	1,7,2,35,0,4
+	.byte	'signalLoss',0,1
+	.word	212
+	.byte	1,6,2,35,0,4
+	.byte	'signalDegradation',0,1
+	.word	212
+	.byte	1,5,2,35,0,4
+	.byte	'trackingLoss',0,1
+	.word	212
+	.byte	1,4,2,35,0,4
+	.byte	'commError',0,1
+	.word	212
+	.byte	1,3,2,35,0,0
+.L35:
+	.byte	5,1,103,9,4,6
+	.byte	'status',0
+	.word	191
+	.byte	4,2,35,0,6
+	.byte	'B',0
+	.word	229
+	.byte	1,2,35,0,0,7
+	.byte	'void',0,8
+	.word	391
+	.byte	9
+	.byte	'IfxStdIf_InterfaceDriver',0,2,118,15
+	.word	397
+	.byte	10,1,1,11
+	.word	397
+	.byte	0,8
+	.word	435
+	.byte	9
+	.byte	'IfxStdIf_Pos_OnZeroIrq',0,1,135,1,16
+	.word	444
+	.byte	2
+	.byte	'float',0,4,4,12
+	.word	481
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	490
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetAbsolutePosition',0,1,129,1,19
+	.word	503
+	.byte	2
+	.byte	'long int',0,4,5,12
+	.word	550
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	562
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetOffset',0,1,142,1,18
+	.word	575
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetPosition',0,1,152,1,19
+	.word	503
+	.byte	13,1,95,9,1,14
+	.byte	'IfxStdIf_Pos_Dir_forward',0,0,14
+	.byte	'IfxStdIf_Pos_Dir_backward',0,1,14
+	.byte	'IfxStdIf_Pos_Dir_unknown',0,2,0,12
+	.word	646
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	734
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetDirection',0,1,161,1,28
+	.word	747
+	.byte	12
+	.word	358
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	787
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetFault',0,1,168,1,31
+	.word	800
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetRawPosition',0,1,184,1,18
+	.word	575
+	.byte	2
+	.byte	'unsigned short int',0,2,7,12
+	.word	873
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	895
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetPeriodPerRotation',0,1,175,1,18
+	.word	908
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetRefreshPeriod',0,1,190,1,19
+	.word	503
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetResolution',0,1,196,1,18
+	.word	575
+	.byte	13,1,84,9,1,14
+	.byte	'IfxStdIf_Pos_SensorType_encoder',0,0,14
+	.byte	'IfxStdIf_Pos_SensorType_hall',0,1,14
+	.byte	'IfxStdIf_Pos_SensorType_resolver',0,2,14
+	.byte	'IfxStdIf_Pos_SensorType_angletrk',0,3,14
+	.byte	'IfxStdIf_Pos_SensorType_igmr',0,4,14
+	.byte	'IfxStdIf_Pos_SensorType_virtual',0,5,0,12
+	.word	1031
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	1237
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetSensorType',0,1,202,1,35
+	.word	1250
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetTurn',0,1,214,1,18
+	.word	575
+	.byte	9
+	.byte	'IfxStdIf_Pos_OnEventA',0,1,221,1,16
+	.word	444
+	.byte	9
+	.byte	'IfxStdIf_Pos_Reset',0,1,239,1,16
+	.word	444
+	.byte	9
+	.byte	'IfxStdIf_Pos_ResetFaults',0,1,248,1,16
+	.word	444
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetSpeed',0,1,208,1,19
+	.word	503
+	.byte	9
+	.byte	'IfxStdIf_Pos_Update',0,1,230,1,16
+	.word	444
+	.byte	10,1,1,11
+	.word	397
+	.byte	11
+	.word	550
+	.byte	0,8
+	.word	1474
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetOffset',0,1,255,1,16
+	.word	1488
+	.byte	10,1,1,11
+	.word	397
+	.byte	11
+	.word	481
+	.byte	0,8
+	.word	1525
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetPosition',0,1,134,2,16
+	.word	1539
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetRawPosition',0,1,140,2,16
+	.word	1488
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetSpeed',0,1,147,2,16
+	.word	1539
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetRefreshPeriod',0,1,154,2,16
+	.word	1539
+	.byte	15
+	.byte	'IfxStdIf_Pos_',0,1,158,2,8,92,6
+	.byte	'driver',0
+	.word	402
+	.byte	4,2,35,0,6
+	.byte	'onZeroIrq',0
+	.word	449
+	.byte	4,2,35,4,6
+	.byte	'getAbsolutePosition',0
+	.word	508
+	.byte	4,2,35,8,6
+	.byte	'getOffset',0
+	.word	580
+	.byte	4,2,35,12,6
+	.byte	'getPosition',0
+	.word	612
+	.byte	4,2,35,16,6
+	.byte	'getDirection',0
+	.word	752
+	.byte	4,2,35,20,6
+	.byte	'getFault',0
+	.word	805
+	.byte	4,2,35,24,6
+	.byte	'getRawPosition',0
+	.word	836
+	.byte	4,2,35,28,6
+	.byte	'getPeriodPerRotation',0
+	.word	913
+	.byte	4,2,35,32,6
+	.byte	'getRefreshPeriod',0
+	.word	956
+	.byte	4,2,35,36,6
+	.byte	'getResolution',0
+	.word	995
+	.byte	4,2,35,40,6
+	.byte	'getSensorType',0
+	.word	1255
+	.byte	4,2,35,44,6
+	.byte	'getTurn',0
+	.word	1291
+	.byte	4,2,35,48,6
+	.byte	'onEventA',0
+	.word	1321
+	.byte	4,2,35,52,6
+	.byte	'reset',0
+	.word	1352
+	.byte	4,2,35,56,6
+	.byte	'resetFaults',0
+	.word	1380
+	.byte	4,2,35,60,6
+	.byte	'getSpeed',0
+	.word	1414
+	.byte	4,2,35,64,6
+	.byte	'update',0
+	.word	1445
+	.byte	4,2,35,68,6
+	.byte	'setOffset',0
+	.word	1493
+	.byte	4,2,35,72,6
+	.byte	'setPosition',0
+	.word	1544
+	.byte	4,2,35,76,6
+	.byte	'setRawPosition',0
+	.word	1578
+	.byte	4,2,35,80,6
+	.byte	'setSpeed',0
+	.word	1615
+	.byte	4,2,35,84,6
+	.byte	'setRefreshPeriod',0
+	.word	1646
+	.byte	4,2,35,88,0
+.L31:
+	.byte	8
+	.word	1685
+.L37:
+	.byte	16
+	.byte	'IfxStdIf_Pos_getFault',0,3,1,225,2,32
+	.word	358
+	.byte	1,1
+.L40:
+	.byte	17
+	.byte	'stdIf',0,1,225,2,68
+	.word	2189
+.L42:
+	.byte	18,0,8
+	.word	391
+	.byte	8
+	.word	435
+	.byte	8
+	.word	490
+	.byte	8
+	.word	562
+	.byte	8
+	.word	490
+	.byte	8
+	.word	734
+	.byte	8
+	.word	787
+	.byte	8
+	.word	562
+	.byte	8
+	.word	895
+	.byte	8
+	.word	490
+	.byte	8
+	.word	562
+	.byte	8
+	.word	1237
+	.byte	8
+	.word	562
+	.byte	8
+	.word	435
+	.byte	8
+	.word	435
+	.byte	8
+	.word	435
+	.byte	8
+	.word	490
+	.byte	8
+	.word	435
+	.byte	8
+	.word	1474
+	.byte	8
+	.word	1525
+	.byte	8
+	.word	1474
+	.byte	8
+	.word	1525
+	.byte	8
+	.word	1525
+	.byte	2
+	.byte	'int',0,4,5,19
+	.word	2360
+	.byte	20
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,11
+	.word	2367
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,21
+	.word	2409
+	.byte	8
+	.word	2409
+	.byte	22
+	.byte	'__cmpswapw',0
+	.word	2425
+	.byte	1,1,1,1,23
+	.byte	'p',0
+	.word	2430
+	.byte	23
+	.byte	'value',0
+	.word	2409
+	.byte	23
+	.byte	'compare',0
+	.word	2409
+	.byte	0,2
+	.byte	'short int',0,2,5,8
+	.word	2487
+	.byte	2
+	.byte	'long long int',0,8,5,12
+	.word	212
+	.byte	1,1,11
+	.word	397
+	.byte	11
+	.word	397
+	.byte	11
+	.word	2500
+	.byte	11
+	.word	2505
+	.byte	0,8
+	.word	2522
+	.byte	9
+	.byte	'IfxStdIf_DPipe_Write',0,3,92,19
+	.word	2550
+	.byte	9
+	.byte	'IfxStdIf_DPipe_Read',0,3,107,19
+	.word	2550
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetReadCount',0,3,115,18
+	.word	575
+	.byte	21
+	.word	212
+	.byte	8
+	.word	2648
+	.byte	12
+	.word	2653
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	2658
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetReadEvent',0,3,123,36
+	.word	2671
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetWriteCount',0,3,147,1,18
+	.word	575
+	.byte	8
+	.word	2658
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetWriteEvent',0,3,155,1,37
+	.word	2750
+	.byte	12
+	.word	212
+	.byte	1,1,11
+	.word	397
+	.byte	11
+	.word	2487
+	.byte	11
+	.word	2505
+	.byte	0,8
+	.word	2793
+	.byte	9
+	.byte	'IfxStdIf_DPipe_CanReadCount',0,3,166,1,19
+	.word	2816
+	.byte	9
+	.byte	'IfxStdIf_DPipe_CanWriteCount',0,3,177,1,19
+	.word	2816
+	.byte	12
+	.word	212
+	.byte	1,1,11
+	.word	397
+	.byte	11
+	.word	2505
+	.byte	0,8
+	.word	2896
+	.byte	9
+	.byte	'IfxStdIf_DPipe_FlushTx',0,3,186,1,19
+	.word	2914
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ClearTx',0,3,200,1,16
+	.word	444
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ClearRx',0,3,193,1,16
+	.word	444
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnReceive',0,3,208,1,16
+	.word	444
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnTransmit',0,3,215,1,16
+	.word	444
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnError',0,3,222,1,16
+	.word	444
+	.byte	12
+	.word	191
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	3116
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetSendCount',0,3,131,1,18
+	.word	3129
+	.byte	12
+	.word	2505
+	.byte	1,1,11
+	.word	397
+	.byte	0,8
+	.word	3171
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetTxTimeStamp',0,3,139,1,24
+	.word	3184
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ResetSendCount',0,3,229,1,16
+	.word	444
+	.byte	15
+	.byte	'IfxStdIf_DPipe_',0,3,233,1,8,76,6
+	.byte	'driver',0
+	.word	402
+	.byte	4,2,35,0,6
+	.byte	'txDisabled',0
+	.word	212
+	.byte	1,2,35,4,6
+	.byte	'write',0
+	.word	2555
+	.byte	4,2,35,8,6
+	.byte	'read',0
+	.word	2584
+	.byte	4,2,35,12,6
+	.byte	'getReadCount',0
+	.word	2612
+	.byte	4,2,35,16,6
+	.byte	'getReadEvent',0
+	.word	2676
+	.byte	4,2,35,20,6
+	.byte	'getWriteCount',0
+	.word	2712
+	.byte	4,2,35,24,6
+	.byte	'getWriteEvent',0
+	.word	2755
+	.byte	4,2,35,28,6
+	.byte	'canReadCount',0
+	.word	2821
+	.byte	4,2,35,32,6
+	.byte	'canWriteCount',0
+	.word	2858
+	.byte	4,2,35,36,6
+	.byte	'flushTx',0
+	.word	2919
+	.byte	4,2,35,40,6
+	.byte	'clearTx',0
+	.word	2951
+	.byte	4,2,35,44,6
+	.byte	'clearRx',0
+	.word	2983
+	.byte	4,2,35,48,6
+	.byte	'onReceive',0
+	.word	3015
+	.byte	4,2,35,52,6
+	.byte	'onTransmit',0
+	.word	3049
+	.byte	4,2,35,56,6
+	.byte	'onError',0
+	.word	3084
+	.byte	4,2,35,60,6
+	.byte	'getSendCount',0
+	.word	3134
+	.byte	4,2,35,64,6
+	.byte	'getTxTimeStamp',0
+	.word	3189
+	.byte	4,2,35,68,6
+	.byte	'resetSendCount',0
+	.word	3228
+	.byte	4,2,35,72,0
+.L33:
+	.byte	8
+	.word	3267
+	.byte	2
+	.byte	'char',0,1,6,19
+	.word	3672
+	.byte	8
+	.word	3680
+	.byte	9
+	.byte	'pchar',0,4,56,28
+	.word	3685
+	.byte	24
+	.byte	'IfxStdIf_DPipe_print',0,3,140,3,17,1,1,1,1,17
+	.byte	'stdIf',0,3,140,3,54
+	.word	3667
+	.byte	17
+	.byte	'format',0,3,140,3,67
+	.word	3690
+	.byte	25,3,140,3,75,0,8
+	.word	2522
+	.byte	8
+	.word	2522
+	.byte	8
+	.word	562
+	.byte	8
+	.word	2658
+	.byte	8
+	.word	562
+	.byte	8
+	.word	2658
+	.byte	8
+	.word	2793
+	.byte	8
+	.word	2793
+	.byte	8
+	.word	2896
+	.byte	8
+	.word	435
+	.byte	8
+	.word	435
+	.byte	8
+	.word	435
+	.byte	8
+	.word	435
+	.byte	8
+	.word	435
+	.byte	8
+	.word	3116
+	.byte	8
+	.word	3171
+	.byte	8
+	.word	435
+	.byte	19
+	.word	3672
+	.byte	8
+	.word	3856
+	.byte	26
+	.word	2194
+	.byte	27
+	.word	2228
+	.byte	18,0,13,1,76,9,1,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_oneFold',0,1,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_twoFold',0,2,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_fourFold',0,4,0,3,1,186,2,9,36,6
+	.byte	'offset',0
+	.word	550
+	.byte	4,2,35,0,6
+	.byte	'reversed',0
+	.word	212
+	.byte	1,2,35,4,6
+	.byte	'resolution',0
+	.word	550
+	.byte	4,2,35,6,6
+	.byte	'periodPerRotation',0
+	.word	873
+	.byte	2,2,35,10,6
+	.byte	'resolutionFactor',0
+	.word	3878
+	.byte	1,2,35,12,6
+	.byte	'updatePeriod',0
+	.word	481
+	.byte	4,2,35,14,6
+	.byte	'speedModeThreshold',0
+	.word	481
+	.byte	4,2,35,18,6
+	.byte	'minSpeed',0
+	.word	481
+	.byte	4,2,35,22,6
+	.byte	'maxSpeed',0
+	.word	481
+	.byte	4,2,35,26,6
+	.byte	'speedFilterEnabled',0
+	.word	212
+	.byte	1,2,35,30,6
+	.byte	'speedFilerCutOffFrequency',0
+	.word	481
+	.byte	4,2,35,32,0
+.L28:
+	.byte	8
+	.word	4005
+	.byte	28
+	.byte	'__INDIRECT__',0,5,1,1,1,1,1,9
+	.byte	'__wchar_t',0,5,1,1
+	.word	2487
+	.byte	9
+	.byte	'__size_t',0,5,1,1
+	.word	2409
+	.byte	9
+	.byte	'__ptrdiff_t',0,5,1,1
+	.word	2360
+	.byte	29,1,8
+	.word	4348
+	.byte	9
+	.byte	'__codeptr',0,5,1,1
+	.word	4350
+	.byte	9
+	.byte	'boolean',0,6,101,29
+	.word	212
+	.byte	9
+	.byte	'uint8',0,6,105,29
+	.word	212
+	.byte	9
+	.byte	'uint16',0,6,109,29
+	.word	873
+	.byte	9
+	.byte	'uint32',0,6,113,29
+	.word	191
+	.byte	9
+	.byte	'sint16',0,6,126,29
+	.word	2487
+	.byte	9
+	.byte	'sint32',0,6,131,1,29
+	.word	550
+	.byte	9
+	.byte	'sint64',0,6,139,1,29
+	.word	2505
+	.byte	9
+	.byte	'float32',0,6,168,1,29
+	.word	481
+	.byte	9
+	.byte	'pvoid',0,4,57,28
+	.word	397
+	.byte	9
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	2505
+	.byte	9
+	.byte	'Ifx_SizeT',0,4,92,16
+	.word	2487
+	.byte	9
+	.byte	'IfxStdIf_DPipe',0,3,71,32
+	.word	3267
+	.byte	21
+	.word	212
+	.byte	8
+	.word	4573
+	.byte	9
+	.byte	'IfxStdIf_DPipe_WriteEvent',0,3,73,32
+	.word	4578
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ReadEvent',0,3,74,32
+	.word	4578
+	.byte	9
+	.byte	'IfxStdIf_Pos_ResolutionFactor',0,1,81,3
+	.word	3878
+	.byte	9
+	.byte	'IfxStdIf_Pos_SensorType',0,1,92,3
+	.word	1031
+	.byte	9
+	.byte	'IfxStdIf_Pos_Dir',0,1,100,3
+	.word	646
+	.byte	9
+	.byte	'IfxStdIf_Pos_Status',0,1,114,3
+	.word	358
+	.byte	9
+	.byte	'IfxStdIf_Pos',0,1,119,30
+	.word	1685
+	.byte	9
+	.byte	'IfxStdIf_Pos_Config',0,1,199,2,3
+	.word	4005
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,19,1,58,15,59,15,57,15,11,15
+	.byte	0,0,4,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,5,23,1,58,15,59,15,57,15,11,15,0,0,6,13,0,3,8,73,19,11
+	.byte	15,56,9,0,0,7,59,0,3,8,0,0,8,15,0,73,19,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,10,21,1,54,15,39,12
+	.byte	0,0,11,5,0,73,19,0,0,12,21,1,73,19,54,15,39,12,0,0,13,4,1,58,15,59,15,57,15,11,15,0,0,14,40,0,3,8,28,13
+	.byte	0,0,15,19,1,3,8,58,15,59,15,57,15,11,15,0,0,16,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0
+	.byte	17,5,0,3,8,58,15,59,15,57,15,73,19,0,0,18,11,0,0,0,19,38,0,73,19,0,0,20,46,1,3,8,54,15,39,12,63,12,60
+	.byte	12,0,0,21,53,0,73,19,0,0,22,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,23,5,0,3,8,73,19,0,0,24,46,1,3
+	.byte	8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,25,24,0,58,15,59,15,57,15,0,0,26,46,1,49,19,0,0,27,5,0
+	.byte	49,19,0,0,28,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,29,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L16:
+	.word	.L53-.L52
+.L52:
+	.half	3
+	.word	.L55-.L54
+.L54:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.h',0,0,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf.h',0,0,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L55:
+.L53:
+	.sdecl	'.debug_info',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_info'
+.L17:
+	.word	269
+	.half	3
+	.word	.L18
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L20,.L19
+	.byte	2
+	.word	.L13
+	.byte	3
+	.byte	'IfxStdIf_Pos_initConfig',0,1,48,6,1,1,1
+	.word	.L10,.L27,.L9
+	.byte	4
+	.byte	'config',0,1,48,53
+	.word	.L28,.L29
+	.byte	5
+	.word	.L10,.L27
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_abbrev'
+.L18:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_line'
+.L19:
+	.word	.L57-.L56
+.L56:
+	.half	3
+	.word	.L59-.L58
+.L58:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.c',0,0,0,0,0
+.L59:
+	.byte	5,22,7,0,5,2
+	.word	.L10
+	.byte	3,49,1,5,20,1,5,22,9
+	.half	.L60-.L10
+	.byte	3,1,1,5,33,9
+	.half	.L61-.L60
+	.byte	3,2,1,5,24,3,127,1,5,31,9
+	.half	.L62-.L61
+	.byte	3,1,1,5,30,9
+	.half	.L63-.L62
+	.byte	3,1,1,5,28,9
+	.half	.L64-.L63
+	.byte	3,1,1,5,26,1,5,28,9
+	.half	.L65-.L64
+	.byte	1,5,26,1,5,39,9
+	.half	.L66-.L65
+	.byte	3,3,1,5,32,3,126,1,5,39,9
+	.half	.L67-.L66
+	.byte	3,2,1,5,22,3,127,1,9
+	.half	.L68-.L67
+	.byte	3,1,1,5,32,9
+	.half	.L69-.L68
+	.byte	3,1,1,5,39,9
+	.half	.L70-.L69
+	.byte	3,1,1,5,1,9
+	.half	.L71-.L70
+	.byte	3,2,1,7,9
+	.half	.L21-.L71
+	.byte	0,1,1
+.L57:
+	.sdecl	'.debug_ranges',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_ranges'
+.L20:
+	.word	-1,.L10,0,.L21-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxStdIf_Pos_printStatus')
+	.sect	'.debug_info'
+.L22:
+	.word	341
+	.half	3
+	.word	.L23
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L25,.L24
+	.byte	2
+	.word	.L13
+	.byte	3
+	.byte	'IfxStdIf_Pos_printStatus',0,1,64,6,1,1,1
+	.word	.L12,.L30,.L11
+	.byte	4
+	.byte	'driver',0,1,64,45
+	.word	.L31,.L32
+	.byte	4
+	.byte	'io',0,1,64,69
+	.word	.L33,.L34
+	.byte	5
+	.word	.L12,.L30
+	.byte	6
+	.byte	'status',0,1,66,25
+	.word	.L35,.L36
+	.byte	7
+	.word	.L37,.L38,.L39
+	.byte	8
+	.word	.L40,.L41
+	.byte	9
+	.word	.L42,.L38,.L39
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxStdIf_Pos_printStatus')
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
+	.byte	1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxStdIf_Pos_printStatus')
+	.sect	'.debug_line'
+.L24:
+	.word	.L73-.L72
+.L72:
+	.half	3
+	.word	.L75-.L74
+.L74:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.c',0,0,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_Pos.h',0,0,0,0,0
+.L75:
+	.byte	5,6,7,0,5,2
+	.word	.L12
+	.byte	3,63,1,4,2,5,17,9
+	.half	.L38-.L12
+	.byte	3,163,2,1,5,33,9
+	.half	.L76-.L38
+	.byte	1,4,1,5,12,9
+	.half	.L39-.L76
+	.byte	3,224,125,1,5,30,3,2,1,5,5,9
+	.half	.L46-.L39
+	.byte	3,1,1,5,9,7,9
+	.half	.L77-.L46
+	.byte	3,2,1,5,35,7,9
+	.half	.L78-.L77
+	.byte	3,2,1,5,9,9
+	.half	.L3-.L78
+	.byte	3,2,1,5,35,7,9
+	.half	.L79-.L3
+	.byte	3,2,1,5,9,9
+	.half	.L4-.L79
+	.byte	3,2,1,5,35,7,9
+	.half	.L80-.L4
+	.byte	3,2,1,5,9,9
+	.half	.L5-.L80
+	.byte	3,2,1,5,35,7,9
+	.half	.L81-.L5
+	.byte	3,2,1,5,9,9
+	.half	.L6-.L81
+	.byte	3,2,1,5,35,7,9
+	.half	.L82-.L6
+	.byte	3,2,1,5,9,9
+	.half	.L83-.L82
+	.byte	3,126,1,5,1,9
+	.half	.L7-.L83
+	.byte	3,9,1,5,31,7,9
+	.half	.L2-.L7
+	.byte	3,126,1,5,1,9
+	.half	.L26-.L2
+	.byte	3,2,0,1,1
+.L73:
+	.sdecl	'.debug_ranges',debug,cluster('IfxStdIf_Pos_printStatus')
+	.sect	'.debug_ranges'
+.L25:
+	.word	-1,.L12,0,.L26-.L12,0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_loc'
+.L9:
+	.word	-1,.L10,0,.L27-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L29:
+	.word	-1,.L10,0,.L27-.L10
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxStdIf_Pos_printStatus')
+	.sect	'.debug_loc'
+.L11:
+	.word	-1,.L12,0,.L30-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L32:
+	.word	-1,.L12,0,.L43-.L12
+	.half	1
+	.byte	100
+	.word	0,0
+.L34:
+	.word	-1,.L12,0,.L39-.L12
+	.half	1
+	.byte	101
+	.word	.L38-.L12,.L30-.L12
+	.half	1
+	.byte	111
+	.word	.L45-.L12,.L46-.L12
+	.half	1
+	.byte	100
+	.word	.L47-.L12,.L3-.L12
+	.half	1
+	.byte	100
+	.word	.L48-.L12,.L4-.L12
+	.half	1
+	.byte	100
+	.word	.L49-.L12,.L5-.L12
+	.half	1
+	.byte	100
+	.word	.L50-.L12,.L6-.L12
+	.half	1
+	.byte	100
+	.word	.L51-.L12,.L30-.L12
+	.half	1
+	.byte	100
+	.word	0,0
+.L36:
+	.word	-1,.L12,.L44-.L12,.L30-.L12
+	.half	1
+	.byte	95
+	.word	0,0
+.L41:
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L84:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L84,.L10,.L27-.L10
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('IfxStdIf_Pos_printStatus')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L84,.L12,.L30-.L12
+
+
+	; Module end

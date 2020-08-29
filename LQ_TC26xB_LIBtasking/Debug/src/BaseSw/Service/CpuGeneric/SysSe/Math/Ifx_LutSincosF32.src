@@ -1,0 +1,604 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_LutSincosF32.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.src ..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_LutSincosF32.Ifx_LutSincosF32_init',code,cluster('Ifx_LutSincosF32_init')
+	.sect	'.text.Ifx_LutSincosF32.Ifx_LutSincosF32_init'
+	.align	2
+	
+	.global	Ifx_LutSincosF32_init
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     2   * \file Ifx_LutSincosF32.c
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     3   * \brief Sin/Cos lookup functions with fixed-point angle data type
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     4   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     6   * \version disabled
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     8   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    17  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    18  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    20  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    27  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    34  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    42  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    44   */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    45  #include "Ifx_LutSincosF32.h"
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    46  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    47  #include <math.h>
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    48  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    49  void Ifx_LutSincosF32_init(void)
+; Function Ifx_LutSincosF32_init
+.L9:
+Ifx_LutSincosF32_init:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    50  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    51  #if IFX_LUT_TABLE_CONST == 0
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    52      {   /* generate sin and cos table */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    53          sint32 k;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    54  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    55          for (k = 0; k <= (IFX_LUT_ANGLE_PI / 2); k++)
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    56          {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    57              Ifx_g_LutSincosF32_table[k] = sinf((IFX_PI * 2 * k) / IFX_LUT_ANGLE_RESOLUTION);
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    58          }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    59      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    60  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    61  }
+	ret
+.L26:
+	
+__Ifx_LutSincosF32_init_function_end:
+	.size	Ifx_LutSincosF32_init,__Ifx_LutSincosF32_init_function_end-Ifx_LutSincosF32_init
+.L20:
+	; End of function
+	
+	.sdecl	'.text.Ifx_LutSincosF32.Ifx_LutSincosF32_sin',code,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.text.Ifx_LutSincosF32.Ifx_LutSincosF32_sin'
+	.align	2
+	
+	.global	Ifx_LutSincosF32_sin
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    62  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    63  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    64  float32 Ifx_LutSincosF32_sin(Ifx_Lut_FxpAngle fxpAngle)
+; Function Ifx_LutSincosF32_sin
+.L11:
+Ifx_LutSincosF32_sin:	.type	func
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    65  {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    66      float32 result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    67      fxpAngle = fxpAngle & (IFX_LUT_ANGLE_RESOLUTION - 1);
+	insert	d0,d4,#0,#12,#20
+.L32:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    68  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    69      if (fxpAngle < (IFX_LUT_ANGLE_PI / 2))
+	mov	d15,#1024
+.L48:
+	jlt	d0,d15,.L2
+.L49:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    70      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    71          result = Ifx_g_LutSincosF32_table[fxpAngle];
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    72      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    73      else if (fxpAngle < IFX_LUT_ANGLE_PI)
+	mov	d15,#2048
+.L50:
+	jge	d0,d15,.L3
+.L51:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    74      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    75          fxpAngle = IFX_LUT_ANGLE_PI - fxpAngle;
+	sub	d0,d15,d0
+.L2:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    76          result   = Ifx_g_LutSincosF32_table[fxpAngle];
+	movh.a	a15,#@his(Ifx_g_LutSincosF32_table)
+	lea	a15,[a15]@los(Ifx_g_LutSincosF32_table)
+.L52:
+	addsc.a	a15,a15,d0,#2
+	ld.w	d2,[a15]
+.L33:
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    77      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    78      else if (fxpAngle < (IFX_LUT_ANGLE_PI / 2 * 3))
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    79      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    80          fxpAngle = fxpAngle - IFX_LUT_ANGLE_PI;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    81          result   = -Ifx_g_LutSincosF32_table[fxpAngle];
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    82      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    83      else
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    84      {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    85          fxpAngle = IFX_LUT_ANGLE_RESOLUTION - fxpAngle;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    86          result   = -Ifx_g_LutSincosF32_table[fxpAngle];
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    87      }
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    88  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    89      return result;
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    90  }
+	ret
+.L3:
+	mov	d15,#3072
+.L53:
+	jge	d0,d15,.L5
+.L54:
+	addi	d15,d0,#-2048
+	j	.L6
+.L5:
+	mov	d15,#4096
+.L34:
+	sub	d15,d0
+.L6:
+	movh.a	a15,#@his(Ifx_g_LutSincosF32_table)
+	lea	a15,[a15]@los(Ifx_g_LutSincosF32_table)
+.L55:
+	addsc.a	a15,a15,d15,#2
+	ld.w	d15,[a15]
+.L35:
+	insn.t	d2,d15:31,d15:31
+	ret
+.L28:
+	
+__Ifx_LutSincosF32_sin_function_end:
+	.size	Ifx_LutSincosF32_sin,__Ifx_LutSincosF32_sin_function_end-Ifx_LutSincosF32_sin
+.L25:
+	; End of function
+	
+	.calls	'Ifx_LutSincosF32_init','',0
+	.extern	Ifx_g_LutSincosF32_table
+	.calls	'Ifx_LutSincosF32_sin','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L13:
+	.word	1283
+	.half	3
+	.word	.L14
+	.byte	4
+.L12:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L15
+	.byte	2,1,1,3
+	.word	200
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	203
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L27:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	248
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	260
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	340
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	314
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	346
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	346
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	314
+	.byte	6,0,10,4,61,9,8,11
+	.byte	'real',0
+	.word	260
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	260
+	.byte	4,2,35,4,0,12
+	.word	432
+	.byte	3
+	.word	466
+	.byte	8
+	.byte	'IFX_Cf32_dot',0,3,3,85,20
+	.word	260
+	.byte	1,1,5
+	.byte	'b',0,3,85,49
+	.word	471
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,91,20
+	.word	260
+	.byte	1,1,5
+	.byte	'c',0,3,91,49
+	.word	471
+	.byte	13,6,0,0,3
+	.word	432
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
+	.byte	'a',0,3,125,40
+	.word	550
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	260
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	260
+	.byte	6,0,7
+	.byte	'int',0,4,5,12
+	.word	609
+	.byte	14
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,15
+	.word	616
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,16
+	.word	658
+	.byte	3
+	.word	658
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	674
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	679
+	.byte	18
+	.byte	'value',0
+	.word	658
+	.byte	18
+	.byte	'compare',0
+	.word	658
+	.byte	0,19
+	.word	208
+	.byte	20
+	.word	234
+	.byte	6,0,19
+	.word	269
+	.byte	20
+	.word	301
+	.byte	6,0,19
+	.word	351
+	.byte	20
+	.word	370
+	.byte	6,0,19
+	.word	386
+	.byte	20
+	.word	401
+	.byte	20
+	.word	415
+	.byte	6,0,19
+	.word	476
+	.byte	20
+	.word	500
+	.byte	6,0,19
+	.word	512
+	.byte	20
+	.word	536
+	.byte	13,21
+	.word	476
+	.byte	20
+	.word	500
+	.byte	22
+	.word	510
+	.byte	0,6,0,0,19
+	.word	555
+	.byte	20
+	.word	575
+	.byte	20
+	.word	585
+	.byte	20
+	.word	596
+	.byte	6,0
+.L29:
+	.byte	7
+	.byte	'long int',0,4,5,7
+	.byte	'short int',0,2,5,23
+	.byte	'__wchar_t',0,5,1,1
+	.word	865
+	.byte	23
+	.byte	'__size_t',0,5,1,1
+	.word	658
+	.byte	23
+	.byte	'__ptrdiff_t',0,5,1,1
+	.word	609
+	.byte	24,1,3
+	.word	933
+	.byte	23
+	.byte	'__codeptr',0,5,1,1
+	.word	935
+	.byte	7
+	.byte	'unsigned char',0,1,8,23
+	.byte	'uint8',0,6,105,29
+	.word	958
+	.byte	7
+	.byte	'unsigned short int',0,2,7,23
+	.byte	'uint16',0,6,109,29
+	.word	989
+	.byte	7
+	.byte	'unsigned long int',0,4,7,23
+	.byte	'uint32',0,6,113,29
+	.word	1026
+	.byte	23
+	.byte	'uint64',0,6,118,29
+	.word	314
+	.byte	23
+	.byte	'sint16',0,6,126,29
+	.word	865
+	.byte	23
+	.byte	'sint32',0,6,131,1,29
+	.word	853
+	.byte	7
+	.byte	'long long int',0,8,5,23
+	.byte	'sint64',0,6,139,1,29
+	.word	1108
+	.byte	23
+	.byte	'float32',0,6,168,1,29
+	.word	260
+	.byte	23
+	.byte	'pvoid',0,4,57,28
+	.word	346
+	.byte	23
+	.byte	'cfloat32',0,4,65,3
+	.word	432
+	.byte	23
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	1108
+	.byte	23
+	.byte	'Ifx_Lut_FxpAngle',0,7,84,16
+	.word	853
+	.byte	25,132,32
+	.word	260
+	.byte	26,128,8,0,12
+	.word	1235
+	.byte	27
+	.byte	'Ifx_g_LutSincosF32_table',0,8,62,34
+	.word	1246
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L14:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,73,19,0,0,16,53,0,73,19,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,18,5,0,3
+	.byte	8,73,19,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,29,1,49,19,0,0,22,11,0,49,19,0,0,23,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,24,21,0,54,15,0,0,25,1,1,11,15,73,19,0,0,26,33,0,47,15,0,0,27,52,0,3,8,58,15,59,15
+	.byte	57,15,73,19,63,12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L15:
+	.word	.L37-.L36
+.L36:
+	.half	3
+	.word	.L39-.L38
+.L38:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math',0
+	.byte	0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'Ifx_Cf32.h',0,2,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Lut.h',0,0,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.h',0,0,0,0,0
+.L39:
+.L37:
+	.sdecl	'.debug_info',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_info'
+.L16:
+	.word	257
+	.half	3
+	.word	.L17
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L19,.L18
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'Ifx_LutSincosF32_init',0,1,49,6,1,1,1
+	.word	.L9,.L26,.L8
+	.byte	4
+	.word	.L9,.L26
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_abbrev'
+.L17:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_line'
+.L18:
+	.word	.L41-.L40
+.L40:
+	.half	3
+	.word	.L43-.L42
+.L42:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0,0,0,0,0
+.L43:
+	.byte	5,1,7,0,5,2
+	.word	.L9
+	.byte	3,60,1,7,9
+	.half	.L20-.L9
+	.byte	0,1,1
+.L41:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_ranges'
+.L19:
+	.word	-1,.L9,0,.L20-.L9,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_info'
+.L21:
+	.word	301
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L24,.L23
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'Ifx_LutSincosF32_sin',0,1,64,9
+	.word	.L27
+	.byte	1,1,1
+	.word	.L11,.L28,.L10
+	.byte	4
+	.byte	'fxpAngle',0,1,64,47
+	.word	.L29,.L30
+	.byte	5
+	.word	.L11,.L28
+	.byte	6
+	.byte	'result',0,1,66,13
+	.word	.L27,.L31
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_line'
+.L23:
+	.word	.L45-.L44
+.L44:
+	.half	3
+	.word	.L47-.L46
+.L46:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0,0,0,0,0
+.L47:
+	.byte	5,25,7,0,5,2
+	.word	.L11
+	.byte	3,194,0,1,5,38,9
+	.half	.L32-.L11
+	.byte	3,2,1,5,5,9
+	.half	.L48-.L32
+	.byte	1,5,25,7,9
+	.half	.L49-.L48
+	.byte	3,4,1,5,10,9
+	.half	.L50-.L49
+	.byte	1,5,37,7,9
+	.half	.L51-.L50
+	.byte	3,2,1,5,20,9
+	.half	.L2-.L51
+	.byte	3,1,1,5,44,9
+	.half	.L52-.L2
+	.byte	1,5,1,9
+	.half	.L33-.L52
+	.byte	3,14,1,5,47,7,9
+	.half	.L3-.L33
+	.byte	3,116,1,5,10,9
+	.half	.L53-.L3
+	.byte	1,5,29,7,9
+	.half	.L54-.L53
+	.byte	3,2,1,5,47,1,5,20,9
+	.half	.L5-.L54
+	.byte	3,5,1,5,45,9
+	.half	.L34-.L5
+	.byte	1,5,21,9
+	.half	.L6-.L34
+	.byte	3,1,1,5,45,9
+	.half	.L55-.L6
+	.byte	1,5,20,9
+	.half	.L35-.L55
+	.byte	1,5,1,3,4,1,7,9
+	.half	.L25-.L35
+	.byte	0,1,1
+.L45:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_ranges'
+.L24:
+	.word	-1,.L11,0,.L25-.L11,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_loc'
+.L8:
+	.word	-1,.L9,0,.L26-.L9
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_loc'
+.L10:
+	.word	-1,.L11,0,.L28-.L11
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L30:
+	.word	-1,.L11,0,.L32-.L11
+	.half	1
+	.byte	84
+	.word	.L32-.L11,.L6-.L11
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L34-.L11,.L35-.L11
+	.half	1
+	.byte	95
+	.word	0,0
+.L31:
+	.word	-1,.L11,.L33-.L11,.L3-.L11
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L56:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L56,.L9,.L26-.L9
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L56,.L11,.L28-.L11
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+
+	; Module end

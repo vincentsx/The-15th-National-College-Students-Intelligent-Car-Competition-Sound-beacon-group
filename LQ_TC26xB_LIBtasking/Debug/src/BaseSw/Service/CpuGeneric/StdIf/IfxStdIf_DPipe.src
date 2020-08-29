@@ -1,0 +1,1312 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Service\\CpuGeneric\\StdIf\\.IfxStdIf_DPipe.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.src ..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.c'
+
+	
+$TC16X
+	.sdecl	'.rodata.IfxStdIf_DPipe..1.cnt',data,rom
+	.sect	'.rodata.IfxStdIf_DPipe..1.cnt'
+	.align	4
+.1.cnt:	.type	object
+	.size	.1.cnt,8
+	.word	-1,2147483647
+	
+	.sdecl	'.text.IfxStdIf_DPipe.IfxStdIf_DPipe_print',code,cluster('IfxStdIf_DPipe_print')
+	.sect	'.text.IfxStdIf_DPipe.IfxStdIf_DPipe_print'
+	.align	2
+	
+	.global	IfxStdIf_DPipe_print
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     2   * \file IfxStdIf_DPipe.c
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     3   * \brief Standard interface: Data Pipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     4   * \ingroup IfxStdIf
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     7   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     8   * $Date: 2014-02-27 20:08:23 GMT$
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    17  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    18  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    20  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    27  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    34  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    42  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    44   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    45  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    46  #include "IfxStdIf_DPipe.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    47  #include "_Utilities/Ifx_Assert.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    48  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    49  #include <string.h>
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    50  #include <stdio.h>
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    51  #include <stdarg.h>
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    52  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    53  void IfxStdIf_DPipe_print(IfxStdIf_DPipe *stdIf, pchar format, ...)
+; Function IfxStdIf_DPipe_print
+.L4:
+IfxStdIf_DPipe_print:	.type	func
+	mov.aa	a15,a4
+.L38:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    54  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    55      if (!stdIf->txDisabled)
+	ld.bu	d15,[a15]4
+.L48:
+	lea	a10,[a10]-264
+.L35:
+	jne	d15,#0,.L2
+.L19:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    56      {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    57          char      message[STDIF_DPIPE_MAX_PRINT_SIZE + 1];
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    58          Ifx_SizeT count;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    59          va_list   args;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    60          va_start(args, format);
+	lea	a6,[a10]264
+.L49:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    61          vsprintf((char *)message, format, args);
+	mov.aa	a4,a10
+.L37:
+	call	vsprintf
+.L36:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    62          va_end(args);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    63          count = (Ifx_SizeT)strlen(message);
+	mov.aa	a4,a10
+	call	strlen
+.L50:
+	st.h	[a10]256,d2
+.L25:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     2   * \file IfxStdIf_DPipe.h
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     3   * \brief Standard interface: Data Pipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     4   * \ingroup IfxStdIf
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     7   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     8   * $Date: 2014-02-27 20:08:24 GMT$
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    17  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    18  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    20  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    27  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    34  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    42  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    44   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    45   * \defgroup library_srvsw_stdif_dpipe Standard interface: Data Pipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    46   * \ingroup library_srvsw_stdif
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    47   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    48   * The standard interafce data pipe (DPipe) abstract the hardware used for data transfer. It provide, after proper initialization an hardware independant way to write
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    49   * and read data to/from as communciation channel.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    50   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    51   * \par Porting StandardIo to DPipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    52   * replace all
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    53   *  - StandardIo type with IfxStdIf_DPipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    54   *  - StandardIo_print with IfxStdIf_DPipe_print
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    55   * delete StandardIo.c and StandardIo.h
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    56   * Include "StdIf/IfxStdIf_DPipe.h" instead of "SysSe/Bsp/StandardIo.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    57   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    58   * The following files are already ported: Ifx_Console, Ifx_Shell
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    59   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    60   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    61  #ifndef STDIF_DPIPE_H_
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    62  #define STDIF_DPIPE_H_ 1
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    63  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    64  #include "IfxStdIf.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    65  //----------------------------------------------------------------------------------------
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    66  #ifndef ENDL
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    67  #    define ENDL       "\r\n"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    68  #endif
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    69  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    70  /** \brief Forward declaration */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    71  typedef struct IfxStdIf_DPipe_ IfxStdIf_DPipe;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    72  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    73  typedef volatile boolean      *IfxStdIf_DPipe_WriteEvent;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    74  typedef volatile boolean      *IfxStdIf_DPipe_ReadEvent;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    75  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    76  /** \brief Size of the buffer allocated on the stack for the print function */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    77  #define STDIF_DPIPE_MAX_PRINT_SIZE (255)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    78  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    79  /** \brief Write binary data into the \ref IfxStdIf_DPipe.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    80   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    81   * Initially the parameter 'count' specifies count of data to write.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    82   * After execution the data pointed by 'count' specifies the data actually written
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    83   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    84   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    85   * \param data Pointer to the start of data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    86   * \param count Pointer to the count of data (in bytes).
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    87   * \param timeout in system timer ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    88   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    89   * \retval TRUE Returns TRUE if all items could be written
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    90   * \retval FALSE Returns FALSE if not all the items could be written
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    91   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    92  typedef boolean (*IfxStdIf_DPipe_Write)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    93  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    94  /** \brief Read data from the \ref IfxStdIf_DPipe object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    95   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    96   * Initially the parameter 'count' specifies count of data to read.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    97   * After execution the data pointed by 'count' specifies the data actually read.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    98   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    99   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   100   * \param data Pointer to the start of data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   101   * \param count Pointer to the count of data (in bytes).
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   102   * \param timeout in system timer ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   103   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   104   * \retval TRUE Returns TRUE if all items could be read
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   105   * \retval FALSE Returns FALSE if not all the items could be read
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   106   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   107  typedef boolean (*IfxStdIf_DPipe_Read)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   108  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   109  /** \brief Returns the number of bytes in the rx buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   110   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   111   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   112   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   113   * \return Returns the number of bytes in the rx buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   114   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   115  typedef sint32 (*IfxStdIf_DPipe_GetReadCount)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   116  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   117  /** \brief Returns read event object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   118   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   119   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   120   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   121   * \return Returns read event object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   122   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   123  typedef IfxStdIf_DPipe_ReadEvent (*IfxStdIf_DPipe_GetReadEvent)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   124  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   125  /** \brief Returns number of bytes send
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   126   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   127   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   128   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   129   * \return Returns number of bytes send
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   130   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   131  typedef uint32 (*IfxStdIf_DPipe_GetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   132  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   133  /** \brief Returns the time stamp of the last transmit data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   134   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   135   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   136   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   137   * \return Returns the time stamp of the last transmit data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   138   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   139  typedef Ifx_TickTime (*IfxStdIf_DPipe_GetTxTimeStamp)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   140  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   141  /** \brief Returns the number of free bytes (free space) in the tx buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   142   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   143   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   144   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   145   * \return Returns the number of free bytes in the tx buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   146   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   147  typedef sint32 (*IfxStdIf_DPipe_GetWriteCount)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   148  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   149  /** \brief Returns write event object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   150   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   151   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   152   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   153   * \return Returns write event object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   154   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   155  typedef IfxStdIf_DPipe_WriteEvent (*IfxStdIf_DPipe_GetWriteEvent)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   156  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   157  /** \brief Indicates if the required number of bytes are available for read in the buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   158   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   159   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   160   * \param count Pointer to the count of data (in bytes).
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   161   * \param timeout in system timer ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   162   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   163   * \return Returns TRUE if at least count bytes are available for read in the rx buffer,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   164   * if not the Event is armed to be set when the buffer count is bigger or equal to the requested count
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   165   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   166  typedef boolean (*IfxStdIf_DPipe_CanReadCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   167  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   168  /** \brief  Indicates if there is enough free space to write the data in the buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   169   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   170   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   171   * \param count Pointer to the count of data (in bytes).
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   172   * \param timeout in system timer ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   173   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   174   * \return Returns TRUE if at least count bytes can be written to the tx buffer,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   175   *  if not the Event is armed to be set when the buffer free count is bigger or equal to the requested count
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   176   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   177  typedef boolean (*IfxStdIf_DPipe_CanWriteCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   178  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   179  /** \brief Flush the transmit buffer by transmitting all data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   180   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   181   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   182   * \param timeout timeout for the flush operation
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   183   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   184   * \return Returns TRUE if the FIFO is empty
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   185   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   186  typedef boolean (*IfxStdIf_DPipe_FlushTx)(IfxStdIf_InterfaceDriver stdIf, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   187  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   188  /** \brief Clears the RX buffer by removing all data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   189   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   190   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   191   * \return void
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   192   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   193  typedef void (*IfxStdIf_DPipe_ClearRx)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   194  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   195  /** \brief Clears the TX buffer by removing all data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   196   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   197   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   198   * \return void
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   199   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   200  typedef void (*IfxStdIf_DPipe_ClearTx)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   201  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   202  /** \brief handler called on reveive event
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   203   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   204   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   205   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   206   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   207   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   208  typedef void (*IfxStdIf_DPipe_OnReceive)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   209  /** \brief handler called on transmit event
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   210   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   211   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   212   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   213   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   214   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   215  typedef void (*IfxStdIf_DPipe_OnTransmit)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   216  /** \brief handler called on error event
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   217   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   218   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   219   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   220   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   221   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   222  typedef void (*IfxStdIf_DPipe_OnError)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   223  /** \brief Reset the sendCount counter
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   224   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   225   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   226   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   227   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   228   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   229  typedef void (*IfxStdIf_DPipe_ResetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   230  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   231  /** \brief Standard interface object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   232   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   233  struct IfxStdIf_DPipe_
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   234  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   235      IfxStdIf_InterfaceDriver driver;              /**< \brief Pointer to the specific driver object */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   236      boolean                  txDisabled;          /**< \brief If disabled is set to TRUE, the output is disabled, else enabled */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   237  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   238      /* Standard interface APIs */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   239      IfxStdIf_DPipe_Write          write;          /**< \brief \see IfxStdIf_DPipe_Write */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   240      IfxStdIf_DPipe_Read           read;           /**< \brief \see IfxStdIf_DPipe_Read */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   241      IfxStdIf_DPipe_GetReadCount   getReadCount;   /**< \brief \see IfxStdIf_DPipe_GetReadCount */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   242      IfxStdIf_DPipe_GetReadEvent   getReadEvent;   /**< \brief \see IfxStdIf_DPipe_GetReadEvent */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   243      IfxStdIf_DPipe_GetWriteCount  getWriteCount;  /**< \brief \see IfxStdIf_DPipe_GetWriteCount */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   244      IfxStdIf_DPipe_GetWriteEvent  getWriteEvent;  /**< \brief \see IfxStdIf_DPipe_GetWriteEvent */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   245      IfxStdIf_DPipe_CanReadCount   canReadCount;   /**< \brief \see IfxStdIf_DPipe_CanReadCount */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   246      IfxStdIf_DPipe_CanWriteCount  canWriteCount;  /**< \brief \see IfxStdIf_DPipe_CanWriteCount */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   247      IfxStdIf_DPipe_FlushTx        flushTx;        /**< \brief \see IfxStdIf_DPipe_FlushTx */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   248      IfxStdIf_DPipe_ClearTx        clearTx;        /**< \brief \see IfxStdIf_DPipe_ClearTx */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   249      IfxStdIf_DPipe_ClearRx        clearRx;        /**< \brief \see IfxStdIf_DPipe_ClearRx */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   250      IfxStdIf_DPipe_OnReceive      onReceive;      /**< \brief \see IfxStdIf_DPipe_OnReceive  */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   251      IfxStdIf_DPipe_OnTransmit     onTransmit;     /**< \brief \see IfxStdIf_DPipe_OnTransmit */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   252      IfxStdIf_DPipe_OnError        onError;        /**< \brief \see IfxStdIf_DPipe_OnError    */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   253  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   254      IfxStdIf_DPipe_GetSendCount   getSendCount;   /**< \brief \see IfxStdIf_DPipe_GetSendCount    */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   255      IfxStdIf_DPipe_GetTxTimeStamp getTxTimeStamp; /**< \brief \see IfxStdIf_DPipe_GetTxTimeStamp    */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   256      IfxStdIf_DPipe_ResetSendCount resetSendCount; /**< \brief \see IfxStdIf_DPipe_ResetSendCount    */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   257  };
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   258  /** \addtogroup library_srvsw_stdif_dpipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   259   * \{ */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   260  /** \copydoc IfxStdIf_DPipe_Write
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   261   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   262  IFX_INLINE boolean IfxStdIf_DPipe_write(IfxStdIf_DPipe *stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   263  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   264      return stdIf->write(stdIf->driver, data, count, timeout);
+	ld.a	a2,[a15]8
+.L51:
+	ld.a	a4,[a15]
+.L52:
+	movh.a	a15,#@his(.1.cnt)
+.L39:
+	lea	a15,[a15]@los(.1.cnt)
+	ld.d	e4,[a15]0
+.L53:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    64  essage);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    65          IFX_ASSERT(IFX_VERBOSE_LEVEL_ERROR, count < STDIF_DPIPE_MAX_PRINT_SIZE);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    66          //return
+	mov.aa	a5,a10
+.L54:
+	lea	a6,[a10]256
+.L55:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     2   * \file IfxStdIf_DPipe.h
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     3   * \brief Standard interface: Data Pipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     4   * \ingroup IfxStdIf
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     7   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     8   * $Date: 2014-02-27 20:08:24 GMT$
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    17  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    18  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    20  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    27  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    34  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    42  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    44   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    45   * \defgroup library_srvsw_stdif_dpipe Standard interface: Data Pipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    46   * \ingroup library_srvsw_stdif
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    47   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    48   * The standard interafce data pipe (DPipe) abstract the hardware used for data transfer. It provide, after proper initialization an hardware independant way to write
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    49   * and read data to/from as communciation channel.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    50   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    51   * \par Porting StandardIo to DPipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    52   * replace all
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    53   *  - StandardIo type with IfxStdIf_DPipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    54   *  - StandardIo_print with IfxStdIf_DPipe_print
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    55   * delete StandardIo.c and StandardIo.h
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    56   * Include "StdIf/IfxStdIf_DPipe.h" instead of "SysSe/Bsp/StandardIo.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    57   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    58   * The following files are already ported: Ifx_Console, Ifx_Shell
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    59   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    60   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    61  #ifndef STDIF_DPIPE_H_
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    62  #define STDIF_DPIPE_H_ 1
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    63  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    64  #include "IfxStdIf.h"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    65  //----------------------------------------------------------------------------------------
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    66  #ifndef ENDL
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    67  #    define ENDL       "\r\n"
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    68  #endif
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    69  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    70  /** \brief Forward declaration */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    71  typedef struct IfxStdIf_DPipe_ IfxStdIf_DPipe;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    72  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    73  typedef volatile boolean      *IfxStdIf_DPipe_WriteEvent;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    74  typedef volatile boolean      *IfxStdIf_DPipe_ReadEvent;
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    75  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    76  /** \brief Size of the buffer allocated on the stack for the print function */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    77  #define STDIF_DPIPE_MAX_PRINT_SIZE (255)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    78  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    79  /** \brief Write binary data into the \ref IfxStdIf_DPipe.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    80   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    81   * Initially the parameter 'count' specifies count of data to write.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    82   * After execution the data pointed by 'count' specifies the data actually written
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    83   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    84   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    85   * \param data Pointer to the start of data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    86   * \param count Pointer to the count of data (in bytes).
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    87   * \param timeout in system timer ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    88   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    89   * \retval TRUE Returns TRUE if all items could be written
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    90   * \retval FALSE Returns FALSE if not all the items could be written
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    91   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    92  typedef boolean (*IfxStdIf_DPipe_Write)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    93  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    94  /** \brief Read data from the \ref IfxStdIf_DPipe object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    95   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    96   * Initially the parameter 'count' specifies count of data to read.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    97   * After execution the data pointed by 'count' specifies the data actually read.
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    98   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    99   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   100   * \param data Pointer to the start of data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   101   * \param count Pointer to the count of data (in bytes).
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   102   * \param timeout in system timer ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   103   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   104   * \retval TRUE Returns TRUE if all items could be read
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   105   * \retval FALSE Returns FALSE if not all the items could be read
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   106   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   107  typedef boolean (*IfxStdIf_DPipe_Read)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   108  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   109  /** \brief Returns the number of bytes in the rx buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   110   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   111   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   112   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   113   * \return Returns the number of bytes in the rx buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   114   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   115  typedef sint32 (*IfxStdIf_DPipe_GetReadCount)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   116  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   117  /** \brief Returns read event object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   118   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   119   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   120   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   121   * \return Returns read event object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   122   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   123  typedef IfxStdIf_DPipe_ReadEvent (*IfxStdIf_DPipe_GetReadEvent)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   124  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   125  /** \brief Returns number of bytes send
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   126   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   127   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   128   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   129   * \return Returns number of bytes send
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   130   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   131  typedef uint32 (*IfxStdIf_DPipe_GetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   132  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   133  /** \brief Returns the time stamp of the last transmit data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   134   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   135   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   136   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   137   * \return Returns the time stamp of the last transmit data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   138   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   139  typedef Ifx_TickTime (*IfxStdIf_DPipe_GetTxTimeStamp)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   140  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   141  /** \brief Returns the number of free bytes (free space) in the tx buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   142   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   143   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   144   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   145   * \return Returns the number of free bytes in the tx buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   146   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   147  typedef sint32 (*IfxStdIf_DPipe_GetWriteCount)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   148  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   149  /** \brief Returns write event object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   150   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   151   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   152   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   153   * \return Returns write event object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   154   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   155  typedef IfxStdIf_DPipe_WriteEvent (*IfxStdIf_DPipe_GetWriteEvent)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   156  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   157  /** \brief Indicates if the required number of bytes are available for read in the buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   158   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   159   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   160   * \param count Pointer to the count of data (in bytes).
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   161   * \param timeout in system timer ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   162   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   163   * \return Returns TRUE if at least count bytes are available for read in the rx buffer,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   164   * if not the Event is armed to be set when the buffer count is bigger or equal to the requested count
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   165   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   166  typedef boolean (*IfxStdIf_DPipe_CanReadCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   167  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   168  /** \brief  Indicates if there is enough free space to write the data in the buffer
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   169   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   170   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   171   * \param count Pointer to the count of data (in bytes).
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   172   * \param timeout in system timer ticks
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   173   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   174   * \return Returns TRUE if at least count bytes can be written to the tx buffer,
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   175   *  if not the Event is armed to be set when the buffer free count is bigger or equal to the requested count
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   176   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   177  typedef boolean (*IfxStdIf_DPipe_CanWriteCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   178  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   179  /** \brief Flush the transmit buffer by transmitting all data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   180   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   181   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   182   * \param timeout timeout for the flush operation
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   183   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   184   * \return Returns TRUE if the FIFO is empty
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   185   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   186  typedef boolean (*IfxStdIf_DPipe_FlushTx)(IfxStdIf_InterfaceDriver stdIf, Ifx_TickTime timeout);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   187  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   188  /** \brief Clears the RX buffer by removing all data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   189   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   190   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   191   * \return void
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   192   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   193  typedef void (*IfxStdIf_DPipe_ClearRx)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   194  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   195  /** \brief Clears the TX buffer by removing all data
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   196   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   197   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   198   * \return void
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   199   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   200  typedef void (*IfxStdIf_DPipe_ClearTx)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   201  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   202  /** \brief handler called on reveive event
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   203   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   204   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   205   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   206   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   207   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   208  typedef void (*IfxStdIf_DPipe_OnReceive)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   209  /** \brief handler called on transmit event
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   210   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   211   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   212   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   213   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   214   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   215  typedef void (*IfxStdIf_DPipe_OnTransmit)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   216  /** \brief handler called on error event
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   217   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   218   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   219   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   220   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   221   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   222  typedef void (*IfxStdIf_DPipe_OnError)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   223  /** \brief Reset the sendCount counter
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   224   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   225   * \param stdif Pointer to the interface driver object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   226   *
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   227   * \return none
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   228   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   229  typedef void (*IfxStdIf_DPipe_ResetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   230  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   231  /** \brief Standard interface object
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   232   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   233  struct IfxStdIf_DPipe_
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   234  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   235      IfxStdIf_InterfaceDriver driver;              /**< \brief Pointer to the specific driver object */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   236      boolean                  txDisabled;          /**< \brief If disabled is set to TRUE, the output is disabled, else enabled */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   237  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   238      /* Standard interface APIs */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   239      IfxStdIf_DPipe_Write          write;          /**< \brief \see IfxStdIf_DPipe_Write */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   240      IfxStdIf_DPipe_Read           read;           /**< \brief \see IfxStdIf_DPipe_Read */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   241      IfxStdIf_DPipe_GetReadCount   getReadCount;   /**< \brief \see IfxStdIf_DPipe_GetReadCount */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   242      IfxStdIf_DPipe_GetReadEvent   getReadEvent;   /**< \brief \see IfxStdIf_DPipe_GetReadEvent */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   243      IfxStdIf_DPipe_GetWriteCount  getWriteCount;  /**< \brief \see IfxStdIf_DPipe_GetWriteCount */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   244      IfxStdIf_DPipe_GetWriteEvent  getWriteEvent;  /**< \brief \see IfxStdIf_DPipe_GetWriteEvent */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   245      IfxStdIf_DPipe_CanReadCount   canReadCount;   /**< \brief \see IfxStdIf_DPipe_CanReadCount */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   246      IfxStdIf_DPipe_CanWriteCount  canWriteCount;  /**< \brief \see IfxStdIf_DPipe_CanWriteCount */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   247      IfxStdIf_DPipe_FlushTx        flushTx;        /**< \brief \see IfxStdIf_DPipe_FlushTx */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   248      IfxStdIf_DPipe_ClearTx        clearTx;        /**< \brief \see IfxStdIf_DPipe_ClearTx */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   249      IfxStdIf_DPipe_ClearRx        clearRx;        /**< \brief \see IfxStdIf_DPipe_ClearRx */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   250      IfxStdIf_DPipe_OnReceive      onReceive;      /**< \brief \see IfxStdIf_DPipe_OnReceive  */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   251      IfxStdIf_DPipe_OnTransmit     onTransmit;     /**< \brief \see IfxStdIf_DPipe_OnTransmit */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   252      IfxStdIf_DPipe_OnError        onError;        /**< \brief \see IfxStdIf_DPipe_OnError    */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   253  
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   254      IfxStdIf_DPipe_GetSendCount   getSendCount;   /**< \brief \see IfxStdIf_DPipe_GetSendCount    */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   255      IfxStdIf_DPipe_GetTxTimeStamp getTxTimeStamp; /**< \brief \see IfxStdIf_DPipe_GetTxTimeStamp    */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   256      IfxStdIf_DPipe_ResetSendCount resetSendCount; /**< \brief \see IfxStdIf_DPipe_ResetSendCount    */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   257  };
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   258  /** \addtogroup library_srvsw_stdif_dpipe
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   259   * \{ */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   260  /** \copydoc IfxStdIf_DPipe_Write
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   261   */
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   262  IFX_INLINE boolean IfxStdIf_DPipe_write(IfxStdIf_DPipe *stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout)
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   263  {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   264      return stdIf->write(stdIf->driver, data, count, timeout);
+	ji	a2
+.L2:
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    67  return
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    68          IfxStdIf_DPipe_write(stdIf, (void *)message, &count, TIME_INFINITE);
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    69      }
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    70      else
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    71      {
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    72          //return TRUE;
+	ret
+.L14:
+	
+__IfxStdIf_DPipe_print_function_end:
+	.size	IfxStdIf_DPipe_print,__IfxStdIf_DPipe_print_function_end-IfxStdIf_DPipe_print
+.L13:
+	; End of function
+	
+	.calls	'IfxStdIf_DPipe_print','vsprintf'
+	.calls	'IfxStdIf_DPipe_print','strlen'
+	.calls	'IfxStdIf_DPipe_print','__INDIRECT__'
+	.extern	strlen
+	.extern	vsprintf
+	.extern	__printf_float
+	.extern	__printf_llong
+	.extern	__INDIRECT__
+	.calls	'IfxStdIf_DPipe_print','',264
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L6:
+	.word	2479
+	.half	3
+	.word	.L7
+	.byte	4
+.L5:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L8
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.byte	'void',0,4
+	.word	210
+	.byte	5
+	.byte	'IfxStdIf_InterfaceDriver',0,2,118,15
+	.word	216
+.L22:
+	.byte	2
+	.byte	'short int',0,2,5,4
+	.word	254
+	.byte	2
+	.byte	'long long int',0,8,5,6
+	.word	193
+	.byte	1,1,7
+	.word	216
+	.byte	7
+	.word	216
+	.byte	7
+	.word	267
+	.byte	7
+	.word	272
+	.byte	0,4
+	.word	289
+	.byte	5
+	.byte	'IfxStdIf_DPipe_Write',0,1,92,19
+	.word	317
+	.byte	5
+	.byte	'IfxStdIf_DPipe_Read',0,1,107,19
+	.word	317
+	.byte	2
+	.byte	'long int',0,4,5,6
+	.word	379
+	.byte	1,1,7
+	.word	216
+	.byte	0,4
+	.word	391
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetReadCount',0,1,115,18
+	.word	404
+	.byte	8
+	.word	193
+	.byte	4
+	.word	445
+	.byte	6
+	.word	450
+	.byte	1,1,7
+	.word	216
+	.byte	0,4
+	.word	455
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetReadEvent',0,1,123,36
+	.word	468
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetWriteCount',0,1,147,1,18
+	.word	404
+	.byte	4
+	.word	455
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetWriteEvent',0,1,155,1,37
+	.word	547
+	.byte	6
+	.word	193
+	.byte	1,1,7
+	.word	216
+	.byte	7
+	.word	254
+	.byte	7
+	.word	272
+	.byte	0,4
+	.word	590
+	.byte	5
+	.byte	'IfxStdIf_DPipe_CanReadCount',0,1,166,1,19
+	.word	613
+	.byte	5
+	.byte	'IfxStdIf_DPipe_CanWriteCount',0,1,177,1,19
+	.word	613
+	.byte	6
+	.word	193
+	.byte	1,1,7
+	.word	216
+	.byte	7
+	.word	272
+	.byte	0,4
+	.word	693
+	.byte	5
+	.byte	'IfxStdIf_DPipe_FlushTx',0,1,186,1,19
+	.word	711
+	.byte	9,1,1,7
+	.word	216
+	.byte	0,4
+	.word	748
+	.byte	5
+	.byte	'IfxStdIf_DPipe_ClearTx',0,1,200,1,16
+	.word	757
+	.byte	5
+	.byte	'IfxStdIf_DPipe_ClearRx',0,1,193,1,16
+	.word	757
+	.byte	5
+	.byte	'IfxStdIf_DPipe_OnReceive',0,1,208,1,16
+	.word	757
+	.byte	5
+	.byte	'IfxStdIf_DPipe_OnTransmit',0,1,215,1,16
+	.word	757
+	.byte	5
+	.byte	'IfxStdIf_DPipe_OnError',0,1,222,1,16
+	.word	757
+	.byte	2
+	.byte	'unsigned long int',0,4,7,6
+	.word	927
+	.byte	1,1,7
+	.word	216
+	.byte	0,4
+	.word	948
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetSendCount',0,1,131,1,18
+	.word	961
+	.byte	6
+	.word	272
+	.byte	1,1,7
+	.word	216
+	.byte	0,4
+	.word	1003
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetTxTimeStamp',0,1,139,1,24
+	.word	1016
+	.byte	5
+	.byte	'IfxStdIf_DPipe_ResetSendCount',0,1,229,1,16
+	.word	757
+	.byte	10
+	.byte	'IfxStdIf_DPipe_',0,1,233,1,8,76,11
+	.byte	'driver',0
+	.word	221
+	.byte	4,2,35,0,11
+	.byte	'txDisabled',0
+	.word	193
+	.byte	1,2,35,4,11
+	.byte	'write',0
+	.word	322
+	.byte	4,2,35,8,11
+	.byte	'read',0
+	.word	351
+	.byte	4,2,35,12,11
+	.byte	'getReadCount',0
+	.word	409
+	.byte	4,2,35,16,11
+	.byte	'getReadEvent',0
+	.word	473
+	.byte	4,2,35,20,11
+	.byte	'getWriteCount',0
+	.word	509
+	.byte	4,2,35,24,11
+	.byte	'getWriteEvent',0
+	.word	552
+	.byte	4,2,35,28,11
+	.byte	'canReadCount',0
+	.word	618
+	.byte	4,2,35,32,11
+	.byte	'canWriteCount',0
+	.word	655
+	.byte	4,2,35,36,11
+	.byte	'flushTx',0
+	.word	716
+	.byte	4,2,35,40,11
+	.byte	'clearTx',0
+	.word	762
+	.byte	4,2,35,44,11
+	.byte	'clearRx',0
+	.word	794
+	.byte	4,2,35,48,11
+	.byte	'onReceive',0
+	.word	826
+	.byte	4,2,35,52,11
+	.byte	'onTransmit',0
+	.word	860
+	.byte	4,2,35,56,11
+	.byte	'onError',0
+	.word	895
+	.byte	4,2,35,60,11
+	.byte	'getSendCount',0
+	.word	966
+	.byte	4,2,35,64,11
+	.byte	'getTxTimeStamp',0
+	.word	1021
+	.byte	4,2,35,68,11
+	.byte	'resetSendCount',0
+	.word	1060
+	.byte	4,2,35,72,0
+.L15:
+	.byte	4
+	.word	1099
+	.byte	4
+	.word	254
+.L24:
+	.byte	12
+	.byte	'IfxStdIf_DPipe_write',0,3,1,134,2,20
+	.word	193
+	.byte	1,1
+.L26:
+	.byte	13
+	.byte	'stdIf',0,1,134,2,57
+	.word	1499
+.L28:
+	.byte	13
+	.byte	'data',0,1,134,2,70
+	.word	216
+.L30:
+	.byte	13
+	.byte	'count',0,1,134,2,87
+	.word	1504
+.L32:
+	.byte	13
+	.byte	'timeout',0,1,134,2,107
+	.word	272
+.L34:
+	.byte	14,0,4
+	.word	210
+	.byte	4
+	.word	289
+	.byte	4
+	.word	289
+	.byte	4
+	.word	391
+	.byte	4
+	.word	455
+	.byte	4
+	.word	391
+	.byte	4
+	.word	455
+	.byte	4
+	.word	590
+	.byte	4
+	.word	590
+	.byte	4
+	.word	693
+	.byte	4
+	.word	748
+	.byte	4
+	.word	748
+	.byte	4
+	.word	748
+	.byte	4
+	.word	748
+	.byte	4
+	.word	748
+	.byte	4
+	.word	948
+	.byte	4
+	.word	1003
+	.byte	4
+	.word	748
+	.byte	2
+	.byte	'int',0,4,5,15
+	.word	1695
+	.byte	16
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,7
+	.word	1702
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,8
+	.word	1744
+	.byte	4
+	.word	1744
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	1760
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	1765
+	.byte	18
+	.byte	'value',0
+	.word	1744
+	.byte	18
+	.byte	'compare',0
+	.word	1744
+	.byte	0,19
+	.byte	'__dotdotdot__',0
+	.word	216
+	.byte	1,1,1,1,20
+	.word	1509
+	.byte	21
+	.word	1542
+	.byte	21
+	.word	1557
+	.byte	21
+	.word	1571
+	.byte	21
+	.word	1586
+	.byte	14,0,2
+	.byte	'char',0,1,6,15
+	.word	1872
+	.byte	4
+	.word	1880
+	.byte	15
+	.word	1872
+	.byte	4
+	.word	1890
+.L17:
+	.byte	5
+	.byte	'pchar',0,3,56,28
+	.word	1895
+.L20:
+	.byte	22,128,2
+	.word	1872
+	.byte	23,255,1,0,24
+	.byte	'strlen',0,4,52,17
+	.word	1744
+	.byte	1,1,1,1,25,4,52,39
+	.word	1895
+	.byte	0,4
+	.word	1872
+	.byte	26
+	.word	1953
+	.byte	26
+	.word	1895
+	.byte	5
+	.byte	'va_list',0,6,24,16
+	.word	1953
+	.byte	24
+	.byte	'vsprintf',0,5,151,1,16
+	.word	1695
+	.byte	1,1,1,1,25,5,151,1,32
+	.word	1958
+	.byte	25,5,151,1,55
+	.word	1963
+	.byte	25,5,151,1,67
+	.word	1968
+	.byte	0,4
+	.word	1872
+	.byte	27
+	.byte	'__INDIRECT__',0,7,1,1,1,1,1,5
+	.byte	'__wchar_t',0,7,1,1
+	.word	254
+	.byte	5
+	.byte	'__size_t',0,7,1,1
+	.word	1744
+	.byte	5
+	.byte	'__ptrdiff_t',0,7,1,1
+	.word	1695
+	.byte	28,1,4
+	.word	2114
+	.byte	5
+	.byte	'__codeptr',0,7,1,1
+	.word	2116
+	.byte	5
+	.byte	'size_t',0,8,24,25
+	.word	1744
+	.byte	5
+	.byte	'boolean',0,9,101,29
+	.word	193
+	.byte	5
+	.byte	'uint8',0,9,105,29
+	.word	193
+	.byte	2
+	.byte	'unsigned short int',0,2,7,5
+	.byte	'uint16',0,9,109,29
+	.word	2184
+	.byte	5
+	.byte	'uint32',0,9,113,29
+	.word	927
+	.byte	5
+	.byte	'sint16',0,9,126,29
+	.word	254
+	.byte	5
+	.byte	'sint32',0,9,131,1,29
+	.word	379
+	.byte	5
+	.byte	'sint64',0,9,139,1,29
+	.word	272
+	.byte	2
+	.byte	'float',0,4,4,5
+	.byte	'float32',0,9,168,1,29
+	.word	2283
+	.byte	5
+	.byte	'pvoid',0,3,57,28
+	.word	216
+	.byte	5
+	.byte	'Ifx_TickTime',0,3,79,28
+	.word	272
+	.byte	5
+	.byte	'Ifx_SizeT',0,3,92,16
+	.word	254
+	.byte	5
+	.byte	'IfxStdIf_DPipe',0,1,71,32
+	.word	1099
+	.byte	8
+	.word	193
+	.byte	4
+	.word	2385
+	.byte	5
+	.byte	'IfxStdIf_DPipe_WriteEvent',0,1,73,32
+	.word	2390
+	.byte	5
+	.byte	'IfxStdIf_DPipe_ReadEvent',0,1,74,32
+	.word	2390
+	.byte	5
+	.byte	'_iob_flag_t',0,5,82,25
+	.word	2184
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,59,0,3,8,0,0,4,15,0,73,19,0
+	.byte	0,5,22,0,3,8,58,15,59,15,57,15,73,19,0,0,6,21,1,73,19,54,15,39,12,0,0,7,5,0,73,19,0,0,8,53,0,73,19,0,0
+	.byte	9,21,1,54,15,39,12,0,0,10,19,1,3,8,58,15,59,15,57,15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,46
+	.byte	1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,13,5,0,3,8,58,15,59,15,57,15,73,19,0,0,14,11,0,0,0
+	.byte	15,38,0,73,19,0,0,16,46,1,3,8,54,15,39,12,63,12,60,12,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0
+	.byte	0,18,5,0,3,8,73,19,0,0,19,46,0,3,8,73,19,54,15,39,12,63,12,60,12,0,0,20,46,1,49,19,0,0,21,5,0,49,19,0
+	.byte	0,22,1,1,11,15,73,19,0,0,23,33,0,47,15,0,0,24,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12
+	.byte	0,0,25,5,0,58,15,59,15,57,15,73,19,0,0,26,55,0,73,19,0,0,27,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60
+	.byte	12,0,0,28,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L8:
+	.word	.L41-.L40
+.L40:
+	.half	3
+	.word	.L43-.L42
+.L42:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\Program Files (x86)\\TASKING_v6_3r1\\ctc\\include\\',0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.h',0,0,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'string.h',0,2,0,0
+	.byte	'stdio.h',0,2,0,0
+	.byte	'stdarg.h',0,2,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.c',0,0,0,0
+	.byte	'stddef.h',0,2,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L43:
+.L41:
+	.sdecl	'.debug_info',debug,cluster('IfxStdIf_DPipe_print')
+	.sect	'.debug_info'
+.L9:
+	.word	402
+	.half	3
+	.word	.L10
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L12,.L11
+	.byte	2
+	.word	.L5
+	.byte	3
+	.byte	'IfxStdIf_DPipe_print',0,1,53,6,1,1,1
+	.word	.L4,.L14,.L3
+	.byte	4
+	.byte	'stdIf',0,1,53,43
+	.word	.L15,.L16
+	.byte	4
+	.byte	'format',0,1,53,56
+	.word	.L17,.L18
+	.byte	5,1,53,64,6
+	.word	.L4,.L14
+	.byte	6
+	.word	.L19,.L2
+	.byte	7
+	.byte	'message',0,1,57,19
+	.word	.L20,.L21
+	.byte	7
+	.byte	'count',0,1,58,19
+	.word	.L22,.L23
+	.byte	8
+	.word	.L24,.L25,.L2
+	.byte	9
+	.word	.L26,.L27
+	.byte	9
+	.word	.L28,.L29
+	.byte	9
+	.word	.L30,.L31
+	.byte	9
+	.word	.L32,.L33
+	.byte	10
+	.word	.L34,.L25,.L2
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxStdIf_DPipe_print')
+	.sect	'.debug_abbrev'
+.L10:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,24,0,58,15,59,15,57,15,0,0
+	.byte	6,11,1,17,1,18,1,0,0,7,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,8,29,1,49,16,17,1,18,1,0,0,9,5,0,49,16
+	.byte	2,6,0,0,10,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxStdIf_DPipe_print')
+	.sect	'.debug_line'
+.L11:
+	.word	.L45-.L44
+.L44:
+	.half	3
+	.word	.L47-.L46
+.L46:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.c',0,0,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.h',0,0,0,0,0
+.L47:
+	.byte	5,6,7,0,5,2
+	.word	.L4
+	.byte	3,52,1,5,15,9
+	.half	.L38-.L4
+	.byte	3,2,1,5,6,9
+	.half	.L48-.L38
+	.byte	3,126,1,5,10,9
+	.half	.L35-.L48
+	.byte	3,2,1,5,9,7,9
+	.half	.L19-.L35
+	.byte	3,5,1,5,26,9
+	.half	.L49-.L19
+	.byte	3,1,1,5,9,9
+	.half	.L37-.L49
+	.byte	3,127,1,5,35,9
+	.half	.L36-.L37
+	.byte	3,3,1,5,15,9
+	.half	.L50-.L36
+	.byte	1,4,2,5,17,9
+	.half	.L25-.L50
+	.byte	3,201,1,1,5,30,9
+	.half	.L51-.L25
+	.byte	1,5,53,9
+	.half	.L52-.L51
+	.byte	1,4,1,5,45,9
+	.half	.L53-.L52
+	.byte	3,186,126,1,5,55,9
+	.half	.L54-.L53
+	.byte	1,4,2,5,53,9
+	.half	.L55-.L54
+	.byte	3,198,1,1,4,1,5,1,7,9
+	.half	.L2-.L55
+	.byte	3,192,126,1,7,9
+	.half	.L13-.L2
+	.byte	0,1,1
+.L45:
+	.sdecl	'.debug_ranges',debug,cluster('IfxStdIf_DPipe_print')
+	.sect	'.debug_ranges'
+.L12:
+	.word	-1,.L4,0,.L13-.L4,0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxStdIf_DPipe_print')
+	.sect	'.debug_loc'
+.L3:
+	.word	-1,.L4,0,.L35-.L4
+	.half	2
+	.byte	138,0
+	.word	.L35-.L4,.L2-.L4
+	.half	3
+	.byte	138,136,2
+	.word	.L2-.L4,.L2-.L4
+	.half	2
+	.byte	138,0
+	.word	.L2-.L4,.L14-.L4
+	.half	3
+	.byte	138,136,2
+	.word	.L14-.L4,.L14-.L4
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L23:
+	.word	-1,.L4,0,.L14-.L4
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L31:
+	.word	0,0
+.L29:
+	.word	0,0
+.L18:
+	.word	-1,.L4,0,.L36-.L4
+	.half	1
+	.byte	101
+	.word	.L2-.L4,.L14-.L4
+	.half	1
+	.byte	101
+	.word	0,0
+.L21:
+	.word	-1,.L4,0,.L14-.L4
+	.half	3
+	.byte	145,248,125
+	.word	0,0
+.L16:
+	.word	-1,.L4,0,.L37-.L4
+	.half	1
+	.byte	100
+	.word	.L38-.L4,.L39-.L4
+	.half	1
+	.byte	111
+	.word	.L2-.L4,.L14-.L4
+	.half	1
+	.byte	111
+	.word	.L2-.L4,.L14-.L4
+	.half	1
+	.byte	100
+	.word	0,0
+.L27:
+	.word	0,0
+.L33:
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L56:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('IfxStdIf_DPipe_print')
+	.sect	'.debug_frame'
+	.word	56
+	.word	.L56,.L4,.L14-.L4
+	.byte	4
+	.word	(.L35-.L4)/2
+	.byte	19,136,2,22,26,4,19,138,136,2,4
+	.word	(.L2-.L35)/2
+	.byte	19,0,8,26,19,136,2,22,26,4,19,138,136,2,4
+	.word	(.L14-.L2)/2
+	.byte	19,0,8,26,0
+
+; ..\src\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.c	    73      }
+	; Module end

@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project LQ_TC26xB_LIBtasking ****
+
+"D:\\Program Files (x86)\\TASKING_v6_3r1\\ctc\\bin\\amk" -j8 all 
+Compiling LQ_MotorControl.c
+Linking to LQ_TC26xB_LIBtasking.elf
+
+Time consumed: 3407 ms
+**** End of build ****
+
+Tool info: 
+TASKING VX-toolset for TriCore: control program v6.3r1 Build 19041558
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+TASKING VX-toolset for TriCore: object linker v6.3r1 Build 19041558 SN 99245187
+TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187
+TASKING program builder v6.3r1 Build 19041558

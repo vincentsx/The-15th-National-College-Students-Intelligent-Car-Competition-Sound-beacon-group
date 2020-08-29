@@ -1,0 +1,72 @@
+
+INFINEON TECHNOLOGIES TRICORE ISS
+
+ATTENTION: TSIM is an ARCHITECTURAL MODEL
+cycle counts are approximate.
+
+VERSION: TC_MODELS_1.18.1
+         Build Time: 16:40:08 on Mar 16 2018
+         64 bit build
+         Setting simulator to TC16P B-STEP mode
+
+Command Line Arguments:
+    -project_path D:/Tasking/LQ_TC26xB_LIBtasking
+    -tasking_path C:\Program Files\TASKING\TriCore v6.3r1\ctc\eclipse\plugins\com.tasking.ctc.debug.win32.x86_64_1.10.0.0\ctc
+    -output_path D:/Tasking/LQ_TC26xB_LIBtasking
+
+Reading MConfig file for memory configuration: D:/Tasking/LQ_TC26xB_LIBtasking/MConfig
+Code cache: enabled:1 lines:64   ways:4   line size:32 access time:0 lru:pseudo LRU
+DATA cache: enabled:1 lines:64   ways:4   line size:32 access time:0 lru:pseudo LRU
+SCRATCH 0   SCRATCH: FROM 0xc0000000 UNTIL 0xc0003fff  0T wait
+PARTITION 1   PSPR1: FROM 0x60100000 UNTIL 0x60107fff  0T wait
+SCRATCH 2   SCRATCH: FROM 0xd0000000 UNTIL 0xd0011fff  0T wait
+PARTITION 3   DSPR1: FROM 0x60000000 UNTIL 0x6001dfff  0T wait
+PARTITION 4   DFLASH0: FROM 0xaf000000 UNTIL 0xaf017fff  0T wait
+Memory accesses to addresses 0xaf000000 - 0xaf017fff access physical memory in segment 0x8
+PARTITION 5   DFLASH0: FROM 0xaf100000 UNTIL 0xaf103fff  0T wait
+Memory accesses to addresses 0xaf100000 - 0xaf103fff access physical memory in segment 0x8
+PARTITION 6   PFLASH0: FROM 0xa0000000 UNTIL 0xa00fffff  0T wait
+Memory accesses to addresses 0xa0000000 - 0xa00fffff access physical memory in segment 0x8
+PARTITION 7   PFLASH1: FROM 0xa0100000 UNTIL 0xa027ffff  0T wait
+Memory accesses to addresses 0xa0100000 - 0xa027ffff access physical memory in segment 0x8
+PARTITION 8   MCS00_RAM: FROM 0xf0138000 UNTIL 0xf0139fff  0T wait
+PARTITION 9   MCS01_RAM: FROM 0xf0140000 UNTIL 0xf0141fff  0T wait
+PARTITION 10   MCS02_RAM: FROM 0xf0148000 UNTIL 0xf0149fff  0T wait
+PARTITION 11   SFR_BASE_ADDRESS_TC1: FROM 0xf8820000 UNTIL 0xf883ffff  0T wait
+PARTITION 12   SFR_BASE_ADDRESS_GTM: FROM 0xf0190000 UNTIL 0xf019ffff  0T wait
+
+Peripheral Register Base Address Configuration:
+sfr base address   : 0xf8810000
+cps base address   : 0xf8800000
+dmi base address   : 0xf87ffc00
+pmi base address   : 0xf87ffd00
+lfi base address   : 0xf87fff00
+wdt base address   : 0xf0036000
+stm base address   : 0xf0000000
+gptu0 base address : 0xf0000600
+IR SRC base address: 0xf0038000
+
+reset: pc = a0000000
+
+(PConfig) No peripheral configuration file specified / Error opening: D:/Tasking/LQ_TC26xB_LIBtasking/PConfig
+Reading PConfig file for peripheral configuration: C:\Program Files\TASKING\TriCore v6.3r1\ctc\eclipse\plugins\com.tasking.ctc.debug.win32.x86_64_1.10.0.0\ctc\etc\/PConfig
+No peripheral addresses specified
+
+(IConfig) No external interrupt file specified / Error opening: D:/Tasking/LQ_TC26xB_LIBtasking/IConfig
+Reading IConfig file for external interrupt: C:\Program Files\TASKING\TriCore v6.3r1\ctc\eclipse\plugins\com.tasking.ctc.debug.win32.x86_64_1.10.0.0\ctc\etc\/IConfig
+(DConfig) No device plugin file specified / Error opening: D:/Tasking/LQ_TC26xB_LIBtasking/DConfig
+Reading DConfig file for device plugin: C:\Program Files\TASKING\TriCore v6.3r1\ctc\eclipse\plugins\com.tasking.ctc.debug.win32.x86_64_1.10.0.0\ctc\etc\/DConfig
+- Attempting to initialise device plugin: pcp.dll
+Initialised plugin: pcp.dll, (-output_path D:/Tasking/LQ_TC26xB_LIBtasking END_TSIM -cmem_base 0xf0060000 -cmem_size 0x40000 -pram_base 0xf0050000 -pram_size 0x40000 -preg_base 0xf0043f00 -preg_size 0xcd -psrn_base 0xf0043fd0 -psrn_size 0x30)
+
+Number of protection register sets: 4
+Number of code protection ranges:   8
+Number of data protection ranges:   16
+
+All Files setup for simulation run
+reset: pc = a0000000
+reset: pc = a0000000
+reset: pc = a0000000
+Warning(gpt): Can't open stimulus file "stimulus_0" for read.
+reset: pc = a0000000
+Warning(gpt): Can't open stimulus file "stimulus_0" for read.

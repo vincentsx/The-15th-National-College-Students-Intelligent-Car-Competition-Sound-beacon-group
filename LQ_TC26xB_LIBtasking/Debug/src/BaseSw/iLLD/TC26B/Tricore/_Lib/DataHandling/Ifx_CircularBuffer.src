@@ -1,0 +1,2001 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\.Ifx_CircularBuffer.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.src ..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_get32',code,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_get32'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_get32
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     1  /**
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     2   * \file Ifx_CircularBuffer.c
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     3   * \brief Circular buffer functions in C language.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     4   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     5   * \version iLLD_1_0_1_11_0
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     7   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     8   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     9   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    10   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    11   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    16  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    17  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    19  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    26  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    32   * language processor.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    33  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    41  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    42   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    43   */
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    44  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    45  #include "Ifx_CircularBuffer.h"
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    46  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    47  #if (IFX_CFG_CIRCULARBUFFER_C)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    48  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    49  uint32 Ifx_CircularBuffer_get32(Ifx_CircularBuffer *buffer)
+; Function Ifx_CircularBuffer_get32
+.L20:
+Ifx_CircularBuffer_get32:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    50  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    51      uint32 data = ((uint32 *)buffer->base)[buffer->index];
+	ld.a	a15,[a4]
+.L174:
+	ld.hu	d15,[a4]4
+.L175:
+	addsc.a	a15,a15,d15,#2
+.L176:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    52  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    53      buffer->index += 4;
+	add	d15,#4
+.L177:
+	ld.w	d2,[a15]
+.L142:
+	fcall	.cocofun_1
+.L178:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    54  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    55      if (buffer->index >= buffer->length)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    56      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    57          buffer->index = 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    58      }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    59  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    60      return data;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    61  }
+	ret
+.L104:
+	
+__Ifx_CircularBuffer_get32_function_end:
+	.size	Ifx_CircularBuffer_get32,__Ifx_CircularBuffer_get32_function_end-Ifx_CircularBuffer_get32
+.L52:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_get16',code,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_get16'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_get16
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    62  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    63  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    64  uint16 Ifx_CircularBuffer_get16(Ifx_CircularBuffer *buffer)
+; Function Ifx_CircularBuffer_get16
+.L22:
+Ifx_CircularBuffer_get16:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    65  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    66      uint16 data = ((uint16 *)buffer->base)[buffer->index];
+	ld.a	a15,[a4]
+.L165:
+	ld.hu	d15,[a4]4
+.L166:
+	addsc.a	a15,a15,d15,#1
+.L167:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    67  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    68      buffer->index += 2;
+	add	d15,#2
+.L168:
+	ld.hu	d2,[a15]0
+.L143:
+	fcall	.cocofun_1
+.L169:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    69  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    70      if (buffer->index >= buffer->length)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    71      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    72          buffer->index = 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    73      }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    74  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    75      return data;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    76  }
+	ret
+.L99:
+	
+__Ifx_CircularBuffer_get16_function_end:
+	.size	Ifx_CircularBuffer_get16,__Ifx_CircularBuffer_get16_function_end-Ifx_CircularBuffer_get16
+.L47:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_addDataIncr',code,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_addDataIncr'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_addDataIncr
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    77  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    78  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    79  /** \brief Add a 32 bit value to the circular buffer, and post-increment the circular buffer pointer
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    80   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    81   * \param buffer Specifies circular buffer.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    82   * \param data Specifies value to be added to the buffer.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    83   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    84   * \return None.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    85   */
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    86  void Ifx_CircularBuffer_addDataIncr(Ifx_CircularBuffer *buffer, uint32 data)
+; Function Ifx_CircularBuffer_addDataIncr
+.L24:
+Ifx_CircularBuffer_addDataIncr:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    87  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    88      ((uint32 *)buffer->base)[buffer->index] = data;
+	ld.a	a15,[a4]
+.L219:
+	ld.hu	d15,[a4]4
+.L220:
+	addsc.a	a15,a15,d15,#2
+.L221:
+	st.w	[a15],d4
+.L222:
+	ld.hu	d15,[a4]4
+.L223:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    89      buffer->index                          += 4;
+	add	d15,#4
+	fcall	.cocofun_1
+.L224:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    90  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    91      if (buffer->index >= buffer->length)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    92      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    93          buffer->index = 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    94      }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    95  }
+	ret
+.L138:
+	
+__Ifx_CircularBuffer_addDataIncr_function_end:
+	.size	Ifx_CircularBuffer_addDataIncr,__Ifx_CircularBuffer_addDataIncr_function_end-Ifx_CircularBuffer_addDataIncr
+.L77:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_read8',code,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_read8'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_read8
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    96  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    97  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    98  void *Ifx_CircularBuffer_read8(Ifx_CircularBuffer *buffer, void *data, Ifx_SizeT count)
+; Function Ifx_CircularBuffer_read8
+Ifx_CircularBuffer_read8:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    99  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   100      uint8 *Dest = (uint8 *)data;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   101  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   102      do
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   103      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   104          count--;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   105          *Dest = ((uint8 *)buffer->base)[buffer->index];
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   106          Dest  = &Dest[1];
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   107          buffer->index++;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   108  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   109          if (buffer->index >= buffer->length)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   110          {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   111              buffer->index = 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   112          }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   113      } while (count > 0);
+.L7:
+	fcall	.cocofun_3
+.L146:
+	ld.bu	d15,[a15]
+.L183:
+	st.b	[a5+],d15
+.L184:
+	ld.hu	d15,[a4]4
+.L185:
+	add	d15,#1
+	fcall	.cocofun_1
+.L186:
+	jge	d4,#1,.L7
+.L187:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   114  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   115      return Dest;
+	mov.aa	a2,a5
+.L147:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   116  }
+	ret
+.L108:
+	
+__Ifx_CircularBuffer_read8_function_end:
+	.size	Ifx_CircularBuffer_read8,__Ifx_CircularBuffer_read8_function_end-Ifx_CircularBuffer_read8
+.L57:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer..cocofun_3',code,cluster('.cocofun_3')
+	.sect	'.text.Ifx_CircularBuffer..cocofun_3'
+	.align	2
+; Function .cocofun_3
+.L27:
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:0
+	ld.a	a15,[a4]
+.L152:
+	add	d4,#-1
+	ld.hu	d15,[a4]4
+.L144:
+	extr	d4,d4,#0,#16
+.L145:
+	addsc.a	a15,a15,d15,#0
+.L240:
+	fret
+.L92:
+	; End of function
+	.sdecl	'.text.Ifx_CircularBuffer..cocofun_1',code,cluster('.cocofun_1')
+	.sect	'.text.Ifx_CircularBuffer..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.L29:
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	fcall	.cocofun_4
+.L141:
+	st.h	[a4]4,d0
+.L229:
+	fret
+.L82:
+	; End of function
+	.sdecl	'.text.Ifx_CircularBuffer..cocofun_4',code,cluster('.cocofun_4')
+	.sect	'.text.Ifx_CircularBuffer..cocofun_4'
+	.align	2
+; Function .cocofun_4
+.L31:
+.cocofun_4:	.type	func
+; Function body .cocofun_4, coco_iter:1
+	extr.u	d0,d15,#0,#16
+	ld.hu	d15,[a4]6
+.L245:
+	lt.u	d15,d0,d15
+.L246:
+	cmovn	d0,d15,#0
+	fret
+.L97:
+	; End of function
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_read32',code,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_read32'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_read32
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   117  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   118  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   119  void *Ifx_CircularBuffer_read32(Ifx_CircularBuffer *buffer, void *data, Ifx_SizeT count)
+; Function Ifx_CircularBuffer_read32
+.L33:
+Ifx_CircularBuffer_read32:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   120  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   121      uint32 *Dest = (uint32 *)data;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   122      uint8  *base = buffer->base;
+	ld.a	a15,[a4]
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   123  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   124      do
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   125      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   126          *Dest         = *((uint32 *)(&base[buffer->index]));
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   127          Dest          = &Dest[1];
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   128          buffer->index = buffer->index + 4;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   129  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   130          if (buffer->index >= buffer->length)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   131          {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   132              buffer->index = 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   133          }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   134  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   135          count--;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   136      } while (count > 0);
+.L10:
+	ld.hu	d15,[a4]4
+.L192:
+	addsc.a	a2,a15,d15,#0
+.L193:
+	ld.w	d15,[a2]
+.L194:
+	st.w	[a5+],d15
+.L195:
+	fcall	.cocofun_2
+.L148:
+	jge	d4,#1,.L10
+.L150:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   137  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   138      return Dest;
+	mov.aa	a2,a5
+.L151:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   139  }
+	ret
+.L116:
+	
+__Ifx_CircularBuffer_read32_function_end:
+	.size	Ifx_CircularBuffer_read32,__Ifx_CircularBuffer_read32_function_end-Ifx_CircularBuffer_read32
+.L62:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer..cocofun_2',code,cluster('.cocofun_2')
+	.sect	'.text.Ifx_CircularBuffer..cocofun_2'
+	.align	2
+; Function .cocofun_2
+.L35:
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	ld.hu	d15,[a4]4
+.L234:
+	add	d15,#4
+.L235:
+	fcall	.cocofun_4
+.L155:
+	add	d4,#-1
+	st.h	[a4]4,d0
+.L149:
+	extr	d4,d4,#0,#16
+	fret
+.L87:
+	; End of function
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_write8',code,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_write8'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_write8
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   140  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   141  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   142  const void *Ifx_CircularBuffer_write8(Ifx_CircularBuffer *buffer, const void *data, Ifx_SizeT count)
+; Function Ifx_CircularBuffer_write8
+Ifx_CircularBuffer_write8:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   143  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   144      const uint8 *source = (const uint8 *)data;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   145  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   146      do
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   147      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   148          count--;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   149          ((uint8 *)buffer->base)[buffer->index] = *source;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   150          source                                 = &source[1];
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   151          buffer->index++;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   152  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   153          if (buffer->index >= buffer->length)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   154          {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   155              buffer->index = 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   156          }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   157      } while (count > 0);
+.L13:
+	fcall	.cocofun_3
+.L153:
+	ld.bu	d15,[a5+]
+.L200:
+	st.b	[a15],d15
+.L201:
+	ld.hu	d15,[a4]4
+.L202:
+	add	d15,#1
+	fcall	.cocofun_1
+.L203:
+	jge	d4,#1,.L13
+.L204:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   158  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   159      return source;
+	mov.aa	a2,a5
+.L154:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   160  }
+	ret
+.L125:
+	
+__Ifx_CircularBuffer_write8_function_end:
+	.size	Ifx_CircularBuffer_write8,__Ifx_CircularBuffer_write8_function_end-Ifx_CircularBuffer_write8
+.L67:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_write32',code,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_write32'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_write32
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   161  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   162  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   163  const void *Ifx_CircularBuffer_write32(Ifx_CircularBuffer *buffer, const void *data, Ifx_SizeT count)
+; Function Ifx_CircularBuffer_write32
+.L38:
+Ifx_CircularBuffer_write32:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   164  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   165      const uint32 *source = (const uint32 *)data;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   166      uint8        *base   = buffer->base;
+	ld.a	a15,[a4]
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   167  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   168      do
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   169      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   170          *((uint32 *)(&base[buffer->index])) = *source;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   171          source                              = &source[1];
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   172          buffer->index                       = buffer->index + 4;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   173  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   174          if (buffer->index >= buffer->length)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   175          {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   176              buffer->index = 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   177          }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   178  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   179          count--;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   180      } while (count > 0);
+.L16:
+	ld.hu	d15,[a4]4
+.L209:
+	addsc.a	a2,a15,d15,#0
+.L210:
+	ld.w	d15,[a5+]
+.L211:
+	st.w	[a2],d15
+.L212:
+	fcall	.cocofun_2
+.L213:
+	jge	d4,#1,.L16
+.L214:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   181  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   182      return source;
+	mov.aa	a2,a5
+.L156:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   183  }
+	ret
+.L131:
+	
+__Ifx_CircularBuffer_write32_function_end:
+	.size	Ifx_CircularBuffer_write32,__Ifx_CircularBuffer_write32_function_end-Ifx_CircularBuffer_write32
+.L72:
+	; End of function
+	
+	.calls	'Ifx_CircularBuffer_get32','.cocofun_1'
+	.calls	'Ifx_CircularBuffer_get16','.cocofun_1'
+	.calls	'Ifx_CircularBuffer_addDataIncr','.cocofun_1'
+	.calls	'Ifx_CircularBuffer_read8','.cocofun_3'
+	.calls	'Ifx_CircularBuffer_read8','.cocofun_1'
+	.calls	'.cocofun_1','.cocofun_4'
+	.calls	'Ifx_CircularBuffer_read32','.cocofun_2'
+	.calls	'.cocofun_2','.cocofun_4'
+	.calls	'Ifx_CircularBuffer_write8','.cocofun_3'
+	.calls	'Ifx_CircularBuffer_write8','.cocofun_1'
+	.calls	'Ifx_CircularBuffer_write32','.cocofun_2'
+	.calls	'Ifx_CircularBuffer_get32','',0
+	.calls	'Ifx_CircularBuffer_get16','',0
+	.calls	'Ifx_CircularBuffer_addDataIncr','',0
+	.calls	'Ifx_CircularBuffer_read8','',0
+	.calls	'.cocofun_3','',0
+	.calls	'.cocofun_1','',0
+	.calls	'.cocofun_4','',0
+	.calls	'Ifx_CircularBuffer_read32','',0
+	.calls	'.cocofun_2','',0
+	.calls	'Ifx_CircularBuffer_write8','',0
+	.calls	'Ifx_CircularBuffer_write32','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L40:
+	.word	1099
+	.half	3
+	.word	.L41
+	.byte	4
+.L39:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L42
+	.byte	2,1,1,3
+	.word	209
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	212
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	257
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	269
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0
+.L107:
+	.byte	3
+	.word	349
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	323
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	355
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	355
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	323
+	.byte	6,0,7
+	.byte	'int',0,4,5,10
+	.word	441
+	.byte	11
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,12
+	.word	448
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,13
+	.word	490
+	.byte	3
+	.word	490
+	.byte	14
+	.byte	'__cmpswapw',0
+	.word	506
+	.byte	1,1,1,1,15
+	.byte	'p',0
+	.word	511
+	.byte	15
+	.byte	'value',0
+	.word	490
+	.byte	15
+	.byte	'compare',0
+	.word	490
+	.byte	0,16
+	.word	217
+	.byte	17
+	.word	243
+	.byte	6,0,16
+	.word	278
+	.byte	17
+	.word	310
+	.byte	6,0,16
+	.word	360
+	.byte	17
+	.word	379
+	.byte	6,0,16
+	.word	395
+	.byte	17
+	.word	410
+	.byte	17
+	.word	424
+	.byte	6,0
+.L98:
+	.byte	7
+	.byte	'unsigned short int',0,2,7,18,3,96,9,8,19
+	.byte	'base',0
+	.word	355
+	.byte	4,2,35,0,19
+	.byte	'index',0
+	.word	621
+	.byte	2,2,35,4,19
+	.byte	'length',0
+	.word	621
+	.byte	2,2,35,6,0
+.L100:
+	.byte	3
+	.word	643
+.L103:
+	.byte	7
+	.byte	'unsigned long int',0,4,7
+.L111:
+	.byte	7
+	.byte	'short int',0,2,5,7
+	.byte	'unsigned char',0,1,8
+.L114:
+	.byte	3
+	.word	733
+.L121:
+	.byte	3
+	.word	699
+	.byte	10
+	.word	349
+.L124:
+	.byte	3
+	.word	760
+	.byte	10
+	.word	733
+.L129:
+	.byte	3
+	.word	770
+	.byte	10
+	.word	699
+.L135:
+	.byte	3
+	.word	780
+	.byte	20
+	.byte	'__wchar_t',0,4,1,1
+	.word	720
+	.byte	20
+	.byte	'__size_t',0,4,1,1
+	.word	490
+	.byte	20
+	.byte	'__ptrdiff_t',0,4,1,1
+	.word	441
+	.byte	21,1,3
+	.word	845
+	.byte	20
+	.byte	'__codeptr',0,4,1,1
+	.word	847
+	.byte	20
+	.byte	'uint8',0,5,105,29
+	.word	733
+	.byte	20
+	.byte	'uint16',0,5,109,29
+	.word	621
+	.byte	20
+	.byte	'uint32',0,5,113,29
+	.word	699
+	.byte	20
+	.byte	'uint64',0,5,118,29
+	.word	323
+	.byte	20
+	.byte	'sint16',0,5,126,29
+	.word	720
+	.byte	7
+	.byte	'long int',0,4,5,20
+	.byte	'sint32',0,5,131,1,29
+	.word	944
+	.byte	7
+	.byte	'long long int',0,8,5,20
+	.byte	'sint64',0,5,139,1,29
+	.word	972
+	.byte	20
+	.byte	'float32',0,5,168,1,29
+	.word	269
+	.byte	20
+	.byte	'pvoid',0,3,57,28
+	.word	355
+	.byte	20
+	.byte	'Ifx_TickTime',0,3,79,28
+	.word	972
+	.byte	20
+	.byte	'Ifx_SizeT',0,3,92,16
+	.word	720
+	.byte	20
+	.byte	'Ifx_CircularBuffer',0,3,101,3
+	.word	643
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,38,0,73,19,0,0,11,46
+	.byte	1,3,8,54,15,39,12,63,12,60,12,0,0,12,5,0,73,19,0,0,13,53,0,73,19,0,0,14,46,1,3,8,73,19,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,3,8,73,19,0,0,16,46,1,49,19,0,0,17,5,0,49,19,0,0,18,19,1,58,15,59,15,57,15,11,15,0
+	.byte	0,19,13,0,3,8,73,19,11,15,56,9,0,0,20,22,0,3,8,58,15,59,15,57,15,73,19,0,0,21,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L42:
+	.word	.L158-.L157
+.L157:
+	.half	3
+	.word	.L160-.L159
+.L159:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L160:
+.L158:
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_info'
+.L43:
+	.word	310
+	.half	3
+	.word	.L44
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L46,.L45
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'Ifx_CircularBuffer_get16',0,1,64,8
+	.word	.L98
+	.byte	1,1,1
+	.word	.L22,.L99,.L21
+	.byte	4
+	.byte	'buffer',0,1,64,53
+	.word	.L100,.L101
+	.byte	5
+	.word	.L22,.L99
+	.byte	6
+	.byte	'data',0,1,66,12
+	.word	.L98,.L102
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_abbrev'
+.L44:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_line'
+.L45:
+	.word	.L162-.L161
+.L161:
+	.half	3
+	.word	.L164-.L163
+.L163:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L164:
+	.byte	5,36,7,0,5,2
+	.word	.L22
+	.byte	3,193,0,1,5,50,9
+	.half	.L165-.L22
+	.byte	1,5,43,9
+	.half	.L166-.L165
+	.byte	1,5,19,9
+	.half	.L167-.L166
+	.byte	3,2,1,5,43,9
+	.half	.L168-.L167
+	.byte	3,126,1,5,19,9
+	.half	.L143-.L168
+	.byte	3,2,1,5,1,9
+	.half	.L169-.L143
+	.byte	3,8,1,7,9
+	.half	.L47-.L169
+	.byte	0,1,1
+.L162:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_ranges'
+.L46:
+	.word	-1,.L22,0,.L47-.L22,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_info'
+.L48:
+	.word	310
+	.half	3
+	.word	.L49
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L51,.L50
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'Ifx_CircularBuffer_get32',0,1,49,8
+	.word	.L103
+	.byte	1,1,1
+	.word	.L20,.L104,.L19
+	.byte	4
+	.byte	'buffer',0,1,49,53
+	.word	.L100,.L105
+	.byte	5
+	.word	.L20,.L104
+	.byte	6
+	.byte	'data',0,1,51,12
+	.word	.L103,.L106
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_abbrev'
+.L49:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_line'
+.L50:
+	.word	.L171-.L170
+.L170:
+	.half	3
+	.word	.L173-.L172
+.L172:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L173:
+	.byte	5,36,7,0,5,2
+	.word	.L20
+	.byte	3,50,1,5,50,9
+	.half	.L174-.L20
+	.byte	1,5,43,9
+	.half	.L175-.L174
+	.byte	1,5,19,9
+	.half	.L176-.L175
+	.byte	3,2,1,5,43,9
+	.half	.L177-.L176
+	.byte	3,126,1,5,19,9
+	.half	.L142-.L177
+	.byte	3,2,1,5,1,9
+	.half	.L178-.L142
+	.byte	3,8,1,7,9
+	.half	.L52-.L178
+	.byte	0,1,1
+.L171:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_ranges'
+.L51:
+	.word	-1,.L20,0,.L52-.L20,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_info'
+.L53:
+	.word	341
+	.half	3
+	.word	.L54
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L56,.L55
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'Ifx_CircularBuffer_read8',0,1,98,7
+	.word	.L107
+	.byte	1,1,1
+	.word	.L7,.L108,.L25
+	.byte	4
+	.byte	'buffer',0,1,98,52
+	.word	.L100,.L109
+	.byte	4
+	.byte	'data',0,1,98,66
+	.word	.L107,.L110
+	.byte	4
+	.byte	'count',0,1,98,82
+	.word	.L111,.L112
+	.byte	5
+	.word	.L113
+	.byte	6
+	.byte	'Dest',0,1,100,12
+	.word	.L114,.L115
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_abbrev'
+.L54:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_line'
+.L55:
+	.word	.L180-.L179
+.L179:
+	.half	3
+	.word	.L182-.L181
+.L181:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L182:
+	.byte	5,14,7,0,5,2
+	.word	.L7
+	.byte	3,231,0,1,5,40,9
+	.half	.L146-.L7
+	.byte	3,1,1,5,15,9
+	.half	.L183-.L146
+	.byte	1,5,47,9
+	.half	.L184-.L183
+	.byte	1,5,22,9
+	.half	.L185-.L184
+	.byte	3,2,1,5,24,9
+	.half	.L186-.L185
+	.byte	3,6,1,5,5,7,9
+	.half	.L187-.L186
+	.byte	3,2,1,5,1,9
+	.half	.L147-.L187
+	.byte	3,1,1,7,9
+	.half	.L57-.L147
+	.byte	0,1,1
+.L180:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_ranges'
+.L56:
+	.word	-1,.L7,0,.L57-.L7,0,0
+.L113:
+	.word	-1,.L7,0,.L108-.L7,-1,.L27,0,.L92-.L27,-1,.L29,0,.L82-.L29,-1,.L31,0,.L97-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_info'
+.L58:
+	.word	359
+	.half	3
+	.word	.L59
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L61,.L60
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'Ifx_CircularBuffer_read32',0,1,119,7
+	.word	.L107
+	.byte	1,1,1
+	.word	.L33,.L116,.L32
+	.byte	4
+	.byte	'buffer',0,1,119,53
+	.word	.L100,.L117
+	.byte	4
+	.byte	'data',0,1,119,67
+	.word	.L107,.L118
+	.byte	4
+	.byte	'count',0,1,119,83
+	.word	.L111,.L119
+	.byte	5
+	.word	.L120
+	.byte	6
+	.byte	'Dest',0,1,121,13
+	.word	.L121,.L122
+	.byte	6
+	.byte	'base',0,1,122,13
+	.word	.L114,.L123
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_abbrev'
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_line'
+.L60:
+	.word	.L189-.L188
+.L188:
+	.half	3
+	.word	.L191-.L190
+.L190:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L191:
+	.byte	5,26,7,0,5,2
+	.word	.L33
+	.byte	3,249,0,1,5,50,9
+	.half	.L10-.L33
+	.byte	3,4,1,5,43,9
+	.half	.L192-.L10
+	.byte	1,5,25,9
+	.half	.L193-.L192
+	.byte	1,5,23,9
+	.half	.L194-.L193
+	.byte	1,5,50,9
+	.half	.L195-.L194
+	.byte	1,5,24,9
+	.half	.L148-.L195
+	.byte	3,10,1,5,5,7,9
+	.half	.L150-.L148
+	.byte	3,2,1,5,1,9
+	.half	.L151-.L150
+	.byte	3,1,1,7,9
+	.half	.L62-.L151
+	.byte	0,1,1
+.L189:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_ranges'
+.L61:
+	.word	-1,.L33,0,.L62-.L33,0,0
+.L120:
+	.word	-1,.L33,0,.L116-.L33,-1,.L35,0,.L87-.L35,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_info'
+.L63:
+	.word	353
+	.half	3
+	.word	.L64
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L66,.L65
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'Ifx_CircularBuffer_write8',0,1,142,1,13
+	.word	.L124
+	.byte	1,1,1
+	.word	.L13,.L125,.L36
+	.byte	4
+	.byte	'buffer',0,1,142,1,59
+	.word	.L100,.L126
+	.byte	4
+	.byte	'data',0,1,142,1,79
+	.word	.L124,.L127
+	.byte	4
+	.byte	'count',0,1,142,1,95
+	.word	.L111,.L128
+	.byte	5
+	.word	.L13,.L125
+	.byte	6
+	.byte	'source',0,1,144,1,18
+	.word	.L129,.L130
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_abbrev'
+.L64:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_line'
+.L65:
+	.word	.L197-.L196
+.L196:
+	.half	3
+	.word	.L199-.L198
+.L198:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L199:
+	.byte	5,14,7,0,5,2
+	.word	.L13
+	.byte	3,147,1,1,5,50,9
+	.half	.L153-.L13
+	.byte	3,1,1,5,48,9
+	.half	.L200-.L153
+	.byte	1,5,39,9
+	.half	.L201-.L200
+	.byte	1,5,22,9
+	.half	.L202-.L201
+	.byte	3,2,1,5,24,9
+	.half	.L203-.L202
+	.byte	3,6,1,5,5,7,9
+	.half	.L204-.L203
+	.byte	3,2,1,5,1,9
+	.half	.L154-.L204
+	.byte	3,1,1,7,9
+	.half	.L67-.L154
+	.byte	0,1,1
+.L197:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_ranges'
+.L66:
+	.word	-1,.L13,0,.L67-.L13,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_info'
+.L68:
+	.word	372
+	.half	3
+	.word	.L69
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L71,.L70
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'Ifx_CircularBuffer_write32',0,1,163,1,13
+	.word	.L124
+	.byte	1,1,1
+	.word	.L38,.L131,.L37
+	.byte	4
+	.byte	'buffer',0,1,163,1,60
+	.word	.L100,.L132
+	.byte	4
+	.byte	'data',0,1,163,1,80
+	.word	.L124,.L133
+	.byte	4
+	.byte	'count',0,1,163,1,96
+	.word	.L111,.L134
+	.byte	5
+	.word	.L38,.L131
+	.byte	6
+	.byte	'source',0,1,165,1,19
+	.word	.L135,.L136
+	.byte	6
+	.byte	'base',0,1,166,1,19
+	.word	.L114,.L137
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_abbrev'
+.L69:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_line'
+.L70:
+	.word	.L206-.L205
+.L205:
+	.half	3
+	.word	.L208-.L207
+.L207:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L208:
+	.byte	5,34,7,0,5,2
+	.word	.L38
+	.byte	3,165,1,1,9
+	.half	.L16-.L38
+	.byte	3,4,1,5,27,9
+	.half	.L209-.L16
+	.byte	1,5,47,9
+	.half	.L210-.L209
+	.byte	1,5,45,9
+	.half	.L211-.L210
+	.byte	1,5,34,9
+	.half	.L212-.L211
+	.byte	1,5,24,9
+	.half	.L213-.L212
+	.byte	3,10,1,5,5,7,9
+	.half	.L214-.L213
+	.byte	3,2,1,5,1,9
+	.half	.L156-.L214
+	.byte	3,1,1,7,9
+	.half	.L72-.L156
+	.byte	0,1,1
+.L206:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_ranges'
+.L71:
+	.word	-1,.L38,0,.L72-.L38,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_info'
+.L73:
+	.word	311
+	.half	3
+	.word	.L74
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L76,.L75
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'Ifx_CircularBuffer_addDataIncr',0,1,86,6,1,1,1
+	.word	.L24,.L138,.L23
+	.byte	4
+	.byte	'buffer',0,1,86,57
+	.word	.L100,.L139
+	.byte	4
+	.byte	'data',0,1,86,72
+	.word	.L103,.L140
+	.byte	5
+	.word	.L24,.L138
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_abbrev'
+.L74:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_line'
+.L75:
+	.word	.L216-.L215
+.L215:
+	.half	3
+	.word	.L218-.L217
+.L217:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L218:
+	.byte	5,22,7,0,5,2
+	.word	.L24
+	.byte	3,215,0,1,5,36,9
+	.half	.L219-.L24
+	.byte	1,5,29,9
+	.half	.L220-.L219
+	.byte	1,5,45,9
+	.half	.L221-.L220
+	.byte	1,5,36,9
+	.half	.L222-.L221
+	.byte	1,5,44,9
+	.half	.L223-.L222
+	.byte	3,1,1,5,1,9
+	.half	.L224-.L223
+	.byte	3,6,1,7,9
+	.half	.L77-.L224
+	.byte	0,1,1
+.L216:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_ranges'
+.L76:
+	.word	-1,.L24,0,.L77-.L24,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_1')
+	.sect	'.debug_info'
+.L78:
+	.word	243
+	.half	3
+	.word	.L79
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L81,.L80
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'.cocofun_1',0,1,98,7,1
+	.word	.L29,.L82,.L28
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_1')
+	.sect	'.debug_abbrev'
+.L79:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_1')
+	.sect	'.debug_line'
+.L80:
+	.word	.L226-.L225
+.L225:
+	.half	3
+	.word	.L228-.L227
+.L227:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L228:
+	.byte	5,22,7,0,5,2
+	.word	.L29
+	.byte	3,234,0,1,5,24,9
+	.half	.L141-.L29
+	.byte	3,6,1,9
+	.half	.L82-.L141
+	.byte	0,1,1,5,22,0,5,2
+	.word	.L29
+	.byte	3,234,0,1,5,1,9
+	.half	.L141-.L29
+	.byte	3,82,1,5,24,9
+	.half	.L229-.L141
+	.byte	3,52,1,7,9
+	.half	.L82-.L229
+	.byte	0,1,1,5,22,0,5,2
+	.word	.L29
+	.byte	3,234,0,1,5,1,9
+	.half	.L141-.L29
+	.byte	3,97,1,5,24,9
+	.half	.L229-.L141
+	.byte	3,37,1,7,9
+	.half	.L82-.L229
+	.byte	0,1,1,5,22,0,5,2
+	.word	.L29
+	.byte	3,234,0,1,5,1,9
+	.half	.L141-.L29
+	.byte	3,116,1,5,24,9
+	.half	.L229-.L141
+	.byte	3,18,1,7,9
+	.half	.L82-.L229
+	.byte	0,1,1,5,22,0,5,2
+	.word	.L29
+	.byte	3,234,0,1,5,24,9
+	.half	.L141-.L29
+	.byte	3,50,1,9
+	.half	.L229-.L141
+	.byte	3,84,1,7,9
+	.half	.L82-.L229
+	.byte	0,1,1
+.L226:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_1')
+	.sect	'.debug_ranges'
+.L81:
+	.word	-1,.L29,0,.L82-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_2')
+	.sect	'.debug_info'
+.L83:
+	.word	243
+	.half	3
+	.word	.L84
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L86,.L85
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'.cocofun_2',0,1,119,7,1
+	.word	.L35,.L87,.L34
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_2')
+	.sect	'.debug_abbrev'
+.L84:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_2')
+	.sect	'.debug_line'
+.L85:
+	.word	.L231-.L230
+.L230:
+	.half	3
+	.word	.L233-.L232
+.L232:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L233:
+	.byte	5,50,7,0,5,2
+	.word	.L35
+	.byte	3,253,0,1,5,39,9
+	.half	.L234-.L35
+	.byte	3,2,1,5,14,9
+	.half	.L155-.L234
+	.byte	3,7,1,5,24,3,1,1,5,14,9
+	.half	.L149-.L155
+	.byte	3,127,1,5,24,3,1,1,7,9
+	.half	.L87-.L149
+	.byte	0,1,1,5,34,0,5,2
+	.word	.L35
+	.byte	3,169,1,1,5,61,9
+	.half	.L234-.L35
+	.byte	3,2,1,5,39,9
+	.half	.L235-.L234
+	.byte	3,84,1,5,14,9
+	.half	.L155-.L235
+	.byte	3,51,1,5,24,3,1,1,5,14,9
+	.half	.L149-.L155
+	.byte	3,127,1,5,24,3,85,1,7,9
+	.half	.L87-.L149
+	.byte	0,1,1
+.L231:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_2')
+	.sect	'.debug_ranges'
+.L86:
+	.word	-1,.L35,0,.L87-.L35,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_3')
+	.sect	'.debug_info'
+.L88:
+	.word	243
+	.half	3
+	.word	.L89
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L91,.L90
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'.cocofun_3',0,1,98,7,1
+	.word	.L27,.L92,.L26
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_3')
+	.sect	'.debug_abbrev'
+.L89:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_3')
+	.sect	'.debug_line'
+.L90:
+	.word	.L237-.L236
+.L236:
+	.half	3
+	.word	.L239-.L238
+.L238:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L239:
+	.byte	5,33,7,0,5,2
+	.word	.L27
+	.byte	3,232,0,1,5,14,9
+	.half	.L152-.L27
+	.byte	3,127,1,5,47,3,1,1,5,14,9
+	.half	.L144-.L152
+	.byte	3,127,1,5,40,9
+	.half	.L145-.L144
+	.byte	3,1,1,9
+	.half	.L92-.L145
+	.byte	0,1,1,5,25,0,5,2
+	.word	.L27
+	.byte	3,148,1,1,5,14,9
+	.half	.L152-.L27
+	.byte	3,127,1,5,39,3,1,1,5,14,9
+	.half	.L144-.L152
+	.byte	3,127,1,5,32,9
+	.half	.L145-.L144
+	.byte	3,1,1,5,40,9
+	.half	.L240-.L145
+	.byte	3,84,1,7,9
+	.half	.L92-.L240
+	.byte	0,1,1
+.L237:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_3')
+	.sect	'.debug_ranges'
+.L91:
+	.word	-1,.L27,0,.L92-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_4')
+	.sect	'.debug_info'
+.L93:
+	.word	243
+	.half	3
+	.word	.L94
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L96,.L95
+	.byte	2
+	.word	.L39
+	.byte	3
+	.byte	'.cocofun_4',0,1,98,7,1
+	.word	.L31,.L97,.L30
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_4')
+	.sect	'.debug_abbrev'
+.L94:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_4')
+	.sect	'.debug_line'
+.L95:
+	.word	.L242-.L241
+.L241:
+	.half	3
+	.word	.L244-.L243
+.L243:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L244:
+	.byte	5,22,7,0,5,2
+	.word	.L31
+	.byte	3,234,0,1,5,36,3,2,1,5,9,9
+	.half	.L245-.L31
+	.byte	1,5,27,9
+	.half	.L246-.L245
+	.byte	3,2,1,9
+	.half	.L97-.L246
+	.byte	0,1,1,5,19,0,5,2
+	.word	.L31
+	.byte	3,52,1,5,32,3,2,1,5,5,9
+	.half	.L245-.L31
+	.byte	1,5,23,9
+	.half	.L246-.L245
+	.byte	3,2,1,5,27,3,54,1,7,9
+	.half	.L97-.L246
+	.byte	0,1,1,5,19,0,5,2
+	.word	.L31
+	.byte	3,195,0,1,5,32,3,2,1,5,5,9
+	.half	.L245-.L31
+	.byte	1,5,23,9
+	.half	.L246-.L245
+	.byte	3,2,1,5,27,3,39,1,7,9
+	.half	.L97-.L246
+	.byte	0,1,1,5,44,0,5,2
+	.word	.L31
+	.byte	3,216,0,1,5,32,3,2,1,5,5,9
+	.half	.L245-.L31
+	.byte	1,5,23,9
+	.half	.L246-.L245
+	.byte	3,2,1,5,27,3,18,1,7,9
+	.half	.L97-.L246
+	.byte	0,1,1,5,22,0,5,2
+	.word	.L31
+	.byte	3,150,1,1,5,36,3,2,1,5,9,9
+	.half	.L245-.L31
+	.byte	1,5,27,9
+	.half	.L246-.L245
+	.byte	3,2,1,3,84,1,7,9
+	.half	.L97-.L246
+	.byte	0,1,1,5,39,0,5,2
+	.word	.L31
+	.byte	3,255,0,1,5,36,3,2,1,5,9,9
+	.half	.L245-.L31
+	.byte	1,5,27,9
+	.half	.L246-.L245
+	.byte	3,2,1,3,107,1,7,9
+	.half	.L97-.L246
+	.byte	0,1,1,5,61,0,5,2
+	.word	.L31
+	.byte	3,171,1,1,5,36,3,2,1,5,9,9
+	.half	.L245-.L31
+	.byte	1,5,27,9
+	.half	.L246-.L245
+	.byte	3,2,1,3,191,127,1,7,9
+	.half	.L97-.L246
+	.byte	0,1,1
+.L242:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_4')
+	.sect	'.debug_ranges'
+.L96:
+	.word	-1,.L31,0,.L97-.L31,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_1')
+	.sect	'.debug_loc'
+.L28:
+	.word	-1,.L29,0,.L82-.L29
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_2')
+	.sect	'.debug_loc'
+.L34:
+	.word	-1,.L35,0,.L87-.L35
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_3')
+	.sect	'.debug_loc'
+.L26:
+	.word	-1,.L27,0,.L92-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_4')
+	.sect	'.debug_loc'
+.L30:
+	.word	-1,.L31,0,.L97-.L31
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_loc'
+.L23:
+	.word	-1,.L24,0,.L138-.L24
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L139:
+	.word	-1,.L24,.L31-.L24,.L97-.L24
+	.half	1
+	.byte	100
+	.word	.L141-.L24,.L82-.L24
+	.half	1
+	.byte	100
+	.word	0,.L138-.L24
+	.half	1
+	.byte	100
+	.word	0,0
+.L140:
+	.word	-1,.L24,.L31-.L24,.L97-.L24
+	.half	1
+	.byte	84
+	.word	.L141-.L24,.L82-.L24
+	.half	1
+	.byte	84
+	.word	0,.L138-.L24
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_loc'
+.L21:
+	.word	-1,.L22,0,.L99-.L22
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L101:
+	.word	-1,.L22,.L31-.L22,.L97-.L22
+	.half	1
+	.byte	100
+	.word	.L141-.L22,.L82-.L22
+	.half	1
+	.byte	100
+	.word	0,.L99-.L22
+	.half	1
+	.byte	100
+	.word	0,0
+.L102:
+	.word	-1,.L22,.L31-.L22,.L97-.L22
+	.half	1
+	.byte	82
+	.word	.L141-.L22,.L82-.L22
+	.half	1
+	.byte	82
+	.word	.L143-.L22,.L99-.L22
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_loc'
+.L19:
+	.word	-1,.L20,0,.L104-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L105:
+	.word	-1,.L20,.L31-.L20,.L97-.L20
+	.half	1
+	.byte	100
+	.word	.L141-.L20,.L82-.L20
+	.half	1
+	.byte	100
+	.word	0,.L104-.L20
+	.half	1
+	.byte	100
+	.word	0,0
+.L106:
+	.word	-1,.L20,.L31-.L20,.L97-.L20
+	.half	1
+	.byte	82
+	.word	.L141-.L20,.L82-.L20
+	.half	1
+	.byte	82
+	.word	.L142-.L20,.L104-.L20
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_loc'
+.L122:
+	.word	-1,.L33,0,.L148-.L33
+	.half	1
+	.byte	101
+	.word	.L31-.L33,.L97-.L33
+	.half	1
+	.byte	101
+	.word	.L35-.L33,.L87-.L33
+	.half	1
+	.byte	101
+	.word	.L150-.L33,.L116-.L33
+	.half	1
+	.byte	101
+	.word	.L151-.L33,.L116-.L33
+	.half	1
+	.byte	98
+	.word	0,0
+.L32:
+	.word	-1,.L33,0,.L116-.L33
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L123:
+	.word	-1,.L33,.L10-.L33,.L148-.L33
+	.half	1
+	.byte	111
+	.word	.L31-.L33,.L97-.L33
+	.half	1
+	.byte	111
+	.word	.L35-.L33,.L87-.L33
+	.half	1
+	.byte	111
+	.word	.L150-.L33,.L116-.L33
+	.half	1
+	.byte	111
+	.word	0,0
+.L117:
+	.word	-1,.L33,0,.L148-.L33
+	.half	1
+	.byte	100
+	.word	.L31-.L33,.L97-.L33
+	.half	1
+	.byte	100
+	.word	.L35-.L33,.L87-.L33
+	.half	1
+	.byte	100
+	.word	.L150-.L33,.L116-.L33
+	.half	1
+	.byte	100
+	.word	0,0
+.L119:
+	.word	-1,.L33,0,.L148-.L33
+	.half	1
+	.byte	84
+	.word	.L31-.L33,.L97-.L33
+	.half	1
+	.byte	84
+	.word	.L35-.L33,.L149-.L33
+	.half	1
+	.byte	84
+	.word	.L149-.L33,.L87-.L33
+	.half	1
+	.byte	84
+	.word	.L150-.L33,.L116-.L33
+	.half	1
+	.byte	84
+	.word	0,0
+.L118:
+	.word	-1,.L33,0,.L148-.L33
+	.half	1
+	.byte	101
+	.word	.L31-.L33,.L97-.L33
+	.half	1
+	.byte	101
+	.word	.L35-.L33,.L87-.L33
+	.half	1
+	.byte	101
+	.word	.L150-.L33,.L116-.L33
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_loc'
+.L115:
+	.word	-1,.L7,.L27-.L7,.L92-.L7
+	.half	1
+	.byte	101
+	.word	.L31-.L7,.L97-.L7
+	.half	1
+	.byte	101
+	.word	.L146-.L7,.L108-.L7
+	.half	1
+	.byte	101
+	.word	.L147-.L7,.L108-.L7
+	.half	1
+	.byte	98
+	.word	0,0
+.L25:
+	.word	-1,.L7,0,.L108-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L109:
+	.word	-1,.L7,.L27-.L7,.L92-.L7
+	.half	1
+	.byte	100
+	.word	.L31-.L7,.L97-.L7
+	.half	1
+	.byte	100
+	.word	.L146-.L7,.L108-.L7
+	.half	1
+	.byte	100
+	.word	0,0
+.L112:
+	.word	-1,.L7,.L27-.L7,.L144-.L7
+	.half	1
+	.byte	84
+	.word	.L145-.L7,.L92-.L7
+	.half	1
+	.byte	84
+	.word	.L31-.L7,.L97-.L7
+	.half	1
+	.byte	84
+	.word	.L146-.L7,.L108-.L7
+	.half	1
+	.byte	84
+	.word	0,0
+.L110:
+	.word	-1,.L7,.L27-.L7,.L92-.L7
+	.half	1
+	.byte	101
+	.word	.L31-.L7,.L97-.L7
+	.half	1
+	.byte	101
+	.word	.L146-.L7,.L108-.L7
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_loc'
+.L37:
+	.word	-1,.L38,0,.L131-.L38
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L137:
+	.word	-1,.L38,.L31-.L38,.L97-.L38
+	.half	1
+	.byte	111
+	.word	.L35-.L38,.L87-.L38
+	.half	1
+	.byte	111
+	.word	.L16-.L38,.L131-.L38
+	.half	1
+	.byte	111
+	.word	0,0
+.L132:
+	.word	-1,.L38,.L31-.L38,.L97-.L38
+	.half	1
+	.byte	100
+	.word	.L35-.L38,.L87-.L38
+	.half	1
+	.byte	100
+	.word	0,.L131-.L38
+	.half	1
+	.byte	100
+	.word	0,0
+.L134:
+	.word	-1,.L38,.L31-.L38,.L97-.L38
+	.half	1
+	.byte	84
+	.word	.L35-.L38,.L155-.L38
+	.half	1
+	.byte	84
+	.word	.L149-.L38,.L87-.L38
+	.half	1
+	.byte	84
+	.word	0,.L131-.L38
+	.half	1
+	.byte	84
+	.word	0,0
+.L133:
+	.word	-1,.L38,.L31-.L38,.L97-.L38
+	.half	1
+	.byte	101
+	.word	.L35-.L38,.L87-.L38
+	.half	1
+	.byte	101
+	.word	0,.L131-.L38
+	.half	1
+	.byte	101
+	.word	0,0
+.L136:
+	.word	-1,.L38,.L31-.L38,.L97-.L38
+	.half	1
+	.byte	101
+	.word	.L35-.L38,.L87-.L38
+	.half	1
+	.byte	101
+	.word	0,.L131-.L38
+	.half	1
+	.byte	101
+	.word	.L156-.L38,.L131-.L38
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_loc'
+.L36:
+	.word	-1,.L13,0,.L125-.L13
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L126:
+	.word	-1,.L13,.L27-.L13,.L92-.L13
+	.half	1
+	.byte	100
+	.word	.L31-.L13,.L97-.L13
+	.half	1
+	.byte	100
+	.word	.L141-.L13,.L82-.L13
+	.half	1
+	.byte	100
+	.word	.L153-.L13,.L125-.L13
+	.half	1
+	.byte	100
+	.word	0,0
+.L128:
+	.word	-1,.L13,.L27-.L13,.L152-.L13
+	.half	1
+	.byte	84
+	.word	.L145-.L13,.L92-.L13
+	.half	1
+	.byte	84
+	.word	.L31-.L13,.L97-.L13
+	.half	1
+	.byte	84
+	.word	.L141-.L13,.L82-.L13
+	.half	1
+	.byte	84
+	.word	.L153-.L13,.L125-.L13
+	.half	1
+	.byte	84
+	.word	0,0
+.L127:
+	.word	-1,.L13,.L27-.L13,.L92-.L13
+	.half	1
+	.byte	101
+	.word	.L31-.L13,.L97-.L13
+	.half	1
+	.byte	101
+	.word	.L141-.L13,.L82-.L13
+	.half	1
+	.byte	101
+	.word	.L153-.L13,.L125-.L13
+	.half	1
+	.byte	101
+	.word	0,0
+.L130:
+	.word	-1,.L13,.L27-.L13,.L92-.L13
+	.half	1
+	.byte	101
+	.word	.L31-.L13,.L97-.L13
+	.half	1
+	.byte	101
+	.word	.L141-.L13,.L82-.L13
+	.half	1
+	.byte	101
+	.word	.L153-.L13,.L125-.L13
+	.half	1
+	.byte	101
+	.word	.L154-.L13,.L125-.L13
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L247:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L247,.L20,.L104-.L20
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L247,.L22,.L99-.L22
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L247,.L24,.L138-.L24
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L247,.L7,.L108-.L7
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L247,.L33,.L116-.L33
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L247,.L13,.L125-.L13
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L247,.L38,.L131-.L38
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L248:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_3')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L248,.L27,.L92-.L27
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L248,.L29,.L82-.L29
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_4')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L248,.L31,.L97-.L31
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_2')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L248,.L35,.L87-.L35
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   184  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   185  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   186  #endif
+
+	; Module end

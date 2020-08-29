@@ -1,0 +1,81 @@
+Net Status Report
+Filename     : C:\Users\bz794\Desktop\123\Project\Ö÷¿Ø4.PcbDoc
+Date         : 2020/7/11
+Time         : 17:31:50
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    +3.3_1, Signal Layers Only, 8549.738mils
+    +3.3_2, Signal Layers Only, 6524.325mils
+    +3.3_9814, Signal Layers Only, 8508.798mils
+    +5V_MV, Signal Layers Only, 6930.811mils
+    13.0, Signal Layers Only, 224.853mils
+    AN0, Signal Layers Only, 1313.325mils
+    AN1, Signal Layers Only, 2250.244mils
+    AN2, Signal Layers Only, 3169.172mils
+    AN3, Signal Layers Only, 623.407mils
+    AN4, Signal Layers Only, 334.35mils
+    AN5, Signal Layers Only, 234.35mils
+    AN6, Signal Layers Only, 197.071mils
+    AN7, Signal Layers Only, 3942.983mils
+    BAT, Signal Layers Only, 3543.818mils
+    CSI HSYNC, Signal Layers Only, 815.816mils
+    CSI VSYNC, Signal Layers Only, 1815.361mils
+    ENcoder1A, Signal Layers Only, 685.945mils
+    ENcoder1B, Signal Layers Only, 656.656mils
+    ENcoder2A, Signal Layers Only, 2714.255mils
+    ENcoder2B, Signal Layers Only, 649.094mils
+    ENcoder3A, Signal Layers Only, 528.492mils
+    ENcoder3B, Signal Layers Only, 528.492mils
+    ENcoder4A, Signal Layers Only, 1338.755mils
+    ENcoder4B, Signal Layers Only, 1601.629mils
+    GND, Signal Layers Only, 5500.863mils
+    KEY0, Signal Layers Only, 2879.997mils
+    KEY1, Signal Layers Only, 2565.306mils
+    KEY2, Signal Layers Only, 2485.264mils
+    MB LED0, Signal Layers Only, 2691.781mils
+    MB LED1, Signal Layers Only, 2585.883mils
+    MT1 N, Signal Layers Only, 654.411mils
+    MT1 P, Signal Layers Only, 271.569mils
+    MT2 N, Signal Layers Only, 511.676mils
+    MT2 P, Signal Layers Only, 275.711mils
+    MT3 N, Signal Layers Only, 725.388mils
+    MT3 P, Signal Layers Only, 916.422mils
+    MT4 N, Signal Layers Only, 715.711mils
+    MT4 P, Signal Layers Only, 1262.115mils
+    NetJP1_2, Signal Layers Only, 574.031mils
+    NetLED1_1, Signal Layers Only, 657.216mils
+    NetLED2_1, Signal Layers Only, 529.411mils
+    NetLED3_1, Signal Layers Only, 135mils
+    NetLED4_1, Signal Layers Only, 135mils
+    NetLED5_1, Signal Layers Only, 135mils
+    NetLED6_1, Signal Layers Only, 626.42mils
+    NetLED7_1, Signal Layers Only, 680.833mils
+    NetLED8_1, Signal Layers Only, 764.354mils
+    NetR12_1, Signal Layers Only, 102.071mils
+    NetR20_1, Signal Layers Only, 111.213mils
+    NetR2_1, Signal Layers Only, 101.213mils
+    NetR3_1, Signal Layers Only, 170mils
+    NetR7_1, Signal Layers Only, 102.071mils
+    RX0, Signal Layers Only, 2694.742mils
+    RX1, Signal Layers Only, 1134.853mils
+    RX3, Signal Layers Only, 1597.026mils
+    Reed, Signal Layers Only, 932.696mils
+    SCL, Signal Layers Only, 762.193mils
+    SDA, Signal Layers Only, 601.482mils
+    SPI CS0, Signal Layers Only, 483.848mils
+    SPI MISO, Signal Layers Only, 282.635mils
+    SPI MOSI, Signal Layers Only, 644.186mils
+    SPI SCK, Signal Layers Only, 297.279mils
+    TFT CS, Signal Layers Only, 2045.829mils
+    TFT DC, Signal Layers Only, 2138.634mils
+    TFT RST, Signal Layers Only, 1820.66mils
+    TFT SCK, Signal Layers Only, 1895.641mils
+    TFT SDI, Signal Layers Only, 1770.47mils
+    TX0, Signal Layers Only, 2673.051mils
+    TX1, Signal Layers Only, 1202.42mils
+    TX3, Signal Layers Only, 1690.772mils
+    V3.3, Signal Layers Only, 2232.341mils
+    dial SW0, Signal Layers Only, 3324.893mils
+    dial SW1, Signal Layers Only, 3411.334mils
+count : 73

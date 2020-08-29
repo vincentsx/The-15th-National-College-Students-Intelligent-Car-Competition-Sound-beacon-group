@@ -1,0 +1,9 @@
+!!! Invalid PRAM size causing overlap between PRAM and CMEM !!!
+!!! PRAM size now reduced to : 0x10000
+Initialised PCP2 Simulator, version: 1.41
+***** Pcp Memory Configuration *****
+Code memory, address: 0xf0060000, size: 0x00040000
+Pram memory, address: 0xf0050000, size: 0x00010000
+Preg memory, address: 0xf0043f00, size: 0x000000cd
+Psrn memory, address: 0xf0043fd0, size: 0x00000030
+************************************

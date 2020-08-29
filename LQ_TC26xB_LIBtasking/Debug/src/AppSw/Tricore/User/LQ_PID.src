@@ -1,0 +1,808 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\AppSw\\Tricore\\User\\.LQ_PID.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\AppSw\\Tricore\\User\\LQ_PID.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\AppSw\\Tricore\\User\\LQ_PID.src ..\\src\\AppSw\\Tricore\\User\\LQ_PID.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.LQ_PID.constrain_float',code,cluster('constrain_float')
+	.sect	'.text.LQ_PID.constrain_float'
+	.align	2
+	
+	.global	constrain_float
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     1  /*!
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     2    * @file     LQ_PID.c
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     3    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     4    * @brief    PID控制
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     5    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     6    * @company  北京龙邱智能科技
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     7    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     8    * @author   LQ-005
+; ..\src\AppSw\Tricore\User\LQ_PID.c	     9    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    10    * @note     Tab键 4个空格
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    11    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    12    * @version  V1.0
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    13    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    14    * @par URL  http://shop36265907.taobao.com
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    15    *           http://www.lqist.cn
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    16    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    17    * @date     2020年6月5日
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    18    */ 
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    19  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    20  #include <LQ_PID.h>
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    21  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    22  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    23  /*!
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    24    * @brief    限幅函数
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    25    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    26    * @param    amt   ： 参数
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    27    * @param    low   ： 最低值
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    28    * @param    high  ： 最高值
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    29    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    30    * @return   无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    31    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    32    * @note     无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    33    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    34    * @see      无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    35    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    36    * @date     2020/6/8
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    37    */
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    38  float constrain_float(float amt, float low, float high)
+; Function constrain_float
+.L11:
+constrain_float:	.type	func
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    39  {
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    40  	return ((amt)<(low)?(low):((amt)>(high)?(high):(amt)));
+	cmp.f	d15,d4,d5
+	jnz.t	d15:0,.L2
+.L70:
+	cmp.f	d15,d4,d6
+	and	d15,#6
+	sel	d5,d15,d6,d4
+.L2:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    41  }
+	mov	d2,d5
+	ret
+.L46:
+	
+__constrain_float_function_end:
+	.size	constrain_float,__constrain_float_function_end-constrain_float
+.L31:
+	; End of function
+	
+	.sdecl	'.text.LQ_PID.PidInit',code,cluster('PidInit')
+	.sect	'.text.LQ_PID.PidInit'
+	.align	2
+	
+	.global	PidInit
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    42  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    43  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    44  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    45  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    46  /*!
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    47    * @brief    pid参数初始化函数
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    48    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    49    * @param    无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    50    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    51    * @return   无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    52    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    53    * @note     无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    54    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    55    * @see      无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    56    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    57    * @date     2020/6/8
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    58    */
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    59  void PidInit(pid_param_t * pid)
+; Function PidInit
+.L13:
+PidInit:	.type	func
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    60  {
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    61  	pid->kp        = 0;
+	mov	d15,#0
+	st.w	[a4],d15
+.L64:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    62  	pid->ki        = 0;
+	lea	a15,[a4]4
+	lea	a2,10
+.L9:
+	st.w	[a15+],d15
+	loop	a2,.L9
+.L65:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    63  	pid->kd        = 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    64  	pid->imax      = 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    65  	pid->out_p     = 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    66  	pid->out_i     = 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    67  	pid->out_d     = 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    68  	pid->out       = 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    69  	pid->integrator= 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    70  	pid->last_error= 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    71  	pid->last_derivative   = 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    72  	pid->last_t    = 0;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    73  }
+	ret
+.L42:
+	
+__PidInit_function_end:
+	.size	PidInit,__PidInit_function_end-PidInit
+.L26:
+	; End of function
+	
+	.sdecl	'.text.LQ_PID.PidLocCtrl',code,cluster('PidLocCtrl')
+	.sect	'.text.LQ_PID.PidLocCtrl'
+	.align	2
+	
+	.global	PidLocCtrl
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    74  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    75  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    76  /*!
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    77    * @brief    pid位置式控制器输出
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    78    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    79    * @param    pid     pid参数
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    80    * @param    error   pid输入误差
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    81    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    82    * @return   PID输出结果
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    83    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    84    * @note     无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    85    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    86    * @see      无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    87    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    88    * @date     2020/6/8
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    89    */
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    90  float PidLocCtrl(pid_param_t * pid, float error)
+; Function PidLocCtrl
+.L15:
+PidLocCtrl:	.type	func
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    91  {
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    92  	/* 累积误差 */
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    93  	pid->integrator += error;
+	ld.w	d15,[a4]32
+.L75:
+	add.f	d0,d15,d4
+	st.w	[a4]32,d0
+.L76:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    94  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    95  	/* 误差限幅 */
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    96  	constrain_float(pid->integrator, -pid->imax, pid->imax);
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    97  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    98  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	    99  	pid->out_p = pid->kp * error;
+	ld.w	d15,[a4]
+.L77:
+	mul.f	d1,d15,d4
+	st.w	[a4]16,d1
+.L78:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   100  	pid->out_i = pid->ki * pid->integrator;
+	ld.w	d15,[a4]4
+.L79:
+	mul.f	d0,d15,d0
+	st.w	[a4]20,d0
+.L80:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   101  	pid->out_d = pid->kd * (error - pid->last_error);
+	ld.w	d15,[a4]36
+.L81:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   102  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   103  	pid->last_error = error;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   104  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   105  	pid->out = pid->out_p + pid->out_i + pid->out_d;
+	add.f	d0,d1,d0
+	ld.w	d2,[a4]8
+.L82:
+	sub.f	d15,d4,d15
+.L83:
+	mul.f	d15,d2,d15
+	st.w	[a4]24,d15
+.L84:
+	st.w	[a4]36,d4
+.L85:
+	add.f	d2,d0,d15
+	st.w	[a4]28,d2
+.L86:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   106  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   107  	return pid->out;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   108  }
+	ret
+.L50:
+	
+__PidLocCtrl_function_end:
+	.size	PidLocCtrl,__PidLocCtrl_function_end-PidLocCtrl
+.L36:
+	; End of function
+	
+	.sdecl	'.text.LQ_PID.PidIncCtrl',code,cluster('PidIncCtrl')
+	.sect	'.text.LQ_PID.PidIncCtrl'
+	.align	2
+	
+	.global	PidIncCtrl
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   109  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   110  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   111  /*!
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   112    * @brief    pid增量式控制器输出
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   113    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   114    * @param    pid     pid参数
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   115    * @param    error   pid输入误差
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   116    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   117    * @return   PID输出结果   注意输出结果已经包涵了上次结果
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   118    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   119    * @note     无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   120    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   121    * @see      无
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   122    *
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   123    * @date     2020/6/8
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   124    */
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   125  float PidIncCtrl(pid_param_t * pid, float error)
+; Function PidIncCtrl
+.L17:
+PidIncCtrl:	.type	func
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   126  {
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   127  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   128  	pid->out_p = pid->kp * (error - pid->last_error);
+	ld.w	d15,[a4]36
+.L91:
+	sub.f	d0,d4,d15
+	ld.w	d15,[a4]
+.L92:
+	mul.f	d1,d15,d0
+	st.w	[a4]16,d1
+.L93:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   129  	pid->out_i = pid->ki * error;
+	ld.w	d15,[a4]4
+.L94:
+	mul.f	d2,d15,d4
+	st.w	[a4]20,d2
+.L95:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   130  	pid->out_d = pid->kd * ((error - pid->last_error) - pid->last_derivative);
+	ld.w	d15,[a4]40
+.L96:
+	ld.w	d3,[a4]8
+.L97:
+	sub.f	d15,d0,d15
+.L98:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   131  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   132  	pid->last_derivative = error - pid->last_error;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   133  	pid->last_error = error;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   134  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   135  	pid->out += pid->out_p + pid->out_i + pid->out_d;
+	add.f	d1,d1,d2
+.L99:
+	mul.f	d15,d3,d15
+	st.w	[a4]24,d15
+.L100:
+	st.w	[a4]40,d0
+.L101:
+	st.w	[a4]36,d4
+.L102:
+	add.f	d15,d1,d15
+.L103:
+	ld.w	d0,[a4]28
+.L104:
+	add.f	d2,d0,d15
+	st.w	[a4]28,d2
+.L105:
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   136  
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   137  	return pid->out;
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   138  }
+	ret
+.L53:
+	
+__PidIncCtrl_function_end:
+	.size	PidIncCtrl,__PidIncCtrl_function_end-PidIncCtrl
+.L41:
+	; End of function
+	
+	.calls	'constrain_float','',0
+	.calls	'PidInit','',0
+	.calls	'PidLocCtrl','',0
+	.calls	'PidIncCtrl','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L19:
+	.word	607
+	.half	3
+	.word	.L20
+	.byte	4
+.L18:
+	.byte	1
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L21
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	172
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	179
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	221
+	.byte	7
+	.word	221
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	237
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	242
+	.byte	9
+	.byte	'value',0
+	.word	221
+	.byte	9
+	.byte	'compare',0
+	.word	221
+	.byte	0
+.L45:
+	.byte	2
+	.byte	'float',0,4,4,10,1,24,9,48,11
+	.byte	'kp',0
+	.word	299
+	.byte	4,2,35,0,11
+	.byte	'ki',0
+	.word	299
+	.byte	4,2,35,4,11
+	.byte	'kd',0
+	.word	299
+	.byte	4,2,35,8,11
+	.byte	'imax',0
+	.word	299
+	.byte	4,2,35,12,11
+	.byte	'out_p',0
+	.word	299
+	.byte	4,2,35,16,11
+	.byte	'out_i',0
+	.word	299
+	.byte	4,2,35,20,11
+	.byte	'out_d',0
+	.word	299
+	.byte	4,2,35,24,11
+	.byte	'out',0
+	.word	299
+	.byte	4,2,35,28,11
+	.byte	'integrator',0
+	.word	299
+	.byte	4,2,35,32,11
+	.byte	'last_error',0
+	.word	299
+	.byte	4,2,35,36,11
+	.byte	'last_derivative',0
+	.word	299
+	.byte	4,2,35,40,11
+	.byte	'last_t',0
+	.word	221
+	.byte	4,2,35,44,0
+.L43:
+	.byte	7
+	.word	308
+	.byte	12,1,7
+	.word	508
+	.byte	13
+	.byte	'__codeptr',0,2,1,1
+	.word	510
+	.byte	13
+	.byte	'__intptr_t',0,2,1,1
+	.word	172
+	.byte	13
+	.byte	'__uintptr_t',0,2,1,1
+	.word	221
+	.byte	13
+	.byte	'uint32_t',0,3,254,1,41
+	.word	221
+	.byte	13
+	.byte	'pid_param_t',0,1,40,2
+	.word	308
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L20:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,19,1,58,15,59,15,57,15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0
+	.byte	0,12,21,0,54,15,0,0,13,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L21:
+	.word	.L57-.L56
+.L56:
+	.half	3
+	.word	.L59-.L58
+.L58:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User',0
+	.byte	'D:\\Program Files (x86)\\TASKING_v6_3r1\\ctc\\include\\',0,0
+	.byte	'LQ_PID.h',0,1,0,0
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0,0,0,0
+	.byte	'stdint.h',0,2,0,0,0
+.L59:
+.L57:
+	.sdecl	'.debug_info',debug,cluster('PidInit')
+	.sect	'.debug_info'
+.L22:
+	.word	231
+	.half	3
+	.word	.L23
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L25,.L24
+	.byte	2
+	.word	.L18
+	.byte	3
+	.byte	'PidInit',0,1,59,6,1,1,1
+	.word	.L13,.L42,.L12
+	.byte	4
+	.byte	'pid',0,1,59,28
+	.word	.L43,.L44
+	.byte	5
+	.word	.L13,.L42
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('PidInit')
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('PidInit')
+	.sect	'.debug_line'
+.L24:
+	.word	.L61-.L60
+.L60:
+	.half	3
+	.word	.L63-.L62
+.L62:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0,0,0,0,0
+.L63:
+	.byte	5,19,7,0,5,2
+	.word	.L13
+	.byte	3,60,1,5,17,1,9
+	.half	.L64-.L13
+	.byte	3,1,1,5,1,9
+	.half	.L65-.L64
+	.byte	3,11,1,7,9
+	.half	.L26-.L65
+	.byte	0,1,1
+.L61:
+	.sdecl	'.debug_ranges',debug,cluster('PidInit')
+	.sect	'.debug_ranges'
+.L25:
+	.word	-1,.L13,0,.L26-.L13,0,0
+	.sdecl	'.debug_info',debug,cluster('constrain_float')
+	.sect	'.debug_info'
+.L27:
+	.word	276
+	.half	3
+	.word	.L28
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L30,.L29
+	.byte	2
+	.word	.L18
+	.byte	3
+	.byte	'constrain_float',0,1,38,7
+	.word	.L45
+	.byte	1,1,1
+	.word	.L11,.L46,.L10
+	.byte	4
+	.byte	'amt',0,1,38,29
+	.word	.L45,.L47
+	.byte	4
+	.byte	'low',0,1,38,40
+	.word	.L45,.L48
+	.byte	4
+	.byte	'high',0,1,38,51
+	.word	.L45,.L49
+	.byte	5
+	.word	.L11,.L46
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('constrain_float')
+	.sect	'.debug_abbrev'
+.L28:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('constrain_float')
+	.sect	'.debug_line'
+.L29:
+	.word	.L67-.L66
+.L66:
+	.half	3
+	.word	.L69-.L68
+.L68:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0,0,0,0,0
+.L69:
+	.byte	5,10,7,0,5,2
+	.word	.L11
+	.byte	3,39,1,5,34,9
+	.half	.L70-.L11
+	.byte	1,5,2,9
+	.half	.L2-.L70
+	.byte	1,5,1,3,1,1,7,9
+	.half	.L31-.L2
+	.byte	0,1,1
+.L67:
+	.sdecl	'.debug_ranges',debug,cluster('constrain_float')
+	.sect	'.debug_ranges'
+.L30:
+	.word	-1,.L11,0,.L31-.L11,0,0
+	.sdecl	'.debug_info',debug,cluster('PidLocCtrl')
+	.sect	'.debug_info'
+.L32:
+	.word	256
+	.half	3
+	.word	.L33
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L35,.L34
+	.byte	2
+	.word	.L18
+	.byte	3
+	.byte	'PidLocCtrl',0,1,90,7
+	.word	.L45
+	.byte	1,1,1
+	.word	.L15,.L50,.L14
+	.byte	4
+	.byte	'pid',0,1,90,32
+	.word	.L43,.L51
+	.byte	4
+	.byte	'error',0,1,90,43
+	.word	.L45,.L52
+	.byte	5
+	.word	.L15,.L50
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('PidLocCtrl')
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('PidLocCtrl')
+	.sect	'.debug_line'
+.L34:
+	.word	.L72-.L71
+.L71:
+	.half	3
+	.word	.L74-.L73
+.L73:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0,0,0,0,0
+.L74:
+	.byte	5,5,7,0,5,2
+	.word	.L15
+	.byte	3,220,0,1,5,18,9
+	.half	.L75-.L15
+	.byte	1,9
+	.half	.L76-.L75
+	.byte	3,6,1,5,23,9
+	.half	.L77-.L76
+	.byte	1,5,13,1,5,18,9
+	.half	.L78-.L77
+	.byte	3,1,1,5,23,9
+	.half	.L79-.L78
+	.byte	1,5,13,1,5,37,9
+	.half	.L80-.L79
+	.byte	3,1,1,5,24,9
+	.half	.L81-.L80
+	.byte	3,4,1,5,18,3,124,1,5,32,9
+	.half	.L82-.L81
+	.byte	1,5,23,9
+	.half	.L83-.L82
+	.byte	1,5,13,1,5,18,9
+	.half	.L84-.L83
+	.byte	3,2,1,5,37,9
+	.half	.L85-.L84
+	.byte	3,2,1,5,11,1,5,1,9
+	.half	.L86-.L85
+	.byte	3,3,1,7,9
+	.half	.L36-.L86
+	.byte	0,1,1
+.L72:
+	.sdecl	'.debug_ranges',debug,cluster('PidLocCtrl')
+	.sect	'.debug_ranges'
+.L35:
+	.word	-1,.L15,0,.L36-.L15,0,0
+	.sdecl	'.debug_info',debug,cluster('PidIncCtrl')
+	.sect	'.debug_info'
+.L37:
+	.word	256
+	.half	3
+	.word	.L38
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L40,.L39
+	.byte	2
+	.word	.L18
+	.byte	3
+	.byte	'PidIncCtrl',0,1,125,7
+	.word	.L45
+	.byte	1,1,1
+	.word	.L17,.L53,.L16
+	.byte	4
+	.byte	'pid',0,1,125,32
+	.word	.L43,.L54
+	.byte	4
+	.byte	'error',0,1,125,43
+	.word	.L45,.L55
+	.byte	5
+	.word	.L17,.L53
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('PidIncCtrl')
+	.sect	'.debug_abbrev'
+.L38:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('PidIncCtrl')
+	.sect	'.debug_line'
+.L39:
+	.word	.L88-.L87
+.L87:
+	.half	3
+	.word	.L90-.L89
+.L89:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\User\\LQ_PID.c',0,0,0,0,0
+.L90:
+	.byte	5,37,7,0,5,2
+	.word	.L17
+	.byte	3,255,0,1,5,32,9
+	.half	.L91-.L17
+	.byte	1,5,18,1,5,23,9
+	.half	.L92-.L91
+	.byte	1,5,13,1,5,18,9
+	.half	.L93-.L92
+	.byte	3,1,1,5,23,9
+	.half	.L94-.L93
+	.byte	1,5,13,1,5,57,9
+	.half	.L95-.L94
+	.byte	3,1,1,5,18,9
+	.half	.L96-.L95
+	.byte	1,5,52,9
+	.half	.L97-.L96
+	.byte	1,5,25,9
+	.half	.L98-.L97
+	.byte	3,5,1,5,23,9
+	.half	.L99-.L98
+	.byte	3,123,1,5,13,1,5,23,9
+	.half	.L100-.L99
+	.byte	3,2,1,5,18,9
+	.half	.L101-.L100
+	.byte	3,1,1,5,38,9
+	.half	.L102-.L101
+	.byte	3,2,1,5,5,9
+	.half	.L103-.L102
+	.byte	1,5,11,9
+	.half	.L104-.L103
+	.byte	1,5,1,9
+	.half	.L105-.L104
+	.byte	3,3,1,7,9
+	.half	.L41-.L105
+	.byte	0,1,1
+.L88:
+	.sdecl	'.debug_ranges',debug,cluster('PidIncCtrl')
+	.sect	'.debug_ranges'
+.L40:
+	.word	-1,.L17,0,.L41-.L17,0,0
+	.sdecl	'.debug_loc',debug,cluster('PidIncCtrl')
+	.sect	'.debug_loc'
+.L16:
+	.word	-1,.L17,0,.L53-.L17
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L55:
+	.word	-1,.L17,0,.L53-.L17
+	.half	1
+	.byte	84
+	.word	0,0
+.L54:
+	.word	-1,.L17,0,.L53-.L17
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('PidInit')
+	.sect	'.debug_loc'
+.L12:
+	.word	-1,.L13,0,.L42-.L13
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L44:
+	.word	-1,.L13,0,.L42-.L13
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('PidLocCtrl')
+	.sect	'.debug_loc'
+.L14:
+	.word	-1,.L15,0,.L50-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L52:
+	.word	-1,.L15,0,.L50-.L15
+	.half	1
+	.byte	84
+	.word	0,0
+.L51:
+	.word	-1,.L15,0,.L50-.L15
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('constrain_float')
+	.sect	'.debug_loc'
+.L47:
+	.word	-1,.L11,0,.L46-.L11
+	.half	1
+	.byte	84
+	.word	0,0
+.L10:
+	.word	-1,.L11,0,.L46-.L11
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L49:
+	.word	-1,.L11,0,.L46-.L11
+	.half	1
+	.byte	86
+	.word	0,0
+.L48:
+	.word	-1,.L11,0,.L46-.L11
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L106:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('constrain_float')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L106,.L11,.L46-.L11
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('PidInit')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L106,.L13,.L42-.L13
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('PidLocCtrl')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L106,.L15,.L50-.L15
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('PidIncCtrl')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L106,.L17,.L53-.L17
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+
+; ..\src\AppSw\Tricore\User\LQ_PID.c	   139  
+
+	; Module end

@@ -1,0 +1,964 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_WndF32_HannTable.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_HannTable.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_HannTable.src ..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_HannTable.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_HannTable.c'
+
+	
+$TC16X
+	
+	.sdecl	'.rodata.Ifx_WndF32_HannTable.Ifx_g_WndF32_hannTable',data,rom,cluster('Ifx_g_WndF32_hannTable')
+	.sect	'.rodata.Ifx_WndF32_HannTable.Ifx_g_WndF32_hannTable'
+	.global	Ifx_g_WndF32_hannTable
+	.align	2
+Ifx_g_WndF32_hannTable:	.type	object
+	.size	Ifx_g_WndF32_hannTable,2048
+	.space	4
+	.word	924727512,941504631,951189198,958281455
+	.word	964113420,967965424,972176815,975057107
+	.word	977810190,980886816,982877003,984738680
+	.word	986761937,988946696,990574310,991828067
+	.word	993162442,994577386,996072845,997648762
+	.word	998774715,999643042,1000551505,1001500069
+	.word	1002488698,1003517356,1004586003,1005694599
+	.word	1006738031,1007332215,1007946309,1008580289
+	.word	1009234131,1009907811,1010601304,1011314583
+	.word	1012047621,1012800392,1013572865,1014365013
+	.word	1015099186,1015514889,1015940383,1016375652
+	.word	1016820680,1017275449,1017739944,1018214145
+	.word	1018698036,1019191598,1019694813,1020207661
+	.word	1020730123,1021262179,1021803810,1022354995
+	.word	1022915713,1023448059,1023737920,1024032514
+	.word	1024331832,1024635861,1024944591,1025258010
+	.word	1025576106,1025898866,1026226280,1026558334
+	.word	1026895016,1027236312,1027582212,1027932700
+	.word	1028287765,1028647392,1029011569,1029380281
+	.word	1029753514,1030131254,1030513488,1030900200
+	.word	1031291377,1031687003,1031942924,1032145163
+	.word	1032349605,1032556242,1032765064,1032976066
+	.word	1033189238,1033404573,1033622062,1033841697
+	.word	1034063471,1034287374,1034513399,1034741536
+	.word	1034971778,1035204114,1035438538,1035675039
+	.word	1035913609,1036154239,1036396920,1036641643
+	.word	1036888397,1037137175,1037387967,1037640763
+	.word	1037895554,1038152330,1038411081,1038671798
+	.word	1038934471,1039199089,1039465644,1039734125
+	.word	1040004521,1040232107,1040369206,1040507247
+	.word	1040646225,1040786136,1040926973,1041068731
+	.word	1041211406,1041354991,1041499482,1041644872
+	.word	1041791157,1041938331,1042086388,1042235322
+	.word	1042385129,1042535802,1042687336,1042839725
+	.word	1042992963,1043147045,1043301964,1043457715
+	.word	1043614292,1043771690,1043929901,1044088920
+	.word	1044248742,1044409360,1044570768,1044732959
+	.word	1044895929,1045059670,1045224177,1045389444
+	.word	1045555463,1045722229,1045889736,1046057977
+	.word	1046226946,1046396636,1046567041,1046738155
+	.word	1046909972,1047082484,1047255685,1047429569
+	.word	1047604129,1047779359,1047955251,1048131800
+	.word	1048308999,1048486840,1048620659,1048710213
+	.word	1048800078,1048890251,1048980728,1049071507
+	.word	1049162584,1049253954,1049345616,1049437565
+	.word	1049529798,1049622312,1049715102,1049808166
+	.word	1049901500,1049995101,1050088964,1050183087
+	.word	1050277465,1050372096,1050466975,1050562100
+	.word	1050657466,1050753070,1050848908,1050944977
+	.word	1051041273,1051137793,1051234532,1051331488
+	.word	1051428656,1051526032,1051623614,1051721398
+	.word	1051819379,1051917554,1052015920,1052114473
+	.word	1052213208,1052312123,1052411213,1052510475
+	.word	1052609905,1052709499,1052809254,1052909165
+	.word	1053009229,1053109443,1053209802,1053310303
+	.word	1053410941,1053511714,1053612617,1053713646
+	.word	1053814798,1053916069,1054017455,1054118952
+	.word	1054220556,1054322264,1054424071,1054525975
+	.word	1054627970,1054730054,1054832221,1054934470
+	.word	1055036794,1055139192,1055241658,1055344190
+	.word	1055446782,1055549432,1055652135,1055754888
+	.word	1055857686,1055960526,1056063404,1056166316
+	.word	1056269258,1056372226,1056475217,1056578226
+	.word	1056681250,1056784284,1056887325,1056977489
+	.word	1057029010,1057080529,1057132044,1057183552
+	.word	1057235053,1057286542,1057338020,1057389484
+	.word	1057440932,1057492361,1057543771,1057595159
+	.word	1057646523,1057697862,1057749173,1057800454
+	.word	1057851704,1057902920,1057954101,1058005244
+	.word	1058056348,1058107411,1058158431,1058209406
+	.word	1058260334,1058311213,1058362042,1058412817
+	.word	1058463538,1058514202,1058564808,1058615354
+	.word	1058665837,1058716256,1058766609,1058816894
+	.word	1058867110,1058917253,1058967323,1059017317
+	.word	1059067234,1059117071,1059166828,1059216501
+	.word	1059266089,1059315590,1059365003,1059414325
+	.word	1059463555,1059512691,1059561730,1059610671
+	.word	1059659513,1059708253,1059756889,1059805420
+	.word	1059853844,1059902159,1059950363,1059998455
+	.word	1060046432,1060094293,1060142036,1060189658
+	.word	1060237160,1060284537,1060331790,1060378915
+	.word	1060425912,1060472778,1060519512,1060566112
+	.word	1060612576,1060658902,1060705089,1060751135
+	.word	1060797037,1060842796,1060888408,1060933872
+	.word	1060979186,1061024349,1061069359,1061114214
+	.word	1061158912,1061203452,1061247832,1061292051
+	.word	1061336106,1061379997,1061423721,1061467276
+	.word	1061510662,1061553877,1061596918,1061639784
+	.word	1061682475,1061724987,1061767319,1061809471
+	.word	1061851439,1061893224,1061934822,1061976233
+	.word	1062017455,1062058486,1062099325,1062139971
+	.word	1062180421,1062220674,1062260729,1062300584
+	.word	1062340239,1062379690,1062418937,1062457978
+	.word	1062496812,1062535437,1062573852,1062612056
+	.word	1062650047,1062687823,1062725383,1062762726
+	.word	1062799850,1062836754,1062873436,1062909896
+	.word	1062946131,1062982141,1063017923,1063053478
+	.word	1063088802,1063123896,1063158757,1063193385
+	.word	1063227777,1063261934,1063295852,1063329532
+	.word	1063362972,1063396171,1063429127,1063461839
+	.word	1063494306,1063526526,1063558499,1063590224
+	.word	1063621698,1063652921,1063683892,1063714610
+	.word	1063745073,1063775280,1063805230,1063834922
+	.word	1063864355,1063893527,1063922439,1063951087
+	.word	1063979473,1064007593,1064035448,1064063037
+	.word	1064090357,1064117409,1064144190,1064170701
+	.word	1064196940,1064222907,1064248599,1064274017
+	.word	1064299159,1064324024,1064348612,1064372921
+	.word	1064396951,1064420700,1064444168,1064467354
+	.word	1064490257,1064512876,1064535210,1064557259
+	.word	1064579021,1064600496,1064621683,1064642581
+	.word	1064663189,1064683508,1064703534,1064723269
+	.word	1064742712,1064761860,1064780715,1064799275
+	.word	1064817539,1064835507,1064853178,1064870552
+	.word	1064887627,1064904404,1064920881,1064937057
+	.word	1064952933,1064968508,1064983781,1064998751
+	.word	1065013418,1065027782,1065041841,1065055596
+	.word	1065069046,1065082189,1065095027,1065107558
+	.word	1065119781,1065131697,1065143305,1065154605
+	.word	1065165595,1065176276,1065186648,1065196709
+	.word	1065206459,1065215899,1065225028,1065233844
+	.word	1065242349,1065250542,1065258422,1065265989
+	.word	1065273243,1065280184,1065286811,1065293124
+	.word	1065299123,1065304807,1065310177,1065315232
+	.word	1065319972,1065324396,1065328506,1065332300
+	.word	1065335778,1065338940,1065341787,1065344318
+	.word	1065346532,1065348430,1065350012,1065351278
+	.word	1065352227,1065352860,1065353176
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	1227
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_HannTable.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,1,3
+	.word	204
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	207
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	252
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	264
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	344
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	318
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	350
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	350
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	318
+	.byte	6,0,10,4,61,9,8,11
+	.byte	'real',0
+	.word	264
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	264
+	.byte	4,2,35,4,0,12
+	.word	436
+	.byte	3
+	.word	470
+	.byte	8
+	.byte	'IFX_Cf32_dot',0,3,3,85,20
+	.word	264
+	.byte	1,1,5
+	.byte	'b',0,3,85,49
+	.word	475
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,91,20
+	.word	264
+	.byte	1,1,5
+	.byte	'c',0,3,91,49
+	.word	475
+	.byte	13,6,0,0,3
+	.word	436
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
+	.byte	'a',0,3,125,40
+	.word	554
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	264
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	264
+	.byte	6,0,7
+	.byte	'int',0,4,5,12
+	.word	613
+	.byte	14
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,15
+	.word	620
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,16
+	.word	662
+	.byte	3
+	.word	662
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	678
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	683
+	.byte	18
+	.byte	'value',0
+	.word	662
+	.byte	18
+	.byte	'compare',0
+	.word	662
+	.byte	0,19
+	.word	212
+	.byte	20
+	.word	238
+	.byte	6,0,19
+	.word	273
+	.byte	20
+	.word	305
+	.byte	6,0,19
+	.word	355
+	.byte	20
+	.word	374
+	.byte	6,0,19
+	.word	390
+	.byte	20
+	.word	405
+	.byte	20
+	.word	419
+	.byte	6,0,19
+	.word	480
+	.byte	20
+	.word	504
+	.byte	6,0,19
+	.word	516
+	.byte	20
+	.word	540
+	.byte	13,21
+	.word	480
+	.byte	20
+	.word	504
+	.byte	22
+	.word	514
+	.byte	0,6,0,0,19
+	.word	559
+	.byte	20
+	.word	579
+	.byte	20
+	.word	589
+	.byte	20
+	.word	600
+	.byte	6,0,7
+	.byte	'short int',0,2,5,23
+	.byte	'__wchar_t',0,5,1,1
+	.word	857
+	.byte	23
+	.byte	'__size_t',0,5,1,1
+	.word	662
+	.byte	23
+	.byte	'__ptrdiff_t',0,5,1,1
+	.word	613
+	.byte	24,1,3
+	.word	925
+	.byte	23
+	.byte	'__codeptr',0,5,1,1
+	.word	927
+	.byte	7
+	.byte	'unsigned char',0,1,8,23
+	.byte	'uint8',0,6,105,29
+	.word	950
+	.byte	7
+	.byte	'unsigned short int',0,2,7,23
+	.byte	'uint16',0,6,109,29
+	.word	981
+	.byte	7
+	.byte	'unsigned long int',0,4,7,23
+	.byte	'uint32',0,6,113,29
+	.word	1018
+	.byte	23
+	.byte	'uint64',0,6,118,29
+	.word	318
+	.byte	23
+	.byte	'sint16',0,6,126,29
+	.word	857
+	.byte	7
+	.byte	'long int',0,4,5,23
+	.byte	'sint32',0,6,131,1,29
+	.word	1084
+	.byte	7
+	.byte	'long long int',0,8,5,23
+	.byte	'sint64',0,6,139,1,29
+	.word	1112
+	.byte	23
+	.byte	'float32',0,6,168,1,29
+	.word	264
+	.byte	23
+	.byte	'pvoid',0,4,57,28
+	.word	350
+	.byte	23
+	.byte	'cfloat32',0,4,65,3
+	.word	436
+	.byte	23
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	1112
+	.byte	25,128,16
+	.word	264
+	.byte	26,255,3,0
+.L8:
+	.byte	12
+	.word	1214
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,73,19,0,0,16,53,0,73,19,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,18,5,0,3
+	.byte	8,73,19,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,29,1,49,19,0,0,22,11,0,49,19,0,0,23,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,24,21,0,54,15,0,0,25,1,1,11,15,73,19,0,0,26,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L10-.L9
+.L9:
+	.half	3
+	.word	.L12-.L11
+.L11:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_HannTable.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L12:
+.L10:
+	.sdecl	'.debug_info',debug,cluster('Ifx_g_WndF32_hannTable')
+	.sect	'.debug_info'
+.L6:
+	.word	240
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_WndF32_HannTable.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Ifx_g_WndF32_hannTable',0,5,52,19
+	.word	.L8
+	.byte	1,5,3
+	.word	Ifx_g_WndF32_hannTable
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_g_WndF32_hannTable')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     1  /**
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     2   * \file Ifx_WndF32_HannTable.c
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     3   * \brief Lookup table for Hann window function
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     4   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     5   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     6   * \version disabled
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     8   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	     9   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    10   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    11   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    12   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    17  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    18  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    20  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    27  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    33   * language processor.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    34  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    42  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    43   *
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    44   */
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    45  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    46  #include "Ifx_WndF32.h"
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    47  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    48  #if IFX_WNDF32_TABLE_LENGTH != 1024
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    49  #error This was generated with IFX_WNDF32_TABLE_LENGTH = 1024. Please regenerate.
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    50  #endif
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    51  
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    52  CONST_CFG float32 Ifx_g_WndF32_hannTable[(IFX_WNDF32_TABLE_LENGTH / 2)] = {
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    53      _DATAF(0.00000000000000000000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    54      _DATAF(0.00000943076884141192),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    55      _DATAF(0.00003772272248170339),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    56      _DATAF(0.00008487478771712631),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    57      _DATAF(0.00015088518557604402),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    58      _DATAF(0.00023575144587084651),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    59      _DATAF(0.00033947033807635307),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    60      _DATAF(0.00046203794772736728),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    61      _DATAF(0.00060344970552250743),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    62      _DATAF(0.00076370022725313902),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    63      _DATAF(0.00094278343021869659),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    64      _DATAF(0.00114069262053817510),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    65      _DATAF(0.00135742034763097760),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    66      _DATAF(0.00159295846242457630),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    67      _DATAF(0.00184729788452386860),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    68      _DATAF(0.00212042918428778650),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    69      _DATAF(0.00241234223358333110),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    70      _DATAF(0.00272302562370896340),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    71      _DATAF(0.00305246794596314430),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    72      _DATAF(0.00340065662749111650),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    73      _DATAF(0.00376757839694619180),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    74      _DATAF(0.00415321951732039450),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    75      _DATAF(0.00455756578594446180),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    76      _DATAF(0.00498060183599591260),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    77      _DATAF(0.00542231136932969090),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    78      _DATAF(0.00588267762213945390),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    79      _DATAF(0.00636168383061885830),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    80      _DATAF(0.00685931136831641200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    81      _DATAF(0.00737554160878062250),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    82      _DATAF(0.00791035499423742290),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    83      _DATAF(0.00846373196691274640),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    84      _DATAF(0.00903565157204866410),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    85      _DATAF(0.00962609145790338520),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    86      _DATAF(0.01023502927273511900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    87      _DATAF(0.01086244266480207400),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    88      _DATAF(0.01150830835103988600),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    89      _DATAF(0.01217260118573904000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    90      _DATAF(0.01285529602319002200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    91      _DATAF(0.01355636864900589000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    92      _DATAF(0.01427579019218683200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    93      _DATAF(0.01501353550702333500),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    94      _DATAF(0.01576957479119300800),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    95      _DATAF(0.01654388196766376500),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    96      _DATAF(0.01733642630279064200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    97      _DATAF(0.01814717799425125100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    98      _DATAF(0.01897610723972320600),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	    99      _DATAF(0.01982318051159381900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   100      _DATAF(0.02068836987018585200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   101      _DATAF(0.02157163806259632100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   102      _DATAF(0.02247295528650283800),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   103      _DATAF(0.02339228615164756800),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   104      _DATAF(0.02432959713041782400),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   105      _DATAF(0.02528485096991062200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   106      _DATAF(0.02625801227986812600),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   107      _DATAF(0.02724904380738735200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   108      _DATAF(0.02825791016221046400),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   109      _DATAF(0.02928457222878933000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   110      _DATAF(0.03032899089157581300),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   111      _DATAF(0.03139112517237663300),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   112      _DATAF(0.03247094154357910200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   113      _DATAF(0.03356838971376419100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   114      _DATAF(0.03468343615531921400),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   115      _DATAF(0.03581603243947029100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   116      _DATAF(0.03696614131331443800),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   117      _DATAF(0.03813371807336807300),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   118      _DATAF(0.03931871801614761400),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   119      _DATAF(0.04052109271287918100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   120      _DATAF(0.04174080491065979000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   121      _DATAF(0.04297780245542526200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   122      _DATAF(0.04423204064369201700),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   123      _DATAF(0.04550346732139587400),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   124      _DATAF(0.04679204523563385000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   125      _DATAF(0.04809771478176116900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   126      _DATAF(0.04942043498158454900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   127      _DATAF(0.05076014995574951200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   128      _DATAF(0.05211681500077247600),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   129      _DATAF(0.05349037423729896500),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   130      _DATAF(0.05488077551126480100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   131      _DATAF(0.05628796666860580400),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   132      _DATAF(0.05771189928054809600),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   133      _DATAF(0.05915251374244689900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   134      _DATAF(0.06060976162552833600),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   135      _DATAF(0.06208358332514762900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   136      _DATAF(0.06357392668724060100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   137      _DATAF(0.06508072465658187900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   138      _DATAF(0.06660393625497818000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   139      _DATAF(0.06814350187778472900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   140      _DATAF(0.06969934701919555700),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   141      _DATAF(0.07127143442630767800),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   142      _DATAF(0.07285968959331512500),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   143      _DATAF(0.07446406036615371700),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   144      _DATAF(0.07608447968959808300),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   145      _DATAF(0.07772088795900344800),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   146      _DATAF(0.07937323302030563400),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   147      _DATAF(0.08104144036769866900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   148      _DATAF(0.08272545784711837800),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   149      _DATAF(0.08442521095275878900),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   150      _DATAF(0.08614064753055572500),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   151      _DATAF(0.08787168562412262000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   152      _DATAF(0.08961828052997589100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   153      _DATAF(0.09138035029172897300),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   154      _DATAF(0.09315783530473709100),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   155      _DATAF(0.09495066851377487200),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   156      _DATAF(0.09675878286361694300),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   157      _DATAF(0.09858211129903793300),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   158      _DATAF(0.10042057186365128000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   159      _DATAF(0.10227411240339279000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   160      _DATAF(0.10414265841245651000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   161      _DATAF(0.10602613538503647000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   162      _DATAF(0.10792447626590729000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   163      _DATAF(0.10983760654926300000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   164      _DATAF(0.11176545172929764000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   165      _DATAF(0.11370794475078583000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   166      _DATAF(0.11566501110792160000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   167      _DATAF(0.11763656884431839000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   168      _DATAF(0.11962255835533142000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   169      _DATAF(0.12162289768457413000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   170      _DATAF(0.12363750487565994000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   171      _DATAF(0.12566630542278290000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   172      _DATAF(0.12770923972129822000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   173      _DATAF(0.12976621091365814000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   174      _DATAF(0.13183714449405670000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   175      _DATAF(0.13392198085784912000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   176      _DATAF(0.13602061569690704000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   177      _DATAF(0.13813297450542450000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   178      _DATAF(0.14025899767875671000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   179      _DATAF(0.14239858090877533000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   180      _DATAF(0.14455166459083557000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   181      _DATAF(0.14671814441680908000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   182      _DATAF(0.14889796078205109000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   183      _DATAF(0.15109102427959442000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   184      _DATAF(0.15329724550247192000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   185      _DATAF(0.15551653504371643000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   186      _DATAF(0.15774883329868317000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   187      _DATAF(0.15999403595924377000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   188      _DATAF(0.16225206851959229000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   189      _DATAF(0.16452284157276154000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   190      _DATAF(0.16680626571178436000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   191      _DATAF(0.16910226643085480000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   192      _DATAF(0.17141073942184448000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   193      _DATAF(0.17373161017894745000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   194      _DATAF(0.17606478929519653000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   195      _DATAF(0.17841020226478577000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   196      _DATAF(0.18076772987842560000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   197      _DATAF(0.18313729763031006000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   198      _DATAF(0.18551883101463318000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   199      _DATAF(0.18791222572326660000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   200      _DATAF(0.19031739234924316000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   201      _DATAF(0.19273422658443451000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   202      _DATAF(0.19516266882419586000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   203      _DATAF(0.19760259985923767000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   204      _DATAF(0.20005394518375397000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   205      _DATAF(0.20251661539077759000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   206      _DATAF(0.20499049127101898000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   207      _DATAF(0.20747549831867218000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   208      _DATAF(0.20997154712677002000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   209      _DATAF(0.21247853338718414000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   210      _DATAF(0.21499636769294739000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   211      _DATAF(0.21752494573593140000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   212      _DATAF(0.22006417810916901000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   213      _DATAF(0.22261397540569305000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   214      _DATAF(0.22517424821853638000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   215      _DATAF(0.22774487733840942000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   216      _DATAF(0.23032577335834503000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   217      _DATAF(0.23291684687137604000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   218      _DATAF(0.23551799356937408000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   219      _DATAF(0.23812912404537201000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   220      _DATAF(0.24075011909008026000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   221      _DATAF(0.24338090419769287000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   222      _DATAF(0.24602137506008148000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   223      _DATAF(0.24867141246795654000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   224      _DATAF(0.25133094191551208000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   225      _DATAF(0.25399985909461975000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   226      _DATAF(0.25667804479598999000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   227      _DATAF(0.25936540961265564000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   228      _DATAF(0.26206183433532715000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   229      _DATAF(0.26476725935935974000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   230      _DATAF(0.26748156547546387000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   231      _DATAF(0.27020460367202759000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   232      _DATAF(0.27293634414672852000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   233      _DATAF(0.27567663788795471000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   234      _DATAF(0.27842539548873901000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   235      _DATAF(0.28118252754211426000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   236      _DATAF(0.28394788503646851000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   237      _DATAF(0.28672140836715698000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   238      _DATAF(0.28950297832489014000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   239      _DATAF(0.29229250550270081000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   240      _DATAF(0.29508984088897705000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   241      _DATAF(0.29789492487907410000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   242      _DATAF(0.30070760846138000000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   243      _DATAF(0.30352783203125000000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   244      _DATAF(0.30635544657707214000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   245      _DATAF(0.30919039249420166000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   246      _DATAF(0.31203252077102661000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   247      _DATAF(0.31488174200057983000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   248      _DATAF(0.31773793697357178000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   249      _DATAF(0.32060101628303528000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   250      _DATAF(0.32347086071968079000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   251      _DATAF(0.32634738087654114000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   252      _DATAF(0.32923042774200439000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   253      _DATAF(0.33211994171142578000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   254      _DATAF(0.33501577377319336000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   255      _DATAF(0.33791780471801758000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   256      _DATAF(0.34082597494125366000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   257      _DATAF(0.34374016523361206000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   258      _DATAF(0.34666022658348083000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   259      _DATAF(0.34958606958389282000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   260      _DATAF(0.35251760482788086000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   261      _DATAF(0.35545471310615540000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   262      _DATAF(0.35839724540710449000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   263      _DATAF(0.36134514212608337000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   264      _DATAF(0.36429825425148010000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   265      _DATAF(0.36725649237632751000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   266      _DATAF(0.37021973729133606000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   267      _DATAF(0.37318786978721619000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   268      _DATAF(0.37616080045700073000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   269      _DATAF(0.37913838028907776000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   270      _DATAF(0.38212051987648010000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   271      _DATAF(0.38510712981224060000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   272      _DATAF(0.38809806108474731000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   273      _DATAF(0.39109322428703308000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   274      _DATAF(0.39409247040748596000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   275      _DATAF(0.39709573984146118000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   276      _DATAF(0.40010288357734680000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   277      _DATAF(0.40311378240585327000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   278      _DATAF(0.40612834692001343000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   279      _DATAF(0.40914645791053772000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   280      _DATAF(0.41216799616813660000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   281      _DATAF(0.41519284248352051000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   282      _DATAF(0.41822087764739990000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   283      _DATAF(0.42125201225280762000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   284      _DATAF(0.42428609728813171000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   285      _DATAF(0.42732307314872742000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   286      _DATAF(0.43036276102066040000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   287      _DATAF(0.43340510129928589000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   288      _DATAF(0.43644991517066956000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   289      _DATAF(0.43949717283248901000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   290      _DATAF(0.44254666566848755000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   291      _DATAF(0.44559836387634277000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   292      _DATAF(0.44865208864212036000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   293      _DATAF(0.45170778036117554000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   294      _DATAF(0.45476526021957397000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   295      _DATAF(0.45782446861267090000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   296      _DATAF(0.46088525652885437000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   297      _DATAF(0.46394753456115723000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   298      _DATAF(0.46701115369796753000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   299      _DATAF(0.47007602453231812000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   300      _DATAF(0.47314202785491943000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   301      _DATAF(0.47620904445648193000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   302      _DATAF(0.47927695512771606000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   303      _DATAF(0.48234564065933228000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   304      _DATAF(0.48541501164436340000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   305      _DATAF(0.48848491907119751000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   306      _DATAF(0.49155527353286743000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   307      _DATAF(0.49462592601776123000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   308      _DATAF(0.49769678711891174000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   309      _DATAF(0.50076776742935181000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   310      _DATAF(0.50383865833282471000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   311      _DATAF(0.50690943002700806000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   312      _DATAF(0.50997996330261230000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   313      _DATAF(0.51305007934570313000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   314      _DATAF(0.51611977815628052000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   315      _DATAF(0.51918876171112061000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   316      _DATAF(0.52225708961486816000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   317      _DATAF(0.52532458305358887000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   318      _DATAF(0.52839112281799316000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   319      _DATAF(0.53145653009414673000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   320      _DATAF(0.53452080488204956000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   321      _DATAF(0.53758376836776733000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   322      _DATAF(0.54064530134201050000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   323      _DATAF(0.54370534420013428000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   324      _DATAF(0.54676371812820435000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   325      _DATAF(0.54982030391693115000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   326      _DATAF(0.55287504196166992000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   327      _DATAF(0.55592775344848633000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   328      _DATAF(0.55897837877273560000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   329      _DATAF(0.56202673912048340000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   330      _DATAF(0.56507277488708496000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   331      _DATAF(0.56811636686325073000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   332      _DATAF(0.57115739583969116000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   333      _DATAF(0.57419574260711670000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   334      _DATAF(0.57723128795623779000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   335      _DATAF(0.58026391267776489000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   336      _DATAF(0.58329355716705322000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   337      _DATAF(0.58631998300552368000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   338      _DATAF(0.58934319019317627000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   339      _DATAF(0.59236299991607666000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   340      _DATAF(0.59537935256958008000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   341      _DATAF(0.59839212894439697000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   342      _DATAF(0.60140115022659302000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   343      _DATAF(0.60440635681152344000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   344      _DATAF(0.60740762948989868000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   345      _DATAF(0.61040484905242920000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   346      _DATAF(0.61339795589447021000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   347      _DATAF(0.61638671159744263000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   348      _DATAF(0.61937111616134644000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   349      _DATAF(0.62235099077224731000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   350      _DATAF(0.62532627582550049000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   351      _DATAF(0.62829679250717163000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   352      _DATAF(0.63126254081726074000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   353      _DATAF(0.63422328233718872000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   354      _DATAF(0.63717895746231079000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   355      _DATAF(0.64012944698333740000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   356      _DATAF(0.64307469129562378000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   357      _DATAF(0.64601451158523560000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   358      _DATAF(0.64894884824752808000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   359      _DATAF(0.65187758207321167000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   360      _DATAF(0.65480053424835205000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   361      _DATAF(0.65771764516830444000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   362      _DATAF(0.66062885522842407000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   363      _DATAF(0.66353398561477661000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   364      _DATAF(0.66643291711807251000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   365      _DATAF(0.66932559013366699000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   366      _DATAF(0.67221188545227051000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   367      _DATAF(0.67509168386459351000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   368      _DATAF(0.67796486616134644000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   369      _DATAF(0.68083137273788452000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   370      _DATAF(0.68369102478027344000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   371      _DATAF(0.68654376268386841000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   372      _DATAF(0.68938946723937988000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   373      _DATAF(0.69222795963287354000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   374      _DATAF(0.69505929946899414000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   375      _DATAF(0.69788318872451782000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   376      _DATAF(0.70069968700408936000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   377      _DATAF(0.70350855588912964000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   378      _DATAF(0.70630979537963867000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   379      _DATAF(0.70910322666168213000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   380      _DATAF(0.71188879013061523000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   381      _DATAF(0.71466636657714844000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   382      _DATAF(0.71743583679199219000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   383      _DATAF(0.72019708156585693000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   384      _DATAF(0.72295004129409790000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   385      _DATAF(0.72569459676742554000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   386      _DATAF(0.72843056917190552000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   387      _DATAF(0.73115801811218262000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   388      _DATAF(0.73387670516967773000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   389      _DATAF(0.73658657073974609000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   390      _DATAF(0.73928749561309814000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   391      _DATAF(0.74197942018508911000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   392      _DATAF(0.74466222524642944000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   393      _DATAF(0.74733579158782959000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   394      _DATAF(0.75000000000000000000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   395      _DATAF(0.75265479087829590000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   396      _DATAF(0.75530004501342773000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   397      _DATAF(0.75793570280075073000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   398      _DATAF(0.76056158542633057000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   399      _DATAF(0.76317769289016724000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   400      _DATAF(0.76578384637832642000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   401      _DATAF(0.76837992668151855000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   402      _DATAF(0.77096593379974365000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   403      _DATAF(0.77354174852371216000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   404      _DATAF(0.77610719203948975000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   405      _DATAF(0.77866220474243164000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   406      _DATAF(0.78120678663253784000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   407      _DATAF(0.78374069929122925000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   408      _DATAF(0.78626388311386108000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   409      _DATAF(0.78877633810043335000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   410      _DATAF(0.79127782583236694000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   411      _DATAF(0.79376840591430664000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   412      _DATAF(0.79624783992767334000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   413      _DATAF(0.79871612787246704000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   414      _DATAF(0.80117315053939819000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   415      _DATAF(0.80361878871917725000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   416      _DATAF(0.80605298280715942000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   417      _DATAF(0.80847567319869995000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   418      _DATAF(0.81088668107986450000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   419      _DATAF(0.81328594684600830000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   420      _DATAF(0.81567341089248657000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   421      _DATAF(0.81804895401000977000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   422      _DATAF(0.82041257619857788000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   423      _DATAF(0.82276403903961182000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   424      _DATAF(0.82510334253311157000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   425      _DATAF(0.82743036746978760000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   426      _DATAF(0.82974505424499512000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   427      _DATAF(0.83204728364944458000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   428      _DATAF(0.83433699607849121000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   429      _DATAF(0.83661413192749023000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   430      _DATAF(0.83887857198715210000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   431      _DATAF(0.84113019704818726000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   432      _DATAF(0.84336894750595093000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   433      _DATAF(0.84559476375579834000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   434      _DATAF(0.84780752658843994000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   435      _DATAF(0.85000717639923096000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   436      _DATAF(0.85219359397888184000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   437      _DATAF(0.85436677932739258000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   438      _DATAF(0.85652655363082886000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   439      _DATAF(0.85867291688919067000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   440      _DATAF(0.86080569028854370000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   441      _DATAF(0.86292493343353271000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   442      _DATAF(0.86503040790557861000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   443      _DATAF(0.86712217330932617000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   444      _DATAF(0.86920005083084106000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   445      _DATAF(0.87126404047012329000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   446      _DATAF(0.87331396341323853000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   447      _DATAF(0.87534987926483154000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   448      _DATAF(0.87737154960632324000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   449      _DATAF(0.87937903404235840000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   450      _DATAF(0.88137221336364746000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   451      _DATAF(0.88335102796554565000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   452      _DATAF(0.88531535863876343000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   453      _DATAF(0.88726514577865601000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   454      _DATAF(0.88920032978057861000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   455      _DATAF(0.89112079143524170000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   456      _DATAF(0.89302653074264526000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   457      _DATAF(0.89491748809814453000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   458      _DATAF(0.89679348468780518000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   459      _DATAF(0.89865452051162720000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   460      _DATAF(0.90050053596496582000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   461      _DATAF(0.90233147144317627000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   462      _DATAF(0.90414720773696899000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   463      _DATAF(0.90594768524169922000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   464      _DATAF(0.90773284435272217000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   465      _DATAF(0.90950262546539307000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   466      _DATAF(0.91125696897506714000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   467      _DATAF(0.91299575567245483000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   468      _DATAF(0.91471904516220093000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   469      _DATAF(0.91642659902572632000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   470      _DATAF(0.91811853647232056000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   471      _DATAF(0.91979461908340454000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   472      _DATAF(0.92145490646362305000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   473      _DATAF(0.92309933900833130000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   474      _DATAF(0.92472773790359497000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   475      _DATAF(0.92634016275405884000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   476      _DATAF(0.92793643474578857000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   477      _DATAF(0.92951661348342896000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   478      _DATAF(0.93108057975769043000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   479      _DATAF(0.93262833356857300000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   480      _DATAF(0.93415969610214233000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   481      _DATAF(0.93567472696304321000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   482      _DATAF(0.93717330694198608000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   483      _DATAF(0.93865537643432617000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   484      _DATAF(0.94012093544006348000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   485      _DATAF(0.94156986474990845000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   486      _DATAF(0.94300216436386108000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   487      _DATAF(0.94441771507263184000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   488      _DATAF(0.94581651687622070000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   489      _DATAF(0.94719851016998291000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   490      _DATAF(0.94856363534927368000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   491      _DATAF(0.94991183280944824000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   492      _DATAF(0.95124304294586182000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   493      _DATAF(0.95255726575851440000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   494      _DATAF(0.95385438203811646000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   495      _DATAF(0.95513439178466797000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   496      _DATAF(0.95639723539352417000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   497      _DATAF(0.95764285326004028000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   498      _DATAF(0.95887118577957153000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   499      _DATAF(0.96008229255676270000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   500      _DATAF(0.96127593517303467000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   501      _DATAF(0.96245223283767700000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   502      _DATAF(0.96361112594604492000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   503      _DATAF(0.96475243568420410000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   504      _DATAF(0.96587628126144409000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   505      _DATAF(0.96698254346847534000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   506      _DATAF(0.96807116270065308000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   507      _DATAF(0.96914213895797729000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   508      _DATAF(0.97019541263580322000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   509      _DATAF(0.97123098373413086000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   510      _DATAF(0.97224873304367065000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   511      _DATAF(0.97324872016906738000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   512      _DATAF(0.97423082590103149000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   513      _DATAF(0.97519499063491821000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   514      _DATAF(0.97614127397537231000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   515      _DATAF(0.97706961631774902000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   516      _DATAF(0.97797995805740356000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   517      _DATAF(0.97887223958969116000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   518      _DATAF(0.97974646091461182000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   519      _DATAF(0.98060262203216553000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   520      _DATAF(0.98144060373306274000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   521      _DATAF(0.98226046562194824000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   522      _DATAF(0.98306214809417725000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   523      _DATAF(0.98384553194046021000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   524      _DATAF(0.98461073637008667000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   525      _DATAF(0.98535764217376709000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   526      _DATAF(0.98608618974685669000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   527      _DATAF(0.98679643869400024000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   528      _DATAF(0.98748832941055298000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   529      _DATAF(0.98816186189651489000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   530      _DATAF(0.98881691694259644000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   531      _DATAF(0.98945355415344238000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   532      _DATAF(0.99007177352905273000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   533      _DATAF(0.99067145586013794000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   534      _DATAF(0.99125260114669800000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   535      _DATAF(0.99181526899337769000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   536      _DATAF(0.99235939979553223000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   537      _DATAF(0.99288487434387207000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   538      _DATAF(0.99339181184768677000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   539      _DATAF(0.99388015270233154000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   540      _DATAF(0.99434983730316162000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   541      _DATAF(0.99480086565017700000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   542      _DATAF(0.99523323774337769000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   543      _DATAF(0.99564695358276367000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   544      _DATAF(0.99604195356369019000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   545      _DATAF(0.99641823768615723000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   546      _DATAF(0.99677580595016479000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   547      _DATAF(0.99711459875106812000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   548      _DATAF(0.99743467569351196000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   549      _DATAF(0.99773597717285156000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   550      _DATAF(0.99801850318908691000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   551      _DATAF(0.99828219413757324000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   552      _DATAF(0.99852716922760010000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   553      _DATAF(0.99875330924987793000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   554      _DATAF(0.99896061420440674000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   555      _DATAF(0.99914908409118652000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   556      _DATAF(0.99931877851486206000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   557      _DATAF(0.99946963787078857000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   558      _DATAF(0.99960160255432129000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   559      _DATAF(0.99971473217010498000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   560      _DATAF(0.99980902671813965000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   561      _DATAF(0.99988448619842529000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   562      _DATAF(0.99994105100631714000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   563      _DATAF(0.99997878074645996000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   564      _DATAF(0.99999761581420898000),
+; ..\src\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_WndF32_HannTable.c	   565  };
+
+	; Module end

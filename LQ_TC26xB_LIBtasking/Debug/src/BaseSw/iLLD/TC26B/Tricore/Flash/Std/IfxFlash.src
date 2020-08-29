@@ -1,0 +1,3736 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99245187"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\.IfxFlash.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\User -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\APP -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Main -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\AppSw\\Tricore\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IG:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.src ..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.IfxFlash.IfxFlash_clearCorrectableErrorTracking',code,cluster('IfxFlash_clearCorrectableErrorTracking')
+	.sect	'.text.IfxFlash.IfxFlash_clearCorrectableErrorTracking'
+	.align	2
+	
+	.global	IfxFlash_clearCorrectableErrorTracking
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     1  /**
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     2   * \file IfxFlash.c
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     3   * \brief FLASH  basic functionality
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     4   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     5   * \version iLLD_1_0_1_11_0
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     6   * \copyright Copyright (c) 2019 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     7   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     8   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	     9   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    10   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    11   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    16  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    17  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    19  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    26  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    32   * language processor.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    33  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    41  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    42   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    43   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    44   */
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    45  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    46  /******************************************************************************/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    47  /*----------------------------------Includes----------------------------------*/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    48  /******************************************************************************/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    49  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    50  #include "IfxFlash.h"
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    51  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    52  /******************************************************************************/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    53  /*-------------------------Function Implementations---------------------------*/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    54  /******************************************************************************/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    55  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    56  void IfxFlash_clearCorrectableErrorTracking(IfxFlash_PortId portId)
+; Function IfxFlash_clearCorrectableErrorTracking
+.L14:
+IfxFlash_clearCorrectableErrorTracking:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    57  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    58      MODULE_FLASH0.CBAB[portId].CFG.B.CLR = 1;
+	fcall	.cocofun_2
+.L170:
+	or	d15,#1
+	st.b	[a15],d15
+.L200:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    59  }
+	ret
+.L123:
+	
+__IfxFlash_clearCorrectableErrorTracking_function_end:
+	.size	IfxFlash_clearCorrectableErrorTracking,__IfxFlash_clearCorrectableErrorTracking_function_end-IfxFlash_clearCorrectableErrorTracking
+.L54:
+	; End of function
+	
+	.sdecl	'.text.IfxFlash..cocofun_2',code,cluster('.cocofun_2')
+	.sect	'.text.IfxFlash..cocofun_2'
+	.align	2
+; Function .cocofun_2
+.L16:
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	fcall	.cocofun_5
+.L169:
+	lea	a15,[a3]8372
+.L262:
+	ld.bu	d15,[+a15]1
+.L263:
+	fret
+.L99:
+	; End of function
+	.sdecl	'.text.IfxFlash..cocofun_5',code,cluster('.cocofun_5')
+	.sect	'.text.IfxFlash..cocofun_5'
+	.align	2
+; Function .cocofun_5
+.L18:
+.cocofun_5:	.type	func
+; Function body .cocofun_5, coco_iter:1
+	mul	d15,d4,#12
+.L176:
+	mov.a	a15,d15
+	movh.a	a3,#63488
+	add.a	a3,a15
+.L278:
+	fret
+.L114:
+	; End of function
+	.sdecl	'.text.IfxFlash.IfxFlash_clearUncorrectableErrorTracking',code,cluster('IfxFlash_clearUncorrectableErrorTracking')
+	.sect	'.text.IfxFlash.IfxFlash_clearUncorrectableErrorTracking'
+	.align	2
+	
+	.global	IfxFlash_clearUncorrectableErrorTracking
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    60  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    61  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    62  void IfxFlash_clearUncorrectableErrorTracking(IfxFlash_PortId portId)
+; Function IfxFlash_clearUncorrectableErrorTracking
+.L20:
+IfxFlash_clearUncorrectableErrorTracking:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    63  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    64      MODULE_FLASH0.UBAB[portId].CFG.B.CLR = 1;
+	fcall	.cocofun_3
+.L172:
+	or	d15,#1
+	st.b	[a15],d15
+.L205:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    65  }
+	ret
+.L127:
+	
+__IfxFlash_clearUncorrectableErrorTracking_function_end:
+	.size	IfxFlash_clearUncorrectableErrorTracking,__IfxFlash_clearUncorrectableErrorTracking_function_end-IfxFlash_clearUncorrectableErrorTracking
+.L59:
+	; End of function
+	
+	.sdecl	'.text.IfxFlash..cocofun_3',code,cluster('.cocofun_3')
+	.sect	'.text.IfxFlash..cocofun_3'
+	.align	2
+; Function .cocofun_3
+.L22:
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:0
+	fcall	.cocofun_5
+.L171:
+	lea	a15,[a3]8420
+.L268:
+	ld.bu	d15,[+a15]1
+.L269:
+	fret
+.L104:
+	; End of function
+	.sdecl	'.text.IfxFlash.IfxFlash_disableCorrectableErrorTracking',code,cluster('IfxFlash_disableCorrectableErrorTracking')
+	.sect	'.text.IfxFlash.IfxFlash_disableCorrectableErrorTracking'
+	.align	2
+	
+	.global	IfxFlash_disableCorrectableErrorTracking
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    66  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    67  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    68  void IfxFlash_disableCorrectableErrorTracking(IfxFlash_PortId portId, boolean disable)
+; Function IfxFlash_disableCorrectableErrorTracking
+.L24:
+IfxFlash_disableCorrectableErrorTracking:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    69  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    70      MODULE_FLASH0.CBAB[portId].CFG.B.DIS = disable;
+	fcall	.cocofun_2
+.L173:
+	insert	d15,d15,d5,#1,#1
+	st.b	[a15],d15
+.L210:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    71  }
+	ret
+.L130:
+	
+__IfxFlash_disableCorrectableErrorTracking_function_end:
+	.size	IfxFlash_disableCorrectableErrorTracking,__IfxFlash_disableCorrectableErrorTracking_function_end-IfxFlash_disableCorrectableErrorTracking
+.L64:
+	; End of function
+	
+	.sdecl	'.text.IfxFlash.IfxFlash_disableUncorrectableErrorTracking',code,cluster('IfxFlash_disableUncorrectableErrorTracking')
+	.sect	'.text.IfxFlash.IfxFlash_disableUncorrectableErrorTracking'
+	.align	2
+	
+	.global	IfxFlash_disableUncorrectableErrorTracking
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    72  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    73  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    74  void IfxFlash_disableUncorrectableErrorTracking(IfxFlash_PortId portId, boolean disable)
+; Function IfxFlash_disableUncorrectableErrorTracking
+.L26:
+IfxFlash_disableUncorrectableErrorTracking:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    75  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    76      MODULE_FLASH0.UBAB[portId].CFG.B.DIS = disable;
+	fcall	.cocofun_3
+.L174:
+	insert	d15,d15,d5,#1,#1
+	st.b	[a15],d15
+.L215:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    77  }
+	ret
+.L134:
+	
+__IfxFlash_disableUncorrectableErrorTracking_function_end:
+	.size	IfxFlash_disableUncorrectableErrorTracking,__IfxFlash_disableUncorrectableErrorTracking_function_end-IfxFlash_disableUncorrectableErrorTracking
+.L69:
+	; End of function
+	
+	.sdecl	'.text.IfxFlash.IfxFlash_disableWriteProtection',code,cluster('IfxFlash_disableWriteProtection')
+	.sect	'.text.IfxFlash.IfxFlash_disableWriteProtection'
+	.align	2
+	
+	.global	IfxFlash_disableWriteProtection
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    78  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    79  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    80  void IfxFlash_disableWriteProtection(uint32 flash, IfxFlash_UcbType ucb, uint32 *password)
+; Function IfxFlash_disableWriteProtection
+.L28:
+IfxFlash_disableWriteProtection:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    81  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    82      IFX_UNUSED_PARAMETER(flash);
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    83      volatile uint32 *addr1 = (volatile uint32 *)(IFXFLASH_CMD_BASE_ADDRESS | 0x553c);
+	movh.a	a15,#44800
+	lea	a15,[a15]@los(0xaf00553c)
+.L191:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    84      uint32           i;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    85  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    86      *addr1 = ucb;
+	st.w	[a15],d5
+.L192:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    87  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    88      for (i = 0; i < 8; i++)
+	mov.a	a2,#7
+.L2:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    89      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    90          *addr1 = password[i];
+	ld.w	d15,[a4+]
+.L193:
+	st.w	[a15],d15
+	loop	a2,.L2
+.L194:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    91      }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    92  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    93      __dsync();
+	dsync
+.L195:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    94  }
+	ret
+.L115:
+	
+__IfxFlash_disableWriteProtection_function_end:
+	.size	IfxFlash_disableWriteProtection,__IfxFlash_disableWriteProtection_function_end-IfxFlash_disableWriteProtection
+.L49:
+	; End of function
+	
+	.sdecl	'.text.IfxFlash.IfxFlash_getTrackedCorrectableErrors',code,cluster('IfxFlash_getTrackedCorrectableErrors')
+	.sect	'.text.IfxFlash.IfxFlash_getTrackedCorrectableErrors'
+	.align	2
+	
+	.global	IfxFlash_getTrackedCorrectableErrors
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    95  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    96  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    97  uint32 IfxFlash_getTrackedCorrectableErrors(IfxFlash_PortId portId, IfxFlash_ErrorTracking_Address *trackedFlashAdresses)
+; Function IfxFlash_getTrackedCorrectableErrors
+.L30:
+IfxFlash_getTrackedCorrectableErrors:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    98  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	    99      uint32 numErrors    = 0;
+	fcall	.cocofun_4
+.L177:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   100      uint32 fillingLevel = MODULE_FLASH0.CBAB[portId].STAT.U;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   101  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   102      int    i;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   103  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   104      for (i = 0;
+	mov	d1,d2
+	lea	a15,[a3]8372
+.L147:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   105           i < IFXFLASH_ERROR_TRACKING_MAX_CORRECTABLE_ERRORS &&
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   106           (fillingLevel & (1 << i)) != 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   107           ++i)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   108      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   109          Ifx_FLASH_CBAB_TOP top;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   110          top.U = MODULE_FLASH0.CBAB[portId].TOP.U;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   111  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   112          if (top.B.VLD)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   113          {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   114              trackedFlashAdresses[numErrors].address   = 0xa0000000 | (top.B.ADDR << 5);
+	movh	d4,#40960
+	ld.w	d0,[a15]4
+.L148:
+	j	.L3
+.L4:
+	fcall	.cocofun_1
+.L3:
+	mov	d15,#10
+.L220:
+	jge	d1,d15,.L6
+.L221:
+	mov	d15,#1
+.L222:
+	sha	d15,d15,d1
+.L223:
+	and	d15,d0
+.L224:
+	jne	d15,#0,.L4
+.L6:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   115              trackedFlashAdresses[numErrors].errorType = (IfxFlash_ErrorTracking)top.B.ERR;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   116              ++numErrors;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   117          }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   118  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   119          // clear entry
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   120          MODULE_FLASH0.CBAB[portId].TOP.U = (((uint32)1) << 31);
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   121      }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   122  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   123      return numErrors;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   124  }
+	ret
+.L137:
+	
+__IfxFlash_getTrackedCorrectableErrors_function_end:
+	.size	IfxFlash_getTrackedCorrectableErrors,__IfxFlash_getTrackedCorrectableErrors_function_end-IfxFlash_getTrackedCorrectableErrors
+.L74:
+	; End of function
+	
+	.sdecl	'.text.IfxFlash..cocofun_4',code,cluster('.cocofun_4')
+	.sect	'.text.IfxFlash..cocofun_4'
+	.align	2
+; Function .cocofun_4
+.L32:
+.cocofun_4:	.type	func
+; Function body .cocofun_4, coco_iter:0
+	mov	d2,#0
+	fcall	.cocofun_5
+.L175:
+	fret
+.L109:
+	; End of function
+	.sdecl	'.text.IfxFlash..cocofun_1',code,cluster('.cocofun_1')
+	.sect	'.text.IfxFlash..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.L34:
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	lea	a2,[a15]8
+.L249:
+	ld.w	d3,[a2]
+.L178:
+	extr.u	d15,d3,#24,#8
+.L250:
+	jz.t	d15:6,.L5
+.L251:
+	extr.u	d3,d3,#5,#19
+.L179:
+	and	d15,#63
+.L252:
+	add	d2,#1
+.L253:
+	sha	d3,#5
+.L254:
+	or	d3,d4
+	st.w	[a4],d3
+.L255:
+	st.b	[a4]4,d15
+.L256:
+	add.a	a4,#6
+.L5:
+	movh	d15,#32768
+	st.w	[a2],d15
+.L257:
+	add	d1,#1
+	fret
+.L94:
+	; End of function
+	.sdecl	'.text.IfxFlash.IfxFlash_getTrackedUncorrectableErrors',code,cluster('IfxFlash_getTrackedUncorrectableErrors')
+	.sect	'.text.IfxFlash.IfxFlash_getTrackedUncorrectableErrors'
+	.align	2
+	
+	.global	IfxFlash_getTrackedUncorrectableErrors
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   125  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   126  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   127  uint32 IfxFlash_getTrackedUncorrectableErrors(IfxFlash_PortId portId, IfxFlash_ErrorTracking_Address *trackedFlashAdresses)
+; Function IfxFlash_getTrackedUncorrectableErrors
+.L36:
+IfxFlash_getTrackedUncorrectableErrors:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   128  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   129      uint32 numErrors    = 0;
+	fcall	.cocofun_4
+.L180:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   130      uint32 fillingLevel = MODULE_FLASH0.UBAB[portId].STAT.U;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   131  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   132      int    i;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   133  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   134      for (i = 0;
+	mov	d1,d2
+	lea	a15,[a3]8420
+.L158:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   135           i < IFXFLASH_ERROR_TRACKING_MAX_UNCORRECTABLE_ERRORS &&
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   136           (fillingLevel & (1 << i)) != 0;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   137           ++i)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   138      {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   139          Ifx_FLASH_UBAB_TOP top;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   140          top.U = MODULE_FLASH0.UBAB[portId].TOP.U;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   141  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   142          if (top.B.VLD)
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   143          {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   144              trackedFlashAdresses[numErrors].address   = 0xa0000000 | (top.B.ADDR << 5);
+	movh	d4,#40960
+	ld.w	d0,[a15]4
+.L159:
+	j	.L8
+.L9:
+	fcall	.cocofun_1
+.L8:
+	jge	d1,#1,.L11
+.L229:
+	mov	d15,#1
+.L230:
+	sha	d15,d15,d1
+.L231:
+	and	d15,d0
+.L232:
+	jne	d15,#0,.L9
+.L11:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   145              trackedFlashAdresses[numErrors].errorType = (IfxFlash_ErrorTracking)top.B.ERR;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   146              ++numErrors;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   147          }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   148  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   149          // clear entry
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   150          MODULE_FLASH0.UBAB[portId].TOP.U = (((uint32)1) << 31);
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   151      }
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   152  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   153      return numErrors;
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   154  }
+	ret
+.L151:
+	
+__IfxFlash_getTrackedUncorrectableErrors_function_end:
+	.size	IfxFlash_getTrackedUncorrectableErrors,__IfxFlash_getTrackedUncorrectableErrors_function_end-IfxFlash_getTrackedUncorrectableErrors
+.L79:
+	; End of function
+	
+	.sdecl	'.text.IfxFlash.IfxFlash_selectCorrectableErrorTracking',code,cluster('IfxFlash_selectCorrectableErrorTracking')
+	.sect	'.text.IfxFlash.IfxFlash_selectCorrectableErrorTracking'
+	.align	2
+	
+	.global	IfxFlash_selectCorrectableErrorTracking
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   155  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   156  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   157  void IfxFlash_selectCorrectableErrorTracking(IfxFlash_PortId portId, IfxFlash_ErrorTracking errorTracking)
+; Function IfxFlash_selectCorrectableErrorTracking
+.L38:
+IfxFlash_selectCorrectableErrorTracking:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   158  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   159      IFX_ASSERT(IFX_VERBOSE_LEVEL_ERROR,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   160          errorTracking == IfxFlash_ErrorTracking_none ||
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   161          errorTracking == IfxFlash_ErrorTracking_correctedSingleBitError ||
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   162          errorTracking == IfxFlash_ErrorTracking_correctedDoubleBitError ||
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   163          errorTracking == IfxFlash_ErrorTracking_correctedSingleOrDoubleBitError);
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   164  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   165      MODULE_FLASH0.CBAB[portId].CFG.B.SEL = errorTracking;
+	fcall	.cocofun_5
+.L181:
+	ld.bu	d15,[a3]8372
+.L237:
+	insert	d15,d15,d5,#0,#6
+	st.b	[a3]8372,d15
+.L238:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   166  }
+	ret
+.L162:
+	
+__IfxFlash_selectCorrectableErrorTracking_function_end:
+	.size	IfxFlash_selectCorrectableErrorTracking,__IfxFlash_selectCorrectableErrorTracking_function_end-IfxFlash_selectCorrectableErrorTracking
+.L84:
+	; End of function
+	
+	.sdecl	'.text.IfxFlash.IfxFlash_selectUncorrectableErrorTracking',code,cluster('IfxFlash_selectUncorrectableErrorTracking')
+	.sect	'.text.IfxFlash.IfxFlash_selectUncorrectableErrorTracking'
+	.align	2
+	
+	.global	IfxFlash_selectUncorrectableErrorTracking
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   167  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   168  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   169  void IfxFlash_selectUncorrectableErrorTracking(IfxFlash_PortId portId, IfxFlash_ErrorTracking errorTracking)
+; Function IfxFlash_selectUncorrectableErrorTracking
+.L40:
+IfxFlash_selectUncorrectableErrorTracking:	.type	func
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   170  {
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   171      IFX_ASSERT(IFX_VERBOSE_LEVEL_ERROR,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   172          errorTracking == IfxFlash_ErrorTracking_none ||
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   173          errorTracking == IfxFlash_ErrorTracking_uncorrectableMultiBitError);
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   174  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   175      MODULE_FLASH0.UBAB[portId].CFG.B.SEL = errorTracking;
+	fcall	.cocofun_5
+.L182:
+	ld.bu	d15,[a3]8420
+.L243:
+	insert	d15,d15,d5,#0,#6
+	st.b	[a3]8420,d15
+.L244:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\Flash\Std\IfxFlash.c	   176  }
+	ret
+.L166:
+	
+__IfxFlash_selectUncorrectableErrorTracking_function_end:
+	.size	IfxFlash_selectUncorrectableErrorTracking,__IfxFlash_selectUncorrectableErrorTracking_function_end-IfxFlash_selectUncorrectableErrorTracking
+.L89:
+	; End of function
+	
+	.calls	'IfxFlash_clearCorrectableErrorTracking','.cocofun_2'
+	.calls	'.cocofun_2','.cocofun_5'
+	.calls	'IfxFlash_clearUncorrectableErrorTracking','.cocofun_3'
+	.calls	'.cocofun_3','.cocofun_5'
+	.calls	'IfxFlash_disableCorrectableErrorTracking','.cocofun_2'
+	.calls	'IfxFlash_disableUncorrectableErrorTracking','.cocofun_3'
+	.calls	'IfxFlash_getTrackedCorrectableErrors','.cocofun_4'
+	.calls	'IfxFlash_getTrackedCorrectableErrors','.cocofun_1'
+	.calls	'.cocofun_4','.cocofun_5'
+	.calls	'IfxFlash_getTrackedUncorrectableErrors','.cocofun_4'
+	.calls	'IfxFlash_getTrackedUncorrectableErrors','.cocofun_1'
+	.calls	'IfxFlash_selectCorrectableErrorTracking','.cocofun_5'
+	.calls	'IfxFlash_selectUncorrectableErrorTracking','.cocofun_5'
+	.calls	'IfxFlash_clearCorrectableErrorTracking','',0
+	.calls	'.cocofun_2','',0
+	.calls	'.cocofun_5','',0
+	.calls	'IfxFlash_clearUncorrectableErrorTracking','',0
+	.calls	'.cocofun_3','',0
+	.calls	'IfxFlash_disableCorrectableErrorTracking','',0
+	.calls	'IfxFlash_disableUncorrectableErrorTracking','',0
+	.calls	'IfxFlash_disableWriteProtection','',0
+	.calls	'IfxFlash_getTrackedCorrectableErrors','',0
+	.calls	'.cocofun_4','',0
+	.calls	'.cocofun_1','',0
+	.calls	'IfxFlash_getTrackedUncorrectableErrors','',0
+	.calls	'IfxFlash_selectCorrectableErrorTracking','',0
+	.calls	'IfxFlash_selectUncorrectableErrorTracking','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L42:
+	.word	12124
+	.half	3
+	.word	.L43
+	.byte	4
+.L41:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L44
+	.byte	2,1,1,3
+	.word	191
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	194
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	239
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	251
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	331
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	305
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	337
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	337
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	305
+	.byte	6,0
+.L116:
+	.byte	7
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'__st64_lu',0,3,2,162,1,17,1,1,5
+	.byte	'addr',0,2,162,1,33
+	.word	337
+	.byte	5
+	.byte	'valueLower',0,2,162,1,46
+	.word	423
+	.byte	5
+	.byte	'valueUpper',0,2,162,1,65
+	.word	423
+	.byte	10,6,0,0
+.L144:
+	.byte	7
+	.byte	'int',0,4,5,11
+	.word	520
+	.byte	12
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,13
+	.word	527
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,14
+	.word	569
+	.byte	3
+	.word	569
+	.byte	15
+	.byte	'__cmpswapw',0
+	.word	585
+	.byte	1,1,1,1,16
+	.byte	'p',0
+	.word	590
+	.byte	16
+	.byte	'value',0
+	.word	569
+	.byte	16
+	.byte	'compare',0
+	.word	569
+	.byte	0,17
+	.byte	'__dsync',0,1,1,1,1,18
+	.word	199
+	.byte	19
+	.word	225
+	.byte	6,0,18
+	.word	260
+	.byte	19
+	.word	292
+	.byte	6,0,18
+	.word	342
+	.byte	19
+	.word	361
+	.byte	6,0,18
+	.word	377
+	.byte	19
+	.word	392
+	.byte	19
+	.word	406
+	.byte	6,0,18
+	.word	444
+	.byte	19
+	.word	462
+	.byte	19
+	.word	476
+	.byte	19
+	.word	496
+	.byte	10,20
+	.word	377
+	.byte	19
+	.word	392
+	.byte	19
+	.word	406
+	.byte	21
+	.word	421
+	.byte	0,6,0,0
+.L118:
+	.byte	22,3,163,1,9,1,23
+	.byte	'IfxFlash_UcbType_ucb0',0,0,23
+	.byte	'IfxFlash_UcbType_ucb1',0,1,23
+	.byte	'IfxFlash_UcbType_ucbHsmc',0,5,0
+.L120:
+	.byte	3
+	.word	423
+.L124:
+	.byte	22,4,83,9,1,23
+	.byte	'IfxFlash_PortId_PortId_0',0,0,23
+	.byte	'IfxFlash_PortId_PortId_1',0,1,0
+.L132:
+	.byte	7
+	.byte	'unsigned char',0,1,8
+.L164:
+	.byte	22,4,72,9,1,23
+	.byte	'IfxFlash_ErrorTracking_none',0,0,23
+	.byte	'IfxFlash_ErrorTracking_correctedSingleBitError',0,1,23
+	.byte	'IfxFlash_ErrorTracking_correctedDoubleBitError',0,2,23
+	.byte	'IfxFlash_ErrorTracking_correctedSingleOrDoubleBitError',0,3,23
+	.byte	'IfxFlash_ErrorTracking_uncorrectableMultiBitError',0,4,0,24,4,99,9,6,25
+	.byte	'address',0
+	.word	423
+	.byte	4,2,35,0,25
+	.byte	'errorType',0
+	.word	922
+	.byte	1,2,35,4,0
+.L139:
+	.byte	3
+	.word	1165
+	.byte	26
+	.byte	'_Ifx_FLASH_CBAB_TOP_Bits',0,5,114,16,4,27
+	.byte	'reserved_0',0,1
+	.word	905
+	.byte	5,3,2,35,0,27
+	.byte	'ADDR',0,4
+	.word	569
+	.byte	19,8,2,35,0,27
+	.byte	'ERR',0,1
+	.word	905
+	.byte	6,2,2,35,3,27
+	.byte	'VLD',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'CLR',0,1
+	.word	905
+	.byte	1,0,2,35,3,0
+.L149:
+	.byte	28,5,187,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	1212
+	.byte	4,2,35,0,0,26
+	.byte	'_Ifx_FLASH_UBAB_TOP_Bits',0,5,140,4,16,4,27
+	.byte	'reserved_0',0,1
+	.word	905
+	.byte	5,3,2,35,0,27
+	.byte	'ADDR',0,4
+	.word	569
+	.byte	19,8,2,35,0,27
+	.byte	'ERR',0,1
+	.word	905
+	.byte	6,2,2,35,3,27
+	.byte	'VLD',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'CLR',0,1
+	.word	905
+	.byte	1,0,2,35,3,0
+.L160:
+	.byte	28,5,163,6,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	1366
+	.byte	4,2,35,0,0,7
+	.byte	'short int',0,2,5,29
+	.byte	'__wchar_t',0,6,1,1
+	.word	1521
+	.byte	29
+	.byte	'__size_t',0,6,1,1
+	.word	569
+	.byte	29
+	.byte	'__ptrdiff_t',0,6,1,1
+	.word	520
+	.byte	30,1,3
+	.word	1589
+	.byte	29
+	.byte	'__codeptr',0,6,1,1
+	.word	1591
+	.byte	29
+	.byte	'boolean',0,7,101,29
+	.word	905
+	.byte	29
+	.byte	'uint8',0,7,105,29
+	.word	905
+	.byte	7
+	.byte	'unsigned short int',0,2,7,29
+	.byte	'uint16',0,7,109,29
+	.word	1644
+	.byte	29
+	.byte	'uint32',0,7,113,29
+	.word	423
+	.byte	29
+	.byte	'uint64',0,7,118,29
+	.word	305
+	.byte	29
+	.byte	'sint16',0,7,126,29
+	.word	1521
+	.byte	7
+	.byte	'long int',0,4,5,29
+	.byte	'sint32',0,7,131,1,29
+	.word	1726
+	.byte	7
+	.byte	'long long int',0,8,5,29
+	.byte	'sint64',0,7,139,1,29
+	.word	1754
+	.byte	29
+	.byte	'float32',0,7,168,1,29
+	.word	251
+	.byte	29
+	.byte	'pvoid',0,8,57,28
+	.word	337
+	.byte	29
+	.byte	'Ifx_TickTime',0,8,79,28
+	.word	1754
+	.byte	22,3,150,1,9,1,23
+	.byte	'IfxFlash_FlashType_Fa',0,0,23
+	.byte	'IfxFlash_FlashType_D0',0,1,23
+	.byte	'IfxFlash_FlashType_D1',0,2,23
+	.byte	'IfxFlash_FlashType_P0',0,3,23
+	.byte	'IfxFlash_FlashType_P1',0,4,23
+	.byte	'IfxFlash_FlashType_P2',0,5,23
+	.byte	'IfxFlash_FlashType_P3',0,6,0,29
+	.byte	'IfxFlash_FlashType',0,3,159,1,3
+	.word	1839
+	.byte	29
+	.byte	'IfxFlash_UcbType',0,3,168,1,3
+	.word	758
+	.byte	26
+	.byte	'_Ifx_FLASH_ACCEN0_Bits',0,5,45,16,4,27
+	.byte	'EN0',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'EN1',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'EN2',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'EN3',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'EN4',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'EN5',0,1
+	.word	905
+	.byte	1,2,2,35,0,27
+	.byte	'EN6',0,1
+	.word	905
+	.byte	1,1,2,35,0,27
+	.byte	'EN7',0,1
+	.word	905
+	.byte	1,0,2,35,0,27
+	.byte	'EN8',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'EN9',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'EN10',0,1
+	.word	905
+	.byte	1,5,2,35,1,27
+	.byte	'EN11',0,1
+	.word	905
+	.byte	1,4,2,35,1,27
+	.byte	'EN12',0,1
+	.word	905
+	.byte	1,3,2,35,1,27
+	.byte	'EN13',0,1
+	.word	905
+	.byte	1,2,2,35,1,27
+	.byte	'EN14',0,1
+	.word	905
+	.byte	1,1,2,35,1,27
+	.byte	'EN15',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'EN16',0,1
+	.word	905
+	.byte	1,7,2,35,2,27
+	.byte	'EN17',0,1
+	.word	905
+	.byte	1,6,2,35,2,27
+	.byte	'EN18',0,1
+	.word	905
+	.byte	1,5,2,35,2,27
+	.byte	'EN19',0,1
+	.word	905
+	.byte	1,4,2,35,2,27
+	.byte	'EN20',0,1
+	.word	905
+	.byte	1,3,2,35,2,27
+	.byte	'EN21',0,1
+	.word	905
+	.byte	1,2,2,35,2,27
+	.byte	'EN22',0,1
+	.word	905
+	.byte	1,1,2,35,2,27
+	.byte	'EN23',0,1
+	.word	905
+	.byte	1,0,2,35,2,27
+	.byte	'EN24',0,1
+	.word	905
+	.byte	1,7,2,35,3,27
+	.byte	'EN25',0,1
+	.word	905
+	.byte	1,6,2,35,3,27
+	.byte	'EN26',0,1
+	.word	905
+	.byte	1,5,2,35,3,27
+	.byte	'EN27',0,1
+	.word	905
+	.byte	1,4,2,35,3,27
+	.byte	'EN28',0,1
+	.word	905
+	.byte	1,3,2,35,3,27
+	.byte	'EN29',0,1
+	.word	905
+	.byte	1,2,2,35,3,27
+	.byte	'EN30',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'EN31',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_ACCEN0_Bits',0,5,79,3
+	.word	2068
+	.byte	26
+	.byte	'_Ifx_FLASH_ACCEN1_Bits',0,5,82,16,4,27
+	.byte	'reserved_0',0,4
+	.word	569
+	.byte	32,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_ACCEN1_Bits',0,5,85,3
+	.word	2629
+	.byte	26
+	.byte	'_Ifx_FLASH_CBAB_CFG_Bits',0,5,88,16,4,27
+	.byte	'SEL',0,1
+	.word	905
+	.byte	6,2,2,35,0,27
+	.byte	'reserved_6',0,1
+	.word	905
+	.byte	2,0,2,35,0,27
+	.byte	'CLR',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'DIS',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'reserved_10',0,4
+	.word	569
+	.byte	22,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_CBAB_CFG_Bits',0,5,95,3
+	.word	2710
+	.byte	26
+	.byte	'_Ifx_FLASH_CBAB_STAT_Bits',0,5,98,16,4,27
+	.byte	'VLD0',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'VLD1',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'VLD2',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'VLD3',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'VLD4',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'VLD5',0,1
+	.word	905
+	.byte	1,2,2,35,0,27
+	.byte	'VLD6',0,1
+	.word	905
+	.byte	1,1,2,35,0,27
+	.byte	'VLD7',0,1
+	.word	905
+	.byte	1,0,2,35,0,27
+	.byte	'VLD8',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'VLD9',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'reserved_10',0,4
+	.word	569
+	.byte	22,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_CBAB_STAT_Bits',0,5,111,3
+	.word	2863
+	.byte	29
+	.byte	'Ifx_FLASH_CBAB_TOP_Bits',0,5,121,3
+	.word	1212
+	.byte	26
+	.byte	'_Ifx_FLASH_COMM0_Bits',0,5,124,16,4,27
+	.byte	'STATUS',0,1
+	.word	905
+	.byte	8,0,2,35,0,27
+	.byte	'reserved_8',0,4
+	.word	569
+	.byte	24,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_COMM0_Bits',0,5,128,1,3
+	.word	3143
+	.byte	26
+	.byte	'_Ifx_FLASH_COMM1_Bits',0,5,131,1,16,4,27
+	.byte	'STATUS',0,1
+	.word	905
+	.byte	8,0,2,35,0,27
+	.byte	'DATA',0,1
+	.word	905
+	.byte	8,0,2,35,1,27
+	.byte	'reserved_16',0,2
+	.word	1644
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_FLASH_COMM1_Bits',0,5,136,1,3
+	.word	3241
+	.byte	26
+	.byte	'_Ifx_FLASH_COMM2_Bits',0,5,139,1,16,4,27
+	.byte	'STATUS',0,1
+	.word	905
+	.byte	8,0,2,35,0,27
+	.byte	'DATA',0,1
+	.word	905
+	.byte	8,0,2,35,1,27
+	.byte	'reserved_16',0,2
+	.word	1644
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_FLASH_COMM2_Bits',0,5,144,1,3
+	.word	3357
+	.byte	26
+	.byte	'_Ifx_FLASH_ECCRD_Bits',0,5,147,1,16,4,27
+	.byte	'RCODE',0,4
+	.word	569
+	.byte	22,10,2,35,0,27
+	.byte	'reserved_22',0,2
+	.word	1644
+	.byte	8,2,2,35,2,27
+	.byte	'EDCERRINJ',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'ECCORDIS',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_ECCRD_Bits',0,5,153,1,3
+	.word	3473
+	.byte	26
+	.byte	'_Ifx_FLASH_ECCRP_Bits',0,5,156,1,16,4,27
+	.byte	'RCODE',0,4
+	.word	569
+	.byte	22,10,2,35,0,27
+	.byte	'reserved_22',0,2
+	.word	1644
+	.byte	8,2,2,35,2,27
+	.byte	'EDCERRINJ',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'ECCORDIS',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_ECCRP_Bits',0,5,162,1,3
+	.word	3613
+	.byte	26
+	.byte	'_Ifx_FLASH_ECCW_Bits',0,5,165,1,16,4,27
+	.byte	'WCODE',0,4
+	.word	569
+	.byte	22,10,2,35,0,27
+	.byte	'reserved_22',0,2
+	.word	1644
+	.byte	8,2,2,35,2,27
+	.byte	'DECENCDIS',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'PECENCDIS',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_ECCW_Bits',0,5,171,1,3
+	.word	3753
+	.byte	26
+	.byte	'_Ifx_FLASH_FCON_Bits',0,5,174,1,16,4,27
+	.byte	'WSPFLASH',0,1
+	.word	905
+	.byte	4,4,2,35,0,27
+	.byte	'WSECPF',0,1
+	.word	905
+	.byte	2,2,2,35,0,27
+	.byte	'WSDFLASH',0,2
+	.word	1644
+	.byte	6,4,2,35,0,27
+	.byte	'WSECDF',0,1
+	.word	905
+	.byte	3,1,2,35,1,27
+	.byte	'IDLE',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'ESLDIS',0,1
+	.word	905
+	.byte	1,7,2,35,2,27
+	.byte	'SLEEP',0,1
+	.word	905
+	.byte	1,6,2,35,2,27
+	.byte	'NSAFECC',0,1
+	.word	905
+	.byte	1,5,2,35,2,27
+	.byte	'STALL',0,1
+	.word	905
+	.byte	1,4,2,35,2,27
+	.byte	'RES21',0,1
+	.word	905
+	.byte	2,2,2,35,2,27
+	.byte	'RES23',0,1
+	.word	905
+	.byte	2,0,2,35,2,27
+	.byte	'VOPERM',0,1
+	.word	905
+	.byte	1,7,2,35,3,27
+	.byte	'SQERM',0,1
+	.word	905
+	.byte	1,6,2,35,3,27
+	.byte	'PROERM',0,1
+	.word	905
+	.byte	1,5,2,35,3,27
+	.byte	'reserved_27',0,1
+	.word	905
+	.byte	3,2,2,35,3,27
+	.byte	'PR5V',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'EOBM',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_FCON_Bits',0,5,193,1,3
+	.word	3892
+	.byte	26
+	.byte	'_Ifx_FLASH_FPRO_Bits',0,5,196,1,16,4,27
+	.byte	'PROINP',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'PRODISP',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'PROIND',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'PRODISD',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'PROINHSMCOTP',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'RES5',0,1
+	.word	905
+	.byte	1,2,2,35,0,27
+	.byte	'PROINOTP',0,1
+	.word	905
+	.byte	1,1,2,35,0,27
+	.byte	'RES7',0,1
+	.word	905
+	.byte	1,0,2,35,0,27
+	.byte	'PROINDBG',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'PRODISDBG',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'PROINHSM',0,1
+	.word	905
+	.byte	1,5,2,35,1,27
+	.byte	'reserved_11',0,1
+	.word	905
+	.byte	5,0,2,35,1,27
+	.byte	'DCFP',0,1
+	.word	905
+	.byte	1,7,2,35,2,27
+	.byte	'DDFP',0,1
+	.word	905
+	.byte	1,6,2,35,2,27
+	.byte	'DDFPX',0,1
+	.word	905
+	.byte	1,5,2,35,2,27
+	.byte	'reserved_19',0,1
+	.word	905
+	.byte	1,4,2,35,2,27
+	.byte	'DDFD',0,1
+	.word	905
+	.byte	1,3,2,35,2,27
+	.byte	'reserved_21',0,1
+	.word	905
+	.byte	1,2,2,35,2,27
+	.byte	'ENPE',0,1
+	.word	905
+	.byte	2,0,2,35,2,27
+	.byte	'reserved_24',0,1
+	.word	905
+	.byte	8,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_FPRO_Bits',0,5,218,1,3
+	.word	4254
+	.byte	26
+	.byte	'_Ifx_FLASH_FSR_Bits',0,5,221,1,16,4,27
+	.byte	'FABUSY',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'D0BUSY',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'RES1',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'P0BUSY',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'P1BUSY',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'RES5',0,1
+	.word	905
+	.byte	1,2,2,35,0,27
+	.byte	'RES6',0,1
+	.word	905
+	.byte	1,1,2,35,0,27
+	.byte	'PROG',0,1
+	.word	905
+	.byte	1,0,2,35,0,27
+	.byte	'ERASE',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'PFPAGE',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'DFPAGE',0,1
+	.word	905
+	.byte	1,5,2,35,1,27
+	.byte	'OPER',0,1
+	.word	905
+	.byte	1,4,2,35,1,27
+	.byte	'SQER',0,1
+	.word	905
+	.byte	1,3,2,35,1,27
+	.byte	'PROER',0,1
+	.word	905
+	.byte	1,2,2,35,1,27
+	.byte	'PFSBER',0,1
+	.word	905
+	.byte	1,1,2,35,1,27
+	.byte	'PFDBER',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'PFMBER',0,1
+	.word	905
+	.byte	1,7,2,35,2,27
+	.byte	'RES17',0,1
+	.word	905
+	.byte	1,6,2,35,2,27
+	.byte	'DFSBER',0,1
+	.word	905
+	.byte	1,5,2,35,2,27
+	.byte	'DFDBER',0,1
+	.word	905
+	.byte	1,4,2,35,2,27
+	.byte	'DFTBER',0,1
+	.word	905
+	.byte	1,3,2,35,2,27
+	.byte	'DFMBER',0,1
+	.word	905
+	.byte	1,2,2,35,2,27
+	.byte	'SRIADDERR',0,1
+	.word	905
+	.byte	1,1,2,35,2,27
+	.byte	'reserved_23',0,2
+	.word	1644
+	.byte	2,7,2,35,2,27
+	.byte	'PVER',0,1
+	.word	905
+	.byte	1,6,2,35,3,27
+	.byte	'EVER',0,1
+	.word	905
+	.byte	1,5,2,35,3,27
+	.byte	'SPND',0,1
+	.word	905
+	.byte	1,4,2,35,3,27
+	.byte	'SLM',0,1
+	.word	905
+	.byte	1,3,2,35,3,27
+	.byte	'reserved_29',0,1
+	.word	905
+	.byte	1,2,2,35,3,27
+	.byte	'ORIER',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'reserved_31',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_FSR_Bits',0,5,254,1,3
+	.word	4695
+	.byte	26
+	.byte	'_Ifx_FLASH_ID_Bits',0,5,129,2,16,4,27
+	.byte	'MODREV',0,1
+	.word	905
+	.byte	8,0,2,35,0,27
+	.byte	'MODTYPE',0,1
+	.word	905
+	.byte	8,0,2,35,1,27
+	.byte	'MODNUMBER',0,2
+	.word	1644
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_FLASH_ID_Bits',0,5,134,2,3
+	.word	5301
+	.byte	26
+	.byte	'_Ifx_FLASH_MARD_Bits',0,5,137,2,16,4,27
+	.byte	'HMARGIN',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'SELD0',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'reserved_2',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'SPND',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'SPNDERR',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'reserved_5',0,2
+	.word	1644
+	.byte	10,1,2,35,0,27
+	.byte	'TRAPDIS',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'reserved_16',0,2
+	.word	1644
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_FLASH_MARD_Bits',0,5,147,2,3
+	.word	5412
+	.byte	26
+	.byte	'_Ifx_FLASH_MARP_Bits',0,5,150,2,16,4,27
+	.byte	'SELP0',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'SELP1',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'RES2',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'RES3',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'reserved_4',0,2
+	.word	1644
+	.byte	11,1,2,35,0,27
+	.byte	'TRAPDIS',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'reserved_16',0,2
+	.word	1644
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_FLASH_MARP_Bits',0,5,159,2,3
+	.word	5626
+	.byte	26
+	.byte	'_Ifx_FLASH_PROCOND_Bits',0,5,162,2,16,4,27
+	.byte	'L',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'NSAFECC',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'RAMIN',0,1
+	.word	905
+	.byte	2,4,2,35,0,27
+	.byte	'RAMINSEL',0,1
+	.word	905
+	.byte	4,0,2,35,0,27
+	.byte	'OSCCFG',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'MODE',0,1
+	.word	905
+	.byte	2,5,2,35,1,27
+	.byte	'APREN',0,1
+	.word	905
+	.byte	1,4,2,35,1,27
+	.byte	'CAP0EN',0,1
+	.word	905
+	.byte	1,3,2,35,1,27
+	.byte	'CAP1EN',0,1
+	.word	905
+	.byte	1,2,2,35,1,27
+	.byte	'CAP2EN',0,1
+	.word	905
+	.byte	1,1,2,35,1,27
+	.byte	'CAP3EN',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'ESR0CNT',0,2
+	.word	1644
+	.byte	12,4,2,35,2,27
+	.byte	'RES29',0,1
+	.word	905
+	.byte	2,2,2,35,3,27
+	.byte	'RES30',0,1
+	.word	905
+	.byte	1,1,2,35,3,27
+	.byte	'RPRO',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_PROCOND_Bits',0,5,179,2,3
+	.word	5813
+	.byte	26
+	.byte	'_Ifx_FLASH_PROCONDBG_Bits',0,5,182,2,16,4,27
+	.byte	'OCDSDIS',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'DBGIFLCK',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'EDM',0,1
+	.word	905
+	.byte	2,4,2,35,0,27
+	.byte	'reserved_4',0,4
+	.word	569
+	.byte	28,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_PROCONDBG_Bits',0,5,188,2,3
+	.word	6137
+	.byte	26
+	.byte	'_Ifx_FLASH_PROCONHSM_Bits',0,5,191,2,16,4,27
+	.byte	'HSMDBGDIS',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'DBGIFLCK',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'TSTIFLCK',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'HSMTSTDIS',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'RES15',0,2
+	.word	1644
+	.byte	12,0,2,35,0,27
+	.byte	'reserved_16',0,2
+	.word	1644
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_FLASH_PROCONHSM_Bits',0,5,199,2,3
+	.word	6280
+	.byte	26
+	.byte	'_Ifx_FLASH_PROCONHSMCOTP_Bits',0,5,202,2,16,4,27
+	.byte	'HSMBOOTEN',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'SSWWAIT',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'HSMDX',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'HSM6X',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'HSM16X',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'HSM17X',0,1
+	.word	905
+	.byte	1,2,2,35,0,27
+	.byte	'S6ROM',0,1
+	.word	905
+	.byte	1,1,2,35,0,27
+	.byte	'HSMENPINS',0,2
+	.word	1644
+	.byte	2,7,2,35,0,27
+	.byte	'HSMENRES',0,1
+	.word	905
+	.byte	2,5,2,35,1,27
+	.byte	'DESTDBG',0,1
+	.word	905
+	.byte	2,3,2,35,1,27
+	.byte	'BLKFLAN',0,1
+	.word	905
+	.byte	1,2,2,35,1,27
+	.byte	'reserved_14',0,1
+	.word	905
+	.byte	2,0,2,35,1,27
+	.byte	'S16ROM',0,1
+	.word	905
+	.byte	1,7,2,35,2,27
+	.byte	'S17ROM',0,1
+	.word	905
+	.byte	1,6,2,35,2,27
+	.byte	'reserved_18',0,2
+	.word	1644
+	.byte	14,0,2,35,2,0,29
+	.byte	'Ifx_FLASH_PROCONHSMCOTP_Bits',0,5,219,2,3
+	.word	6469
+	.byte	26
+	.byte	'_Ifx_FLASH_PROCONOTP_Bits',0,5,222,2,16,4,27
+	.byte	'S0ROM',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'S1ROM',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'S2ROM',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'S3ROM',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'S4ROM',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'S5ROM',0,1
+	.word	905
+	.byte	1,2,2,35,0,27
+	.byte	'S6ROM',0,1
+	.word	905
+	.byte	1,1,2,35,0,27
+	.byte	'S7ROM',0,1
+	.word	905
+	.byte	1,0,2,35,0,27
+	.byte	'S8ROM',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'S9ROM',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'S10ROM',0,1
+	.word	905
+	.byte	1,5,2,35,1,27
+	.byte	'S11ROM',0,1
+	.word	905
+	.byte	1,4,2,35,1,27
+	.byte	'S12ROM',0,1
+	.word	905
+	.byte	1,3,2,35,1,27
+	.byte	'S13ROM',0,1
+	.word	905
+	.byte	1,2,2,35,1,27
+	.byte	'S14ROM',0,1
+	.word	905
+	.byte	1,1,2,35,1,27
+	.byte	'S15ROM',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'S16ROM',0,1
+	.word	905
+	.byte	1,7,2,35,2,27
+	.byte	'S17ROM',0,1
+	.word	905
+	.byte	1,6,2,35,2,27
+	.byte	'S18ROM',0,1
+	.word	905
+	.byte	1,5,2,35,2,27
+	.byte	'S19ROM',0,1
+	.word	905
+	.byte	1,4,2,35,2,27
+	.byte	'S20ROM',0,1
+	.word	905
+	.byte	1,3,2,35,2,27
+	.byte	'S21ROM',0,1
+	.word	905
+	.byte	1,2,2,35,2,27
+	.byte	'S22ROM',0,1
+	.word	905
+	.byte	1,1,2,35,2,27
+	.byte	'S23ROM',0,1
+	.word	905
+	.byte	1,0,2,35,2,27
+	.byte	'S24ROM',0,1
+	.word	905
+	.byte	1,7,2,35,3,27
+	.byte	'S25ROM',0,1
+	.word	905
+	.byte	1,6,2,35,3,27
+	.byte	'S26ROM',0,1
+	.word	905
+	.byte	1,5,2,35,3,27
+	.byte	'reserved_27',0,1
+	.word	905
+	.byte	2,3,2,35,3,27
+	.byte	'BML',0,1
+	.word	905
+	.byte	2,1,2,35,3,27
+	.byte	'TP',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_PROCONOTP_Bits',0,5,254,2,3
+	.word	6832
+	.byte	26
+	.byte	'_Ifx_FLASH_PROCONP_Bits',0,5,129,3,16,4,27
+	.byte	'S0L',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'S1L',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'S2L',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'S3L',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'S4L',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'S5L',0,1
+	.word	905
+	.byte	1,2,2,35,0,27
+	.byte	'S6L',0,1
+	.word	905
+	.byte	1,1,2,35,0,27
+	.byte	'S7L',0,1
+	.word	905
+	.byte	1,0,2,35,0,27
+	.byte	'S8L',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'S9L',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'S10L',0,1
+	.word	905
+	.byte	1,5,2,35,1,27
+	.byte	'S11L',0,1
+	.word	905
+	.byte	1,4,2,35,1,27
+	.byte	'S12L',0,1
+	.word	905
+	.byte	1,3,2,35,1,27
+	.byte	'S13L',0,1
+	.word	905
+	.byte	1,2,2,35,1,27
+	.byte	'S14L',0,1
+	.word	905
+	.byte	1,1,2,35,1,27
+	.byte	'S15L',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'S16L',0,1
+	.word	905
+	.byte	1,7,2,35,2,27
+	.byte	'S17L',0,1
+	.word	905
+	.byte	1,6,2,35,2,27
+	.byte	'S18L',0,1
+	.word	905
+	.byte	1,5,2,35,2,27
+	.byte	'S19L',0,1
+	.word	905
+	.byte	1,4,2,35,2,27
+	.byte	'S20L',0,1
+	.word	905
+	.byte	1,3,2,35,2,27
+	.byte	'S21L',0,1
+	.word	905
+	.byte	1,2,2,35,2,27
+	.byte	'S22L',0,1
+	.word	905
+	.byte	1,1,2,35,2,27
+	.byte	'S23L',0,1
+	.word	905
+	.byte	1,0,2,35,2,27
+	.byte	'S24L',0,1
+	.word	905
+	.byte	1,7,2,35,3,27
+	.byte	'S25L',0,1
+	.word	905
+	.byte	1,6,2,35,3,27
+	.byte	'S26L',0,1
+	.word	905
+	.byte	1,5,2,35,3,27
+	.byte	'reserved_27',0,1
+	.word	905
+	.byte	4,1,2,35,3,27
+	.byte	'RPRO',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_PROCONP_Bits',0,5,160,3,3
+	.word	7427
+	.byte	26
+	.byte	'_Ifx_FLASH_PROCONWOP_Bits',0,5,163,3,16,4,27
+	.byte	'S0WOP',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'S1WOP',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'S2WOP',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'S3WOP',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'S4WOP',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'S5WOP',0,1
+	.word	905
+	.byte	1,2,2,35,0,27
+	.byte	'S6WOP',0,1
+	.word	905
+	.byte	1,1,2,35,0,27
+	.byte	'S7WOP',0,1
+	.word	905
+	.byte	1,0,2,35,0,27
+	.byte	'S8WOP',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'S9WOP',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'S10WOP',0,1
+	.word	905
+	.byte	1,5,2,35,1,27
+	.byte	'S11WOP',0,1
+	.word	905
+	.byte	1,4,2,35,1,27
+	.byte	'S12WOP',0,1
+	.word	905
+	.byte	1,3,2,35,1,27
+	.byte	'S13WOP',0,1
+	.word	905
+	.byte	1,2,2,35,1,27
+	.byte	'S14WOP',0,1
+	.word	905
+	.byte	1,1,2,35,1,27
+	.byte	'S15WOP',0,1
+	.word	905
+	.byte	1,0,2,35,1,27
+	.byte	'S16WOP',0,1
+	.word	905
+	.byte	1,7,2,35,2,27
+	.byte	'S17WOP',0,1
+	.word	905
+	.byte	1,6,2,35,2,27
+	.byte	'S18WOP',0,1
+	.word	905
+	.byte	1,5,2,35,2,27
+	.byte	'S19WOP',0,1
+	.word	905
+	.byte	1,4,2,35,2,27
+	.byte	'S20WOP',0,1
+	.word	905
+	.byte	1,3,2,35,2,27
+	.byte	'S21WOP',0,1
+	.word	905
+	.byte	1,2,2,35,2,27
+	.byte	'S22WOP',0,1
+	.word	905
+	.byte	1,1,2,35,2,27
+	.byte	'S23WOP',0,1
+	.word	905
+	.byte	1,0,2,35,2,27
+	.byte	'S24WOP',0,1
+	.word	905
+	.byte	1,7,2,35,3,27
+	.byte	'S25WOP',0,1
+	.word	905
+	.byte	1,6,2,35,3,27
+	.byte	'S26WOP',0,1
+	.word	905
+	.byte	1,5,2,35,3,27
+	.byte	'reserved_27',0,1
+	.word	905
+	.byte	4,1,2,35,3,27
+	.byte	'DATM',0,1
+	.word	905
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_FLASH_PROCONWOP_Bits',0,5,194,3,3
+	.word	7951
+	.byte	26
+	.byte	'_Ifx_FLASH_RDB_CFG0_Bits',0,5,197,3,16,4,27
+	.byte	'TAG',0,1
+	.word	905
+	.byte	6,2,2,35,0,27
+	.byte	'reserved_6',0,4
+	.word	569
+	.byte	26,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_RDB_CFG0_Bits',0,5,201,3,3
+	.word	8533
+	.byte	26
+	.byte	'_Ifx_FLASH_RDB_CFG1_Bits',0,5,204,3,16,4,27
+	.byte	'TAG',0,1
+	.word	905
+	.byte	6,2,2,35,0,27
+	.byte	'reserved_6',0,4
+	.word	569
+	.byte	26,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_RDB_CFG1_Bits',0,5,208,3,3
+	.word	8635
+	.byte	26
+	.byte	'_Ifx_FLASH_RDB_CFG2_Bits',0,5,211,3,16,4,27
+	.byte	'TAG',0,1
+	.word	905
+	.byte	6,2,2,35,0,27
+	.byte	'reserved_6',0,4
+	.word	569
+	.byte	26,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_RDB_CFG2_Bits',0,5,215,3,3
+	.word	8737
+	.byte	26
+	.byte	'_Ifx_FLASH_RRAD_Bits',0,5,218,3,16,4,27
+	.byte	'reserved_0',0,1
+	.word	905
+	.byte	3,5,2,35,0,27
+	.byte	'ADD',0,4
+	.word	569
+	.byte	29,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_RRAD_Bits',0,5,222,3,3
+	.word	8839
+	.byte	26
+	.byte	'_Ifx_FLASH_RRCT_Bits',0,5,225,3,16,4,27
+	.byte	'STRT',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'STP',0,1
+	.word	905
+	.byte	1,6,2,35,0,27
+	.byte	'BUSY',0,1
+	.word	905
+	.byte	1,5,2,35,0,27
+	.byte	'DONE',0,1
+	.word	905
+	.byte	1,4,2,35,0,27
+	.byte	'ERR',0,1
+	.word	905
+	.byte	1,3,2,35,0,27
+	.byte	'reserved_5',0,1
+	.word	905
+	.byte	3,0,2,35,0,27
+	.byte	'EOBM',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'reserved_9',0,1
+	.word	905
+	.byte	7,0,2,35,1,27
+	.byte	'CNT',0,2
+	.word	1644
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_FLASH_RRCT_Bits',0,5,236,3,3
+	.word	8933
+	.byte	26
+	.byte	'_Ifx_FLASH_RRD0_Bits',0,5,239,3,16,4,27
+	.byte	'DATA',0,4
+	.word	569
+	.byte	32,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_RRD0_Bits',0,5,242,3,3
+	.word	9143
+	.byte	26
+	.byte	'_Ifx_FLASH_RRD1_Bits',0,5,245,3,16,4,27
+	.byte	'DATA',0,4
+	.word	569
+	.byte	32,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_RRD1_Bits',0,5,248,3,3
+	.word	9216
+	.byte	26
+	.byte	'_Ifx_FLASH_UBAB_CFG_Bits',0,5,251,3,16,4,27
+	.byte	'SEL',0,1
+	.word	905
+	.byte	6,2,2,35,0,27
+	.byte	'reserved_6',0,1
+	.word	905
+	.byte	2,0,2,35,0,27
+	.byte	'CLR',0,1
+	.word	905
+	.byte	1,7,2,35,1,27
+	.byte	'DIS',0,1
+	.word	905
+	.byte	1,6,2,35,1,27
+	.byte	'reserved_10',0,4
+	.word	569
+	.byte	22,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_UBAB_CFG_Bits',0,5,130,4,3
+	.word	9289
+	.byte	26
+	.byte	'_Ifx_FLASH_UBAB_STAT_Bits',0,5,133,4,16,4,27
+	.byte	'VLD0',0,1
+	.word	905
+	.byte	1,7,2,35,0,27
+	.byte	'reserved_1',0,4
+	.word	569
+	.byte	31,0,2,35,0,0,29
+	.byte	'Ifx_FLASH_UBAB_STAT_Bits',0,5,137,4,3
+	.word	9444
+	.byte	29
+	.byte	'Ifx_FLASH_UBAB_TOP_Bits',0,5,147,4,3
+	.word	1366
+	.byte	28,5,155,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	2068
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_ACCEN0',0,5,160,4,3
+	.word	9582
+	.byte	28,5,163,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	2629
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_ACCEN1',0,5,168,4,3
+	.word	9648
+	.byte	28,5,171,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	2710
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_CBAB_CFG',0,5,176,4,3
+	.word	9714
+	.byte	28,5,179,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	2863
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_CBAB_STAT',0,5,184,4,3
+	.word	9782
+	.byte	29
+	.byte	'Ifx_FLASH_CBAB_TOP',0,5,192,4,3
+	.word	1326
+	.byte	28,5,195,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	3143
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_COMM0',0,5,200,4,3
+	.word	9879
+	.byte	28,5,203,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	3241
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_COMM1',0,5,208,4,3
+	.word	9944
+	.byte	28,5,211,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	3357
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_COMM2',0,5,216,4,3
+	.word	10009
+	.byte	28,5,219,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	3473
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_ECCRD',0,5,224,4,3
+	.word	10074
+	.byte	28,5,227,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	3613
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_ECCRP',0,5,232,4,3
+	.word	10139
+	.byte	28,5,235,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	3753
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_ECCW',0,5,240,4,3
+	.word	10204
+	.byte	28,5,243,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	3892
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_FCON',0,5,248,4,3
+	.word	10268
+	.byte	28,5,251,4,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	4254
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_FPRO',0,5,128,5,3
+	.word	10332
+	.byte	28,5,131,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	4695
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_FSR',0,5,136,5,3
+	.word	10396
+	.byte	28,5,139,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	5301
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_ID',0,5,144,5,3
+	.word	10459
+	.byte	28,5,147,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	5412
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_MARD',0,5,152,5,3
+	.word	10521
+	.byte	28,5,155,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	5626
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_MARP',0,5,160,5,3
+	.word	10585
+	.byte	28,5,163,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	5813
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_PROCOND',0,5,168,5,3
+	.word	10649
+	.byte	28,5,171,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	6137
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_PROCONDBG',0,5,176,5,3
+	.word	10716
+	.byte	28,5,179,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	6280
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_PROCONHSM',0,5,184,5,3
+	.word	10785
+	.byte	28,5,187,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	6469
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_PROCONHSMCOTP',0,5,192,5,3
+	.word	10854
+	.byte	28,5,195,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	6832
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_PROCONOTP',0,5,200,5,3
+	.word	10927
+	.byte	28,5,203,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	7427
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_PROCONP',0,5,208,5,3
+	.word	10996
+	.byte	28,5,211,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	7951
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_PROCONWOP',0,5,216,5,3
+	.word	11063
+	.byte	28,5,219,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	8533
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_RDB_CFG0',0,5,224,5,3
+	.word	11132
+	.byte	28,5,227,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	8635
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_RDB_CFG1',0,5,232,5,3
+	.word	11200
+	.byte	28,5,235,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	8737
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_RDB_CFG2',0,5,240,5,3
+	.word	11268
+	.byte	28,5,243,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	8839
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_RRAD',0,5,248,5,3
+	.word	11336
+	.byte	28,5,251,5,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	8933
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_RRCT',0,5,128,6,3
+	.word	11400
+	.byte	28,5,131,6,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	9143
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_RRD0',0,5,136,6,3
+	.word	11464
+	.byte	28,5,139,6,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	9216
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_RRD1',0,5,144,6,3
+	.word	11528
+	.byte	28,5,147,6,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	9289
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_UBAB_CFG',0,5,152,6,3
+	.word	11592
+	.byte	28,5,155,6,9,4,25
+	.byte	'U',0
+	.word	569
+	.byte	4,2,35,0,25
+	.byte	'I',0
+	.word	520
+	.byte	4,2,35,0,25
+	.byte	'B',0
+	.word	9444
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_FLASH_UBAB_STAT',0,5,160,6,3
+	.word	11660
+	.byte	29
+	.byte	'Ifx_FLASH_UBAB_TOP',0,5,168,6,3
+	.word	1481
+	.byte	26
+	.byte	'_Ifx_FLASH_CBAB',0,5,179,6,25,12,25
+	.byte	'CFG',0
+	.word	9714
+	.byte	4,2,35,0,25
+	.byte	'STAT',0
+	.word	9782
+	.byte	4,2,35,4,25
+	.byte	'TOP',0
+	.word	1326
+	.byte	4,2,35,8,0,14
+	.word	11757
+	.byte	29
+	.byte	'Ifx_FLASH_CBAB',0,5,184,6,3
+	.word	11820
+	.byte	26
+	.byte	'_Ifx_FLASH_RDB',0,5,187,6,25,12,25
+	.byte	'CFG0',0
+	.word	11132
+	.byte	4,2,35,0,25
+	.byte	'CFG1',0
+	.word	11200
+	.byte	4,2,35,4,25
+	.byte	'CFG2',0
+	.word	11268
+	.byte	4,2,35,8,0,14
+	.word	11849
+	.byte	29
+	.byte	'Ifx_FLASH_RDB',0,5,192,6,3
+	.word	11913
+	.byte	26
+	.byte	'_Ifx_FLASH_UBAB',0,5,195,6,25,12,25
+	.byte	'CFG',0
+	.word	11592
+	.byte	4,2,35,0,25
+	.byte	'STAT',0
+	.word	11660
+	.byte	4,2,35,4,25
+	.byte	'TOP',0
+	.word	1481
+	.byte	4,2,35,8,0,14
+	.word	11941
+	.byte	29
+	.byte	'Ifx_FLASH_UBAB',0,5,200,6,3
+	.word	12004
+	.byte	29
+	.byte	'IfxFlash_ErrorTracking',0,4,79,3
+	.word	922
+	.byte	29
+	.byte	'IfxFlash_PortId',0,4,87,3
+	.word	845
+	.byte	29
+	.byte	'IfxFlash_ErrorTracking_Address',0,4,103,3
+	.word	1165
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L43:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,11,1,0,0,11,38,0,73
+	.byte	19,0,0,12,46,1,3,8,54,15,39,12,63,12,60,12,0,0,13,5,0,73,19,0,0,14,53,0,73,19,0,0,15,46,1,3,8,73,19,54
+	.byte	15,39,12,63,12,60,12,0,0,16,5,0,3,8,73,19,0,0,17,46,0,3,8,54,15,39,12,63,12,60,12,0,0,18,46,1,49,19,0
+	.byte	0,19,5,0,49,19,0,0,20,29,1,49,19,0,0,21,11,0,49,19,0,0,22,4,1,58,15,59,15,57,15,11,15,0,0,23,40,0,3,8
+	.byte	28,13,0,0,24,19,1,58,15,59,15,57,15,11,15,0,0,25,13,0,3,8,73,19,11,15,56,9,0,0,26,19,1,3,8,58,15,59,15
+	.byte	57,15,11,15,0,0,27,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,28,23,1,58,15,59,15,57,15,11,15,0,0,29,22
+	.byte	0,3,8,58,15,59,15,57,15,73,19,0,0,30,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L44:
+	.word	.L184-.L183
+.L183:
+	.half	3
+	.word	.L186-.L185
+.L185:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg',0
+	.byte	0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'IfxFlash_cfg.h',0,2,0,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.h',0,0,0,0
+	.byte	'IfxFlash_regdef.h',0,3,0,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0,0
+.L186:
+.L184:
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_disableWriteProtection')
+	.sect	'.debug_info'
+.L45:
+	.word	338
+	.half	3
+	.word	.L46
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L48,.L47
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_disableWriteProtection',0,1,80,6,1,1,1
+	.word	.L28,.L115,.L27
+	.byte	4
+	.byte	'flash',0,1,80,45
+	.word	.L116,.L117
+	.byte	4
+	.byte	'ucb',0,1,80,69
+	.word	.L118,.L119
+	.byte	4
+	.byte	'password',0,1,80,82
+	.word	.L120,.L121
+	.byte	5
+	.word	.L28,.L115
+	.byte	5
+	.word	.L28,.L115
+	.byte	6
+	.byte	'i',0,1,84,22
+	.word	.L116,.L122
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_disableWriteProtection')
+	.sect	'.debug_abbrev'
+.L46:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_disableWriteProtection')
+	.sect	'.debug_line'
+.L47:
+	.word	.L188-.L187
+.L187:
+	.half	3
+	.word	.L190-.L189
+.L189:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L190:
+	.byte	5,30,7,0,5,2
+	.word	.L28
+	.byte	3,210,0,1,5,12,9
+	.half	.L191-.L28
+	.byte	3,3,1,5,22,9
+	.half	.L192-.L191
+	.byte	3,2,1,5,26,9
+	.half	.L2-.L192
+	.byte	3,2,1,5,16,9
+	.half	.L193-.L2
+	.byte	1,5,22,3,126,1,5,12,7,9
+	.half	.L194-.L193
+	.byte	3,5,1,5,1,9
+	.half	.L195-.L194
+	.byte	3,1,1,7,9
+	.half	.L49-.L195
+	.byte	0,1,1
+.L188:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_disableWriteProtection')
+	.sect	'.debug_ranges'
+.L48:
+	.word	-1,.L28,0,.L49-.L28,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_clearCorrectableErrorTracking')
+	.sect	'.debug_info'
+.L50:
+	.word	280
+	.half	3
+	.word	.L51
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L53,.L52
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_clearCorrectableErrorTracking',0,1,56,6,1,1,1
+	.word	.L14,.L123,.L13
+	.byte	4
+	.byte	'portId',0,1,56,61
+	.word	.L124,.L125
+	.byte	5
+	.word	.L126
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_clearCorrectableErrorTracking')
+	.sect	'.debug_abbrev'
+.L51:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_clearCorrectableErrorTracking')
+	.sect	'.debug_line'
+.L52:
+	.word	.L197-.L196
+.L196:
+	.half	3
+	.word	.L199-.L198
+.L198:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L199:
+	.byte	5,23,7,0,5,2
+	.word	.L14
+	.byte	3,57,1,5,42,9
+	.half	.L170-.L14
+	.byte	1,5,1,9
+	.half	.L200-.L170
+	.byte	3,1,1,7,9
+	.half	.L54-.L200
+	.byte	0,1,1
+.L197:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_clearCorrectableErrorTracking')
+	.sect	'.debug_ranges'
+.L53:
+	.word	-1,.L14,0,.L54-.L14,0,0
+.L126:
+	.word	-1,.L14,0,.L123-.L14,-1,.L16,0,.L99-.L16,-1,.L18,0,.L114-.L18,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_clearUncorrectableErrorTracking')
+	.sect	'.debug_info'
+.L55:
+	.word	282
+	.half	3
+	.word	.L56
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L58,.L57
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_clearUncorrectableErrorTracking',0,1,62,6,1,1,1
+	.word	.L20,.L127,.L19
+	.byte	4
+	.byte	'portId',0,1,62,63
+	.word	.L124,.L128
+	.byte	5
+	.word	.L129
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_clearUncorrectableErrorTracking')
+	.sect	'.debug_abbrev'
+.L56:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_clearUncorrectableErrorTracking')
+	.sect	'.debug_line'
+.L57:
+	.word	.L202-.L201
+.L201:
+	.half	3
+	.word	.L204-.L203
+.L203:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L204:
+	.byte	5,23,7,0,5,2
+	.word	.L20
+	.byte	3,63,1,5,42,9
+	.half	.L172-.L20
+	.byte	1,5,1,9
+	.half	.L205-.L172
+	.byte	3,1,1,7,9
+	.half	.L59-.L205
+	.byte	0,1,1
+.L202:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_clearUncorrectableErrorTracking')
+	.sect	'.debug_ranges'
+.L58:
+	.word	-1,.L20,0,.L59-.L20,0,0
+.L129:
+	.word	-1,.L20,0,.L127-.L20,-1,.L22,0,.L104-.L22,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_disableCorrectableErrorTracking')
+	.sect	'.debug_info'
+.L60:
+	.word	306
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L63,.L62
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_disableCorrectableErrorTracking',0,1,68,6,1,1,1
+	.word	.L24,.L130,.L23
+	.byte	4
+	.byte	'portId',0,1,68,63
+	.word	.L124,.L131
+	.byte	4
+	.byte	'disable',0,1,68,79
+	.word	.L132,.L133
+	.byte	5
+	.word	.L24,.L130
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_disableCorrectableErrorTracking')
+	.sect	'.debug_abbrev'
+.L61:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_disableCorrectableErrorTracking')
+	.sect	'.debug_line'
+.L62:
+	.word	.L207-.L206
+.L206:
+	.half	3
+	.word	.L209-.L208
+.L208:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L209:
+	.byte	5,23,7,0,5,2
+	.word	.L24
+	.byte	3,197,0,1,5,42,9
+	.half	.L173-.L24
+	.byte	1,5,1,9
+	.half	.L210-.L173
+	.byte	3,1,1,7,9
+	.half	.L64-.L210
+	.byte	0,1,1
+.L207:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_disableCorrectableErrorTracking')
+	.sect	'.debug_ranges'
+.L63:
+	.word	-1,.L24,0,.L64-.L24,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_disableUncorrectableErrorTracking')
+	.sect	'.debug_info'
+.L65:
+	.word	308
+	.half	3
+	.word	.L66
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L68,.L67
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_disableUncorrectableErrorTracking',0,1,74,6,1,1,1
+	.word	.L26,.L134,.L25
+	.byte	4
+	.byte	'portId',0,1,74,65
+	.word	.L124,.L135
+	.byte	4
+	.byte	'disable',0,1,74,81
+	.word	.L132,.L136
+	.byte	5
+	.word	.L26,.L134
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_disableUncorrectableErrorTracking')
+	.sect	'.debug_abbrev'
+.L66:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_disableUncorrectableErrorTracking')
+	.sect	'.debug_line'
+.L67:
+	.word	.L212-.L211
+.L211:
+	.half	3
+	.word	.L214-.L213
+.L213:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L214:
+	.byte	5,23,7,0,5,2
+	.word	.L26
+	.byte	3,203,0,1,5,42,9
+	.half	.L174-.L26
+	.byte	1,5,1,9
+	.half	.L215-.L174
+	.byte	3,1,1,7,9
+	.half	.L69-.L215
+	.byte	0,1,1
+.L212:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_disableUncorrectableErrorTracking')
+	.sect	'.debug_ranges'
+.L68:
+	.word	-1,.L26,0,.L69-.L26,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_getTrackedCorrectableErrors')
+	.sect	'.debug_info'
+.L70:
+	.word	399
+	.half	3
+	.word	.L71
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L73,.L72
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_getTrackedCorrectableErrors',0,1,97,8
+	.word	.L116
+	.byte	1,1,1
+	.word	.L30,.L137,.L29
+	.byte	4
+	.byte	'portId',0,1,97,61
+	.word	.L124,.L138
+	.byte	4
+	.byte	'trackedFlashAdresses',0,1,97,101
+	.word	.L139,.L140
+	.byte	5
+	.word	.L141
+	.byte	6
+	.byte	'numErrors',0,1,99,12
+	.word	.L116,.L142
+	.byte	6
+	.byte	'fillingLevel',0,1,100,12
+	.word	.L116,.L143
+	.byte	6
+	.byte	'i',0,1,102,12
+	.word	.L144,.L145
+	.byte	5
+	.word	.L146
+	.byte	6
+	.byte	'top',0,1,109,28
+	.word	.L149,.L150
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_getTrackedCorrectableErrors')
+	.sect	'.debug_abbrev'
+.L71:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,85,6,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_getTrackedCorrectableErrors')
+	.sect	'.debug_line'
+.L72:
+	.word	.L217-.L216
+.L216:
+	.half	3
+	.word	.L219-.L218
+.L218:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L219:
+	.byte	5,25,7,0,5,2
+	.word	.L30
+	.byte	3,226,0,1,5,12,9
+	.half	.L177-.L30
+	.byte	3,5,1,5,45,3,124,1,5,57,9
+	.half	.L147-.L177
+	.byte	3,14,1,5,58,3,114,1,5,40,9
+	.half	.L148-.L147
+	.byte	3,6,1,5,43,9
+	.half	.L4-.L148
+	.byte	3,4,1,5,14,9
+	.half	.L3-.L4
+	.byte	3,123,1,5,10,9
+	.half	.L220-.L3
+	.byte	1,5,27,7,9
+	.half	.L221-.L220
+	.byte	3,1,1,5,29,9
+	.half	.L222-.L221
+	.byte	1,5,24,9
+	.half	.L223-.L222
+	.byte	1,5,36,9
+	.half	.L224-.L223
+	.byte	1,5,1,7,9
+	.half	.L6-.L224
+	.byte	3,18,1,7,9
+	.half	.L74-.L6
+	.byte	0,1,1
+.L217:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_getTrackedCorrectableErrors')
+	.sect	'.debug_ranges'
+.L73:
+	.word	-1,.L30,0,.L74-.L30,0,0
+.L141:
+	.word	-1,.L30,0,.L137-.L30,-1,.L32,0,.L109-.L32,0,0
+.L146:
+	.word	-1,.L30,.L147-.L30,.L148-.L30,.L4-.L30,.L3-.L30,-1,.L34,0,.L94-.L34,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_getTrackedUncorrectableErrors')
+	.sect	'.debug_info'
+.L75:
+	.word	409
+	.half	3
+	.word	.L76
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L78,.L77
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_getTrackedUncorrectableErrors',0,1,127,8
+	.word	.L116
+	.byte	1,1,1
+	.word	.L36,.L151,.L35
+	.byte	4
+	.byte	'portId',0,1,127,63
+	.word	.L124,.L152
+	.byte	4
+	.byte	'trackedFlashAdresses',0,1,127,103
+	.word	.L139,.L153
+	.byte	5
+	.word	.L36,.L151
+	.byte	6
+	.byte	'numErrors',0,1,129,1,12
+	.word	.L116,.L154
+	.byte	6
+	.byte	'fillingLevel',0,1,130,1,12
+	.word	.L116,.L155
+	.byte	6
+	.byte	'i',0,1,132,1,12
+	.word	.L144,.L156
+	.byte	7
+	.word	.L157
+	.byte	6
+	.byte	'top',0,1,139,1,28
+	.word	.L160,.L161
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_getTrackedUncorrectableErrors')
+	.sect	'.debug_abbrev'
+.L76:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,1,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_getTrackedUncorrectableErrors')
+	.sect	'.debug_line'
+.L77:
+	.word	.L226-.L225
+.L225:
+	.half	3
+	.word	.L228-.L227
+.L227:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L228:
+	.byte	5,25,7,0,5,2
+	.word	.L36
+	.byte	3,128,1,1,5,12,9
+	.half	.L180-.L36
+	.byte	3,5,1,5,45,3,124,1,5,57,9
+	.half	.L158-.L180
+	.byte	3,14,1,5,58,3,114,1,5,40,9
+	.half	.L159-.L158
+	.byte	3,6,1,5,43,9
+	.half	.L9-.L159
+	.byte	3,4,1,5,10,9
+	.half	.L8-.L9
+	.byte	3,123,1,5,27,7,9
+	.half	.L229-.L8
+	.byte	3,1,1,5,29,9
+	.half	.L230-.L229
+	.byte	1,5,24,9
+	.half	.L231-.L230
+	.byte	1,5,36,9
+	.half	.L232-.L231
+	.byte	1,5,1,7,9
+	.half	.L11-.L232
+	.byte	3,18,1,7,9
+	.half	.L79-.L11
+	.byte	0,1,1
+.L226:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_getTrackedUncorrectableErrors')
+	.sect	'.debug_ranges'
+.L78:
+	.word	-1,.L36,0,.L79-.L36,0,0
+.L157:
+	.word	-1,.L36,.L158-.L36,.L159-.L36,.L9-.L36,.L8-.L36,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_selectCorrectableErrorTracking')
+	.sect	'.debug_info'
+.L80:
+	.word	314
+	.half	3
+	.word	.L81
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L83,.L82
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_selectCorrectableErrorTracking',0,1,157,1,6,1,1,1
+	.word	.L38,.L162,.L37
+	.byte	4
+	.byte	'portId',0,1,157,1,62
+	.word	.L124,.L163
+	.byte	4
+	.byte	'errorTracking',0,1,157,1,93
+	.word	.L164,.L165
+	.byte	5
+	.word	.L38,.L162
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_selectCorrectableErrorTracking')
+	.sect	'.debug_abbrev'
+.L81:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_selectCorrectableErrorTracking')
+	.sect	'.debug_line'
+.L82:
+	.word	.L234-.L233
+.L233:
+	.half	3
+	.word	.L236-.L235
+.L235:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L236:
+	.byte	5,23,7,0,5,2
+	.word	.L38
+	.byte	3,164,1,1,5,37,9
+	.half	.L181-.L38
+	.byte	1,5,42,9
+	.half	.L237-.L181
+	.byte	1,5,1,9
+	.half	.L238-.L237
+	.byte	3,1,1,7,9
+	.half	.L84-.L238
+	.byte	0,1,1
+.L234:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_selectCorrectableErrorTracking')
+	.sect	'.debug_ranges'
+.L83:
+	.word	-1,.L38,0,.L84-.L38,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_selectUncorrectableErrorTracking')
+	.sect	'.debug_info'
+.L85:
+	.word	316
+	.half	3
+	.word	.L86
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L88,.L87
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'IfxFlash_selectUncorrectableErrorTracking',0,1,169,1,6,1,1,1
+	.word	.L40,.L166,.L39
+	.byte	4
+	.byte	'portId',0,1,169,1,64
+	.word	.L124,.L167
+	.byte	4
+	.byte	'errorTracking',0,1,169,1,95
+	.word	.L164,.L168
+	.byte	5
+	.word	.L40,.L166
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_selectUncorrectableErrorTracking')
+	.sect	'.debug_abbrev'
+.L86:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxFlash_selectUncorrectableErrorTracking')
+	.sect	'.debug_line'
+.L87:
+	.word	.L240-.L239
+.L239:
+	.half	3
+	.word	.L242-.L241
+.L241:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L242:
+	.byte	5,23,7,0,5,2
+	.word	.L40
+	.byte	3,174,1,1,5,37,9
+	.half	.L182-.L40
+	.byte	1,5,42,9
+	.half	.L243-.L182
+	.byte	1,5,1,9
+	.half	.L244-.L243
+	.byte	3,1,1,7,9
+	.half	.L89-.L244
+	.byte	0,1,1
+.L240:
+	.sdecl	'.debug_ranges',debug,cluster('IfxFlash_selectUncorrectableErrorTracking')
+	.sect	'.debug_ranges'
+.L88:
+	.word	-1,.L40,0,.L89-.L40,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_1')
+	.sect	'.debug_info'
+.L90:
+	.word	225
+	.half	3
+	.word	.L91
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L93,.L92
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'.cocofun_1',0,1,97,8,1
+	.word	.L34,.L94,.L33
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_1')
+	.sect	'.debug_abbrev'
+.L91:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_1')
+	.sect	'.debug_line'
+.L92:
+	.word	.L246-.L245
+.L245:
+	.half	3
+	.word	.L248-.L247
+.L247:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L248:
+	.byte	5,43,7,0,5,2
+	.word	.L34
+	.byte	3,237,0,1,5,47,9
+	.half	.L249-.L34
+	.byte	1,5,18,9
+	.half	.L178-.L249
+	.byte	3,2,1,5,9,9
+	.half	.L250-.L178
+	.byte	1,5,76,7,9
+	.half	.L251-.L250
+	.byte	3,2,1,5,86,9
+	.half	.L179-.L251
+	.byte	3,1,1,5,13,9
+	.half	.L252-.L179
+	.byte	3,1,1,5,82,9
+	.half	.L253-.L252
+	.byte	3,126,1,5,68,9
+	.half	.L254-.L253
+	.byte	1,5,55,1,9
+	.half	.L255-.L254
+	.byte	3,1,1,5,13,9
+	.half	.L256-.L255
+	.byte	3,1,1,5,57,9
+	.half	.L5-.L256
+	.byte	3,4,1,5,42,1,5,10,9
+	.half	.L257-.L5
+	.byte	3,115,1,9
+	.half	.L94-.L257
+	.byte	0,1,1,5,43,0,5,2
+	.word	.L34
+	.byte	3,139,1,1,5,47,9
+	.half	.L249-.L34
+	.byte	1,5,18,9
+	.half	.L178-.L249
+	.byte	3,2,1,5,9,9
+	.half	.L250-.L178
+	.byte	1,5,76,7,9
+	.half	.L251-.L250
+	.byte	3,2,1,5,86,9
+	.half	.L179-.L251
+	.byte	3,1,1,5,13,9
+	.half	.L252-.L179
+	.byte	3,1,1,5,82,9
+	.half	.L253-.L252
+	.byte	3,126,1,5,68,9
+	.half	.L254-.L253
+	.byte	1,5,55,1,9
+	.half	.L255-.L254
+	.byte	3,1,1,5,13,9
+	.half	.L256-.L255
+	.byte	3,1,1,5,57,9
+	.half	.L5-.L256
+	.byte	3,4,1,5,42,1,5,10,9
+	.half	.L257-.L5
+	.byte	3,115,1,3,98,1,7,9
+	.half	.L94-.L257
+	.byte	0,1,1
+.L246:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_1')
+	.sect	'.debug_ranges'
+.L93:
+	.word	-1,.L34,0,.L94-.L34,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_2')
+	.sect	'.debug_info'
+.L95:
+	.word	225
+	.half	3
+	.word	.L96
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L98,.L97
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'.cocofun_2',0,1,56,6,1
+	.word	.L16,.L99,.L15
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_2')
+	.sect	'.debug_abbrev'
+.L96:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_2')
+	.sect	'.debug_line'
+.L97:
+	.word	.L259-.L258
+.L258:
+	.half	3
+	.word	.L261-.L260
+.L260:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L261:
+	.byte	5,23,7,0,5,2
+	.word	.L16
+	.byte	3,57,1,5,37,9
+	.half	.L262-.L16
+	.byte	1,9
+	.half	.L99-.L262
+	.byte	0,1,1,5,23,0,5,2
+	.word	.L16
+	.byte	3,57,1,9
+	.half	.L169-.L16
+	.byte	3,12,1,5,37,9
+	.half	.L262-.L169
+	.byte	1,9
+	.half	.L263-.L262
+	.byte	3,116,1,7,9
+	.half	.L99-.L263
+	.byte	0,1,1
+.L259:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_2')
+	.sect	'.debug_ranges'
+.L98:
+	.word	-1,.L16,0,.L99-.L16,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_3')
+	.sect	'.debug_info'
+.L100:
+	.word	225
+	.half	3
+	.word	.L101
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L103,.L102
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'.cocofun_3',0,1,62,6,1
+	.word	.L22,.L104,.L21
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_3')
+	.sect	'.debug_abbrev'
+.L101:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_3')
+	.sect	'.debug_line'
+.L102:
+	.word	.L265-.L264
+.L264:
+	.half	3
+	.word	.L267-.L266
+.L266:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L267:
+	.byte	5,23,7,0,5,2
+	.word	.L22
+	.byte	3,63,1,5,37,9
+	.half	.L268-.L22
+	.byte	1,9
+	.half	.L104-.L268
+	.byte	0,1,1,5,23,0,5,2
+	.word	.L22
+	.byte	3,63,1,9
+	.half	.L171-.L22
+	.byte	3,12,1,5,37,9
+	.half	.L268-.L171
+	.byte	1,9
+	.half	.L269-.L268
+	.byte	3,116,1,7,9
+	.half	.L104-.L269
+	.byte	0,1,1
+.L265:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_3')
+	.sect	'.debug_ranges'
+.L103:
+	.word	-1,.L22,0,.L104-.L22,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_4')
+	.sect	'.debug_info'
+.L105:
+	.word	225
+	.half	3
+	.word	.L106
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L108,.L107
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'.cocofun_4',0,1,97,8,1
+	.word	.L32,.L109,.L31
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_4')
+	.sect	'.debug_abbrev'
+.L106:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_4')
+	.sect	'.debug_line'
+.L107:
+	.word	.L271-.L270
+.L270:
+	.half	3
+	.word	.L273-.L272
+.L272:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L273:
+	.byte	5,25,7,0,5,2
+	.word	.L32
+	.byte	3,226,0,1,5,45,3,1,1,9
+	.half	.L109-.L32
+	.byte	0,1,1,5,25,0,5,2
+	.word	.L32
+	.byte	3,128,1,1,5,45,3,99,1,9
+	.half	.L109-.L32
+	.byte	0,1,1
+.L271:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_4')
+	.sect	'.debug_ranges'
+.L108:
+	.word	-1,.L32,0,.L109-.L32,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_5')
+	.sect	'.debug_info'
+.L110:
+	.word	225
+	.half	3
+	.word	.L111
+	.byte	4,1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Car-Competition\\LQ_TC26xB_LIBtasking20200616\\LQ_TC26xB_LIBtasking\\Debug\\',0,12,1
+	.word	.L113,.L112
+	.byte	2
+	.word	.L41
+	.byte	3
+	.byte	'.cocofun_5',0,1,56,6,1
+	.word	.L18,.L114,.L17
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_5')
+	.sect	'.debug_abbrev'
+.L111:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_5')
+	.sect	'.debug_line'
+.L112:
+	.word	.L275-.L274
+.L274:
+	.half	3
+	.word	.L277-.L276
+.L276:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std\\IfxFlash.c',0,0,0,0,0
+.L277:
+	.byte	5,23,7,0,5,2
+	.word	.L18
+	.byte	3,57,1,9
+	.half	.L114-.L18
+	.byte	0,1,1,5,23,0,5,2
+	.word	.L18
+	.byte	3,197,0,1,9
+	.half	.L278-.L18
+	.byte	3,116,1,7,9
+	.half	.L114-.L278
+	.byte	0,1,1,5,23,0,5,2
+	.word	.L18
+	.byte	3,63,1,9
+	.half	.L278-.L18
+	.byte	3,122,1,7,9
+	.half	.L114-.L278
+	.byte	0,1,1,5,23,0,5,2
+	.word	.L18
+	.byte	3,203,0,1,9
+	.half	.L278-.L18
+	.byte	3,110,1,7,9
+	.half	.L114-.L278
+	.byte	0,1,1,5,45,0,5,2
+	.word	.L18
+	.byte	3,227,0,1,5,23,9
+	.half	.L278-.L18
+	.byte	3,86,1,7,9
+	.half	.L114-.L278
+	.byte	0,1,1,5,45,0,5,2
+	.word	.L18
+	.byte	3,129,1,1,5,23,9
+	.half	.L278-.L18
+	.byte	3,184,127,1,7,9
+	.half	.L114-.L278
+	.byte	0,1,1,5,23,0,5,2
+	.word	.L18
+	.byte	3,164,1,1,9
+	.half	.L278-.L18
+	.byte	3,149,127,1,7,9
+	.half	.L114-.L278
+	.byte	0,1,1,5,23,0,5,2
+	.word	.L18
+	.byte	3,174,1,1,9
+	.half	.L278-.L18
+	.byte	3,139,127,1,7,9
+	.half	.L114-.L278
+	.byte	0,1,1
+.L275:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_5')
+	.sect	'.debug_ranges'
+.L113:
+	.word	-1,.L18,0,.L114-.L18,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_1')
+	.sect	'.debug_loc'
+.L33:
+	.word	-1,.L34,0,.L94-.L34
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_2')
+	.sect	'.debug_loc'
+.L15:
+	.word	-1,.L16,0,.L99-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_3')
+	.sect	'.debug_loc'
+.L21:
+	.word	-1,.L22,0,.L104-.L22
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_4')
+	.sect	'.debug_loc'
+.L31:
+	.word	-1,.L32,0,.L109-.L32
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_5')
+	.sect	'.debug_loc'
+.L17:
+	.word	-1,.L18,0,.L114-.L18
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_clearCorrectableErrorTracking')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L123-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L125:
+	.word	-1,.L14,.L18-.L14,.L114-.L14
+	.half	1
+	.byte	84
+	.word	.L169-.L14,.L99-.L14
+	.half	1
+	.byte	84
+	.word	.L170-.L14,.L123-.L14
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_clearUncorrectableErrorTracking')
+	.sect	'.debug_loc'
+.L19:
+	.word	-1,.L20,0,.L127-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L128:
+	.word	-1,.L20,.L18-.L20,.L114-.L20
+	.half	1
+	.byte	84
+	.word	.L171-.L20,.L104-.L20
+	.half	1
+	.byte	84
+	.word	.L172-.L20,.L127-.L20
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_disableCorrectableErrorTracking')
+	.sect	'.debug_loc'
+.L23:
+	.word	-1,.L24,0,.L130-.L24
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L133:
+	.word	-1,.L24,.L18-.L24,.L114-.L24
+	.half	1
+	.byte	85
+	.word	.L169-.L24,.L99-.L24
+	.half	1
+	.byte	85
+	.word	.L173-.L24,.L130-.L24
+	.half	1
+	.byte	85
+	.word	0,0
+.L131:
+	.word	-1,.L24,.L18-.L24,.L114-.L24
+	.half	1
+	.byte	84
+	.word	.L169-.L24,.L99-.L24
+	.half	1
+	.byte	84
+	.word	.L173-.L24,.L130-.L24
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_disableUncorrectableErrorTracking')
+	.sect	'.debug_loc'
+.L25:
+	.word	-1,.L26,0,.L134-.L26
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L136:
+	.word	-1,.L26,.L18-.L26,.L114-.L26
+	.half	1
+	.byte	85
+	.word	.L171-.L26,.L104-.L26
+	.half	1
+	.byte	85
+	.word	.L174-.L26,.L134-.L26
+	.half	1
+	.byte	85
+	.word	0,0
+.L135:
+	.word	-1,.L26,.L18-.L26,.L114-.L26
+	.half	1
+	.byte	84
+	.word	.L171-.L26,.L104-.L26
+	.half	1
+	.byte	84
+	.word	.L174-.L26,.L134-.L26
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_disableWriteProtection')
+	.sect	'.debug_loc'
+.L27:
+	.word	-1,.L28,0,.L115-.L28
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L117:
+	.word	-1,.L28,0,.L115-.L28
+	.half	1
+	.byte	84
+	.word	0,0
+.L122:
+	.word	0,0
+.L121:
+	.word	-1,.L28,0,.L115-.L28
+	.half	1
+	.byte	100
+	.word	0,0
+.L119:
+	.word	-1,.L28,0,.L115-.L28
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_getTrackedCorrectableErrors')
+	.sect	'.debug_loc'
+.L29:
+	.word	-1,.L30,0,.L137-.L30
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L143:
+	.word	-1,.L30,.L34-.L30,.L94-.L30
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L148-.L30,.L137-.L30
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L145:
+	.word	-1,.L30,.L34-.L30,.L94-.L30
+	.half	1
+	.byte	81
+	.word	.L147-.L30,.L137-.L30
+	.half	1
+	.byte	81
+	.word	0,0
+.L142:
+	.word	-1,.L30,.L32-.L30,.L175-.L30
+	.half	1
+	.byte	82
+	.word	.L176-.L30,.L114-.L30
+	.half	1
+	.byte	82
+	.word	.L34-.L30,.L94-.L30
+	.half	1
+	.byte	82
+	.word	.L177-.L30,.L137-.L30
+	.half	1
+	.byte	82
+	.word	0,0
+.L138:
+	.word	-1,.L30,.L32-.L30,.L175-.L30
+	.half	1
+	.byte	84
+	.word	.L176-.L30,.L114-.L30
+	.half	1
+	.byte	84
+	.word	.L177-.L30,.L148-.L30
+	.half	1
+	.byte	84
+	.word	0,0
+.L150:
+	.word	-1,.L30,.L178-.L30,.L179-.L30
+	.half	1
+	.byte	83
+	.word	0,0
+.L140:
+	.word	-1,.L30,.L32-.L30,.L175-.L30
+	.half	1
+	.byte	100
+	.word	.L176-.L30,.L114-.L30
+	.half	1
+	.byte	100
+	.word	.L34-.L30,.L94-.L30
+	.half	1
+	.byte	100
+	.word	.L177-.L30,.L137-.L30
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_getTrackedUncorrectableErrors')
+	.sect	'.debug_loc'
+.L35:
+	.word	-1,.L36,0,.L151-.L36
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L155:
+	.word	-1,.L36,.L34-.L36,.L94-.L36
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L159-.L36,.L151-.L36
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L156:
+	.word	-1,.L36,.L34-.L36,.L94-.L36
+	.half	1
+	.byte	81
+	.word	.L158-.L36,.L151-.L36
+	.half	1
+	.byte	81
+	.word	0,0
+.L154:
+	.word	-1,.L36,.L32-.L36,.L175-.L36
+	.half	1
+	.byte	82
+	.word	.L18-.L36,.L114-.L36
+	.half	1
+	.byte	82
+	.word	.L34-.L36,.L94-.L36
+	.half	1
+	.byte	82
+	.word	.L180-.L36,.L151-.L36
+	.half	1
+	.byte	82
+	.word	0,0
+.L152:
+	.word	-1,.L36,.L32-.L36,.L175-.L36
+	.half	1
+	.byte	84
+	.word	.L18-.L36,.L114-.L36
+	.half	1
+	.byte	84
+	.word	.L180-.L36,.L159-.L36
+	.half	1
+	.byte	84
+	.word	0,0
+.L161:
+	.word	-1,.L36,.L178-.L36,.L179-.L36
+	.half	1
+	.byte	83
+	.word	0,0
+.L153:
+	.word	-1,.L36,.L32-.L36,.L175-.L36
+	.half	1
+	.byte	100
+	.word	.L18-.L36,.L114-.L36
+	.half	1
+	.byte	100
+	.word	.L34-.L36,.L94-.L36
+	.half	1
+	.byte	100
+	.word	.L180-.L36,.L151-.L36
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_selectCorrectableErrorTracking')
+	.sect	'.debug_loc'
+.L37:
+	.word	-1,.L38,0,.L162-.L38
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L165:
+	.word	-1,.L38,.L18-.L38,.L114-.L38
+	.half	1
+	.byte	85
+	.word	.L181-.L38,.L162-.L38
+	.half	1
+	.byte	85
+	.word	0,0
+.L163:
+	.word	-1,.L38,.L18-.L38,.L114-.L38
+	.half	1
+	.byte	84
+	.word	.L181-.L38,.L162-.L38
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxFlash_selectUncorrectableErrorTracking')
+	.sect	'.debug_loc'
+.L39:
+	.word	-1,.L40,0,.L166-.L40
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L168:
+	.word	-1,.L40,.L18-.L40,.L114-.L40
+	.half	1
+	.byte	85
+	.word	.L182-.L40,.L166-.L40
+	.half	1
+	.byte	85
+	.word	0,0
+.L167:
+	.word	-1,.L40,.L18-.L40,.L114-.L40
+	.half	1
+	.byte	84
+	.word	.L182-.L40,.L166-.L40
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L279:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_clearCorrectableErrorTracking')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L279,.L14,.L123-.L14
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_clearUncorrectableErrorTracking')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L279,.L20,.L127-.L20
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_disableCorrectableErrorTracking')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L279,.L24,.L130-.L24
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_disableUncorrectableErrorTracking')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L279,.L26,.L134-.L26
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_disableWriteProtection')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L279,.L28,.L115-.L28
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_getTrackedCorrectableErrors')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L279,.L30,.L137-.L30
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_getTrackedUncorrectableErrors')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L279,.L36,.L151-.L36
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_selectCorrectableErrorTracking')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L279,.L38,.L162-.L38
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('IfxFlash_selectUncorrectableErrorTracking')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L279,.L40,.L166-.L40
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L280:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_2')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L280,.L16,.L99-.L16
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_5')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L280,.L18,.L114-.L18
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_3')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L280,.L22,.L104-.L22
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_4')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L280,.L32,.L109-.L32
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L280,.L34,.L94-.L34
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+
+	; Module end

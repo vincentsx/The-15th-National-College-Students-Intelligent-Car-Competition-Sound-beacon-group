@@ -1,0 +1,11 @@
+
+**** Clean-only build of configuration Debug for project 9814 ****
+
+"C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\bin\\amk" -j4 clean 
+Cleaning
+
+Time consumed: 4430 ms
+**** End of build ****
+
+Tool info: 
+TASKING program builder v6.3r1 Build 19041558

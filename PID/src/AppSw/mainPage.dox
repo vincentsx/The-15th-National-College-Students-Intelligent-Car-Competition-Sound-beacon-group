@@ -1,0 +1,25 @@
+/** 
+\defgroup IfxLld_Demo_StmDemo System Timer Demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo shows how to use Stm
+
+It features the following:
+- initialization of the Stm
+- Use the Stm to provide a delay of 1s to a blinkingLED API which blinks the LED at a rate of 1s
+- The number of occurences of interrupt is tracked by a dedicated counter variable.
+
+\par Hardware used
+LED connected to P33.6
+Oscilloscope- The timing accuracy of 1s has been verified by connecting pin P33.6 to the oscilloscope where in a square wave of duty cycle 1s 
+			  was observed.
+
+\par Tested on
+This demo application has been tested on the TC275 A step device  with the iLLD version 0.1.0.8 using a triboard.
+
+
+
+
+*/
