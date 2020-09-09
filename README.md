@@ -9,4 +9,4 @@ The 15th National College Students Intelligent Car Competition Sound beacon grou
 
 ![](https://github.com/rtrrsr/The-15th-National-College-Students-Intelligent-Car-Competition-Sound-beacon-group/blob/master/图片/15.jpeg)
 
-![](G:\code\Car-Competition\The 15th National College Students Intelligent Car Competition Sound beacon group\图片\17.jpg)
+![](https://github.com/rtrrsr/The-15th-National-College-Students-Intelligent-Car-Competition-Sound-beacon-group/blob/master/图片/17.jpg)
